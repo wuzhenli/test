@@ -1,0 +1,12 @@
+PODS:
+  - JLLogEncoding (0.0.2)
+
+DEPENDENCIES:
+  - JLLogEncoding (~> 0.0.2)
+
+SPEC CHECKSUMS:
+  JLLogEncoding: e01534b5dcdc51b64ea714a5ca358f32fe6f9271
+
+PODFILE CHECKSUM: 2ef8c03b4b21b90803b5cdba0ff48ba962997e53
+
+COCOAPODS: 1.2.1

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "KeyWinViewController.h"
 
 @interface ViewController ()
 
@@ -17,13 +18,42 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSDictionary *dic = @{
+                          @"key" : @"中午"
+                          };
+    NSLog(@"not define debug:%@", dic);
+    
+   
+    
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
