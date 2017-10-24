@@ -16,7 +16,6 @@
 @implementation JLGradientButton
 
 
-
 - (void)layoutSubviews {
     [super layoutSubviews];
     
@@ -29,12 +28,33 @@
     
     [CATransaction commit];
 }
+
 #pragma -mark 
 #pragma -mark setter
 - (void)setColors:(NSArray *)colors {
-    _colors = colors;
-    self.gradientLayer.colors = _colors;
+    self.gradientLayer.colors = colors;
     
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+}
+-(void)setLocations:(NSArray<NSNumber *> *)locations {
+    self.gradientLayer.locations = locations;
+    
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+}
+- (void)setStartPoint:(CGPoint)startPoint {
+    self.gradientLayer.startPoint = startPoint;
+    
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+}
+
+- (void)setEndPoint:(CGPoint)endPoint {
+    self.gradientLayer.endPoint = endPoint;
+    
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
 }
 
 // Writable atomic property cannot pair a synthesized getter with a user defined setter
@@ -42,17 +62,13 @@
 - (CAGradientLayer *)gradientLayer {
     if (!_gradientLayer) {
         CAGradientLayer *layer = [CAGradientLayer layer];
-        if (self.colors == nil) {
-            NSValue *colorLeft = (__bridge id)[UIColor colorWithRed:237/255.f green:107/255.f blue:82/255.f alpha:1].CGColor;
-            NSValue *colorRight = (__bridge id)[UIColor colorWithRed:235/255.f green:75/255.f blue:65/255.f alpha:1].CGColor;
-            layer.colors = @[colorLeft, colorRight];
-        } else {
-            layer.colors = self.colors;
-        }
+        NSValue *colorLeft = (__bridge id)[UIColor colorWithRed:237/255.f green:107/255.f blue:82/255.f alpha:1].CGColor;
+        NSValue *colorRight = (__bridge id)[UIColor colorWithRed:235/255.f green:75/255.f blue:65/255.f alpha:1].CGColor;
+        layer.colors = @[colorLeft, colorRight];
         
         layer.startPoint = CGPointMake(0, 0.5);
         layer.endPoint = CGPointMake(1, 0.5);        
-        layer.cornerRadius = 20;
+        layer.cornerRadius = 0;
         _gradientLayer = layer;
     }
     return _gradientLayer;

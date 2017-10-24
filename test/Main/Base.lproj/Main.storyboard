@@ -20,13 +20,69 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kf4-P0-3ab" customClass="JLGradientButton">
+                                <rect key="frame" x="20" y="94" width="335" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="6Au-29-Quw"/>
+                                </constraints>
+                                <state key="normal" title="color"/>
+                                <connections>
+                                    <action selector="btnClicked_1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zI6-5W-AnX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uiJ-bb-bSt">
+                                <rect key="frame" x="20" y="145" width="335" height="36"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="wTC-gb-Xl5"/>
+                                </constraints>
+                                <state key="normal" title="startPoint"/>
+                                <connections>
+                                    <action selector="btnClicked_2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qI2-La-kYk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fq-M1-94t">
+                                <rect key="frame" x="20" y="196" width="335" height="36"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Ycn-z3-3UC"/>
+                                </constraints>
+                                <state key="normal" title="locations"/>
+                                <connections>
+                                    <action selector="btnClicked_3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X2O-Ul-hf7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ni-45-30r" customClass="JLGradientButton">
+                                <rect key="frame" x="106" y="371" width="140" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7fq-M1-94t" firstAttribute="trailing" secondItem="uiJ-bb-bSt" secondAttribute="trailing" id="6jo-HU-z8N"/>
+                            <constraint firstItem="uiJ-bb-bSt" firstAttribute="leading" secondItem="Kf4-P0-3ab" secondAttribute="leading" id="8V2-pk-st9"/>
+                            <constraint firstItem="uiJ-bb-bSt" firstAttribute="height" secondItem="Kf4-P0-3ab" secondAttribute="height" id="HgD-HR-mmo"/>
+                            <constraint firstItem="uiJ-bb-bSt" firstAttribute="top" secondItem="Kf4-P0-3ab" secondAttribute="bottom" constant="15" id="MBP-8G-ILH"/>
+                            <constraint firstAttribute="trailing" secondItem="Kf4-P0-3ab" secondAttribute="trailing" constant="20" id="Pog-0n-uty"/>
+                            <constraint firstItem="7fq-M1-94t" firstAttribute="leading" secondItem="uiJ-bb-bSt" secondAttribute="leading" id="ThC-tu-8Tt"/>
+                            <constraint firstItem="uiJ-bb-bSt" firstAttribute="trailing" secondItem="Kf4-P0-3ab" secondAttribute="trailing" id="UF4-Iu-XCS"/>
+                            <constraint firstItem="7fq-M1-94t" firstAttribute="top" secondItem="uiJ-bb-bSt" secondAttribute="bottom" constant="15" id="X1d-Wb-axg"/>
+                            <constraint firstItem="7fq-M1-94t" firstAttribute="height" secondItem="uiJ-bb-bSt" secondAttribute="height" id="hpY-YA-QGk"/>
+                            <constraint firstItem="Kf4-P0-3ab" firstAttribute="top" secondItem="uvr-nX-5Cw" secondAttribute="bottom" constant="30" id="lo9-pf-UD3"/>
+                            <constraint firstItem="Kf4-P0-3ab" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="xEv-Dp-vTF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9C1-y8-sDF"/>
+                    <connections>
+                        <outlet property="btnGradient" destination="0ni-45-30r" id="vVh-zr-qgR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="601" y="130"/>
+            <point key="canvasLocation" x="600.79999999999995" y="129.98500749625188"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8zp-2o-QhU">
