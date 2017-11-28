@@ -31,6 +31,10 @@
 
 #pragma -mark 
 #pragma -mark setter
+- (void)setGradientLayerHidden:(BOOL)isHidden {
+    self.gradientLayer.hidden = isHidden;
+}
+
 - (void)setColors:(NSArray *)colors {
     self.gradientLayer.colors = colors;
     

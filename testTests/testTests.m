@@ -25,6 +25,20 @@
     [super tearDown];
 }
 
+- (void)testDate {
+    NSDate *datePast = [NSDate distantPast];
+    NSDate *date = [NSDate date];
+    
+    NSTimeInterval interval = [date timeIntervalSinceDate:datePast];
+    NSLog(@"distantPast:%@ interval:%lf", date, interval);
+}
+
+- (void)testString {
+    NSString *str = @"abc d e f  ";
+    NSString *newStr = [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSLog(@"newStr:|%@|", newStr);
+}
+
 - (void)testUrl {
     NSURL *baseUrl = [NSURL URLWithString:@"http://www.kongfz.com"];
     NSString *path = @"requere/contactlist";
@@ -38,7 +52,7 @@
     
     NSURLSessionTask *task;
     NSURLSession *session;
-    session 
+//    session 
     
     NSURLSessionDataTask;
     NSURLSessionDownloadTask;

@@ -17,6 +17,9 @@
 		0A5803731F7A01D2000B5192 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5803721F7A01D2000B5192 /* testTests.m */; };
 		0A58037E1F7A01D2000B5192 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A58037D1F7A01D2000B5192 /* testUITests.m */; };
 		0A5803931F7A0282000B5192 /* MehtodSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5803921F7A0282000B5192 /* MehtodSignature.m */; };
+		0A640F1D1FC6D37100B69AFA /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A640F1C1FC6D37100B69AFA /* GestureViewController.m */; };
+		0A640F201FC6D7E600B69AFA /* GestureLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A640F1F1FC6D7E600B69AFA /* GestureLabel.m */; };
+		0A6BCCE01FBABF5700D327AE /* IMBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6BCCDF1FBABF5700D327AE /* IMBoard.m */; };
 		0A8F226E1F7B7E8200499EFD /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8F226C1F7B7E8200499EFD /* TestViewController.m */; };
 		0A8F226F1F7B7E8200499EFD /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8F226D1F7B7E8200499EFD /* TestViewController.xib */; };
 		0AE45A961F90591D00D738F4 /* KeyWinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE45A941F90591D00D738F4 /* KeyWinViewController.m */; };
@@ -67,6 +70,12 @@
 		0A58038F1F7A021C000B5192 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0A5803911F7A0282000B5192 /* MehtodSignature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MehtodSignature.h; sourceTree = "<group>"; };
 		0A5803921F7A0282000B5192 /* MehtodSignature.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MehtodSignature.m; sourceTree = "<group>"; };
+		0A640F1B1FC6D37100B69AFA /* GestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
+		0A640F1C1FC6D37100B69AFA /* GestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
+		0A640F1E1FC6D7E600B69AFA /* GestureLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureLabel.h; sourceTree = "<group>"; };
+		0A640F1F1FC6D7E600B69AFA /* GestureLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureLabel.m; sourceTree = "<group>"; };
+		0A6BCCDE1FBABF5700D327AE /* IMBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMBoard.h; sourceTree = "<group>"; };
+		0A6BCCDF1FBABF5700D327AE /* IMBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMBoard.m; sourceTree = "<group>"; };
 		0A8F226B1F7B7E8200499EFD /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		0A8F226C1F7B7E8200499EFD /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		0A8F226D1F7B7E8200499EFD /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
@@ -198,6 +207,8 @@
 		0A58038D1F7A01F3000B5192 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				0A640F1A1FC6D36200B69AFA /* Gesture */,
+				0A6BCCDD1FBABF2F00D327AE /* IMUI */,
 				0AE45A921F90590400D738F4 /* keyWindow */,
 				0A8F226A1F7B7E7000499EFD /* test */,
 				0A5803901F7A026B000B5192 /* MehtodSignature */,
@@ -225,6 +236,26 @@
 				0A5803921F7A0282000B5192 /* MehtodSignature.m */,
 			);
 			path = MehtodSignature;
+			sourceTree = "<group>";
+		};
+		0A640F1A1FC6D36200B69AFA /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				0A640F1B1FC6D37100B69AFA /* GestureViewController.h */,
+				0A640F1C1FC6D37100B69AFA /* GestureViewController.m */,
+				0A640F1E1FC6D7E600B69AFA /* GestureLabel.h */,
+				0A640F1F1FC6D7E600B69AFA /* GestureLabel.m */,
+			);
+			path = Gesture;
+			sourceTree = "<group>";
+		};
+		0A6BCCDD1FBABF2F00D327AE /* IMUI */ = {
+			isa = PBXGroup;
+			children = (
+				0A6BCCDE1FBABF5700D327AE /* IMBoard.h */,
+				0A6BCCDF1FBABF5700D327AE /* IMBoard.m */,
+			);
+			path = IMUI;
 			sourceTree = "<group>";
 		};
 		0A8F226A1F7B7E7000499EFD /* test */ = {
@@ -556,6 +587,9 @@
 			files = (
 				0A58035E1F7A01D1000B5192 /* ViewController.m in Sources */,
 				0A5803691F7A01D1000B5192 /* main.m in Sources */,
+				0A640F201FC6D7E600B69AFA /* GestureLabel.m in Sources */,
+				0A6BCCE01FBABF5700D327AE /* IMBoard.m in Sources */,
+				0A640F1D1FC6D37100B69AFA /* GestureViewController.m in Sources */,
 				0A58035B1F7A01D1000B5192 /* AppDelegate.m in Sources */,
 				0A5803931F7A0282000B5192 /* MehtodSignature.m in Sources */,
 				0AE45A961F90591D00D738F4 /* KeyWinViewController.m in Sources */,
@@ -725,12 +759,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DTT8J9B465;
+				DEVELOPMENT_TEAM = Y49U8RX2F5;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/test/Others/PrefixHeader.pch";
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jaly.www.extension.test2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaly.www.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -742,12 +776,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DTT8J9B465;
+				DEVELOPMENT_TEAM = Y49U8RX2F5;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/test/Others/PrefixHeader.pch";
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jaly.www.extension.test2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaly.www.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

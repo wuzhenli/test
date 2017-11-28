@@ -10,6 +10,8 @@
 
 @interface JLGradientButton : UIButton
 
+- (void)setGradientLayerHidden:(BOOL)isHidden ;
+
 /* The array of CGColorRef objects defining the color of each gradient
  * stop. Defaults to [(237, 107, 82),(235, 75, 65)]. Animatable. */
 - (void)setColors:(NSArray *)colors ;
@@ -31,5 +33,6 @@
  * are [0,.5] and [1,.5] respectively. Both are animatable. */
 - (void)setStartPoint:(CGPoint)startPoint ;
 - (void)setEndPoint:(CGPoint)endPoint ;
+
 
 @end
