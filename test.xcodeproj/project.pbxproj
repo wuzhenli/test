@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3059421FFC6E910092DF94 /* SlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3059401FFC6E910092DF94 /* SlideViewController.m */; };
+		0A3059431FFC6E910092DF94 /* SlideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3059411FFC6E910092DF94 /* SlideViewController.xib */; };
+		0A3059471FFC800C0092DF94 /* JLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3059461FFC800C0092DF94 /* JLNavigationController.m */; };
+		0A30594B1FFC87920092DF94 /* NSObject+DLIntrospection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A30594A1FFC87920092DF94 /* NSObject+DLIntrospection.m */; };
 		0A4F5B1E1F9EDD6C00140E82 /* JLGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F5B1D1F9EDD6C00140E82 /* JLGradientButton.m */; };
+		0A5604651FF5E3C800A42929 /* ResponderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5604641FF5E3C800A42929 /* ResponderView.m */; };
 		0A58035B1F7A01D1000B5192 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A58035A1F7A01D1000B5192 /* AppDelegate.m */; };
 		0A58035E1F7A01D1000B5192 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A58035D1F7A01D1000B5192 /* ViewController.m */; };
 		0A5803611F7A01D1000B5192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A58035F1F7A01D1000B5192 /* Main.storyboard */; };
@@ -17,9 +22,12 @@
 		0A5803731F7A01D2000B5192 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5803721F7A01D2000B5192 /* testTests.m */; };
 		0A58037E1F7A01D2000B5192 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A58037D1F7A01D2000B5192 /* testUITests.m */; };
 		0A5803931F7A0282000B5192 /* MehtodSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5803921F7A0282000B5192 /* MehtodSignature.m */; };
+		0A5CA3401FECA77900EC170F /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5CA33F1FECA77900EC170F /* Animal.m */; };
 		0A640F1D1FC6D37100B69AFA /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A640F1C1FC6D37100B69AFA /* GestureViewController.m */; };
 		0A640F201FC6D7E600B69AFA /* GestureLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A640F1F1FC6D7E600B69AFA /* GestureLabel.m */; };
 		0A6BCCE01FBABF5700D327AE /* IMBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6BCCDF1FBABF5700D327AE /* IMBoard.m */; };
+		0A6BD2261FD630FC00D13E33 /* APIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6BD2241FD630FC00D13E33 /* APIViewController.m */; };
+		0A6BD2271FD630FC00D13E33 /* APIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6BD2251FD630FC00D13E33 /* APIViewController.xib */; };
 		0A8F226E1F7B7E8200499EFD /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8F226C1F7B7E8200499EFD /* TestViewController.m */; };
 		0A8F226F1F7B7E8200499EFD /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8F226D1F7B7E8200499EFD /* TestViewController.xib */; };
 		0AE45A961F90591D00D738F4 /* KeyWinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE45A941F90591D00D738F4 /* KeyWinViewController.m */; };
@@ -49,8 +57,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A30593F1FFC6E910092DF94 /* SlideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideViewController.h; sourceTree = "<group>"; };
+		0A3059401FFC6E910092DF94 /* SlideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideViewController.m; sourceTree = "<group>"; };
+		0A3059411FFC6E910092DF94 /* SlideViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideViewController.xib; sourceTree = "<group>"; };
+		0A3059451FFC800C0092DF94 /* JLNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLNavigationController.h; sourceTree = "<group>"; };
+		0A3059461FFC800C0092DF94 /* JLNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLNavigationController.m; sourceTree = "<group>"; };
+		0A3059491FFC87920092DF94 /* NSObject+DLIntrospection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DLIntrospection.h"; sourceTree = "<group>"; };
+		0A30594A1FFC87920092DF94 /* NSObject+DLIntrospection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DLIntrospection.m"; sourceTree = "<group>"; };
 		0A4F5B1C1F9EDD6C00140E82 /* JLGradientButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLGradientButton.h; sourceTree = "<group>"; };
 		0A4F5B1D1F9EDD6C00140E82 /* JLGradientButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLGradientButton.m; sourceTree = "<group>"; };
+		0A5604631FF5E3C800A42929 /* ResponderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponderView.h; sourceTree = "<group>"; };
+		0A5604641FF5E3C800A42929 /* ResponderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResponderView.m; sourceTree = "<group>"; };
 		0A5803561F7A01D1000B5192 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5803591F7A01D1000B5192 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0A58035A1F7A01D1000B5192 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,12 +87,17 @@
 		0A58038F1F7A021C000B5192 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0A5803911F7A0282000B5192 /* MehtodSignature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MehtodSignature.h; sourceTree = "<group>"; };
 		0A5803921F7A0282000B5192 /* MehtodSignature.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MehtodSignature.m; sourceTree = "<group>"; };
+		0A5CA33E1FECA77900EC170F /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		0A5CA33F1FECA77900EC170F /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 		0A640F1B1FC6D37100B69AFA /* GestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
 		0A640F1C1FC6D37100B69AFA /* GestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
 		0A640F1E1FC6D7E600B69AFA /* GestureLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureLabel.h; sourceTree = "<group>"; };
 		0A640F1F1FC6D7E600B69AFA /* GestureLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureLabel.m; sourceTree = "<group>"; };
 		0A6BCCDE1FBABF5700D327AE /* IMBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMBoard.h; sourceTree = "<group>"; };
 		0A6BCCDF1FBABF5700D327AE /* IMBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMBoard.m; sourceTree = "<group>"; };
+		0A6BD2231FD630FC00D13E33 /* APIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIViewController.h; sourceTree = "<group>"; };
+		0A6BD2241FD630FC00D13E33 /* APIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIViewController.m; sourceTree = "<group>"; };
+		0A6BD2251FD630FC00D13E33 /* APIViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = APIViewController.xib; sourceTree = "<group>"; };
 		0A8F226B1F7B7E8200499EFD /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		0A8F226C1F7B7E8200499EFD /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		0A8F226D1F7B7E8200499EFD /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
@@ -123,11 +145,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A30593E1FFC6E7D0092DF94 /* Slide */ = {
+			isa = PBXGroup;
+			children = (
+				0A30593F1FFC6E910092DF94 /* SlideViewController.h */,
+				0A3059401FFC6E910092DF94 /* SlideViewController.m */,
+				0A3059411FFC6E910092DF94 /* SlideViewController.xib */,
+			);
+			path = Slide;
+			sourceTree = "<group>";
+		};
+		0A3059441FFC7FF60092DF94 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0A3059451FFC800C0092DF94 /* JLNavigationController.h */,
+				0A3059461FFC800C0092DF94 /* JLNavigationController.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0A3059481FFC87920092DF94 /* DLIntrospection */ = {
+			isa = PBXGroup;
+			children = (
+				0A3059491FFC87920092DF94 /* NSObject+DLIntrospection.h */,
+				0A30594A1FFC87920092DF94 /* NSObject+DLIntrospection.m */,
+			);
+			path = DLIntrospection;
+			sourceTree = "<group>";
+		};
 		0A4F5B1B1F9EDD5F00140E82 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				0A4F5B1C1F9EDD6C00140E82 /* JLGradientButton.h */,
 				0A4F5B1D1F9EDD6C00140E82 /* JLGradientButton.m */,
+				0A5604631FF5E3C800A42929 /* ResponderView.h */,
+				0A5604641FF5E3C800A42929 /* ResponderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,6 +209,9 @@
 		0A5803581F7A01D1000B5192 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				0A3059481FFC87920092DF94 /* DLIntrospection */,
+				0A3059441FFC7FF60092DF94 /* Common */,
+				0A5CA33D1FECA76700EC170F /* Models */,
 				0A4F5B1B1F9EDD5F00140E82 /* View */,
 				0A5803671F7A01D1000B5192 /* Info.plist */,
 				0A58038E1F7A01FC000B5192 /* Others */,
@@ -207,6 +262,8 @@
 		0A58038D1F7A01F3000B5192 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				0A30593E1FFC6E7D0092DF94 /* Slide */,
+				0A6BD2221FD630EA00D13E33 /* API */,
 				0A640F1A1FC6D36200B69AFA /* Gesture */,
 				0A6BCCDD1FBABF2F00D327AE /* IMUI */,
 				0AE45A921F90590400D738F4 /* keyWindow */,
@@ -238,6 +295,15 @@
 			path = MehtodSignature;
 			sourceTree = "<group>";
 		};
+		0A5CA33D1FECA76700EC170F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A5CA33E1FECA77900EC170F /* Animal.h */,
+				0A5CA33F1FECA77900EC170F /* Animal.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0A640F1A1FC6D36200B69AFA /* Gesture */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +322,16 @@
 				0A6BCCDF1FBABF5700D327AE /* IMBoard.m */,
 			);
 			path = IMUI;
+			sourceTree = "<group>";
+		};
+		0A6BD2221FD630EA00D13E33 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0A6BD2231FD630FC00D13E33 /* APIViewController.h */,
+				0A6BD2241FD630FC00D13E33 /* APIViewController.m */,
+				0A6BD2251FD630FC00D13E33 /* APIViewController.xib */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		0A8F226A1F7B7E7000499EFD /* test */ = {
@@ -423,6 +499,8 @@
 				0A8F226F1F7B7E8200499EFD /* TestViewController.xib in Resources */,
 				0AE45A971F90591D00D738F4 /* KeyWinViewController.xib in Resources */,
 				0A5803611F7A01D1000B5192 /* Main.storyboard in Resources */,
+				0A6BD2271FD630FC00D13E33 /* APIViewController.xib in Resources */,
+				0A3059431FFC6E910092DF94 /* SlideViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,13 +587,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		87634A21CDD4EA5AF8CAD34D /* [CP] Copy Pods Resources */ = {
@@ -539,13 +620,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D6103C78F22C0379BD5A5AA6 /* [CP] Copy Pods Resources */ = {
@@ -569,13 +653,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-test-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -587,13 +674,19 @@
 			files = (
 				0A58035E1F7A01D1000B5192 /* ViewController.m in Sources */,
 				0A5803691F7A01D1000B5192 /* main.m in Sources */,
+				0A3059421FFC6E910092DF94 /* SlideViewController.m in Sources */,
 				0A640F201FC6D7E600B69AFA /* GestureLabel.m in Sources */,
 				0A6BCCE01FBABF5700D327AE /* IMBoard.m in Sources */,
 				0A640F1D1FC6D37100B69AFA /* GestureViewController.m in Sources */,
 				0A58035B1F7A01D1000B5192 /* AppDelegate.m in Sources */,
 				0A5803931F7A0282000B5192 /* MehtodSignature.m in Sources */,
+				0A6BD2261FD630FC00D13E33 /* APIViewController.m in Sources */,
+				0A30594B1FFC87920092DF94 /* NSObject+DLIntrospection.m in Sources */,
+				0A3059471FFC800C0092DF94 /* JLNavigationController.m in Sources */,
 				0AE45A961F90591D00D738F4 /* KeyWinViewController.m in Sources */,
+				0A5CA3401FECA77900EC170F /* Animal.m in Sources */,
 				0A4F5B1E1F9EDD6C00140E82 /* JLGradientButton.m in Sources */,
+				0A5604651FF5E3C800A42929 /* ResponderView.m in Sources */,
 				0A8F226E1F7B7E8200499EFD /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -760,6 +853,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y49U8RX2F5;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/test/Others/PrefixHeader.pch";
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -777,6 +871,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y49U8RX2F5;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/test/Others/PrefixHeader.pch";
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

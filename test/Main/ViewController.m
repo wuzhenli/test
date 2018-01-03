@@ -11,12 +11,19 @@
 #import "JLGradientButton.h"
 #import "IMBoard.h"
 #import "GestureViewController.h"
+#import "APIViewController.h"
+#import "SlideViewController.h"
+#import <objc/runtime.h>
+#import <objc/message.h>
 
 @interface ViewController ()
+
 @property (weak, nonatomic) IBOutlet JLGradientButton *btnGradient;
+@property (weak, nonatomic) IBOutlet UILabel *lblTest;
 
 @property (strong, nonatomic) UIView *viewRed;
 @property (strong, nonatomic) IMBoard *imBoard;
+
 @end
 
 @implementation ViewController
@@ -24,15 +31,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    self.navigationController.navigationBarHidden = YES;
-    // add one line
+    // add one 
+    
+    UIButton *btn;
+    UILabel *lbl;
+    UIImageView *imgV;
+    btn.enabled;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
-    NSLog(@"%s",__func__);
+    
 }
 
-
+- (void)testGCDApply {
+    NSMutableArray<NSString *> *arr = [NSMutableArray array];
+    for (int i = 0; i<10; i++) {
+        [arr addObject:@(i).stringValue];
+    }
+    
+    NSLog(@"--- before apply");
+    dispatch_apply(arr.count, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(size_t t) {
+        NSLog(@"%@ %@", arr[t], [NSThread currentThread]);
+    });
+    NSLog(@"--- after apply");
+    
+}
 - (void)testGradient {
 }
 /*
@@ -47,8 +71,8 @@
 
  */
 - (IBAction)btnClicked_1:(JLGradientButton *)sender {
-    self.btnGradient.enabled = NO;
-    [self.btnGradient setGradientLayerHidden:YES];
+    SlideViewController *vc = [[SlideViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (IBAction)btnClicked_2:(id)sender {
@@ -57,13 +81,21 @@
 }
 
 - (IBAction)btnClicked_3:(UIButton *)sender {
-    
-    
+    self.lblTest.highlightedTextColor = [UIColor redColor];
+    self.lblTest.highlighted = YES;
+//    self.lblTest.
 }
 - (void)test {
 
 }
-
+#pragma -mark 
+#pragma -mark goto VC
+- (void)gotoAPIVC {
+    APIViewController *vc = [[APIViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+#pragma -mark 
+#pragma -mark getter
 - (UIView *)viewRed {
     if (!_viewRed) {
         _viewRed = [[UIView alloc] initWithFrame:CGRectMake(10, 30, 10, 30)];

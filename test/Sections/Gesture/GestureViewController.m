@@ -30,8 +30,8 @@
     self.tapDouble = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDouble:)];
     self.tapDouble.numberOfTapsRequired = 2;
     [self.lblTest addGestureRecognizer:self.tapDouble];
-//    
-//    [self.tapSingle requireGestureRecognizerToFail:self.tapDouble];
+
+    
 }
 
 
