@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "MehtodSignature.h"
+#import "Animal.h"
 
 @interface testTests : XCTestCase
 
@@ -23,6 +24,25 @@
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
+}
+
+- (void)testArray {
+    int count = 10;
+    NSMutableArray *muArr = [NSMutableArray arrayWithCapacity:count];
+    NSMutableArray *muArr2 = [NSMutableArray arrayWithCapacity:count];
+    for (int i = 0; i<10; i++) {
+        Animal *animal = [Animal new];
+        animal.name = @(i).stringValue;
+        [muArr addObject:animal];
+        
+        if (i>=5) {
+            [muArr2 addObject:animal];
+        }
+    }
+    
+    muArr.
+    
+    
 }
 
 - (void)testDate {

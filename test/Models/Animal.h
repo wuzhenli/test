@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Animal : NSObject
-
+@property (copy, nonatomic) NSString *name;
 - (instancetype)initWithName:(NSString *)name ;
 
 @end

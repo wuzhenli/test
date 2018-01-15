@@ -12,35 +12,86 @@
 @property (strong, nonatomic) UILabel *lblLeft;
 @property (strong, nonatomic) UILabel *lblRight;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-
+@property (weak, nonatomic) IBOutlet UIView *viewRed;
+@property (strong, nonatomic) UITapGestureRecognizer *tap1;
 @end
 
 @implementation SlideViewController
-
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        NSLog(@"%s", __func__);
+    }
+    return self;
+}
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        NSLog(@"%s", __func__);
+    }
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self setScrollView];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap1Clicked:)];
+    [self.viewRed addGestureRecognizer:tap];
+    tap.delegate = self;
+    self.tap1 = tap;
+    
+    UITapGestureRecognizer *tap2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap2Clicked:)];
+    tap2.numberOfTapsRequired = 2;
+    [self.viewRed addGestureRecognizer:tap2];
+//    NSLog(@"tap1:%@  tap2:%@", tap, tap2);
+//    tap1:<UITapGestureRecognizer: 0x6000001fea00; state = Possible; view = <UIView 0x7f89ea4117b0>; target= <(action=tap1Clicked:, target=<SlideViewController 0x7f89ec800f90>)>>  
+//    tap2:<UITapGestureRecognizer: 0x6000001fe600; state = Possible; view = <UIView 0x7f89ea4117b0>; target= <(action=tap1Clicked:, target=<SlideViewController 0x7f89ec800f90>)>; numberOfTapsRequired = 2>
+}
+
+- (void)setScrollView {
     [self.scrollView addSubview:self.lblLeft];
     [self.scrollView addSubview:self.lblRight];
     
     CGSize size = [UIScreen mainScreen].bounds.size;
-    self.lblLeft.frame = CGRectMake(0, 0, size.width, size.height- 200);
-    self.lblRight.frame = CGRectMake(size.width, 0, size.width, size.height-200);
+    self.lblLeft.frame = CGRectMake(0, 0, size.width, size.height);
+    self.lblRight.frame = CGRectMake(size.width, 0, size.width, size.height);
     
     
-//    self.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    self.scrollView.contentSize = CGSizeMake(size.width * 2, size.height - 200);
+    //    self.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    self.scrollView.contentSize = CGSizeMake(size.width * 2, size.height);
     self.scrollView.pagingEnabled = YES;
     
     self.scrollView.bounces = NO;
     self.scrollView.alwaysBounceHorizontal = NO;
-//    self.scrollView.delegate = self;
+    //    self.scrollView.delegate = self;
     NSLog(@"%@", self.scrollView.panGestureRecognizer);
-    
 }
 
 #pragma -mark 
+#pragma -mark event response
+- (void)tap1Clicked:(UITapGestureRecognizer *)ges {
+    NSLog(@"%s", __func__);
+}
+- (void)tap2Clicked:(UITapGestureRecognizer *)ges {
+    NSLog(@"%s", __func__);
+} 
+#pragma -mark 
 #pragma -mark UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRequireFailureOfGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer NS_AVAILABLE_IOS(7_0) {
+    
+//    NSLog(@"=================\ngestureRecognizer:%@   \n  otherGestureRecognizer:%@", gestureRecognizer, otherGestureRecognizer);
+    if(self.tap1 == gestureRecognizer) {
+    }
+    return YES;
+//    return NO;
+}
+//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer NS_AVAILABLE_IOS(7_0) {
+//    return YES;
+//}
+
+
+
 - (void)endScroll {
     
 }

@@ -15,6 +15,9 @@
 #import "SlideViewController.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
+#import <AVKit/AVKit.h>
+#import <AVFoundation/AVFoundation.h>
+
 
 @interface ViewController ()
 
@@ -27,11 +30,29 @@
 @end
 
 @implementation ViewController
-
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        NSLog(@"%s", __func__);
+    }
+    return self;
+}
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        NSLog(@"%s", __func__);
+    }
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    self.navigationController.navigationBarHidden = YES;
     // add one 
+//    AVAsset
+//    AVCaputureSession
+    
+    
+    
     
     UIButton *btn;
     UILabel *lbl;
@@ -71,9 +92,11 @@
 
  */
 - (IBAction)btnClicked_1:(JLGradientButton *)sender {
-    SlideViewController *vc = [[SlideViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+//    SlideViewController *vc = [[SlideViewController alloc] init];
+//    [self.navigationController pushViewController:vc animated:YES];
+    [self gotoPhotoKitVC];
 }
+
 
 - (IBAction)btnClicked_2:(id)sender {
     self.btnGradient.enabled = YES;
@@ -90,6 +113,11 @@
 }
 #pragma -mark 
 #pragma -mark goto VC
+- (void)gotoPhotoKitVC {
+    Class c = NSClassFromString(@"PhotoKitViewController");
+    UIViewController *vc = [[c alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 - (void)gotoAPIVC {
     APIViewController *vc = [[APIViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];

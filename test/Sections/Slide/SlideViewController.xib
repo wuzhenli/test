@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="scrollView" destination="cH4-Ij-dc9" id="vXa-Cs-hLm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewRed" destination="UQe-cp-llY" id="Ba2-kY-K5P"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -21,15 +22,20 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cH4-Ij-dc9">
-                    <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                    <rect key="frame" x="0.0" y="200" width="375" height="467"/>
                     <color key="backgroundColor" red="0.66666666669999997" green="0.85842633930000001" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                 </scrollView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UQe-cp-llY">
+                    <rect key="frame" x="52" y="64" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.069893973210000002" blue="0.062332589289999997" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="cH4-Ij-dc9" secondAttribute="bottom" id="E2q-Nz-wst"/>
                 <constraint firstAttribute="trailing" secondItem="cH4-Ij-dc9" secondAttribute="trailing" id="RgB-pd-EO7"/>
-                <constraint firstItem="cH4-Ij-dc9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="a3o-52-YYL"/>
+                <constraint firstItem="cH4-Ij-dc9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="a3o-52-YYL"/>
                 <constraint firstItem="cH4-Ij-dc9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yUI-hD-aNH"/>
             </constraints>
             <point key="canvasLocation" x="-67" y="30"/>
