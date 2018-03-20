@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "MehtodSignature.h"
 #import "Animal.h"
+#import "SingleModel.h"
 
 @interface testTests : XCTestCase
 
@@ -26,25 +27,16 @@
     [super tearDown];
 }
 
-- (void)testArray {
-    int count = 10;
-    NSMutableArray *muArr = [NSMutableArray arrayWithCapacity:count];
-    NSMutableArray *muArr2 = [NSMutableArray arrayWithCapacity:count];
-    for (int i = 0; i<10; i++) {
-        Animal *animal = [Animal new];
-        animal.name = @(i).stringValue;
-        [muArr addObject:animal];
-        
-        if (i>=5) {
-            [muArr2 addObject:animal];
-        }
-    }
+- (void)testSingleton {
+    SingleModel *m1 = [SingleModel shareSingleModel];
+    SingleModel *m2 = [SingleModel shareSingleModel];
     
-    muArr.
+    XCTAssertNotNil(m1, "m1 is nil");
+    XCTAssertNotNil(m2, "m2 is nil");
     
     
+    XCTAssert(m1 == m2, "m1 != m2");
 }
-
 - (void)testDate {
     NSDate *datePast = [NSDate distantPast];
     NSDate *date = [NSDate date];

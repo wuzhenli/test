@@ -17,52 +17,41 @@
 #import <objc/message.h>
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import <math.h>
 
+#define Dispatch_Safe_Main(block) \
+if ([NSThread isMainThread]) { \
+block(); \
+} else { \
+dispatch_async(dispatch_get_main_queue(), block); \
+}
 
+#define Method(a, b) - (void)m ## a ## b
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet JLGradientButton *btnGradient;
 @property (weak, nonatomic) IBOutlet UILabel *lblTest;
+@property (weak, nonatomic) IBOutlet UIView *viewRed;
 
-@property (strong, nonatomic) UIView *viewRed;
+
 @property (strong, nonatomic) IMBoard *imBoard;
-
+@property (strong, nonatomic) NSTimer *timer;
 @end
 
 @implementation ViewController
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        NSLog(@"%s", __func__);
-    }
-    return self;
-}
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
-    self = [super initWithCoder:coder];
-    if (self) {
-        NSLog(@"%s", __func__);
-    }
-    return self;
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.navigationController.navigationBarHidden = YES;
-    // add one 
-//    AVAsset
-//    AVCaputureSession
+    //
+    self.viewRed.frame = CGRectMake(0, 0, 100, 100);
+    self.viewRed.layer.delegate = nil;
     
-    
-    
-    
-    UIButton *btn;
-    UILabel *lbl;
-    UIImageView *imgV;
-    btn.enabled;
+    [self mAddNum];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [super touchesBegan:touches withEvent:event];
+Method(Add, Num) {
     
+    NSLog(@"mAddNum");
 }
 
 - (void)testGCDApply {
@@ -80,6 +69,12 @@
 }
 - (void)testGradient {
 }
+
+- (IBAction)viewRedTaped:(id)sender {
+    NSLog(@"%s", __func__);
+}
+
+
 /*
  iPhone 6s
  2017-11-10 10:30:49.604782+0800 test[8176:97697] nativeBounds:{{0, 0}, {750, 1334}}
@@ -92,21 +87,16 @@
 
  */
 - (IBAction)btnClicked_1:(JLGradientButton *)sender {
-//    SlideViewController *vc = [[SlideViewController alloc] init];
-//    [self.navigationController pushViewController:vc animated:YES];
-    [self gotoPhotoKitVC];
+    self.viewRed.transform = CGAffineTransformMakeScale(2, 2);
 }
 
-
 - (IBAction)btnClicked_2:(id)sender {
-    self.btnGradient.enabled = YES;
-    [self.btnGradient setGradientLayerHidden:NO];
+    self.viewRed.transform = CGAffineTransformIdentity;
 }
 
 - (IBAction)btnClicked_3:(UIButton *)sender {
-    self.lblTest.highlightedTextColor = [UIColor redColor];
-    self.lblTest.highlighted = YES;
-//    self.lblTest.
+    NSLog(@"frame:%@", NSStringFromCGRect(self.viewRed.frame));
+    NSLog(@"bounds:%@", NSStringFromCGRect(self.viewRed.bounds));
 }
 - (void)test {
 
@@ -124,13 +114,7 @@
 }
 #pragma -mark 
 #pragma -mark getter
-- (UIView *)viewRed {
-    if (!_viewRed) {
-        _viewRed = [[UIView alloc] initWithFrame:CGRectMake(10, 30, 10, 30)];
-        _viewRed.backgroundColor = [UIColor redColor];
-    }
-    return _viewRed;
-}
+
 
 - (IMBoard *)imBoard {
     if (!_imBoard) {

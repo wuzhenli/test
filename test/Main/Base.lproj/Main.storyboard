@@ -27,7 +27,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="6Au-29-Quw"/>
                                 </constraints>
-                                <state key="normal" title="color"/>
+                                <state key="normal" title="1"/>
                                 <connections>
                                     <action selector="btnClicked_1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zI6-5W-AnX"/>
                                 </connections>
@@ -38,7 +38,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="wTC-gb-Xl5"/>
                                 </constraints>
-                                <state key="normal" title="startPoint"/>
+                                <state key="normal" title="2"/>
                                 <connections>
                                     <action selector="btnClicked_2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qI2-La-kYk"/>
                                 </connections>
@@ -49,16 +49,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="Ycn-z3-3UC"/>
                                 </constraints>
-                                <state key="normal" title="locations"/>
+                                <state key="normal" title="3"/>
                                 <connections>
                                     <action selector="btnClicked_3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X2O-Ul-hf7"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ni-45-30r" customClass="JLGradientButton">
-                                <rect key="frame" x="101" y="266" width="204" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvX-iv-oNh">
                                 <rect key="frame" x="117" y="425" width="113" height="37"/>
@@ -68,6 +62,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zpN-Ho-31K">
+                                <rect key="frame" x="60" y="248" width="207" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ni-45-30r" customClass="JLGradientButton">
+                                <rect key="frame" x="85" y="302" width="204" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fet-7H-Bm0">
+                                <rect key="frame" x="67" y="488" width="102" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.069893973210000002" blue="0.062332589289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="yh5-v9-HZn" appends="YES" id="Io0-Xm-jWp"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -88,9 +105,15 @@
                     <connections>
                         <outlet property="btnGradient" destination="0ni-45-30r" id="vVh-zr-qgR"/>
                         <outlet property="lblTest" destination="vvX-iv-oNh" id="iSN-et-mWO"/>
+                        <outlet property="viewRed" destination="Fet-7H-Bm0" id="XUb-u2-BOG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="yh5-v9-HZn">
+                    <connections>
+                        <action selector="viewRedTaped:" destination="BYZ-38-t0r" id="okH-aW-zuG"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="600.79999999999995" y="129.98500749625188"/>
         </scene>

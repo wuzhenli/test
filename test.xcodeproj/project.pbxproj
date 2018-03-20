@@ -33,6 +33,10 @@
 		0A7C409020073CED00174650 /* PhotoKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7C408F20073CED00174650 /* PhotoKitViewController.xib */; };
 		0A8F226E1F7B7E8200499EFD /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8F226C1F7B7E8200499EFD /* TestViewController.m */; };
 		0A8F226F1F7B7E8200499EFD /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8F226D1F7B7E8200499EFD /* TestViewController.xib */; };
+		0AA47ACF20160DAB00242C4D /* preview_2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47ACD20160DAA00242C4D /* preview_2.mov */; };
+		0AA47AD020160DAB00242C4D /* preview_2的副本.123314.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47ACE20160DAB00242C4D /* preview_2的副本.123314.mov */; };
+		0AA47AD2201610E000242C4D /* changming.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47AD1201610E000242C4D /* changming.png */; };
+		0AD0FEA520614F5D006678F4 /* SingleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0FEA420614F5D006678F4 /* SingleModel.m */; };
 		0AE45A961F90591D00D738F4 /* KeyWinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE45A941F90591D00D738F4 /* KeyWinViewController.m */; };
 		0AE45A971F90591D00D738F4 /* KeyWinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE45A951F90591D00D738F4 /* KeyWinViewController.xib */; };
 		0AEA6F261F90B0E1008C3E69 /* reward_icon_price_rate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEA6F241F90B05B008C3E69 /* reward_icon_price_rate@2x.png */; };
@@ -109,6 +113,12 @@
 		0A8F226B1F7B7E8200499EFD /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		0A8F226C1F7B7E8200499EFD /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		0A8F226D1F7B7E8200499EFD /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		0AA47ACD20160DAA00242C4D /* preview_2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = preview_2.mov; sourceTree = "<group>"; };
+		0AA47ACE20160DAB00242C4D /* preview_2的副本.123314.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "preview_2的副本.123314.mov"; sourceTree = "<group>"; };
+		0AA47AD1201610E000242C4D /* changming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = changming.png; sourceTree = "<group>"; };
+		0AD0FEA320614F5D006678F4 /* SingleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleModel.h; sourceTree = "<group>"; };
+		0AD0FEA420614F5D006678F4 /* SingleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleModel.m; sourceTree = "<group>"; };
+		0AD0FEA6206150BF006678F4 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		0AE45A931F90591D00D738F4 /* KeyWinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyWinViewController.h; sourceTree = "<group>"; };
 		0AE45A941F90591D00D738F4 /* KeyWinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyWinViewController.m; sourceTree = "<group>"; };
 		0AE45A951F90591D00D738F4 /* KeyWinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyWinViewController.xib; sourceTree = "<group>"; };
@@ -217,6 +227,9 @@
 		0A5803581F7A01D1000B5192 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				0AA47AD1201610E000242C4D /* changming.png */,
+				0AA47ACD20160DAA00242C4D /* preview_2.mov */,
+				0AA47ACE20160DAB00242C4D /* preview_2的副本.123314.mov */,
 				0A3059481FFC87920092DF94 /* DLIntrospection */,
 				0A3059441FFC7FF60092DF94 /* Common */,
 				0A5CA33D1FECA76700EC170F /* Models */,
@@ -270,6 +283,7 @@
 		0A58038D1F7A01F3000B5192 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				0AD0FEA120614E3F006678F4 /* Tool */,
 				0A7C408B20073CD200174650 /* PhotoKit */,
 				0A30593E1FFC6E7D0092DF94 /* Slide */,
 				0A6BD2221FD630EA00D13E33 /* API */,
@@ -311,6 +325,8 @@
 				0A5CA33F1FECA77900EC170F /* Animal.m */,
 				0A7C4088200701F500174650 /* Person.h */,
 				0A7C4089200701F500174650 /* Person.m */,
+				0AD0FEA320614F5D006678F4 /* SingleModel.h */,
+				0AD0FEA420614F5D006678F4 /* SingleModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -363,6 +379,14 @@
 				0A8F226D1F7B7E8200499EFD /* TestViewController.xib */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		0AD0FEA120614E3F006678F4 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				0AD0FEA6206150BF006678F4 /* Singleton.h */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		0AE45A921F90590400D738F4 /* keyWindow */ = {
@@ -514,9 +538,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AEA6F261F90B0E1008C3E69 /* reward_icon_price_rate@2x.png in Resources */,
+				0AA47AD020160DAB00242C4D /* preview_2的副本.123314.mov in Resources */,
+				0AA47AD2201610E000242C4D /* changming.png in Resources */,
 				0AEA6F271F90B0E1008C3E69 /* reward_icon_price_rate@3x.png in Resources */,
 				0A5803661F7A01D1000B5192 /* LaunchScreen.storyboard in Resources */,
 				0A5803631F7A01D1000B5192 /* Assets.xcassets in Resources */,
+				0AA47ACF20160DAB00242C4D /* preview_2.mov in Resources */,
 				0A8F226F1F7B7E8200499EFD /* TestViewController.xib in Resources */,
 				0AE45A971F90591D00D738F4 /* KeyWinViewController.xib in Resources */,
 				0A7C409020073CED00174650 /* PhotoKitViewController.xib in Resources */,
@@ -705,6 +732,7 @@
 				0A58035B1F7A01D1000B5192 /* AppDelegate.m in Sources */,
 				0A5803931F7A0282000B5192 /* MehtodSignature.m in Sources */,
 				0A6BD2261FD630FC00D13E33 /* APIViewController.m in Sources */,
+				0AD0FEA520614F5D006678F4 /* SingleModel.m in Sources */,
 				0A30594B1FFC87920092DF94 /* NSObject+DLIntrospection.m in Sources */,
 				0A3059471FFC800C0092DF94 /* JLNavigationController.m in Sources */,
 				0AE45A961F90591D00D738F4 /* KeyWinViewController.m in Sources */,
