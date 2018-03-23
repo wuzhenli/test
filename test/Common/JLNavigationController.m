@@ -19,6 +19,8 @@
     [super viewDidLoad];
     self.interactivePopGestureRecognizer.delegate = self;
     
+    
+    
 }
 
 #pragma -mark 

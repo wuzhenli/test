@@ -18,6 +18,7 @@
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <math.h>
+#import "DBTool.h"
 
 #define Dispatch_Safe_Main(block) \
 if ([NSThread isMainThread]) { \
@@ -26,16 +27,17 @@ block(); \
 dispatch_async(dispatch_get_main_queue(), block); \
 }
 
-#define Method(a, b) - (void)m ## a ## b
+
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet JLGradientButton *btnGradient;
 @property (weak, nonatomic) IBOutlet UILabel *lblTest;
 @property (weak, nonatomic) IBOutlet UIView *viewRed;
 
-
+@property (strong, nonatomic) DBTool *dbTool;
 @property (strong, nonatomic) IMBoard *imBoard;
 @property (strong, nonatomic) NSTimer *timer;
+
 @end
 
 @implementation ViewController
@@ -45,33 +47,71 @@ dispatch_async(dispatch_get_main_queue(), block); \
     //
     self.viewRed.frame = CGRectMake(0, 0, 100, 100);
     self.viewRed.layer.delegate = nil;
+   
     
-    [self mAddNum];
-}
-
-Method(Add, Num) {
     
-    NSLog(@"mAddNum");
-}
-
-- (void)testGCDApply {
-    NSMutableArray<NSString *> *arr = [NSMutableArray array];
-    for (int i = 0; i<10; i++) {
-        [arr addObject:@(i).stringValue];
+    
+    {
+        self.dbTool = [DBTool new];
+        
+        dispatch_semaphore_t sema = dispatch_semaphore_create(0);
+        dispatch_queue_t globalQ = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        dispatch_async(globalQ, ^{
+            dispatch_semaphore_signal(sema);
+            for (int i = 0; i<100; i++) {
+                NSString *value =  [NSString stringWithFormat:@"%d-%d", i, i];
+                NSString *key =  [NSString stringWithFormat:@"%d",  i + 10000];
+                [self.dbTool addObj:value key:key];
+            }
+        });
+        dispatch_async(globalQ, ^{
+            dispatch_semaphore_signal(sema);
+            for (int i = 0; i<100; i++) {
+                NSString *value =  [NSString stringWithFormat:@"%d===%d", i, i];
+                NSString *key =  [NSString stringWithFormat:@"%d", i];
+                [self.dbTool addObj:value key:key];
+            }
+        });
+        dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+        dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+        
+        NSLog(@"%@", self.dbTool.allValue);
     }
     
-    NSLog(@"--- before apply");
-    dispatch_apply(arr.count, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(size_t t) {
-        NSLog(@"%@ %@", arr[t], [NSThread currentThread]);
-    });
-    NSLog(@"--- after apply");
-    
+//    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+//    dispatch_semaphore_t sema = dispatch_semaphore_create(0);
+//    dispatch_queue_t globalQ = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+//    dispatch_async(globalQ, ^{
+//        for (int i = 0; i<1000; i++) {
+//            NSString *value =  [NSString stringWithFormat:@"%d-%d", i, i];
+//            NSString *key =  [NSString stringWithFormat:@"%d", i];
+//            [dic setObject:value forKey:key];
+//        }
+//        dispatch_semaphore_signal(sema);
+//    });
+//    dispatch_async(globalQ, ^{
+//        for (int i = 0; i<1000; i++) {
+//            NSString *value =  [NSString stringWithFormat:@"%d-%d", i, i];
+//            NSString *key =  [NSString stringWithFormat:@"%d", i];
+//            [dic setObject:value forKey:key];
+//        }
+//        dispatch_semaphore_signal(sema);
+//    });
+//    dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+//    dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+//    
+//    NSLog(@"%@", dic);
+
 }
+
 - (void)testGradient {
 }
 
 - (IBAction)viewRedTaped:(id)sender {
-    NSLog(@"%s", __func__);
+ 
+    [self.dbTool show];
+    
+   
 }
 
 

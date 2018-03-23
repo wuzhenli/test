@@ -22,7 +22,9 @@
 		0A5803731F7A01D2000B5192 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5803721F7A01D2000B5192 /* testTests.m */; };
 		0A58037E1F7A01D2000B5192 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A58037D1F7A01D2000B5192 /* testUITests.m */; };
 		0A5803931F7A0282000B5192 /* MehtodSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5803921F7A0282000B5192 /* MehtodSignature.m */; };
+		0A5C56B12064B1B0009A1813 /* NSSafeMuDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5C56B02064B1B0009A1813 /* NSSafeMuDictionary.m */; };
 		0A5CA3401FECA77900EC170F /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5CA33F1FECA77900EC170F /* Animal.m */; };
+		0A5D45D02063578900DC78F7 /* DBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5D45CF2063578900DC78F7 /* DBTool.m */; };
 		0A640F1D1FC6D37100B69AFA /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A640F1C1FC6D37100B69AFA /* GestureViewController.m */; };
 		0A640F201FC6D7E600B69AFA /* GestureLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A640F1F1FC6D7E600B69AFA /* GestureLabel.m */; };
 		0A6BCCE01FBABF5700D327AE /* IMBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6BCCDF1FBABF5700D327AE /* IMBoard.m */; };
@@ -94,8 +96,12 @@
 		0A58038F1F7A021C000B5192 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0A5803911F7A0282000B5192 /* MehtodSignature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MehtodSignature.h; sourceTree = "<group>"; };
 		0A5803921F7A0282000B5192 /* MehtodSignature.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MehtodSignature.m; sourceTree = "<group>"; };
+		0A5C56AF2064B1B0009A1813 /* NSSafeMuDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSSafeMuDictionary.h; sourceTree = "<group>"; };
+		0A5C56B02064B1B0009A1813 /* NSSafeMuDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSSafeMuDictionary.m; sourceTree = "<group>"; };
 		0A5CA33E1FECA77900EC170F /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
 		0A5CA33F1FECA77900EC170F /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		0A5D45CE2063578900DC78F7 /* DBTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBTool.h; sourceTree = "<group>"; };
+		0A5D45CF2063578900DC78F7 /* DBTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBTool.m; sourceTree = "<group>"; };
 		0A640F1B1FC6D37100B69AFA /* GestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
 		0A640F1C1FC6D37100B69AFA /* GestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
 		0A640F1E1FC6D7E600B69AFA /* GestureLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureLabel.h; sourceTree = "<group>"; };
@@ -283,6 +289,7 @@
 		0A58038D1F7A01F3000B5192 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				0A5D45CD2063577100DC78F7 /* New Group */,
 				0AD0FEA120614E3F006678F4 /* Tool */,
 				0A7C408B20073CD200174650 /* PhotoKit */,
 				0A30593E1FFC6E7D0092DF94 /* Slide */,
@@ -327,8 +334,19 @@
 				0A7C4089200701F500174650 /* Person.m */,
 				0AD0FEA320614F5D006678F4 /* SingleModel.h */,
 				0AD0FEA420614F5D006678F4 /* SingleModel.m */,
+				0A5D45CE2063578900DC78F7 /* DBTool.h */,
+				0A5D45CF2063578900DC78F7 /* DBTool.m */,
+				0A5C56AF2064B1B0009A1813 /* NSSafeMuDictionary.h */,
+				0A5C56B02064B1B0009A1813 /* NSSafeMuDictionary.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0A5D45CD2063577100DC78F7 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		0A640F1A1FC6D36200B69AFA /* Gesture */ = {
@@ -726,12 +744,14 @@
 				0A5803691F7A01D1000B5192 /* main.m in Sources */,
 				0A3059421FFC6E910092DF94 /* SlideViewController.m in Sources */,
 				0A640F201FC6D7E600B69AFA /* GestureLabel.m in Sources */,
+				0A5C56B12064B1B0009A1813 /* NSSafeMuDictionary.m in Sources */,
 				0A7C408A200701F500174650 /* Person.m in Sources */,
 				0A6BCCE01FBABF5700D327AE /* IMBoard.m in Sources */,
 				0A640F1D1FC6D37100B69AFA /* GestureViewController.m in Sources */,
 				0A58035B1F7A01D1000B5192 /* AppDelegate.m in Sources */,
 				0A5803931F7A0282000B5192 /* MehtodSignature.m in Sources */,
 				0A6BD2261FD630FC00D13E33 /* APIViewController.m in Sources */,
+				0A5D45D02063578900DC78F7 /* DBTool.m in Sources */,
 				0AD0FEA520614F5D006678F4 /* SingleModel.m in Sources */,
 				0A30594B1FFC87920092DF94 /* NSObject+DLIntrospection.m in Sources */,
 				0A3059471FFC800C0092DF94 /* JLNavigationController.m in Sources */,
