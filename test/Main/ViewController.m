@@ -19,6 +19,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <math.h>
 #import "DBTool.h"
+#import "SafeArrayTool.h"
 
 #define Dispatch_Safe_Main(block) \
 if ([NSThread isMainThread]) { \
@@ -35,6 +36,8 @@ dispatch_async(dispatch_get_main_queue(), block); \
 @property (weak, nonatomic) IBOutlet UIView *viewRed;
 
 @property (strong, nonatomic) DBTool *dbTool;
+@property (strong, nonatomic) SafeArrayTool *arrTool;
+
 @property (strong, nonatomic) IMBoard *imBoard;
 @property (strong, nonatomic) NSTimer *timer;
 
@@ -49,34 +52,57 @@ dispatch_async(dispatch_get_main_queue(), block); \
     self.viewRed.layer.delegate = nil;
    
     
-    
-    
     {
-        self.dbTool = [DBTool new];
+        self.arrTool = [SafeArrayTool new];
         
         dispatch_semaphore_t sema = dispatch_semaphore_create(0);
         dispatch_queue_t globalQ = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
         dispatch_async(globalQ, ^{
             dispatch_semaphore_signal(sema);
             for (int i = 0; i<100; i++) {
-                NSString *value =  [NSString stringWithFormat:@"%d-%d", i, i];
                 NSString *key =  [NSString stringWithFormat:@"%d",  i + 10000];
-                [self.dbTool addObj:value key:key];
+                [self.arrTool addObject:key];
             }
         });
         dispatch_async(globalQ, ^{
             dispatch_semaphore_signal(sema);
             for (int i = 0; i<100; i++) {
-                NSString *value =  [NSString stringWithFormat:@"%d===%d", i, i];
-                NSString *key =  [NSString stringWithFormat:@"%d", i];
-                [self.dbTool addObj:value key:key];
+                NSString *key =  [NSString stringWithFormat:@"%d",  i ];
+                [self.arrTool addObject:key];
             }
         });
         dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
         dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
         
-        NSLog(@"%@", self.dbTool.allValue);
+        NSLog(@"%@", self.arrTool.allValue);
     }
+    
+//    {
+//        self.dbTool = [DBTool new];
+//        
+//        dispatch_semaphore_t sema = dispatch_semaphore_create(0);
+//        dispatch_queue_t globalQ = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+//        dispatch_async(globalQ, ^{
+//            dispatch_semaphore_signal(sema);
+//            for (int i = 0; i<100; i++) {
+//                NSString *value =  [NSString stringWithFormat:@"%d-%d", i, i];
+//                NSString *key =  [NSString stringWithFormat:@"%d",  i + 10000];
+//                [self.dbTool addObj:value key:key];
+//            }
+//        });
+//        dispatch_async(globalQ, ^{
+//            dispatch_semaphore_signal(sema);
+//            for (int i = 0; i<100; i++) {
+//                NSString *value =  [NSString stringWithFormat:@"%d===%d", i, i];
+//                NSString *key =  [NSString stringWithFormat:@"%d", i];
+//                [self.dbTool addObj:value key:key];
+//            }
+//        });
+//        dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+//        dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+//        
+//        NSLog(@"%@", self.dbTool.allValue);
+//    }
     
 //    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
 //    dispatch_semaphore_t sema = dispatch_semaphore_create(0);
@@ -109,7 +135,7 @@ dispatch_async(dispatch_get_main_queue(), block); \
 
 - (IBAction)viewRedTaped:(id)sender {
  
-    [self.dbTool show];
+    [self.arrTool show];
     
    
 }

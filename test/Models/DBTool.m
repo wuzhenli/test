@@ -8,19 +8,10 @@
 
 #import "DBTool.h"
 #import "NSSafeMuDictionary.h"
-
+#import "ThreadSafe.h"
 //#define SafeBarrier(queue, block)  \
 //    if (block) block(self);
 
-
-#define SafeBarrier(queue, block)  \
-__weak typeof(self) ws = self;  \
-dispatch_barrier_async(queue, ^{   \
-    typeof(ws) strongSelf = ws;   \
-    if (strongSelf) {   \
-        if (block) block(strongSelf);   \
-    }   \
-});
 
 @interface DBTool () 
 @property (strong, nonatomic) NSMutableDictionary<NSString *, NSString *> *dic;
