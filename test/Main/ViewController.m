@@ -74,7 +74,10 @@ dispatch_async(dispatch_get_main_queue(), block); \
         dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
         dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
         
-        NSLog(@"%@", self.arrTool.allValue);
+        dispatch_apply(10, globalQ, ^(size_t i) {
+            NSLog(@"%ld", i);
+            [self.arrTool show];
+        });
     }
     
 //    {
@@ -135,7 +138,9 @@ dispatch_async(dispatch_get_main_queue(), block); \
 
 - (IBAction)viewRedTaped:(id)sender {
  
-    [self.arrTool show];
+    Class c = NSClassFromString(@"GestureViewController");
+    UIViewController *vc = [[c alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
     
    
 }

@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) UITapGestureRecognizer *tapSingle;
 @property (strong, nonatomic) UITapGestureRecognizer *tapDouble;
+@property (strong, nonatomic) UIPanGestureRecognizer *pan;
 @end
 
 @implementation GestureViewController
@@ -21,16 +22,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor grayColor];
     [self.view addSubview:self.lblTest];
     
-//    self.tapSingle = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapSingle:)];
-//    self.tapSingle.numberOfTapsRequired = 1;
-//    [self.lblTest addGestureRecognizer:self.tapSingle];
-    
-    self.tapDouble = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDouble:)];
-    self.tapDouble.numberOfTapsRequired = 2;
-    [self.lblTest addGestureRecognizer:self.tapDouble];
+   
+//    self.tapDouble = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDouble:)];
+//    self.tapDouble.numberOfTapsRequired = 1;
+//    self.tapDouble.delaysTouchesBegan = YES;
+//    [self.view addGestureRecognizer:self.tapDouble];
 
+    self.pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panEvent:)];
+    [self.view addGestureRecognizer:self.pan];
+    
+    self.tapSingle = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapSingle:)];
+    self.tapSingle.numberOfTapsRequired = 1;
+    [self.view addGestureRecognizer:self.tapSingle];
     
 }
 
@@ -42,6 +48,9 @@
     NSLog(@"%s", __func__);
 }
 - (void)tapDouble:(UITapGestureRecognizer *)gesture {
+    NSLog(@"%s", __func__);
+}
+- (void)panEvent:(UITapGestureRecognizer *)gesture {
     NSLog(@"%s", __func__);
 }
 - (IBAction)btnClicked:(id)sender {

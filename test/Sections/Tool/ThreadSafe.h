@@ -10,6 +10,7 @@
 #define ThreadSafe_h
 
 
+
 #define SafeBarrier(queue, block)  \
 __weak typeof(self) ws = self;  \
 dispatch_barrier_async(queue, ^{   \
@@ -19,6 +20,27 @@ dispatch_barrier_async(queue, ^{   \
     }   \
 });
 
+#define SafeContainerAsyncInMain(queue, block)  \
+__weak typeof(self) ws = self;      \
+dispatch_async(queue, ^{        \
+typeof(ws) strongSelf = ws;    \
+if (strongSelf && block) {        \
+dispatch_async(dispatch_get_main_queue(), ^{  \
+if (strongSelf) {  \
+block(strongSelf);  \
+}   \
+});  \
+}         \
+});
+
+
+
+#define SafeMainThreadBlock(block) \
+if ([NSThread isMainThread]) { \
+block(); \
+} else { \
+dispatch_async(dispatch_get_main_queue(), block); \
+}
 
 
 #endif /* ThreadSafe_h */

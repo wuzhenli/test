@@ -40,11 +40,17 @@
 - (NSMutableArray *)allValue {
     return _arr;
 }
+
+
+
 - (void)show {
-    NSArray *arr = [self.arr sortedArrayUsingComparator:^NSComparisonResult(NSString *obj1, NSString *obj2) {
-        return obj1.integerValue < obj2.integerValue;
-    }];
-    NSLog(@"%@", arr);
+    SafeContainerAsyncInMain(_queueSafe, ^(SafeArrayTool *sSelf){
+        NSArray *arr = [sSelf.arr sortedArrayUsingComparator:^NSComparisonResult(NSString *obj1, NSString *obj2) {
+                        return obj1.integerValue < obj2.integerValue;
+                    }];
+        NSLog(@"%@", arr);
+    })
+    
 }
 
 
