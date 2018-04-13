@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2E0C01206BD2A20061953B /* UIDevice+Addtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E0C00206BD2A20061953B /* UIDevice+Addtion.m */; };
 		0A3059421FFC6E910092DF94 /* SlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3059401FFC6E910092DF94 /* SlideViewController.m */; };
 		0A3059431FFC6E910092DF94 /* SlideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3059411FFC6E910092DF94 /* SlideViewController.xib */; };
 		0A3059471FFC800C0092DF94 /* JLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3059461FFC800C0092DF94 /* JLNavigationController.m */; };
@@ -36,6 +37,9 @@
 		0A7C409020073CED00174650 /* PhotoKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7C408F20073CED00174650 /* PhotoKitViewController.xib */; };
 		0A8F226E1F7B7E8200499EFD /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8F226C1F7B7E8200499EFD /* TestViewController.m */; };
 		0A8F226F1F7B7E8200499EFD /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8F226D1F7B7E8200499EFD /* TestViewController.xib */; };
+		0A948BDF2080B57E002BD6C7 /* NSString+formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A948BDE2080B57E002BD6C7 /* NSString+formatter.m */; };
+		0A948BE52080B6FB002BD6C7 /* NSDate+compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A948BE42080B6FB002BD6C7 /* NSDate+compare.m */; };
+		0A948BE72080B7B5002BD6C7 /* testDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A948BE62080B7B5002BD6C7 /* testDate.m */; };
 		0AA47ACF20160DAB00242C4D /* preview_2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47ACD20160DAA00242C4D /* preview_2.mov */; };
 		0AA47AD020160DAB00242C4D /* preview_2的副本.123314.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47ACE20160DAB00242C4D /* preview_2的副本.123314.mov */; };
 		0AA47AD2201610E000242C4D /* changming.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47AD1201610E000242C4D /* changming.png */; };
@@ -67,6 +71,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A2E0BFF206BD2A20061953B /* UIDevice+Addtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Addtion.h"; sourceTree = "<group>"; };
+		0A2E0C00206BD2A20061953B /* UIDevice+Addtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Addtion.m"; sourceTree = "<group>"; };
 		0A30593F1FFC6E910092DF94 /* SlideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideViewController.h; sourceTree = "<group>"; };
 		0A3059401FFC6E910092DF94 /* SlideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideViewController.m; sourceTree = "<group>"; };
 		0A3059411FFC6E910092DF94 /* SlideViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideViewController.xib; sourceTree = "<group>"; };
@@ -123,6 +129,11 @@
 		0A8F226B1F7B7E8200499EFD /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		0A8F226C1F7B7E8200499EFD /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		0A8F226D1F7B7E8200499EFD /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		0A948BDD2080B57E002BD6C7 /* NSString+formatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+formatter.h"; sourceTree = "<group>"; };
+		0A948BDE2080B57E002BD6C7 /* NSString+formatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+formatter.m"; sourceTree = "<group>"; };
+		0A948BE32080B6FB002BD6C7 /* NSDate+compare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+compare.h"; sourceTree = "<group>"; };
+		0A948BE42080B6FB002BD6C7 /* NSDate+compare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+compare.m"; sourceTree = "<group>"; };
+		0A948BE62080B7B5002BD6C7 /* testDate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testDate.m; sourceTree = "<group>"; };
 		0AA47ACD20160DAA00242C4D /* preview_2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = preview_2.mov; sourceTree = "<group>"; };
 		0AA47ACE20160DAB00242C4D /* preview_2的副本.123314.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "preview_2的副本.123314.mov"; sourceTree = "<group>"; };
 		0AA47AD1201610E000242C4D /* changming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = changming.png; sourceTree = "<group>"; };
@@ -257,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				0A5803721F7A01D2000B5192 /* testTests.m */,
+				0A948BE62080B7B5002BD6C7 /* testDate.m */,
 				0A5803741F7A01D2000B5192 /* Info.plist */,
 			);
 			path = testTests;
@@ -412,12 +424,34 @@
 			path = test;
 			sourceTree = "<group>";
 		};
+		0A948BDB2080B54F002BD6C7 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				0AD0FEA6206150BF006678F4 /* Singleton.h */,
+				0A5C56B62064D119009A1813 /* ThreadSafe.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		0A948BDC2080B559002BD6C7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0A2E0BFF206BD2A20061953B /* UIDevice+Addtion.h */,
+				0A2E0C00206BD2A20061953B /* UIDevice+Addtion.m */,
+				0A948BDD2080B57E002BD6C7 /* NSString+formatter.h */,
+				0A948BDE2080B57E002BD6C7 /* NSString+formatter.m */,
+				0A948BE32080B6FB002BD6C7 /* NSDate+compare.h */,
+				0A948BE42080B6FB002BD6C7 /* NSDate+compare.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		0AD0FEA120614E3F006678F4 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				0A948BDC2080B559002BD6C7 /* Category */,
+				0A948BDB2080B54F002BD6C7 /* Macro */,
 				0A5C56B52064D10C009A1813 /* New Group */,
-				0AD0FEA6206150BF006678F4 /* Singleton.h */,
-				0A5C56B62064D119009A1813 /* ThreadSafe.h */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -758,9 +792,12 @@
 				0A58035E1F7A01D1000B5192 /* ViewController.m in Sources */,
 				0A5803691F7A01D1000B5192 /* main.m in Sources */,
 				0A3059421FFC6E910092DF94 /* SlideViewController.m in Sources */,
+				0A948BE52080B6FB002BD6C7 /* NSDate+compare.m in Sources */,
 				0A640F201FC6D7E600B69AFA /* GestureLabel.m in Sources */,
 				0A5C56B12064B1B0009A1813 /* NSSafeMuDictionary.m in Sources */,
+				0A948BDF2080B57E002BD6C7 /* NSString+formatter.m in Sources */,
 				0A7C408A200701F500174650 /* Person.m in Sources */,
+				0A2E0C01206BD2A20061953B /* UIDevice+Addtion.m in Sources */,
 				0A6BCCE01FBABF5700D327AE /* IMBoard.m in Sources */,
 				0A5C56B42064CF2F009A1813 /* SafeArrayTool.m in Sources */,
 				0A640F1D1FC6D37100B69AFA /* GestureViewController.m in Sources */,
@@ -784,6 +821,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A5803731F7A01D2000B5192 /* testTests.m in Sources */,
+				0A948BE72080B7B5002BD6C7 /* testDate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@
 #import "MehtodSignature.h"
 #import "Animal.h"
 #import "SingleModel.h"
+#import "UIDevice+Addtion.h"
 
 @interface testTests : XCTestCase
 
@@ -25,6 +26,16 @@
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
+}
+
+- (void)testCompare {
+    NSString *s1 = [[UIDevice currentDevice] systemVersion]; // 11.2
+    
+    
+    XCTAssertTrue([UIDevice ad_lessThenVersion:@"11.3"]);
+    XCTAssertFalse([UIDevice ad_lessThenVersion:@"11.2"]);
+    XCTAssertFalse([UIDevice ad_lessThenVersion:@"8.0"], @"less then 8.4 is false" );
+    NSLog(@"systemV:%@", s1);  // -1
 }
 
 - (void)testSingleton {
