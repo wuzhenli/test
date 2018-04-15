@@ -40,10 +40,23 @@
 
     NSLog(@"origin maskView:%@", self.imgView.maskView);
     self.imgView.image = [UIImage imageNamed:@"4"];
-    self.imgView.backgroundColor = [UIColor blackColor];
     
-    
+    self.view.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.3];
+    CGSize scSize = [UIScreen mainScreen].bounds.size;
+    self.preferredContentSize = CGSizeMake(scSize.width, 300);
 }
+
+- (void)willTransitionToTraitCollection:(UITraitCollection *)newCollection withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    [super willTransitionToTraitCollection:newCollection withTransitionCoordinator:coordinator];
+    
+    // When the current trait collection changes (e.g. the device rotates),
+    // update the preferredContentSize.
+    self.view.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.3];
+    CGSize scSize = [UIScreen mainScreen].bounds.size;
+    self.preferredContentSize = CGSizeMake(scSize.width, 300);
+}
+
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self setMaskView];
@@ -69,6 +82,9 @@
 }
 
 
+- (IBAction)btnClicked:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end
 

@@ -20,6 +20,8 @@
 #import <math.h>
 #import "DBTool.h"
 #import "SafeArrayTool.h"
+#import "JLPresentAnimation.h"
+#import "JLAnimationPresentationController.h"
 
 #define Dispatch_Safe_Main(block) \
 if ([NSThread isMainThread]) { \
@@ -59,13 +61,16 @@ dispatch_async(dispatch_get_main_queue(), block); \
 
 - (IBAction)viewRedTaped:(id)sender {
  
-    Class c = NSClassFromString(@"GestureViewController");
+    Class c = NSClassFromString(@"APIViewController");
     UIViewController *vc = [[c alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
     
-   
+    
+    JLAnimationPresentationController *presentationController = [[JLAnimationPresentationController alloc] initWithPresentedViewController:vc presentingViewController:self];
+    vc.transitioningDelegate = presentationController;
+    
+    [self presentViewController:vc animated:YES completion:nil];
+    
 }
-
 
 /*
  iPhone 6s
