@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E1AD2425B8A19524D81EB1A1E4934896'
-               BlueprintName = 'JLLogEncoding'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libJLLogEncoding.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E1AD2425B8A19524D81EB1A1E4934896"
+               BlueprintName = "JLLogEncoding"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libJLLogEncoding.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -11,7 +11,7 @@
 
 
 NSString *const Identifier = @"mycell_id";
-@interface CollectionViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
+@interface CollectionViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (strong, nonatomic) UICollectionView *collectionView;
 @end
 
@@ -30,13 +30,24 @@ NSString *const Identifier = @"mycell_id";
 
 #pragma -mark UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 1;
+    return 2;
 }
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     TestCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:Identifier forIndexPath:indexPath];
     cell.lblText.text = [NSString stringWithFormat:@"%ld - %ld", indexPath.section, indexPath.row];
     cell.contentView.backgroundColor = [UIColor greenColor];
     return cell;
+}
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+//    return self.themeLayout.itemSizeOfImage;
+    NSUInteger columns = 4;
+    CGFloat margin = 4;
+    
+    CGFloat SC_W = [UIScreen mainScreen].bounds.size.width;
+    CGFloat itemW = (SC_W - (columns+1) * margin) / columns;
+    itemW = (NSUInteger)(itemW * 1000) / 1000.f;
+    CGSize itemSize = CGSizeMake(itemW, itemW);
+    return itemSize;
 }
 #pragma -mark getter
 - (UICollectionView *)collectionView {
@@ -45,14 +56,14 @@ NSString *const Identifier = @"mycell_id";
         CGFloat margin = 4;
         
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-        layout.minimumLineSpacing = margin;
+//        layout.minimumLineSpacing = margin;
         layout.minimumInteritemSpacing = margin;
         layout.scrollDirection = UICollectionViewScrollDirectionVertical;
         
-        CGFloat SC_W = [UIScreen mainScreen].bounds.size.width;
-        CGFloat itemW = (SC_W - (columns+1) * margin) / columns;
-        itemW = (NSUInteger)(itemW * 1000) / 1000.f;
-        layout.itemSize = CGSizeMake(itemW, itemW);
+//        CGFloat SC_W = [UIScreen mainScreen].bounds.size.width;
+//        CGFloat itemW = (SC_W - (columns+1) * margin) / columns;
+//        itemW = (NSUInteger)(itemW * 1000) / 1000.f;
+//        layout.itemSize = CGSizeMake(itemW, itemW);
         
         CGRect frame = [UIScreen mainScreen].bounds;
         frame.origin.y = 0;
@@ -61,7 +72,7 @@ NSString *const Identifier = @"mycell_id";
         _collectionView.backgroundColor = [UIColor lightGrayColor];;
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
-        _collectionView.contentInset = UIEdgeInsetsMake(margin, margin, 0, margin);
+        _collectionView.contentInset = UIEdgeInsetsMake(margin, 0, 0, 0);
         UINib *nib = [UINib nibWithNibName:NSStringFromClass([TestCollectionViewCell class]) bundle:[NSBundle mainBundle]];
         [_collectionView registerNib:nib forCellWithReuseIdentifier:Identifier];
     }
