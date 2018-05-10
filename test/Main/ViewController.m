@@ -53,20 +53,70 @@ dispatch_async(dispatch_get_main_queue(), block); \
     self.viewRed.frame = CGRectMake(0, 0, 100, 100);
     self.viewRed.layer.delegate = nil;
    
-
+   
+    [self testUrl];
+}
+- (void)testUrl {
+    NSString *str = @"http://provider.test.6rooms.net/upload/bbs_thread/20180428/10066/src/20180428172833_KGWS9FtYlJtTq2Fehew6.jpg?width=326&height=482";
+    NSURL *url = [NSURL URLWithString:str];
+    NSString *query = url.query;
+    
+    
 }
 
-- (void)testGradient {
+- (void)testSendText {
+    NSRange range = NSMakeRange(7, 8);
+    // {6, 4}  {13, 4}
+    NSString *text = @"进入巨大打卡@我试试 搭建@孙悟空";
+    
+    NSArray<NSString *> *arrNames = @[@"我试试", @"孙悟空"];
+    NSString *pattern = [arrNames componentsJoinedByString:@"|@"];
+    pattern = [NSString stringWithFormat:@"@%@", pattern];
+    NSRegularExpression *regular = [NSRegularExpression regularExpressionWithPattern:pattern options:kNilOptions error:nil];
+    
+    NSArray<NSTextCheckingResult *> *result = [regular matchesInString:text options:kNilOptions range:NSMakeRange(0, text.length)];
+    [result enumerateObjectsUsingBlock:^(NSTextCheckingResult * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        if (NSLocationInRange(range.location, obj.range )) {
+            NSLog(@" in range:%@", NSStringFromRange(obj.range));
+        }
+        
+    }];
 }
+
+- (void)testShowingText {
+    // /\#s([\s\S]+?,[0-9]+?)\#e/im
+    NSString *text = @"可以at了#s药不,能停,20024#e#s沙悟净,20014#e今天你吃饭了吗#s杨赛,40017#e, 还有#s李强,40029#e";
+    NSMutableString *showText = [[NSMutableString alloc] initWithString:text];
+    
+    NSString *pattern = @"#s([\\s\\S]+?,[0-9]+?)#e";
+    NSRegularExpression *regular = [NSRegularExpression regularExpressionWithPattern:pattern options:kNilOptions error:nil];
+    NSArray<NSTextCheckingResult *> *arr = [regular matchesInString:text options:kNilOptions range:NSMakeRange(0, text.length)];
+    [arr enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(NSTextCheckingResult * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSString *atString = [text substringWithRange:NSMakeRange(obj.range.location + 2, obj.range.length-4)];
+        
+        NSArray<NSString *> *arrNameId = [atString componentsSeparatedByString:@","];
+        NSString *name = [atString substringToIndex:(atString.length - 1 - arrNameId.lastObject.length)];
+        NSString *uId = [arrNameId lastObject];
+        NSLog(@"name:%@| id:%@|", name, uId);
+        
+        NSString *replaceName = [NSString stringWithFormat:@"@%@ ", name];
+        [showText replaceCharactersInRange:obj.range withString:replaceName];
+    }];
+    NSLog(@"%@", showText);
+}
+
+
+
 
 - (IBAction)viewRedTaped:(id)sender {
  
-    Class c = NSClassFromString(@"APIViewController");
+    Class c = NSClassFromString(@"CollectionViewController");
     UIViewController *vc = [[c alloc] init];
     
     
-    JLAnimationPresentationController *presentationController = [[JLAnimationPresentationController alloc] initWithPresentedViewController:vc presentingViewController:self];
-    vc.transitioningDelegate = presentationController;
+//    JLAnimationPresentationController *presentationController = [[JLAnimationPresentationController alloc] initWithPresentedViewController:vc presentingViewController:self];
+//    vc.transitioningDelegate = presentationController;
     
     [self presentViewController:vc animated:YES completion:nil];
     

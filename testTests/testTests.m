@@ -28,6 +28,33 @@
     [super tearDown];
 }
 
+- (void)testArray {
+    NSMutableArray<NSString *> *array = @[@"4", @"5", @"6"].mutableCopy;
+    
+    NSMutableArray<NSString *> *arrayOld = @[@"1", @"2", @"3"].mutableCopy;
+    [array insertObjects:arrayOld atIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, arrayOld.count)]];
+    NSLog(@"%@", array);
+    NSLog(@"count:%ld", array.count);
+    NSAssert(array.count == 6, @"insert error");
+}
+
+- (void)testReadUrl {
+    NSString *str = @"http://provider.test.6rooms.net/upload/bbs_thread/20180503/20004/src/20180503144916_4NklXATozFSck1PYiLS2.png?width=750&height=533";
+    NSURL *url = [NSURL URLWithString:str];
+    NSString *query = url.query;
+    NSScanner *scanner = [NSScanner scannerWithString:query];
+    [scanner scanString:@"width=" intoString:nil];
+    NSInteger width = 0;
+    [scanner scanInteger:&width];
+    
+    [scanner scanString:@"&height=" intoString:nil];
+    NSInteger height = 0;
+    [scanner scanInteger:&height];
+    
+    XCTAssert(width == 750, @"width error");
+    XCTAssert(height == 533, @"height error");
+}
+
 - (void)testCompare {
     NSString *s1 = [[UIDevice currentDevice] systemVersion]; // 11.2
     

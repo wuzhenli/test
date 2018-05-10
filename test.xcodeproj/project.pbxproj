@@ -45,6 +45,9 @@
 		0AA47ACF20160DAB00242C4D /* preview_2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47ACD20160DAA00242C4D /* preview_2.mov */; };
 		0AA47AD020160DAB00242C4D /* preview_2的副本.123314.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47ACE20160DAB00242C4D /* preview_2的副本.123314.mov */; };
 		0AA47AD2201610E000242C4D /* changming.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47AD1201610E000242C4D /* changming.png */; };
+		0AB886F220A3E49D003F2734 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB886F120A3E49D003F2734 /* CollectionViewController.m */; };
+		0AB886F620A3E4DB003F2734 /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB886F420A3E4DB003F2734 /* TestCollectionViewCell.m */; };
+		0AB886F720A3E4DB003F2734 /* TestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB886F520A3E4DB003F2734 /* TestCollectionViewCell.xib */; };
 		0AD0FEA520614F5D006678F4 /* SingleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0FEA420614F5D006678F4 /* SingleModel.m */; };
 		0AE45A961F90591D00D738F4 /* KeyWinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE45A941F90591D00D738F4 /* KeyWinViewController.m */; };
 		0AE45A971F90591D00D738F4 /* KeyWinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE45A951F90591D00D738F4 /* KeyWinViewController.xib */; };
@@ -143,6 +146,11 @@
 		0AA47ACD20160DAA00242C4D /* preview_2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = preview_2.mov; sourceTree = "<group>"; };
 		0AA47ACE20160DAB00242C4D /* preview_2的副本.123314.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "preview_2的副本.123314.mov"; sourceTree = "<group>"; };
 		0AA47AD1201610E000242C4D /* changming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = changming.png; sourceTree = "<group>"; };
+		0AB886F020A3E49D003F2734 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		0AB886F120A3E49D003F2734 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		0AB886F320A3E4DB003F2734 /* TestCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewCell.h; sourceTree = "<group>"; };
+		0AB886F420A3E4DB003F2734 /* TestCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewCell.m; sourceTree = "<group>"; };
+		0AB886F520A3E4DB003F2734 /* TestCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCollectionViewCell.xib; sourceTree = "<group>"; };
 		0AD0FEA320614F5D006678F4 /* SingleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleModel.h; sourceTree = "<group>"; };
 		0AD0FEA420614F5D006678F4 /* SingleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleModel.m; sourceTree = "<group>"; };
 		0AD0FEA6206150BF006678F4 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
@@ -315,6 +323,7 @@
 		0A58038D1F7A01F3000B5192 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				0AB886EF20A3E43B003F2734 /* CollectionView */,
 				0A5D45CD2063577100DC78F7 /* New Group */,
 				0AD0FEA120614E3F006678F4 /* Tool */,
 				0A7C408B20073CD200174650 /* PhotoKit */,
@@ -454,6 +463,18 @@
 				0A948BE42080B6FB002BD6C7 /* NSDate+compare.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		0AB886EF20A3E43B003F2734 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				0AB886F020A3E49D003F2734 /* CollectionViewController.h */,
+				0AB886F120A3E49D003F2734 /* CollectionViewController.m */,
+				0AB886F320A3E4DB003F2734 /* TestCollectionViewCell.h */,
+				0AB886F420A3E4DB003F2734 /* TestCollectionViewCell.m */,
+				0AB886F520A3E4DB003F2734 /* TestCollectionViewCell.xib */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		0AD0FEA120614E3F006678F4 /* Tool */ = {
@@ -614,6 +635,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AB886F720A3E4DB003F2734 /* TestCollectionViewCell.xib in Resources */,
 				0AEA6F261F90B0E1008C3E69 /* reward_icon_price_rate@2x.png in Resources */,
 				0AA47AD020160DAB00242C4D /* preview_2的副本.123314.mov in Resources */,
 				0AA47AD2201610E000242C4D /* changming.png in Resources */,
@@ -806,6 +828,7 @@
 				0A640F201FC6D7E600B69AFA /* GestureLabel.m in Sources */,
 				0A5C56B12064B1B0009A1813 /* NSSafeMuDictionary.m in Sources */,
 				0A948BDF2080B57E002BD6C7 /* NSString+formatter.m in Sources */,
+				0AB886F220A3E49D003F2734 /* CollectionViewController.m in Sources */,
 				0A768B1F2083738F0086AA40 /* JLAnimationPresentationController.m in Sources */,
 				0A7C408A200701F500174650 /* Person.m in Sources */,
 				0A2E0C01206BD2A20061953B /* UIDevice+Addtion.m in Sources */,
@@ -818,6 +841,7 @@
 				0A5D45D02063578900DC78F7 /* DBTool.m in Sources */,
 				0AD0FEA520614F5D006678F4 /* SingleModel.m in Sources */,
 				0A30594B1FFC87920092DF94 /* NSObject+DLIntrospection.m in Sources */,
+				0AB886F620A3E4DB003F2734 /* TestCollectionViewCell.m in Sources */,
 				0A3059471FFC800C0092DF94 /* JLNavigationController.m in Sources */,
 				0AE45A961F90591D00D738F4 /* KeyWinViewController.m in Sources */,
 				0A5CA3401FECA77900EC170F /* Animal.m in Sources */,
