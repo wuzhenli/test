@@ -53,8 +53,16 @@ dispatch_async(dispatch_get_main_queue(), block); \
     self.viewRed.frame = CGRectMake(0, 0, 100, 100);
     self.viewRed.layer.delegate = nil;
    
+    NSLog(@"%lf", self.lblTest.font.lineHeight);
+    NSLog(@"%lf", self.lblTest.font.pointSize);
+    /*
+     X : {{0, 0}, {1125, 2436}}
+     8s Plus: {{0, 0}, {1242, 2208}}
+     8:{{0, 0}, {750, 1334}}
+     */
    
-    [self testUrl];
+    NSLog(@"%@", NSStringFromCGRect([UIScreen mainScreen].nativeBounds));
+    [self testShowUrlText];
 }
 - (void)testUrl {
     NSString *str = @"http://provider.test.6rooms.net/upload/bbs_thread/20180428/10066/src/20180428172833_KGWS9FtYlJtTq2Fehew6.jpg?width=326&height=482";
@@ -105,7 +113,25 @@ dispatch_async(dispatch_get_main_queue(), block); \
     }];
     NSLog(@"%@", showText);
 }
-
+- (void)testShowUrlText {
+    // 百度 http://www.baidu.com 淘宝 http://www.taobao.com 京东 http://www.jd.com
+    NSString *text = @"$shttp://www.baidu.com$e $shttp://www.taobao.com$e $shttp://www.jd.com$e";
+    NSMutableString *showText = [[NSMutableString alloc] initWithString:text];
+    
+    NSString *pattern = @"\\$s([\\s\\S]+?)\\$e";
+    NSRegularExpression *regular = [NSRegularExpression regularExpressionWithPattern:pattern options:kNilOptions error:nil];
+    NSArray<NSTextCheckingResult *> *arr = [regular matchesInString:text options:kNilOptions range:NSMakeRange(0, text.length)];
+    NSString *replace = @"网页连接:";
+    NSUInteger clipLength = 0;
+    for (NSTextCheckingResult *obj in arr) {
+        NSRange range = obj.range; range.location -= clipLength;
+        
+        [showText replaceCharactersInRange:range withString:replace];
+        
+        clipLength += (range.length - replace.length);
+    }
+    NSLog(@"%@", showText);
+}
 
 
 

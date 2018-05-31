@@ -8,6 +8,7 @@
 
 #import "CollectionViewController.h"
 #import "TestCollectionViewCell.h"
+#import <Masonry.h>
 
 
 NSString *const Identifier = @"mycell_id";
@@ -21,6 +22,9 @@ NSString *const Identifier = @"mycell_id";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.view addSubview:self.collectionView];
+    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -68,7 +72,7 @@ NSString *const Identifier = @"mycell_id";
         CGRect frame = [UIScreen mainScreen].bounds;
         frame.origin.y = 0;
         frame.size.height = [UIScreen mainScreen].bounds.size.height;
-        _collectionView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:layout];
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
         _collectionView.backgroundColor = [UIColor lightGrayColor];;
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
