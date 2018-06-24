@@ -22,6 +22,10 @@
 #import "SafeArrayTool.h"
 #import "JLPresentAnimation.h"
 #import "JLAnimationPresentationController.h"
+#import "PlayerViewController.h"
+#import "BBSDrawView.h"
+#import "UIView+Corner.h"
+#import "TVViewController.h"
 
 #define Dispatch_Safe_Main(block) \
 if ([NSThread isMainThread]) { \
@@ -31,169 +35,57 @@ dispatch_async(dispatch_get_main_queue(), block); \
 }
 
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-@property (weak, nonatomic) IBOutlet JLGradientButton *btnGradient;
-@property (weak, nonatomic) IBOutlet UILabel *lblTest;
-@property (weak, nonatomic) IBOutlet UIView *viewRed;
-
-@property (strong, nonatomic) DBTool *dbTool;
-@property (strong, nonatomic) SafeArrayTool *arrTool;
-
-@property (strong, nonatomic) IMBoard *imBoard;
-@property (strong, nonatomic) NSTimer *timer;
-
+@property (strong, nonatomic) NSMutableArray<NSString *> *arrClassName;
+@property (strong, nonatomic) NSMutableArray<NSString *> *arrDescribe;
+@property (strong, nonatomic) UIStoryboard *sb;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //
-    self.viewRed.frame = CGRectMake(0, 0, 100, 100);
-    self.viewRed.layer.delegate = nil;
-   
-    NSLog(@"%lf", self.lblTest.font.lineHeight);
-    NSLog(@"%lf", self.lblTest.font.pointSize);
-    /*
-     X : {{0, 0}, {1125, 2436}}
-     8s Plus: {{0, 0}, {1242, 2208}}
-     8:{{0, 0}, {750, 1334}}
-     */
-   
-    NSLog(@"%@", NSStringFromCGRect([UIScreen mainScreen].nativeBounds));
-    [self testShowUrlText];
-}
-- (void)testUrl {
-    NSString *str = @"http://provider.test.6rooms.net/upload/bbs_thread/20180428/10066/src/20180428172833_KGWS9FtYlJtTq2Fehew6.jpg?width=326&height=482";
-    NSURL *url = [NSURL URLWithString:str];
-    NSString *query = url.query;
+    self.title = @"测试 Demo";
+    self.tableView.tableFooterView = [UIView new];
     
+    self.sb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     
-}
-
-- (void)testSendText {
-    NSRange range = NSMakeRange(7, 8);
-    // {6, 4}  {13, 4}
-    NSString *text = @"进入巨大打卡@我试试 搭建@孙悟空";
-    
-    NSArray<NSString *> *arrNames = @[@"我试试", @"孙悟空"];
-    NSString *pattern = [arrNames componentsJoinedByString:@"|@"];
-    pattern = [NSString stringWithFormat:@"@%@", pattern];
-    NSRegularExpression *regular = [NSRegularExpression regularExpressionWithPattern:pattern options:kNilOptions error:nil];
-    
-    NSArray<NSTextCheckingResult *> *result = [regular matchesInString:text options:kNilOptions range:NSMakeRange(0, text.length)];
-    [result enumerateObjectsUsingBlock:^(NSTextCheckingResult * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-        if (NSLocationInRange(range.location, obj.range )) {
-            NSLog(@" in range:%@", NSStringFromRange(obj.range));
-        }
-        
-    }];
-}
-
-- (void)testShowingText {
-    // /\#s([\s\S]+?,[0-9]+?)\#e/im
-    NSString *text = @"可以at了#s药不,能停,20024#e#s沙悟净,20014#e今天你吃饭了吗#s杨赛,40017#e, 还有#s李强,40029#e";
-    NSMutableString *showText = [[NSMutableString alloc] initWithString:text];
-    
-    NSString *pattern = @"#s([\\s\\S]+?,[0-9]+?)#e";
-    NSRegularExpression *regular = [NSRegularExpression regularExpressionWithPattern:pattern options:kNilOptions error:nil];
-    NSArray<NSTextCheckingResult *> *arr = [regular matchesInString:text options:kNilOptions range:NSMakeRange(0, text.length)];
-    [arr enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(NSTextCheckingResult * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        NSString *atString = [text substringWithRange:NSMakeRange(obj.range.location + 2, obj.range.length-4)];
-        
-        NSArray<NSString *> *arrNameId = [atString componentsSeparatedByString:@","];
-        NSString *name = [atString substringToIndex:(atString.length - 1 - arrNameId.lastObject.length)];
-        NSString *uId = [arrNameId lastObject];
-        NSLog(@"name:%@| id:%@|", name, uId);
-        
-        NSString *replaceName = [NSString stringWithFormat:@"@%@ ", name];
-        [showText replaceCharactersInRange:obj.range withString:replaceName];
-    }];
-    NSLog(@"%@", showText);
-}
-- (void)testShowUrlText {
-    // 百度 http://www.baidu.com 淘宝 http://www.taobao.com 京东 http://www.jd.com
-    NSString *text = @"$shttp://www.baidu.com$e $shttp://www.taobao.com$e $shttp://www.jd.com$e";
-    NSMutableString *showText = [[NSMutableString alloc] initWithString:text];
-    
-    NSString *pattern = @"\\$s([\\s\\S]+?)\\$e";
-    NSRegularExpression *regular = [NSRegularExpression regularExpressionWithPattern:pattern options:kNilOptions error:nil];
-    NSArray<NSTextCheckingResult *> *arr = [regular matchesInString:text options:kNilOptions range:NSMakeRange(0, text.length)];
-    NSString *replace = @"网页连接:";
-    NSUInteger clipLength = 0;
-    for (NSTextCheckingResult *obj in arr) {
-        NSRange range = obj.range; range.location -= clipLength;
-        
-        [showText replaceCharactersInRange:range withString:replace];
-        
-        clipLength += (range.length - replace.length);
-    }
-    NSLog(@"%@", showText);
-}
-
-
-
-- (IBAction)viewRedTaped:(id)sender {
- 
-    Class c = NSClassFromString(@"CollectionViewController");
-    UIViewController *vc = [[c alloc] init];
-    
-    
-//    JLAnimationPresentationController *presentationController = [[JLAnimationPresentationController alloc] initWithPresentedViewController:vc presentingViewController:self];
-//    vc.transitioningDelegate = presentationController;
-    
-    [self presentViewController:vc animated:YES completion:nil];
-    
-}
-
-/*
- iPhone 6s
- 2017-11-10 10:30:49.604782+0800 test[8176:97697] nativeBounds:{{0, 0}, {750, 1334}}
- 2017-11-10 10:30:49.605277+0800 test[8176:97697] nativeScale:2.000000   scale:2.000000
- 2017-11-10 10:30:49.605412+0800 test[8176:97697] bounds:{{0, 0}, {375, 667}}
- iPhone 6s Plus
- 2017-11-10 10:31:30.123601+0800 test[8407:102365] nativeBounds:{{0, 0}, {1242, 2208}}
- 2017-11-10 10:31:30.123857+0800 test[8407:102365] nativeScale:3.000000   scale:3.000000
- 2017-11-10 10:31:30.124060+0800 test[8407:102365] bounds:{{0, 0}, {414, 736}}
-
- */
-- (IBAction)btnClicked_1:(JLGradientButton *)sender {
-    self.viewRed.transform = CGAffineTransformMakeScale(2, 2);
-}
-
-- (IBAction)btnClicked_2:(id)sender {
-    self.viewRed.transform = CGAffineTransformIdentity;
-}
-
-- (IBAction)btnClicked_3:(UIButton *)sender {
-    NSLog(@"frame:%@", NSStringFromCGRect(self.viewRed.frame));
-    NSLog(@"bounds:%@", NSStringFromCGRect(self.viewRed.bounds));
-}
-- (void)test {
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@""
+       style:UIBarButtonItemStylePlain target:self action:nil];
 
 }
-#pragma -mark 
-#pragma -mark goto VC
-- (void)gotoPhotoKitVC {
-    Class c = NSClassFromString(@"PhotoKitViewController");
-    UIViewController *vc = [[c alloc] init];
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.arrClassName.count;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"testProjectVC_Cell_ID"];
+    cell.textLabel.text = self.arrDescribe[indexPath.row];
+    
+    return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *className = self.arrClassName[indexPath.row];
+    
+    UIViewController *vc = [self.sb instantiateViewControllerWithIdentifier:className];
     [self.navigationController pushViewController:vc animated:YES];
 }
-- (void)gotoAPIVC {
-    APIViewController *vc = [[APIViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-#pragma -mark 
-#pragma -mark getter
 
 
-- (IMBoard *)imBoard {
-    if (!_imBoard) {
-        _imBoard = [IMBoard new];
+- (NSMutableArray<NSString *> *)arrClassName {
+    if (!_arrClassName) {
+        _arrClassName = @[@"TVViewController"].mutableCopy;
     }
-    return _imBoard;
+    return _arrClassName;
+}
+
+- (NSMutableArray<NSString *> *)arrDescribe {
+    if (!_arrDescribe) {
+        _arrDescribe = @[@"测试tableView"].mutableCopy;
+    }
+    return _arrDescribe;
 }
 
 @end
