@@ -39,6 +39,7 @@ dispatch_async(dispatch_get_main_queue(), block); \
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong, nonatomic) NSMutableArray<NSString *> *arrClassName;
+@property (strong, nonatomic) NSMutableArray<NSString *> *arrClassNameXib;
 @property (strong, nonatomic) NSMutableArray<NSString *> *arrDescribe;
 @property (strong, nonatomic) UIStoryboard *sb;
 @end
@@ -57,8 +58,15 @@ dispatch_async(dispatch_get_main_queue(), block); \
 
 }
 
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.arrClassName.count;
+    if (0 == section) {
+        return self.arrClassName.count;
+    }
+    return self.arrClassNameXib.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"testProjectVC_Cell_ID"];
@@ -67,23 +75,34 @@ dispatch_async(dispatch_get_main_queue(), block); \
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *className = self.arrClassName[indexPath.row];
-    
-    UIViewController *vc = [self.sb instantiateViewControllerWithIdentifier:className];
+    UIViewController *vc = nil;
+    if (0 == indexPath.section) {
+        NSString *className = self.arrClassName[indexPath.row];
+        vc = [self.sb instantiateViewControllerWithIdentifier:className];
+    } else {
+        NSString *className = self.arrClassName[indexPath.row];
+        vc = [[NSClassFromString(className) alloc] init];
+    }
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (NSMutableArray<NSString *> *)arrClassNameXib {
+    if (!_arrClassNameXib) {
+        _arrClassNameXib = @[].mutableCopy;
+    }
+    return _arrClassNameXib;
+}
 
 - (NSMutableArray<NSString *> *)arrClassName {
     if (!_arrClassName) {
-        _arrClassName = @[@"TVViewController"].mutableCopy;
+        _arrClassName = @[@"TVViewController", @"TimerViewController", @"GCDViewController"].mutableCopy;
     }
     return _arrClassName;
 }
 
 - (NSMutableArray<NSString *> *)arrDescribe {
     if (!_arrDescribe) {
-        _arrDescribe = @[@"测试tableView"].mutableCopy;
+        _arrDescribe = @[@"测试tableView", @"timer", @"GCDViewController"].mutableCopy;
     }
     return _arrDescribe;
 }
