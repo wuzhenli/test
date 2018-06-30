@@ -56,6 +56,11 @@
 		0AC0ACA920BFBD5D00D3185E /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC0ACA820BFBD5D00D3185E /* PlayerViewController.m */; };
 		0AD0FEA520614F5D006678F4 /* SingleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0FEA420614F5D006678F4 /* SingleModel.m */; };
 		0AD77DA920E7558E00330F2C /* GestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD77DA820E7558E00330F2C /* GestureViewController.xib */; };
+		0AD77DB120E763AE00330F2C /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD77DAC20E763AE00330F2C /* MGSwipeTableCell.m */; };
+		0AD77DB220E763AE00330F2C /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD77DAF20E763AE00330F2C /* MGSwipeButton.m */; };
+		0AD77DB720E763D500330F2C /* SlideTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD77DB520E763D500330F2C /* SlideTableViewController.m */; };
+		0AD77DB820E763D500330F2C /* SlideTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD77DB620E763D500330F2C /* SlideTableViewController.xib */; };
+		0AD77DBB20E76B7600330F2C /* SlideData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD77DBA20E76B7600330F2C /* SlideData.m */; };
 		0AE45A961F90591D00D738F4 /* KeyWinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE45A941F90591D00D738F4 /* KeyWinViewController.m */; };
 		0AE45A971F90591D00D738F4 /* KeyWinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE45A951F90591D00D738F4 /* KeyWinViewController.xib */; };
 		0AEA6F261F90B0E1008C3E69 /* reward_icon_price_rate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEA6F241F90B05B008C3E69 /* reward_icon_price_rate@2x.png */; };
@@ -174,6 +179,15 @@
 		0AD0FEA420614F5D006678F4 /* SingleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleModel.m; sourceTree = "<group>"; };
 		0AD0FEA6206150BF006678F4 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		0AD77DA820E7558E00330F2C /* GestureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GestureViewController.xib; sourceTree = "<group>"; };
+		0AD77DAC20E763AE00330F2C /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
+		0AD77DAD20E763AE00330F2C /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
+		0AD77DAE20E763AE00330F2C /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
+		0AD77DAF20E763AE00330F2C /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
+		0AD77DB420E763D500330F2C /* SlideTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideTableViewController.h; sourceTree = "<group>"; };
+		0AD77DB520E763D500330F2C /* SlideTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideTableViewController.m; sourceTree = "<group>"; };
+		0AD77DB620E763D500330F2C /* SlideTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideTableViewController.xib; sourceTree = "<group>"; };
+		0AD77DB920E76B7600330F2C /* SlideData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideData.h; sourceTree = "<group>"; };
+		0AD77DBA20E76B7600330F2C /* SlideData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideData.m; sourceTree = "<group>"; };
 		0AE45A931F90591D00D738F4 /* KeyWinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyWinViewController.h; sourceTree = "<group>"; };
 		0AE45A941F90591D00D738F4 /* KeyWinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyWinViewController.m; sourceTree = "<group>"; };
 		0AE45A951F90591D00D738F4 /* KeyWinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyWinViewController.xib; sourceTree = "<group>"; };
@@ -295,6 +309,7 @@
 		0A5803581F7A01D1000B5192 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				0AD77DAA20E763A500330F2C /* Verders */,
 				0AA47AD1201610E000242C4D /* changming.png */,
 				0AA47ACD20160DAA00242C4D /* preview_2.mov */,
 				0AA47ACE20160DAB00242C4D /* preview_2的副本.123314.mov */,
@@ -476,6 +491,11 @@
 			children = (
 				0A826D5A20DFD4C000338617 /* TVViewController.h */,
 				0A826D5B20DFD4C000338617 /* TVViewController.m */,
+				0AD77DB420E763D500330F2C /* SlideTableViewController.h */,
+				0AD77DB520E763D500330F2C /* SlideTableViewController.m */,
+				0AD77DB920E76B7600330F2C /* SlideData.h */,
+				0AD77DBA20E76B7600330F2C /* SlideData.m */,
+				0AD77DB620E763D500330F2C /* SlideTableViewController.xib */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -550,6 +570,25 @@
 				0A5C56B52064D10C009A1813 /* New Group */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		0AD77DAA20E763A500330F2C /* Verders */ = {
+			isa = PBXGroup;
+			children = (
+				0AD77DAB20E763AE00330F2C /* MGSwipeTableCell */,
+			);
+			path = Verders;
+			sourceTree = "<group>";
+		};
+		0AD77DAB20E763AE00330F2C /* MGSwipeTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				0AD77DAC20E763AE00330F2C /* MGSwipeTableCell.m */,
+				0AD77DAD20E763AE00330F2C /* MGSwipeButton.h */,
+				0AD77DAE20E763AE00330F2C /* MGSwipeTableCell.h */,
+				0AD77DAF20E763AE00330F2C /* MGSwipeButton.m */,
+			);
+			path = MGSwipeTableCell;
 			sourceTree = "<group>";
 		};
 		0AE45A921F90590400D738F4 /* keyWindow */ = {
@@ -699,6 +738,7 @@
 				0AA47AD020160DAB00242C4D /* preview_2的副本.123314.mov in Resources */,
 				0AD77DA920E7558E00330F2C /* GestureViewController.xib in Resources */,
 				0AA47AD2201610E000242C4D /* changming.png in Resources */,
+				0AD77DB820E763D500330F2C /* SlideTableViewController.xib in Resources */,
 				0AEA6F271F90B0E1008C3E69 /* reward_icon_price_rate@3x.png in Resources */,
 				0A5803661F7A01D1000B5192 /* LaunchScreen.storyboard in Resources */,
 				0A5803631F7A01D1000B5192 /* Assets.xcassets in Resources */,
@@ -794,6 +834,7 @@
 				0A58035E1F7A01D1000B5192 /* ViewController.m in Sources */,
 				0A5803691F7A01D1000B5192 /* main.m in Sources */,
 				0A3059421FFC6E910092DF94 /* SlideViewController.m in Sources */,
+				0AD77DB220E763AE00330F2C /* MGSwipeButton.m in Sources */,
 				0A9F887320E4F52400B44E68 /* TimerViewController.m in Sources */,
 				0A948BE52080B6FB002BD6C7 /* NSDate+compare.m in Sources */,
 				0A640F201FC6D7E600B69AFA /* GestureLabel.m in Sources */,
@@ -802,7 +843,9 @@
 				0A83D4E120DA4DCF00F8F231 /* BBSDrawView.m in Sources */,
 				0AB886F220A3E49D003F2734 /* CollectionViewController.m in Sources */,
 				0A768B1F2083738F0086AA40 /* JLAnimationPresentationController.m in Sources */,
+				0AD77DB720E763D500330F2C /* SlideTableViewController.m in Sources */,
 				0A7C408A200701F500174650 /* Person.m in Sources */,
+				0AD77DBB20E76B7600330F2C /* SlideData.m in Sources */,
 				0A2E0C01206BD2A20061953B /* UIDevice+Addtion.m in Sources */,
 				0A6BCCE01FBABF5700D327AE /* IMBoard.m in Sources */,
 				0A5C56B42064CF2F009A1813 /* SafeArrayTool.m in Sources */,
@@ -815,6 +858,7 @@
 				0AD0FEA520614F5D006678F4 /* SingleModel.m in Sources */,
 				0A30594B1FFC87920092DF94 /* NSObject+DLIntrospection.m in Sources */,
 				0AB886F620A3E4DB003F2734 /* TestCollectionViewCell.m in Sources */,
+				0AD77DB120E763AE00330F2C /* MGSwipeTableCell.m in Sources */,
 				0A976BB920DB390F00BDE153 /* UIView+Corner.m in Sources */,
 				0A3059471FFC800C0092DF94 /* JLNavigationController.m in Sources */,
 				0AE45A961F90591D00D738F4 /* KeyWinViewController.m in Sources */,
