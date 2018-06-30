@@ -12,6 +12,7 @@
 		0A3059431FFC6E910092DF94 /* SlideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3059411FFC6E910092DF94 /* SlideViewController.xib */; };
 		0A3059471FFC800C0092DF94 /* JLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3059461FFC800C0092DF94 /* JLNavigationController.m */; };
 		0A30594B1FFC87920092DF94 /* NSObject+DLIntrospection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A30594A1FFC87920092DF94 /* NSObject+DLIntrospection.m */; };
+		0A36886F20E6482E0077BA89 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A36886E20E6482E0077BA89 /* GCDViewController.m */; };
 		0A4F5B1E1F9EDD6C00140E82 /* JLGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F5B1D1F9EDD6C00140E82 /* JLGradientButton.m */; };
 		0A5604651FF5E3C800A42929 /* ResponderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5604641FF5E3C800A42929 /* ResponderView.m */; };
 		0A58035B1F7A01D1000B5192 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A58035A1F7A01D1000B5192 /* AppDelegate.m */; };
@@ -45,6 +46,7 @@
 		0A948BE52080B6FB002BD6C7 /* NSDate+compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A948BE42080B6FB002BD6C7 /* NSDate+compare.m */; };
 		0A948BE72080B7B5002BD6C7 /* testDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A948BE62080B7B5002BD6C7 /* testDate.m */; };
 		0A976BB920DB390F00BDE153 /* UIView+Corner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A976BB820DB390F00BDE153 /* UIView+Corner.m */; };
+		0A9F887320E4F52400B44E68 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F887220E4F52400B44E68 /* TimerViewController.m */; };
 		0AA47ACF20160DAB00242C4D /* preview_2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47ACD20160DAA00242C4D /* preview_2.mov */; };
 		0AA47AD020160DAB00242C4D /* preview_2的副本.123314.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47ACE20160DAB00242C4D /* preview_2的副本.123314.mov */; };
 		0AA47AD2201610E000242C4D /* changming.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47AD1201610E000242C4D /* changming.png */; };
@@ -53,6 +55,7 @@
 		0AB886F720A3E4DB003F2734 /* TestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB886F520A3E4DB003F2734 /* TestCollectionViewCell.xib */; };
 		0AC0ACA920BFBD5D00D3185E /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC0ACA820BFBD5D00D3185E /* PlayerViewController.m */; };
 		0AD0FEA520614F5D006678F4 /* SingleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0FEA420614F5D006678F4 /* SingleModel.m */; };
+		0AD77DA920E7558E00330F2C /* GestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD77DA820E7558E00330F2C /* GestureViewController.xib */; };
 		0AE45A961F90591D00D738F4 /* KeyWinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE45A941F90591D00D738F4 /* KeyWinViewController.m */; };
 		0AE45A971F90591D00D738F4 /* KeyWinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE45A951F90591D00D738F4 /* KeyWinViewController.xib */; };
 		0AEA6F261F90B0E1008C3E69 /* reward_icon_price_rate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEA6F241F90B05B008C3E69 /* reward_icon_price_rate@2x.png */; };
@@ -89,6 +92,8 @@
 		0A3059461FFC800C0092DF94 /* JLNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLNavigationController.m; sourceTree = "<group>"; };
 		0A3059491FFC87920092DF94 /* NSObject+DLIntrospection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DLIntrospection.h"; sourceTree = "<group>"; };
 		0A30594A1FFC87920092DF94 /* NSObject+DLIntrospection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DLIntrospection.m"; sourceTree = "<group>"; };
+		0A36886D20E6482E0077BA89 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		0A36886E20E6482E0077BA89 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 		0A4F5B1C1F9EDD6C00140E82 /* JLGradientButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLGradientButton.h; sourceTree = "<group>"; };
 		0A4F5B1D1F9EDD6C00140E82 /* JLGradientButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLGradientButton.m; sourceTree = "<group>"; };
 		0A5604631FF5E3C800A42929 /* ResponderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponderView.h; sourceTree = "<group>"; };
@@ -153,6 +158,8 @@
 		0A948BE62080B7B5002BD6C7 /* testDate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testDate.m; sourceTree = "<group>"; };
 		0A976BB720DB390F00BDE153 /* UIView+Corner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Corner.h"; sourceTree = "<group>"; };
 		0A976BB820DB390F00BDE153 /* UIView+Corner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Corner.m"; sourceTree = "<group>"; };
+		0A9F887120E4F52400B44E68 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		0A9F887220E4F52400B44E68 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		0AA47ACD20160DAA00242C4D /* preview_2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = preview_2.mov; sourceTree = "<group>"; };
 		0AA47ACE20160DAB00242C4D /* preview_2的副本.123314.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "preview_2的副本.123314.mov"; sourceTree = "<group>"; };
 		0AA47AD1201610E000242C4D /* changming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = changming.png; sourceTree = "<group>"; };
@@ -166,6 +173,7 @@
 		0AD0FEA320614F5D006678F4 /* SingleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleModel.h; sourceTree = "<group>"; };
 		0AD0FEA420614F5D006678F4 /* SingleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleModel.m; sourceTree = "<group>"; };
 		0AD0FEA6206150BF006678F4 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		0AD77DA820E7558E00330F2C /* GestureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GestureViewController.xib; sourceTree = "<group>"; };
 		0AE45A931F90591D00D738F4 /* KeyWinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyWinViewController.h; sourceTree = "<group>"; };
 		0AE45A941F90591D00D738F4 /* KeyWinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyWinViewController.m; sourceTree = "<group>"; };
 		0AE45A951F90591D00D738F4 /* KeyWinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyWinViewController.xib; sourceTree = "<group>"; };
@@ -236,6 +244,15 @@
 				0A30594A1FFC87920092DF94 /* NSObject+DLIntrospection.m */,
 			);
 			path = DLIntrospection;
+			sourceTree = "<group>";
+		};
+		0A36887020E648330077BA89 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				0A36886D20E6482E0077BA89 /* GCDViewController.h */,
+				0A36886E20E6482E0077BA89 /* GCDViewController.m */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 		0A4F5B1B1F9EDD5F00140E82 /* View */ = {
@@ -339,6 +356,8 @@
 		0A58038D1F7A01F3000B5192 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				0A36887020E648330077BA89 /* GCD */,
+				0A9F887020E4F50D00B44E68 /* Timer */,
 				0A826D5920DFD4AC00338617 /* TableView */,
 				0AC0ACA620BFBD3F00D3185E /* Player */,
 				0AB886EF20A3E43B003F2734 /* CollectionView */,
@@ -416,6 +435,7 @@
 			children = (
 				0A640F1B1FC6D37100B69AFA /* GestureViewController.h */,
 				0A640F1C1FC6D37100B69AFA /* GestureViewController.m */,
+				0AD77DA820E7558E00330F2C /* GestureViewController.xib */,
 				0A640F1E1FC6D7E600B69AFA /* GestureLabel.h */,
 				0A640F1F1FC6D7E600B69AFA /* GestureLabel.m */,
 			);
@@ -490,6 +510,15 @@
 				0A948BE42080B6FB002BD6C7 /* NSDate+compare.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		0A9F887020E4F50D00B44E68 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				0A9F887120E4F52400B44E68 /* TimerViewController.h */,
+				0A9F887220E4F52400B44E68 /* TimerViewController.m */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 		0AB886EF20A3E43B003F2734 /* CollectionView */ = {
@@ -668,6 +697,7 @@
 				0AB886F720A3E4DB003F2734 /* TestCollectionViewCell.xib in Resources */,
 				0AEA6F261F90B0E1008C3E69 /* reward_icon_price_rate@2x.png in Resources */,
 				0AA47AD020160DAB00242C4D /* preview_2的副本.123314.mov in Resources */,
+				0AD77DA920E7558E00330F2C /* GestureViewController.xib in Resources */,
 				0AA47AD2201610E000242C4D /* changming.png in Resources */,
 				0AEA6F271F90B0E1008C3E69 /* reward_icon_price_rate@3x.png in Resources */,
 				0A5803661F7A01D1000B5192 /* LaunchScreen.storyboard in Resources */,
@@ -764,6 +794,7 @@
 				0A58035E1F7A01D1000B5192 /* ViewController.m in Sources */,
 				0A5803691F7A01D1000B5192 /* main.m in Sources */,
 				0A3059421FFC6E910092DF94 /* SlideViewController.m in Sources */,
+				0A9F887320E4F52400B44E68 /* TimerViewController.m in Sources */,
 				0A948BE52080B6FB002BD6C7 /* NSDate+compare.m in Sources */,
 				0A640F201FC6D7E600B69AFA /* GestureLabel.m in Sources */,
 				0A5C56B12064B1B0009A1813 /* NSSafeMuDictionary.m in Sources */,
@@ -777,6 +808,7 @@
 				0A5C56B42064CF2F009A1813 /* SafeArrayTool.m in Sources */,
 				0A640F1D1FC6D37100B69AFA /* GestureViewController.m in Sources */,
 				0A58035B1F7A01D1000B5192 /* AppDelegate.m in Sources */,
+				0A36886F20E6482E0077BA89 /* GCDViewController.m in Sources */,
 				0A5803931F7A0282000B5192 /* MehtodSignature.m in Sources */,
 				0A6BD2261FD630FC00D13E33 /* APIViewController.m in Sources */,
 				0A5D45D02063578900DC78F7 /* DBTool.m in Sources */,
@@ -962,7 +994,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/test/Others/PrefixHeader.pch";
 				INFOPLIST_FILE = test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jaly.www.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -980,7 +1012,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/test/Others/PrefixHeader.pch";
 				INFOPLIST_FILE = test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jaly.www.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";

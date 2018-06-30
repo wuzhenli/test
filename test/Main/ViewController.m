@@ -38,9 +38,10 @@ dispatch_async(dispatch_get_main_queue(), block); \
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-@property (strong, nonatomic) NSMutableArray<NSString *> *arrClassName;
+@property (strong, nonatomic) NSMutableArray<NSString *> *arrClassNameSB;
+@property (strong, nonatomic) NSMutableArray<NSString *> *arrDescribeSB;
+
 @property (strong, nonatomic) NSMutableArray<NSString *> *arrClassNameXib;
-@property (strong, nonatomic) NSMutableArray<NSString *> *arrDescribe;
 @property (strong, nonatomic) UIStoryboard *sb;
 @end
 
@@ -64,23 +65,28 @@ dispatch_async(dispatch_get_main_queue(), block); \
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (0 == section) {
-        return self.arrClassName.count;
+        return self.arrClassNameSB.count;
     }
     return self.arrClassNameXib.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"testProjectVC_Cell_ID"];
-    cell.textLabel.text = self.arrDescribe[indexPath.row];
+    if (0 == indexPath.section) {
+        cell.textLabel.text = self.arrDescribeSB[indexPath.row];
+    } else {
+        cell.textLabel.text = self.arrClassNameXib[indexPath.row];
+    }
+    
     
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIViewController *vc = nil;
     if (0 == indexPath.section) {
-        NSString *className = self.arrClassName[indexPath.row];
+        NSString *className = self.arrClassNameSB[indexPath.row];
         vc = [self.sb instantiateViewControllerWithIdentifier:className];
     } else {
-        NSString *className = self.arrClassName[indexPath.row];
+        NSString *className = self.arrClassNameXib[indexPath.row];
         vc = [[NSClassFromString(className) alloc] init];
     }
     [self.navigationController pushViewController:vc animated:YES];
@@ -88,23 +94,23 @@ dispatch_async(dispatch_get_main_queue(), block); \
 
 - (NSMutableArray<NSString *> *)arrClassNameXib {
     if (!_arrClassNameXib) {
-        _arrClassNameXib = @[].mutableCopy;
+        _arrClassNameXib = @[@"GestureViewController"].mutableCopy;
     }
     return _arrClassNameXib;
 }
 
-- (NSMutableArray<NSString *> *)arrClassName {
-    if (!_arrClassName) {
-        _arrClassName = @[@"TVViewController", @"TimerViewController", @"GCDViewController"].mutableCopy;
+- (NSMutableArray<NSString *> *)arrClassNameSB {
+    if (!_arrClassNameSB) {
+        _arrClassNameSB = @[@"TVViewController", @"TimerViewController", @"GCDViewController"].mutableCopy;
     }
-    return _arrClassName;
+    return _arrClassNameSB;
 }
 
-- (NSMutableArray<NSString *> *)arrDescribe {
-    if (!_arrDescribe) {
-        _arrDescribe = @[@"测试tableView", @"timer", @"GCDViewController"].mutableCopy;
+- (NSMutableArray<NSString *> *)arrDescribeSB {
+    if (!_arrDescribeSB) {
+        _arrDescribeSB = @[@"测试tableView", @"timer", @"GCDViewController"].mutableCopy;
     }
-    return _arrDescribe;
+    return _arrDescribeSB;
 }
 
 @end

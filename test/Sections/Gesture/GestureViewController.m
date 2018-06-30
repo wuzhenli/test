@@ -12,9 +12,9 @@
 @interface GestureViewController ()
 @property (strong, nonatomic) UILabel *lblTest;
 
-@property (strong, nonatomic) UITapGestureRecognizer *tapSingle;
-@property (strong, nonatomic) UITapGestureRecognizer *tapDouble;
-@property (strong, nonatomic) UIPanGestureRecognizer *pan;
+//@property (strong, nonatomic) UITapGestureRecognizer *tapSingle;
+//@property (strong, nonatomic) UITapGestureRecognizer *tapDouble;
+//@property (strong, nonatomic) UIPanGestureRecognizer *pan;
 @end
 
 @implementation GestureViewController
@@ -22,8 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor grayColor];
-    [self.view addSubview:self.lblTest];
+    self.view.backgroundColor = [UIColor whiteColor];
+//    [self.view addSubview:self.lblTest];
     
    
 //    self.tapDouble = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDouble:)];
@@ -31,15 +31,21 @@
 //    self.tapDouble.delaysTouchesBegan = YES;
 //    [self.view addGestureRecognizer:self.tapDouble];
 
-    self.pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panEvent:)];
-    [self.view addGestureRecognizer:self.pan];
-    
-    self.tapSingle = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapSingle:)];
-    self.tapSingle.numberOfTapsRequired = 1;
-    [self.view addGestureRecognizer:self.tapSingle];
+//    self.pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panEvent:)];
+//    [self.view addGestureRecognizer:self.pan];
+//
+//    self.tapSingle = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapSingle:)];
+//    self.tapSingle.numberOfTapsRequired = 1;
+//    [self.view addGestureRecognizer:self.tapSingle];
     
 }
+- (IBAction)greenViewGesture:(id)sender {
+    NSLog(@"%s", __func__);
+}
 
+- (IBAction)redViewGesture:(id)sender {
+    NSLog(@"%s", __func__);
+}
 
 
 #pragma -mark 
@@ -54,7 +60,6 @@
     NSLog(@"%s", __func__);
 }
 - (IBAction)btnClicked:(id)sender {
-    self.tapDouble.delaysTouchesBegan = YES;
 }
 #pragma -mark 
 #pragma -mark getter
