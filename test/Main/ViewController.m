@@ -7,25 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "KeyWinViewController.h"
-#import "JLGradientButton.h"
-#import "IMBoard.h"
-#import "GestureViewController.h"
-#import "APIViewController.h"
-#import "SlideViewController.h"
-#import <objc/runtime.h>
-#import <objc/message.h>
-#import <AVKit/AVKit.h>
-#import <AVFoundation/AVFoundation.h>
-#import <math.h>
-#import "DBTool.h"
-#import "SafeArrayTool.h"
-#import "JLPresentAnimation.h"
-#import "JLAnimationPresentationController.h"
-#import "PlayerViewController.h"
-#import "BBSDrawView.h"
-#import "UIView+Corner.h"
-#import "TVViewController.h"
+
 
 #define Dispatch_Safe_Main(block) \
 if ([NSThread isMainThread]) { \
@@ -46,6 +28,15 @@ dispatch_async(dispatch_get_main_queue(), block); \
 @end
 
 @implementation ViewController
+
+- (NSMutableArray<NSString *> *)arrClassNameXib {
+    if (!_arrClassNameXib) {
+        _arrClassNameXib = @[@"GestureViewController", @"SlideTableViewController", @"KeyboardViewController", @"WebViewController", @"ScrollViewController"].mutableCopy;
+    }
+    return _arrClassNameXib;
+}
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -95,12 +86,6 @@ dispatch_async(dispatch_get_main_queue(), block); \
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-- (NSMutableArray<NSString *> *)arrClassNameXib {
-    if (!_arrClassNameXib) {
-        _arrClassNameXib = @[@"GestureViewController", @"SlideTableViewController", @"KeyboardViewController", @"WebViewController"].mutableCopy;
-    }
-    return _arrClassNameXib;
-}
 
 - (NSMutableArray<NSString *> *)arrClassNameSB {
     if (!_arrClassNameSB) {

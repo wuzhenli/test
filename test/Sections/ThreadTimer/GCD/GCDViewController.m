@@ -18,6 +18,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(cutMethod) object:nil];
+    [self performSelector:@selector(cutMethod) withObject:nil afterDelay:2];
+}
+
+- (void)cutMethod {
+    NSLog(@"%s", __func__);
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
