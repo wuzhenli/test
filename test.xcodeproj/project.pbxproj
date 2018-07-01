@@ -28,6 +28,9 @@
 		0A5C56B42064CF2F009A1813 /* SafeArrayTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5C56B32064CF2F009A1813 /* SafeArrayTool.m */; };
 		0A5CA3401FECA77900EC170F /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5CA33F1FECA77900EC170F /* Animal.m */; };
 		0A5D45D02063578900DC78F7 /* DBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5D45CF2063578900DC78F7 /* DBTool.m */; };
+		0A61116220E8ACEC008CE53F /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A61116020E8ACEC008CE53F /* WebViewController.m */; };
+		0A61116320E8ACEC008CE53F /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A61116120E8ACEC008CE53F /* WebViewController.xib */; };
+		0A61116520E8AEDE008CE53F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A61116420E8AEDD008CE53F /* WebKit.framework */; };
 		0A640F1D1FC6D37100B69AFA /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A640F1C1FC6D37100B69AFA /* GestureViewController.m */; };
 		0A640F201FC6D7E600B69AFA /* GestureLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A640F1F1FC6D7E600B69AFA /* GestureLabel.m */; };
 		0A6BCCE01FBABF5700D327AE /* IMBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6BCCDF1FBABF5700D327AE /* IMBoard.m */; };
@@ -134,6 +137,10 @@
 		0A5D45CE2063578900DC78F7 /* DBTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBTool.h; sourceTree = "<group>"; };
 		0A5D45CF2063578900DC78F7 /* DBTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBTool.m; sourceTree = "<group>"; };
 		0A61115D20E8A4B7008CE53F /* LogMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogMacro.h; sourceTree = "<group>"; };
+		0A61115F20E8ACEC008CE53F /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		0A61116020E8ACEC008CE53F /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		0A61116120E8ACEC008CE53F /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		0A61116420E8AEDD008CE53F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		0A640F1B1FC6D37100B69AFA /* GestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
 		0A640F1C1FC6D37100B69AFA /* GestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
 		0A640F1E1FC6D7E600B69AFA /* GestureLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureLabel.h; sourceTree = "<group>"; };
@@ -217,6 +224,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A61116520E8AEDE008CE53F /* WebKit.framework in Frameworks */,
 				A5A60D313472FD2F526845F5 /* libPods-test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,6 +388,7 @@
 		0A58038D1F7A01F3000B5192 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				0A61115E20E8ACC4008CE53F /* webViewProgress */,
 				0AD77DBC20E7704A00330F2C /* dismissKeyboard */,
 				0A36887020E648330077BA89 /* GCD */,
 				0A9F887020E4F50D00B44E68 /* Timer */,
@@ -453,6 +462,16 @@
 			children = (
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		0A61115E20E8ACC4008CE53F /* webViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				0A61115F20E8ACEC008CE53F /* WebViewController.h */,
+				0A61116020E8ACEC008CE53F /* WebViewController.m */,
+				0A61116120E8ACEC008CE53F /* WebViewController.xib */,
+			);
+			path = webViewProgress;
 			sourceTree = "<group>";
 		};
 		0A640F1A1FC6D36200B69AFA /* Gesture */ = {
@@ -647,6 +666,7 @@
 		9F237A32F3EF21F12F0E1157 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A61116420E8AEDD008CE53F /* WebKit.framework */,
 				1E1AF70F871764CF416A73E9 /* libPods-test.a */,
 				612422CE0D061CCBB3748038 /* libPods-testTests.a */,
 				BC7A545D0AFD39E9776C9A01 /* libPods-testUITests.a */,
@@ -766,6 +786,7 @@
 				0AB886F720A3E4DB003F2734 /* TestCollectionViewCell.xib in Resources */,
 				0AEA6F261F90B0E1008C3E69 /* reward_icon_price_rate@2x.png in Resources */,
 				0AA47AD020160DAB00242C4D /* preview_2的副本.123314.mov in Resources */,
+				0A61116320E8ACEC008CE53F /* WebViewController.xib in Resources */,
 				0AD77DC120E7706300330F2C /* KeyboardViewController.xib in Resources */,
 				0AD77DA920E7558E00330F2C /* GestureViewController.xib in Resources */,
 				0AA47AD2201610E000242C4D /* changming.png in Resources */,
@@ -899,6 +920,7 @@
 				0A4F5B1E1F9EDD6C00140E82 /* JLGradientButton.m in Sources */,
 				0A5604651FF5E3C800A42929 /* ResponderView.m in Sources */,
 				0A768B1C208369850086AA40 /* JLPresentAnimation.m in Sources */,
+				0A61116220E8ACEC008CE53F /* WebViewController.m in Sources */,
 				0A8F226E1F7B7E8200499EFD /* TestViewController.m in Sources */,
 				0AC0ACA920BFBD5D00D3185E /* PlayerViewController.m in Sources */,
 			);

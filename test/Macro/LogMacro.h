@@ -10,9 +10,10 @@
 #define LogMacro_h
 
 /** 自定义 log */
-#define SOCKET_Log 0
 
 #ifdef DEBUG
+    #define SOCKET_Log 1
+
     #define DLog(...) NSLog(__VA_ARGS__);
 #else
     #define DLog(...)
