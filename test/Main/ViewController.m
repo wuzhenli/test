@@ -56,7 +56,10 @@ dispatch_async(dispatch_get_main_queue(), block); \
     
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@""
        style:UIBarButtonItemStylePlain target:self action:nil];
+    [UIFont systemFontOfSize:12];
 
+    SKLog(@"%@", @"viewDidload");
+    SKLog(@"test sdlog");
 }
 
 
@@ -94,7 +97,7 @@ dispatch_async(dispatch_get_main_queue(), block); \
 
 - (NSMutableArray<NSString *> *)arrClassNameXib {
     if (!_arrClassNameXib) {
-        _arrClassNameXib = @[@"GestureViewController", @"SlideTableViewController"].mutableCopy;
+        _arrClassNameXib = @[@"GestureViewController", @"SlideTableViewController", @"KeyboardViewController"].mutableCopy;
     }
     return _arrClassNameXib;
 }

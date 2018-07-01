@@ -61,6 +61,8 @@
 		0AD77DB720E763D500330F2C /* SlideTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD77DB520E763D500330F2C /* SlideTableViewController.m */; };
 		0AD77DB820E763D500330F2C /* SlideTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD77DB620E763D500330F2C /* SlideTableViewController.xib */; };
 		0AD77DBB20E76B7600330F2C /* SlideData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD77DBA20E76B7600330F2C /* SlideData.m */; };
+		0AD77DC020E7706300330F2C /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD77DBE20E7706300330F2C /* KeyboardViewController.m */; };
+		0AD77DC120E7706300330F2C /* KeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD77DBF20E7706300330F2C /* KeyboardViewController.xib */; };
 		0AE45A961F90591D00D738F4 /* KeyWinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE45A941F90591D00D738F4 /* KeyWinViewController.m */; };
 		0AE45A971F90591D00D738F4 /* KeyWinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE45A951F90591D00D738F4 /* KeyWinViewController.xib */; };
 		0AEA6F261F90B0E1008C3E69 /* reward_icon_price_rate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEA6F241F90B05B008C3E69 /* reward_icon_price_rate@2x.png */; };
@@ -131,6 +133,7 @@
 		0A5CA33F1FECA77900EC170F /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 		0A5D45CE2063578900DC78F7 /* DBTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBTool.h; sourceTree = "<group>"; };
 		0A5D45CF2063578900DC78F7 /* DBTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBTool.m; sourceTree = "<group>"; };
+		0A61115D20E8A4B7008CE53F /* LogMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogMacro.h; sourceTree = "<group>"; };
 		0A640F1B1FC6D37100B69AFA /* GestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
 		0A640F1C1FC6D37100B69AFA /* GestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
 		0A640F1E1FC6D7E600B69AFA /* GestureLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureLabel.h; sourceTree = "<group>"; };
@@ -188,6 +191,11 @@
 		0AD77DB620E763D500330F2C /* SlideTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideTableViewController.xib; sourceTree = "<group>"; };
 		0AD77DB920E76B7600330F2C /* SlideData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideData.h; sourceTree = "<group>"; };
 		0AD77DBA20E76B7600330F2C /* SlideData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideData.m; sourceTree = "<group>"; };
+		0AD77DBD20E7706300330F2C /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		0AD77DBE20E7706300330F2C /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		0AD77DBF20E7706300330F2C /* KeyboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardViewController.xib; sourceTree = "<group>"; };
+		0AD77DC320E78ADB00330F2C /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		0AD77DC420E78AE700330F2C /* TestHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHeader.h; sourceTree = "<group>"; };
 		0AE45A931F90591D00D738F4 /* KeyWinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyWinViewController.h; sourceTree = "<group>"; };
 		0AE45A941F90591D00D738F4 /* KeyWinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyWinViewController.m; sourceTree = "<group>"; };
 		0AE45A951F90591D00D738F4 /* KeyWinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyWinViewController.xib; sourceTree = "<group>"; };
@@ -309,6 +317,7 @@
 		0A5803581F7A01D1000B5192 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				0AD77DC220E78AB900330F2C /* Macro */,
 				0AD77DAA20E763A500330F2C /* Verders */,
 				0AA47AD1201610E000242C4D /* changming.png */,
 				0AA47ACD20160DAA00242C4D /* preview_2.mov */,
@@ -371,6 +380,7 @@
 		0A58038D1F7A01F3000B5192 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				0AD77DBC20E7704A00330F2C /* dismissKeyboard */,
 				0A36887020E648330077BA89 /* GCD */,
 				0A9F887020E4F50D00B44E68 /* Timer */,
 				0A826D5920DFD4AC00338617 /* TableView */,
@@ -591,6 +601,26 @@
 			path = MGSwipeTableCell;
 			sourceTree = "<group>";
 		};
+		0AD77DBC20E7704A00330F2C /* dismissKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0AD77DBD20E7706300330F2C /* KeyboardViewController.h */,
+				0AD77DBE20E7706300330F2C /* KeyboardViewController.m */,
+				0AD77DBF20E7706300330F2C /* KeyboardViewController.xib */,
+			);
+			path = dismissKeyboard;
+			sourceTree = "<group>";
+		};
+		0AD77DC220E78AB900330F2C /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				0AD77DC320E78ADB00330F2C /* Global.h */,
+				0AD77DC420E78AE700330F2C /* TestHeader.h */,
+				0A61115D20E8A4B7008CE53F /* LogMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
 		0AE45A921F90590400D738F4 /* keyWindow */ = {
 			isa = PBXGroup;
 			children = (
@@ -736,6 +766,7 @@
 				0AB886F720A3E4DB003F2734 /* TestCollectionViewCell.xib in Resources */,
 				0AEA6F261F90B0E1008C3E69 /* reward_icon_price_rate@2x.png in Resources */,
 				0AA47AD020160DAB00242C4D /* preview_2的副本.123314.mov in Resources */,
+				0AD77DC120E7706300330F2C /* KeyboardViewController.xib in Resources */,
 				0AD77DA920E7558E00330F2C /* GestureViewController.xib in Resources */,
 				0AA47AD2201610E000242C4D /* changming.png in Resources */,
 				0AD77DB820E763D500330F2C /* SlideTableViewController.xib in Resources */,
@@ -833,6 +864,7 @@
 				0A7C408E20073CE300174650 /* PhotoKitViewController.m in Sources */,
 				0A58035E1F7A01D1000B5192 /* ViewController.m in Sources */,
 				0A5803691F7A01D1000B5192 /* main.m in Sources */,
+				0AD77DC020E7706300330F2C /* KeyboardViewController.m in Sources */,
 				0A3059421FFC6E910092DF94 /* SlideViewController.m in Sources */,
 				0AD77DB220E763AE00330F2C /* MGSwipeButton.m in Sources */,
 				0A9F887320E4F52400B44E68 /* TimerViewController.m in Sources */,

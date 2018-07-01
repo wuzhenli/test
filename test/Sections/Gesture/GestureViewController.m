@@ -47,6 +47,21 @@
     NSLog(@"%s", __func__);
 }
 
+#pragma -mark
+#pragma -mark UIResponder
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
+    [self.view endEditing:YES];
+    NSLog(@"%s", __func__);
+}
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
+    NSLog(@"%s", __func__);
+}
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
+    NSLog(@"%s", __func__);
+}
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
+    NSLog(@"%s", __func__);
+}
 
 #pragma -mark 
 #pragma -mark event
