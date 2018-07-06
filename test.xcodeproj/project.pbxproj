@@ -23,6 +23,8 @@
 		0A3059431FFC6E910092DF94 /* SlideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3059411FFC6E910092DF94 /* SlideViewController.xib */; };
 		0A3059471FFC800C0092DF94 /* JLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3059461FFC800C0092DF94 /* JLNavigationController.m */; };
 		0A30594B1FFC87920092DF94 /* NSObject+DLIntrospection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A30594A1FFC87920092DF94 /* NSObject+DLIntrospection.m */; };
+		0A35462C20EFBB4A000FA171 /* TestVCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35462A20EFBB4A000FA171 /* TestVCController.m */; };
+		0A35462D20EFBB4A000FA171 /* TestVCController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A35462B20EFBB4A000FA171 /* TestVCController.xib */; };
 		0A36886F20E6482E0077BA89 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A36886E20E6482E0077BA89 /* GCDViewController.m */; };
 		0A4F5B1E1F9EDD6C00140E82 /* JLGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F5B1D1F9EDD6C00140E82 /* JLGradientButton.m */; };
 		0A5604651FF5E3C800A42929 /* ResponderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5604641FF5E3C800A42929 /* ResponderView.m */; };
@@ -126,6 +128,9 @@
 		0A3059461FFC800C0092DF94 /* JLNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLNavigationController.m; sourceTree = "<group>"; };
 		0A3059491FFC87920092DF94 /* NSObject+DLIntrospection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DLIntrospection.h"; sourceTree = "<group>"; };
 		0A30594A1FFC87920092DF94 /* NSObject+DLIntrospection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DLIntrospection.m"; sourceTree = "<group>"; };
+		0A35462920EFBB4A000FA171 /* TestVCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVCController.h; sourceTree = "<group>"; };
+		0A35462A20EFBB4A000FA171 /* TestVCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVCController.m; sourceTree = "<group>"; };
+		0A35462B20EFBB4A000FA171 /* TestVCController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVCController.xib; sourceTree = "<group>"; };
 		0A36886D20E6482E0077BA89 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		0A36886E20E6482E0077BA89 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 		0A4F5B1C1F9EDD6C00140E82 /* JLGradientButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLGradientButton.h; sourceTree = "<group>"; };
@@ -512,6 +517,7 @@
 		0A61116720E8CAC3008CE53F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				0AB4F1A220EFBA6000B2C300 /* TestVC */,
 				0A61116E20E8CB01008CE53F /* ScrollView */,
 				0AB886EF20A3E43B003F2734 /* CollectionView */,
 				0A826D5920DFD4AC00338617 /* TableView */,
@@ -625,6 +631,16 @@
 				0A9F887220E4F52400B44E68 /* TimerViewController.m */,
 			);
 			path = Timer;
+			sourceTree = "<group>";
+		};
+		0AB4F1A220EFBA6000B2C300 /* TestVC */ = {
+			isa = PBXGroup;
+			children = (
+				0A35462920EFBB4A000FA171 /* TestVCController.h */,
+				0A35462A20EFBB4A000FA171 /* TestVCController.m */,
+				0A35462B20EFBB4A000FA171 /* TestVCController.xib */,
+			);
+			path = TestVC;
 			sourceTree = "<group>";
 		};
 		0AB886EF20A3E43B003F2734 /* CollectionView */ = {
@@ -860,6 +876,7 @@
 				0AE45A971F90591D00D738F4 /* KeyWinViewController.xib in Resources */,
 				0A7C409020073CED00174650 /* PhotoKitViewController.xib in Resources */,
 				0A5803611F7A01D1000B5192 /* Main.storyboard in Resources */,
+				0A35462D20EFBB4A000FA171 /* TestVCController.xib in Resources */,
 				0A6BD2271FD630FC00D13E33 /* APIViewController.xib in Resources */,
 				0A3059431FFC6E910092DF94 /* SlideViewController.xib in Resources */,
 			);
@@ -979,6 +996,7 @@
 				0AE45A961F90591D00D738F4 /* KeyWinViewController.m in Sources */,
 				0A826D5C20DFD4C000338617 /* TVViewController.m in Sources */,
 				0A5CA3401FECA77900EC170F /* Animal.m in Sources */,
+				0A35462C20EFBB4A000FA171 /* TestVCController.m in Sources */,
 				0A4F5B1E1F9EDD6C00140E82 /* JLGradientButton.m in Sources */,
 				0A5604651FF5E3C800A42929 /* ResponderView.m in Sources */,
 				0A768B1C208369850086AA40 /* JLPresentAnimation.m in Sources */,

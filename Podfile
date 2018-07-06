@@ -8,6 +8,7 @@ target 'test' do
   # Pods for test
   pod 'JLLogEncoding', '~> 0.0.2'
   pod 'Masonry'
+  pod "NSLogger"
 
   target 'testTests' do
     inherit! :search_paths
