@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSDictionary *dic = @{
+                          @"a" : @1,
+                          @"b" : @2,
+                          @"c" : @3
+                          };
+    NSLog(@"timer dic:%@", dic);
 }
 - (void)displayLinkEvent {
     NSLog(@"%s", __func__);

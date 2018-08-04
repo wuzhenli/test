@@ -23,24 +23,35 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self.navigationController setNavigationBarHidden:YES animated:YES];
-    self.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    
+    
     self.scrollView.delegate = self;
     self.scrollView.maximumZoomScale = 2;
-    self.scrollView.contentSize = CGSizeMake(SCREEN_Width, SCREEN_Height);
+//    self.scrollView.bounces = NO;
+    self.scrollView.alwaysBounceHorizontal = NO;
+    self.scrollView.contentSize = CGSizeMake(0, SCREEN_Height);
+    self.scrollView.frame = CGRectMake(0, 0, SCREEN_Width, SCREEN_Height);
+    self.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    
     self.imgView.frame = self.scrollView.bounds;
+    self.imgView.image = [UIImage imageNamed:@"upload_long_image.jpeg"];
     
     [self.singleTap requireGestureRecognizerToFail:self.doubleTap];
+    
 }
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
+
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 - (IBAction)btnBackClicked:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 - (IBAction)singleTap:(id)sender {
     NSLog(@"%s", __func__);
@@ -63,11 +74,9 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     if (!self.inZooming) {
-        NSLog(@"%s", __func__);
     }
 }                                               // any offset changes
 - (void)scrollViewDidZoom:(UIScrollView *)scrollView {
-    NSLog(@"%s", __func__);
     CGRect imgFrame = self.imgView.frame;
     CGRect scFrame = self.scrollView.bounds;
     // small

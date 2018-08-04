@@ -1,26 +1,20 @@
 PODS:
   - JLLogEncoding (0.0.2)
   - Masonry (1.1.0)
-  - NSLogger (1.9.0):
-    - NSLogger/ObjC (= 1.9.0)
-  - NSLogger/ObjC (1.9.0)
 
 DEPENDENCIES:
   - JLLogEncoding (~> 0.0.2)
   - Masonry
-  - NSLogger
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - JLLogEncoding
     - Masonry
-    - NSLogger
 
 SPEC CHECKSUMS:
   JLLogEncoding: e01534b5dcdc51b64ea714a5ca358f32fe6f9271
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  NSLogger: 9f8f5ab017eb34d1a138f4905dc7fb8e9a0e3186
 
-PODFILE CHECKSUM: ca4394cbcb0309c161241488dfe211e4a8b224e8
+PODFILE CHECKSUM: 2bcf60ef51be6e715be81c58ed05b999c8bdd4aa
 
 COCOAPODS: 1.5.0

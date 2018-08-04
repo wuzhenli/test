@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -17,7 +18,14 @@
 // -application:handleEventsForBackgroundURLSession:completionHandler:
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+//    LoggerSetupBonjourForBuildUser();
+//    LoggerSetOptions(NULL,                  
+//                     kLoggerOption_BufferLogsUntilConnection |
+//                     kLoggerOption_UseSSL |
+//                     kLoggerOption_CaptureSystemConsole|
+//                     kLoggerOption_BrowseBonjour|
+//                     kLoggerOption_BrowseOnlyLocalDomain);
+//    LoggerSetViewerHost(NULL, (__bridge CFStringRef)@"192.168.20.193", (UInt32)50000);
     return YES;
 }
 

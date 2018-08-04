@@ -35,7 +35,8 @@
 - (void)setup {
     [self.view addSubview:self.progressView];
     // 设置访问的URL
-    NSURL *url = [NSURL URLWithString:@"http://www.baidu.com"];
+    NSURL *url = [NSURL URLWithString:@"http://baidu.com"];
+    
     // 根据URL创建请求
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     // WKWebView加载请求
@@ -68,6 +69,28 @@
     
     NSLog(@"didFinishNavigation");
     
+}
+
+- (WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures
+{
+    NSLog(@"createWebViewWithConfiguration %@ %@", navigationAction, windowFeatures);
+    if (!navigationAction.targetFrame.isMainFrame) {
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+        [(WKWebView *)_webView loadRequest:navigationAction.request];
+    }
+    return nil;
+}
+
+
+- (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error {
+    [self handleError:error];
+}
+- (void)webView:(WKWebView *)webView didFailNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error {
+    [self handleError:error];
+}
+
+- (void)handleError:(NSError *)error {
+    NSLog(@"%@", error);
 }
 
 #pragma mark - KVO

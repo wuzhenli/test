@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "NSObject+DLIntrospection.h"
 
 #define Dispatch_Safe_Main(block) \
 if ([NSThread isMainThread]) { \
@@ -31,7 +31,7 @@ dispatch_async(dispatch_get_main_queue(), block); \
 
 - (NSMutableArray<NSString *> *)arrClassNameXib {
     if (!_arrClassNameXib) {
-        _arrClassNameXib = @[@"GestureViewController", @"SlideTableViewController", @"KeyboardViewController", @"WebViewController", @"ScrollViewController", @"TestVCController"].mutableCopy;
+        _arrClassNameXib = @[@"GestureViewController", @"SlideTableViewController", @"KeyboardViewController", @"WebViewController", @"ScrollViewController", @"TestVCController", @"MenuCtlViewController"].mutableCopy;
     }
     return _arrClassNameXib;
 }

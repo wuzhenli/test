@@ -9,12 +9,15 @@
 #import "GestureViewController.h"
 #import "GestureLabel.h"
 
-@interface GestureViewController ()
+@interface GestureViewController ()<UIGestureRecognizerDelegate>
+
 @property (strong, nonatomic) UILabel *lblTest;
 
-//@property (strong, nonatomic) UITapGestureRecognizer *tapSingle;
-//@property (strong, nonatomic) UITapGestureRecognizer *tapDouble;
-//@property (strong, nonatomic) UIPanGestureRecognizer *pan;
+@property (strong, nonatomic) UITapGestureRecognizer *tapSingle;
+@property (strong, nonatomic) UITapGestureRecognizer *tapDouble;
+@property (strong, nonatomic) UIPanGestureRecognizer *pan;
+@property (strong, nonatomic) UIPanGestureRecognizer *pan2;
+
 @end
 
 @implementation GestureViewController
@@ -31,14 +34,24 @@
 //    self.tapDouble.delaysTouchesBegan = YES;
 //    [self.view addGestureRecognizer:self.tapDouble];
 
-//    self.pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panEvent:)];
-//    [self.view addGestureRecognizer:self.pan];
-//
+    self.pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panEvent:)];
+    [self.view addGestureRecognizer:self.pan];
+    self.pan.delegate = self;
+    
+    self.pan2 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan2Event:)];
+    [self.view addGestureRecognizer:self.pan2];
+    
+    
+    
+
 //    self.tapSingle = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapSingle:)];
 //    self.tapSingle.numberOfTapsRequired = 1;
 //    [self.view addGestureRecognizer:self.tapSingle];
     
+    
+    NSLog(@"pan:%p   pan2:%p", self.pan, self.pan2);
 }
+
 - (IBAction)greenViewGesture:(id)sender {
     NSLog(@"%s", __func__);
 }
@@ -47,37 +60,52 @@
     NSLog(@"%s", __func__);
 }
 
-#pragma -mark
-#pragma -mark UIResponder
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
-    [self.view endEditing:YES];
-    NSLog(@"%s", __func__);
-}
-- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
-    NSLog(@"%s", __func__);
-}
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
-    NSLog(@"%s", __func__);
-}
-- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
-    NSLog(@"%s", __func__);
-}
-
-#pragma -mark 
 #pragma -mark event
+
 - (void)tapSingle:(UITapGestureRecognizer *)gesture {
     NSLog(@"%s", __func__);
 }
 - (void)tapDouble:(UITapGestureRecognizer *)gesture {
     NSLog(@"%s", __func__);
 }
-- (void)panEvent:(UITapGestureRecognizer *)gesture {
+- (void)panEvent:(UIPanGestureRecognizer *)gesture {
+    NSLog(@"%s", __func__);
+}
+- (void)pan2Event:(UIPanGestureRecognizer *)gesture {
     NSLog(@"%s", __func__);
 }
 - (IBAction)btnClicked:(id)sender {
 }
-#pragma -mark 
+
+
+#pragma -mark UIGestureRecognizerDelegate
+
+
+/**
+ return YES:gestureRecognizer 失效，NO ： gestureRecognizer 有效
+ */
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRequireFailureOfGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    NSLog(@"%p   %p", gestureRecognizer, otherGestureRecognizer);
+    if (otherGestureRecognizer == self.pan2) {
+        return YES;
+    }
+    return NO;
+}
+
+/**
+ return YES: otherGestureRecognizer 手势失效 , gestureRecognizer不会失效
+ return NO : otherGestureRecognizer 手势有效 , gestureRecognizer不会失效
+ */
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    NSLog(@"%p   %p", gestureRecognizer, otherGestureRecognizer);
+//    if (otherGestureRecognizer == self.pan2) {
+//        return NO;
+//    }
+    return YES;
+}
+
 #pragma -mark getter
+
 - (UILabel *)lblTest {
     if (!_lblTest) {
         _lblTest = [[GestureLabel alloc] init];

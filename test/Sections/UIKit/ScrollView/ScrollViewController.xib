@@ -23,10 +23,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZb-g8-ZSr">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZb-g8-ZSr">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="localImage1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="y0H-AS-vcg">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="upload_long_image.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="y0H-AS-vcg">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
@@ -37,13 +38,10 @@
                         <outletCollection property="gestureRecognizers" destination="d32-M8-L2I" appends="YES" id="BD7-uN-SSx"/>
                     </connections>
                 </scrollView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xF3-FR-aj1">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xF3-FR-aj1">
                     <rect key="frame" x="20" y="40" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="0.75" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="Hwv-PM-ocY"/>
-                        <constraint firstAttribute="width" constant="44" id="bYA-Qf-GWT"/>
-                    </constraints>
                     <state key="normal" title="&lt;"/>
                     <connections>
                         <action selector="btnBackClicked:" destination="-1" eventType="touchUpInside" id="YWb-66-LtW"/>
@@ -51,14 +49,6 @@
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="bZb-g8-ZSr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0Pl-Um-rpe"/>
-                <constraint firstItem="xF3-FR-aj1" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="Cgh-3Y-frn"/>
-                <constraint firstItem="xF3-FR-aj1" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="NfO-uO-XSk"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="bZb-g8-ZSr" secondAttribute="bottom" id="YwQ-gm-9DG"/>
-                <constraint firstItem="bZb-g8-ZSr" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="bEI-r9-rbb"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="bZb-g8-ZSr" secondAttribute="trailing" id="rtA-Xi-gel"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>
         <tapGestureRecognizer id="Q05-VE-QHa" userLabel="singleTap Gesture Recognizer">
@@ -73,6 +63,6 @@
         </tapGestureRecognizer>
     </objects>
     <resources>
-        <image name="localImage1.jpeg" width="1200" height="1800"/>
+        <image name="upload_long_image.jpeg" width="640" height="13878"/>
     </resources>
 </document>
