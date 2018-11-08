@@ -31,7 +31,7 @@ dispatch_async(dispatch_get_main_queue(), block); \
 
 - (NSMutableArray<NSString *> *)arrClassNameXib {
     if (!_arrClassNameXib) {
-        _arrClassNameXib = @[@"GestureViewController", @"SlideTableViewController", @"KeyboardViewController", @"WebViewController", @"ScrollViewController", @"TestVCController", @"MenuCtlViewController"].mutableCopy;
+        _arrClassNameXib = @[@"GestureViewController", @"DefinePanGestureViewController", @"SlideTableViewController", @"KeyboardViewController", @"WebViewController", @"ScrollViewController", @"TestVCController", @"MenuCtlViewController"].mutableCopy;
     }
     return _arrClassNameXib;
 }
@@ -48,8 +48,15 @@ dispatch_async(dispatch_get_main_queue(), block); \
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@""
        style:UIBarButtonItemStylePlain target:self action:nil];
     
-    
+    [self testPlus];
 }
+
+- (void)testPlus {
+    int i = 3;
+    int j = ++i + ++i + ++i;
+    NSLog(@"j=%d", j);
+}
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 2;

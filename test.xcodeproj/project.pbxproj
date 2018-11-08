@@ -28,7 +28,13 @@
 		0A35462C20EFBB4A000FA171 /* TestVCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35462A20EFBB4A000FA171 /* TestVCController.m */; };
 		0A35462D20EFBB4A000FA171 /* TestVCController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A35462B20EFBB4A000FA171 /* TestVCController.xib */; };
 		0A36886F20E6482E0077BA89 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A36886E20E6482E0077BA89 /* GCDViewController.m */; };
+		0A3CCFDB214A330A0017F7A2 /* AudioVolumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3CCFD9214A330A0017F7A2 /* AudioVolumeViewController.m */; };
+		0A3CCFDC214A330A0017F7A2 /* AudioVolumeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3CCFDA214A330A0017F7A2 /* AudioVolumeViewController.xib */; };
+		0A3CCFDF214A33240017F7A2 /* VolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3CCFDE214A33240017F7A2 /* VolumeView.m */; };
 		0A4F5B1E1F9EDD6C00140E82 /* JLGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F5B1D1F9EDD6C00140E82 /* JLGradientButton.m */; };
+		0A5535242115DD5A00A43828 /* DefineGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5535222115DD5A00A43828 /* DefineGestureViewController.m */; };
+		0A5535252115DD5A00A43828 /* DefineGestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A5535232115DD5A00A43828 /* DefineGestureViewController.xib */; };
+		0A5535292115DD9100A43828 /* CircleGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5535282115DD9100A43828 /* CircleGestureRecognizer.m */; };
 		0A5604651FF5E3C800A42929 /* ResponderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5604641FF5E3C800A42929 /* ResponderView.m */; };
 		0A58035B1F7A01D1000B5192 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A58035A1F7A01D1000B5192 /* AppDelegate.m */; };
 		0A58035E1F7A01D1000B5192 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A58035D1F7A01D1000B5192 /* ViewController.m */; };
@@ -50,6 +56,9 @@
 		0A61116D20E8CAFD008CE53F /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A61116B20E8CAFD008CE53F /* ScrollViewController.xib */; };
 		0A640F1D1FC6D37100B69AFA /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A640F1C1FC6D37100B69AFA /* GestureViewController.m */; };
 		0A640F201FC6D7E600B69AFA /* GestureLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A640F1F1FC6D7E600B69AFA /* GestureLabel.m */; };
+		0A6A0D6E21941A4D00AB4634 /* DefinePanGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A0D6C21941A4D00AB4634 /* DefinePanGestureViewController.m */; };
+		0A6A0D6F21941A4D00AB4634 /* DefinePanGestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6A0D6D21941A4D00AB4634 /* DefinePanGestureViewController.xib */; };
+		0A6A0D7221941A7200AB4634 /* JLPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A0D7121941A7200AB4634 /* JLPanGestureRecognizer.m */; };
 		0A6BCCE01FBABF5700D327AE /* IMBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6BCCDF1FBABF5700D327AE /* IMBoard.m */; };
 		0A6BD2261FD630FC00D13E33 /* APIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6BD2241FD630FC00D13E33 /* APIViewController.m */; };
 		0A6BD2271FD630FC00D13E33 /* APIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6BD2251FD630FC00D13E33 /* APIViewController.xib */; };
@@ -70,11 +79,20 @@
 		0AA47ACF20160DAB00242C4D /* preview_2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47ACD20160DAA00242C4D /* preview_2.mov */; };
 		0AA47AD020160DAB00242C4D /* preview_2的副本.123314.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47ACE20160DAB00242C4D /* preview_2的副本.123314.mov */; };
 		0AA47AD2201610E000242C4D /* changming.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47AD1201610E000242C4D /* changming.png */; };
+		0AA82C4C21290B34000A5C02 /* LoadInitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA82C4A21290B34000A5C02 /* LoadInitViewController.m */; };
+		0AA82C4D21290B34000A5C02 /* LoadInitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AA82C4B21290B34000A5C02 /* LoadInitViewController.xib */; };
+		0AA82C5021290B50000A5C02 /* LIPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA82C4F21290B50000A5C02 /* LIPerson.m */; };
+		0AA82C5321290B68000A5C02 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA82C5221290B68000A5C02 /* Student.m */; };
+		0AA82C5621290B8C000A5C02 /* LIPerson+category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA82C5521290B8C000A5C02 /* LIPerson+category.m */; };
+		0AA82C5921290B9C000A5C02 /* Student+category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA82C5821290B9B000A5C02 /* Student+category.m */; };
 		0AB886F220A3E49D003F2734 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB886F120A3E49D003F2734 /* CollectionViewController.m */; };
 		0AB886F620A3E4DB003F2734 /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB886F420A3E4DB003F2734 /* TestCollectionViewCell.m */; };
 		0AB886F720A3E4DB003F2734 /* TestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB886F520A3E4DB003F2734 /* TestCollectionViewCell.xib */; };
 		0AC0ACA920BFBD5D00D3185E /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC0ACA820BFBD5D00D3185E /* PlayerViewController.m */; };
 		0AD0FEA520614F5D006678F4 /* SingleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0FEA420614F5D006678F4 /* SingleModel.m */; };
+		0AD6A9D221185DAE00DBA114 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6A9D021185DAE00DBA114 /* KVOViewController.m */; };
+		0AD6A9D321185DAE00DBA114 /* KVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD6A9D121185DAE00DBA114 /* KVOViewController.xib */; };
+		0AD6A9D621185DD300DBA114 /* KVOPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6A9D521185DD300DBA114 /* KVOPerson.m */; };
 		0AD77DA920E7558E00330F2C /* GestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD77DA820E7558E00330F2C /* GestureViewController.xib */; };
 		0AD77DB120E763AE00330F2C /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD77DAC20E763AE00330F2C /* MGSwipeTableCell.m */; };
 		0AD77DB220E763AE00330F2C /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD77DAF20E763AE00330F2C /* MGSwipeButton.m */; };
@@ -139,8 +157,18 @@
 		0A35462B20EFBB4A000FA171 /* TestVCController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVCController.xib; sourceTree = "<group>"; };
 		0A36886D20E6482E0077BA89 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		0A36886E20E6482E0077BA89 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		0A3CCFD8214A330A0017F7A2 /* AudioVolumeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVolumeViewController.h; sourceTree = "<group>"; };
+		0A3CCFD9214A330A0017F7A2 /* AudioVolumeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVolumeViewController.m; sourceTree = "<group>"; };
+		0A3CCFDA214A330A0017F7A2 /* AudioVolumeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioVolumeViewController.xib; sourceTree = "<group>"; };
+		0A3CCFDD214A33240017F7A2 /* VolumeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VolumeView.h; sourceTree = "<group>"; };
+		0A3CCFDE214A33240017F7A2 /* VolumeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VolumeView.m; sourceTree = "<group>"; };
 		0A4F5B1C1F9EDD6C00140E82 /* JLGradientButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLGradientButton.h; sourceTree = "<group>"; };
 		0A4F5B1D1F9EDD6C00140E82 /* JLGradientButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLGradientButton.m; sourceTree = "<group>"; };
+		0A5535212115DD5A00A43828 /* DefineGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineGestureViewController.h; sourceTree = "<group>"; };
+		0A5535222115DD5A00A43828 /* DefineGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefineGestureViewController.m; sourceTree = "<group>"; };
+		0A5535232115DD5A00A43828 /* DefineGestureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefineGestureViewController.xib; sourceTree = "<group>"; };
+		0A5535272115DD9100A43828 /* CircleGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleGestureRecognizer.h; sourceTree = "<group>"; };
+		0A5535282115DD9100A43828 /* CircleGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleGestureRecognizer.m; sourceTree = "<group>"; };
 		0A5604631FF5E3C800A42929 /* ResponderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponderView.h; sourceTree = "<group>"; };
 		0A5604641FF5E3C800A42929 /* ResponderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResponderView.m; sourceTree = "<group>"; };
 		0A5803561F7A01D1000B5192 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +211,11 @@
 		0A640F1C1FC6D37100B69AFA /* GestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
 		0A640F1E1FC6D7E600B69AFA /* GestureLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureLabel.h; sourceTree = "<group>"; };
 		0A640F1F1FC6D7E600B69AFA /* GestureLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureLabel.m; sourceTree = "<group>"; };
+		0A6A0D6B21941A4D00AB4634 /* DefinePanGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefinePanGestureViewController.h; sourceTree = "<group>"; };
+		0A6A0D6C21941A4D00AB4634 /* DefinePanGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefinePanGestureViewController.m; sourceTree = "<group>"; };
+		0A6A0D6D21941A4D00AB4634 /* DefinePanGestureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefinePanGestureViewController.xib; sourceTree = "<group>"; };
+		0A6A0D7021941A7200AB4634 /* JLPanGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLPanGestureRecognizer.h; sourceTree = "<group>"; };
+		0A6A0D7121941A7200AB4634 /* JLPanGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLPanGestureRecognizer.m; sourceTree = "<group>"; };
 		0A6BCCDE1FBABF5700D327AE /* IMBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMBoard.h; sourceTree = "<group>"; };
 		0A6BCCDF1FBABF5700D327AE /* IMBoard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMBoard.m; sourceTree = "<group>"; };
 		0A6BD2231FD630FC00D13E33 /* APIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIViewController.h; sourceTree = "<group>"; };
@@ -216,6 +249,17 @@
 		0AA47ACD20160DAA00242C4D /* preview_2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = preview_2.mov; sourceTree = "<group>"; };
 		0AA47ACE20160DAB00242C4D /* preview_2的副本.123314.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "preview_2的副本.123314.mov"; sourceTree = "<group>"; };
 		0AA47AD1201610E000242C4D /* changming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = changming.png; sourceTree = "<group>"; };
+		0AA82C4921290B34000A5C02 /* LoadInitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadInitViewController.h; sourceTree = "<group>"; };
+		0AA82C4A21290B34000A5C02 /* LoadInitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadInitViewController.m; sourceTree = "<group>"; };
+		0AA82C4B21290B34000A5C02 /* LoadInitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadInitViewController.xib; sourceTree = "<group>"; };
+		0AA82C4E21290B50000A5C02 /* LIPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LIPerson.h; sourceTree = "<group>"; };
+		0AA82C4F21290B50000A5C02 /* LIPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LIPerson.m; sourceTree = "<group>"; };
+		0AA82C5121290B68000A5C02 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		0AA82C5221290B68000A5C02 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		0AA82C5421290B8C000A5C02 /* LIPerson+category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LIPerson+category.h"; sourceTree = "<group>"; };
+		0AA82C5521290B8C000A5C02 /* LIPerson+category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LIPerson+category.m"; sourceTree = "<group>"; };
+		0AA82C5721290B9B000A5C02 /* Student+category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+category.h"; sourceTree = "<group>"; };
+		0AA82C5821290B9B000A5C02 /* Student+category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+category.m"; sourceTree = "<group>"; };
 		0AB886F020A3E49D003F2734 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		0AB886F120A3E49D003F2734 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		0AB886F320A3E4DB003F2734 /* TestCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewCell.h; sourceTree = "<group>"; };
@@ -226,6 +270,11 @@
 		0AD0FEA320614F5D006678F4 /* SingleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleModel.h; sourceTree = "<group>"; };
 		0AD0FEA420614F5D006678F4 /* SingleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleModel.m; sourceTree = "<group>"; };
 		0AD0FEA6206150BF006678F4 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		0AD6A9CF21185DAE00DBA114 /* KVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
+		0AD6A9D021185DAE00DBA114 /* KVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
+		0AD6A9D121185DAE00DBA114 /* KVOViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KVOViewController.xib; sourceTree = "<group>"; };
+		0AD6A9D421185DD300DBA114 /* KVOPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOPerson.h; sourceTree = "<group>"; };
+		0AD6A9D521185DD300DBA114 /* KVOPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOPerson.m; sourceTree = "<group>"; };
 		0AD77DA820E7558E00330F2C /* GestureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GestureViewController.xib; sourceTree = "<group>"; };
 		0AD77DAC20E763AE00330F2C /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
 		0AD77DAD20E763AE00330F2C /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
@@ -352,6 +401,18 @@
 			path = GCD;
 			sourceTree = "<group>";
 		};
+		0A3CCFD7214A32F00017F7A2 /* auidoVolume */ = {
+			isa = PBXGroup;
+			children = (
+				0A3CCFD8214A330A0017F7A2 /* AudioVolumeViewController.h */,
+				0A3CCFD9214A330A0017F7A2 /* AudioVolumeViewController.m */,
+				0A3CCFDA214A330A0017F7A2 /* AudioVolumeViewController.xib */,
+				0A3CCFDD214A33240017F7A2 /* VolumeView.h */,
+				0A3CCFDE214A33240017F7A2 /* VolumeView.m */,
+			);
+			path = auidoVolume;
+			sourceTree = "<group>";
+		};
 		0A4F5B1B1F9EDD5F00140E82 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +426,18 @@
 				0A976BB820DB390F00BDE153 /* UIView+Corner.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0A5535262115DD5F00A43828 /* DefineGesture */ = {
+			isa = PBXGroup;
+			children = (
+				0A5535212115DD5A00A43828 /* DefineGestureViewController.h */,
+				0A5535222115DD5A00A43828 /* DefineGestureViewController.m */,
+				0A5535232115DD5A00A43828 /* DefineGestureViewController.xib */,
+				0A5535272115DD9100A43828 /* CircleGestureRecognizer.h */,
+				0A5535282115DD9100A43828 /* CircleGestureRecognizer.m */,
+			);
+			path = DefineGesture;
 			sourceTree = "<group>";
 		};
 		0A58034D1F7A01D1000B5192 = {
@@ -456,6 +529,7 @@
 		0A58038D1F7A01F3000B5192 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				0AD6A9CD21185D9900DBA114 /* Runtime */,
 				0A61116820E8CACE008CE53F /* ThreadTimer */,
 				0A61116720E8CAC3008CE53F /* UIKit */,
 				0AD77DBC20E7704A00330F2C /* dismissKeyboard */,
@@ -534,6 +608,8 @@
 		0A61116720E8CAC3008CE53F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				0A6A0D6A21941A3A00AB4634 /* Gesture */,
+				0A3CCFD7214A32F00017F7A2 /* auidoVolume */,
 				0A33173B20F5F88300823A22 /* MenuController */,
 				0AB4F1A220EFBA6000B2C300 /* TestVC */,
 				0A61116E20E8CB01008CE53F /* ScrollView */,
@@ -572,6 +648,19 @@
 				0AD77DA820E7558E00330F2C /* GestureViewController.xib */,
 				0A640F1E1FC6D7E600B69AFA /* GestureLabel.h */,
 				0A640F1F1FC6D7E600B69AFA /* GestureLabel.m */,
+				0A5535262115DD5F00A43828 /* DefineGesture */,
+			);
+			path = Gesture;
+			sourceTree = "<group>";
+		};
+		0A6A0D6A21941A3A00AB4634 /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				0A6A0D6B21941A4D00AB4634 /* DefinePanGestureViewController.h */,
+				0A6A0D6C21941A4D00AB4634 /* DefinePanGestureViewController.m */,
+				0A6A0D6D21941A4D00AB4634 /* DefinePanGestureViewController.xib */,
+				0A6A0D7021941A7200AB4634 /* JLPanGestureRecognizer.h */,
+				0A6A0D7121941A7200AB4634 /* JLPanGestureRecognizer.m */,
 			);
 			path = Gesture;
 			sourceTree = "<group>";
@@ -651,6 +740,24 @@
 			path = Timer;
 			sourceTree = "<group>";
 		};
+		0AA82C4821290B1A000A5C02 /* LoadInit */ = {
+			isa = PBXGroup;
+			children = (
+				0AA82C4921290B34000A5C02 /* LoadInitViewController.h */,
+				0AA82C4A21290B34000A5C02 /* LoadInitViewController.m */,
+				0AA82C4B21290B34000A5C02 /* LoadInitViewController.xib */,
+				0AA82C4E21290B50000A5C02 /* LIPerson.h */,
+				0AA82C4F21290B50000A5C02 /* LIPerson.m */,
+				0AA82C5421290B8C000A5C02 /* LIPerson+category.h */,
+				0AA82C5521290B8C000A5C02 /* LIPerson+category.m */,
+				0AA82C5121290B68000A5C02 /* Student.h */,
+				0AA82C5221290B68000A5C02 /* Student.m */,
+				0AA82C5721290B9B000A5C02 /* Student+category.h */,
+				0AA82C5821290B9B000A5C02 /* Student+category.m */,
+			);
+			path = LoadInit;
+			sourceTree = "<group>";
+		};
 		0AB4F1A220EFBA6000B2C300 /* TestVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -680,6 +787,27 @@
 				0AC0ACA820BFBD5D00D3185E /* PlayerViewController.m */,
 			);
 			path = Player;
+			sourceTree = "<group>";
+		};
+		0AD6A9CD21185D9900DBA114 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				0AA82C4821290B1A000A5C02 /* LoadInit */,
+				0AD6A9CE21185DA100DBA114 /* KVO */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		0AD6A9CE21185DA100DBA114 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				0AD6A9CF21185DAE00DBA114 /* KVOViewController.h */,
+				0AD6A9D021185DAE00DBA114 /* KVOViewController.m */,
+				0AD6A9D121185DAE00DBA114 /* KVOViewController.xib */,
+				0AD6A9D421185DD300DBA114 /* KVOPerson.h */,
+				0AD6A9D521185DD300DBA114 /* KVOPerson.m */,
+			);
+			path = KVO;
 			sourceTree = "<group>";
 		};
 		0AD77DAA20E763A500330F2C /* Verders */ = {
@@ -877,6 +1005,7 @@
 				0AD77DA920E7558E00330F2C /* GestureViewController.xib in Resources */,
 				0AA47AD2201610E000242C4D /* changming.png in Resources */,
 				0A009D3F20E8CC9D00D81C6A /* localImage8.jpeg in Resources */,
+				0A3CCFDC214A330A0017F7A2 /* AudioVolumeViewController.xib in Resources */,
 				0AD77DB820E763D500330F2C /* SlideTableViewController.xib in Resources */,
 				0A009D3C20E8CC9D00D81C6A /* localImage1.jpeg in Resources */,
 				0A009D4320E8CC9E00D81C6A /* localImage2.jpeg in Resources */,
@@ -891,10 +1020,14 @@
 				0A5803631F7A01D1000B5192 /* Assets.xcassets in Resources */,
 				0AA47ACF20160DAB00242C4D /* preview_2.mov in Resources */,
 				0A8F226F1F7B7E8200499EFD /* TestViewController.xib in Resources */,
+				0A5535252115DD5A00A43828 /* DefineGestureViewController.xib in Resources */,
 				0AE45A971F90591D00D738F4 /* KeyWinViewController.xib in Resources */,
 				0A7C409020073CED00174650 /* PhotoKitViewController.xib in Resources */,
+				0A6A0D6F21941A4D00AB4634 /* DefinePanGestureViewController.xib in Resources */,
 				0A5803611F7A01D1000B5192 /* Main.storyboard in Resources */,
 				0A35462D20EFBB4A000FA171 /* TestVCController.xib in Resources */,
+				0AA82C4D21290B34000A5C02 /* LoadInitViewController.xib in Resources */,
+				0AD6A9D321185DAE00DBA114 /* KVOViewController.xib in Resources */,
 				0A6BD2271FD630FC00D13E33 /* APIViewController.xib in Resources */,
 				0A3059431FFC6E910092DF94 /* SlideViewController.xib in Resources */,
 			);
@@ -980,21 +1113,29 @@
 			files = (
 				0A7C408E20073CE300174650 /* PhotoKitViewController.m in Sources */,
 				0A58035E1F7A01D1000B5192 /* ViewController.m in Sources */,
+				0A3CCFDF214A33240017F7A2 /* VolumeView.m in Sources */,
 				0A5803691F7A01D1000B5192 /* main.m in Sources */,
 				0AD77DC020E7706300330F2C /* KeyboardViewController.m in Sources */,
 				0A3059421FFC6E910092DF94 /* SlideViewController.m in Sources */,
+				0A5535242115DD5A00A43828 /* DefineGestureViewController.m in Sources */,
 				0AD77DB220E763AE00330F2C /* MGSwipeButton.m in Sources */,
 				0A9F887320E4F52400B44E68 /* TimerViewController.m in Sources */,
+				0AD6A9D621185DD300DBA114 /* KVOPerson.m in Sources */,
+				0A5535292115DD9100A43828 /* CircleGestureRecognizer.m in Sources */,
+				0A6A0D7221941A7200AB4634 /* JLPanGestureRecognizer.m in Sources */,
 				0A948BE52080B6FB002BD6C7 /* NSDate+compare.m in Sources */,
 				0A640F201FC6D7E600B69AFA /* GestureLabel.m in Sources */,
 				0A5C56B12064B1B0009A1813 /* NSSafeMuDictionary.m in Sources */,
 				0A948BDF2080B57E002BD6C7 /* NSString+formatter.m in Sources */,
 				0A83D4E120DA4DCF00F8F231 /* BBSDrawView.m in Sources */,
+				0AA82C5321290B68000A5C02 /* Student.m in Sources */,
 				0AB886F220A3E49D003F2734 /* CollectionViewController.m in Sources */,
+				0AA82C4C21290B34000A5C02 /* LoadInitViewController.m in Sources */,
 				0A33174120F5F8BA00823A22 /* MCTextView.m in Sources */,
 				0A768B1F2083738F0086AA40 /* JLAnimationPresentationController.m in Sources */,
 				0AD77DB720E763D500330F2C /* SlideTableViewController.m in Sources */,
 				0A7C408A200701F500174650 /* Person.m in Sources */,
+				0AA82C5021290B50000A5C02 /* LIPerson.m in Sources */,
 				0AD77DBB20E76B7600330F2C /* SlideData.m in Sources */,
 				0A2E0C01206BD2A20061953B /* UIDevice+Addtion.m in Sources */,
 				0A6BCCE01FBABF5700D327AE /* IMBoard.m in Sources */,
@@ -1005,11 +1146,15 @@
 				0A36886F20E6482E0077BA89 /* GCDViewController.m in Sources */,
 				0A5803931F7A0282000B5192 /* MehtodSignature.m in Sources */,
 				0A6BD2261FD630FC00D13E33 /* APIViewController.m in Sources */,
+				0AA82C5921290B9C000A5C02 /* Student+category.m in Sources */,
+				0AD6A9D221185DAE00DBA114 /* KVOViewController.m in Sources */,
 				0A5D45D02063578900DC78F7 /* DBTool.m in Sources */,
+				0A3CCFDB214A330A0017F7A2 /* AudioVolumeViewController.m in Sources */,
 				0AD0FEA520614F5D006678F4 /* SingleModel.m in Sources */,
 				0A30594B1FFC87920092DF94 /* NSObject+DLIntrospection.m in Sources */,
 				0AB886F620A3E4DB003F2734 /* TestCollectionViewCell.m in Sources */,
 				0AD77DB120E763AE00330F2C /* MGSwipeTableCell.m in Sources */,
+				0A6A0D6E21941A4D00AB4634 /* DefinePanGestureViewController.m in Sources */,
 				0A976BB920DB390F00BDE153 /* UIView+Corner.m in Sources */,
 				0A3059471FFC800C0092DF94 /* JLNavigationController.m in Sources */,
 				0AE45A961F90591D00D738F4 /* KeyWinViewController.m in Sources */,
@@ -1019,6 +1164,7 @@
 				0A4F5B1E1F9EDD6C00140E82 /* JLGradientButton.m in Sources */,
 				0A5604651FF5E3C800A42929 /* ResponderView.m in Sources */,
 				0A768B1C208369850086AA40 /* JLPresentAnimation.m in Sources */,
+				0AA82C5621290B8C000A5C02 /* LIPerson+category.m in Sources */,
 				0A61116220E8ACEC008CE53F /* WebViewController.m in Sources */,
 				0A33173E20F5F89A00823A22 /* MenuCtlViewController.m in Sources */,
 				0A8F226E1F7B7E8200499EFD /* TestViewController.m in Sources */,
