@@ -24,6 +24,7 @@
     // Do any additional setup after loading the view from its nib.
     
     JLPanGestureRecognizer *pan = [[JLPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizer:)];
+    pan.direction = JLPanGestureDirectionHorizontal;
     [self.view addGestureRecognizer:pan];
 }
 
