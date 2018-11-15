@@ -12,6 +12,6 @@
 
 #import "Global.h"
 #import "LogMacro.h"
-
+#import "BBSProgressHUD.h"
 
 #endif /* TestHeader_h */

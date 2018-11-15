@@ -105,6 +105,9 @@
 		0AE45A971F90591D00D738F4 /* KeyWinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE45A951F90591D00D738F4 /* KeyWinViewController.xib */; };
 		0AEA6F261F90B0E1008C3E69 /* reward_icon_price_rate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEA6F241F90B05B008C3E69 /* reward_icon_price_rate@2x.png */; };
 		0AEA6F271F90B0E1008C3E69 /* reward_icon_price_rate@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEA6F251F90B05B008C3E69 /* reward_icon_price_rate@3x.png */; };
+		0AF7B2E0219D4D8E00144B7E /* MBProgressHUD+bbs.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B2DC219D4D8E00144B7E /* MBProgressHUD+bbs.m */; };
+		0AF7B2E1219D4D8E00144B7E /* BBSProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B2DD219D4D8E00144B7E /* BBSProgressHUD.m */; };
+		0AF7B2E4219D4FA100144B7E /* SaveAlbumTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B2E3219D4FA100144B7E /* SaveAlbumTool.m */; };
 		269B448549997433A8B0D50A /* libPods-testTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 612422CE0D061CCBB3748038 /* libPods-testTests.a */; };
 		3B7D92282984AE0D04858733 /* libPods-testUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7A545D0AFD39E9776C9A01 /* libPods-testUITests.a */; };
 		A5A60D313472FD2F526845F5 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1AF70F871764CF416A73E9 /* libPods-test.a */; };
@@ -295,6 +298,12 @@
 		0AE45A951F90591D00D738F4 /* KeyWinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyWinViewController.xib; sourceTree = "<group>"; };
 		0AEA6F241F90B05B008C3E69 /* reward_icon_price_rate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reward_icon_price_rate@2x.png"; sourceTree = "<group>"; };
 		0AEA6F251F90B05B008C3E69 /* reward_icon_price_rate@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reward_icon_price_rate@3x.png"; sourceTree = "<group>"; };
+		0AF7B2DC219D4D8E00144B7E /* MBProgressHUD+bbs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+bbs.m"; sourceTree = "<group>"; };
+		0AF7B2DD219D4D8E00144B7E /* BBSProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSProgressHUD.m; sourceTree = "<group>"; };
+		0AF7B2DE219D4D8E00144B7E /* BBSProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSProgressHUD.h; sourceTree = "<group>"; };
+		0AF7B2DF219D4D8E00144B7E /* MBProgressHUD+bbs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+bbs.h"; sourceTree = "<group>"; };
+		0AF7B2E2219D4FA100144B7E /* SaveAlbumTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveAlbumTool.h; sourceTree = "<group>"; };
+		0AF7B2E3219D4FA100144B7E /* SaveAlbumTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveAlbumTool.m; sourceTree = "<group>"; };
 		0FCB9083A04B080CBBDD9434 /* Pods-testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testUITests/Pods-testUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1E1AF70F871764CF416A73E9 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AA8B6331C093CDC6CBEA45B /* Pods-testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testUITests/Pods-testUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -529,6 +538,7 @@
 		0A58038D1F7A01F3000B5192 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				0AF7B2DA219D498500144B7E /* New Group */,
 				0AD6A9CD21185D9900DBA114 /* Runtime */,
 				0A61116820E8CACE008CE53F /* ThreadTimer */,
 				0A61116720E8CAC3008CE53F /* UIKit */,
@@ -600,6 +610,7 @@
 		0A61116620E8C8EC008CE53F /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				0AF7B2DB219D4D8E00144B7E /* BBSProgressHUD */,
 				0A948BDC2080B559002BD6C7 /* Category */,
 			);
 			path = Helper;
@@ -690,6 +701,8 @@
 				0A7C408C20073CE300174650 /* PhotoKitViewController.h */,
 				0A7C408D20073CE300174650 /* PhotoKitViewController.m */,
 				0A7C408F20073CED00174650 /* PhotoKitViewController.xib */,
+				0AF7B2E2219D4FA100144B7E /* SaveAlbumTool.h */,
+				0AF7B2E3219D4FA100144B7E /* SaveAlbumTool.m */,
 			);
 			path = PhotoKit;
 			sourceTree = "<group>";
@@ -859,6 +872,24 @@
 				0AE45A951F90591D00D738F4 /* KeyWinViewController.xib */,
 			);
 			path = keyWindow;
+			sourceTree = "<group>";
+		};
+		0AF7B2DA219D498500144B7E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		0AF7B2DB219D4D8E00144B7E /* BBSProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				0AF7B2DC219D4D8E00144B7E /* MBProgressHUD+bbs.m */,
+				0AF7B2DD219D4D8E00144B7E /* BBSProgressHUD.m */,
+				0AF7B2DE219D4D8E00144B7E /* BBSProgressHUD.h */,
+				0AF7B2DF219D4D8E00144B7E /* MBProgressHUD+bbs.h */,
+			);
+			path = BBSProgressHUD;
 			sourceTree = "<group>";
 		};
 		4C8113F0C994875998A88BC3 /* Pods */ = {
@@ -1111,6 +1142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF7B2E1219D4D8E00144B7E /* BBSProgressHUD.m in Sources */,
 				0A7C408E20073CE300174650 /* PhotoKitViewController.m in Sources */,
 				0A58035E1F7A01D1000B5192 /* ViewController.m in Sources */,
 				0A3CCFDF214A33240017F7A2 /* VolumeView.m in Sources */,
@@ -1154,6 +1186,7 @@
 				0A30594B1FFC87920092DF94 /* NSObject+DLIntrospection.m in Sources */,
 				0AB886F620A3E4DB003F2734 /* TestCollectionViewCell.m in Sources */,
 				0AD77DB120E763AE00330F2C /* MGSwipeTableCell.m in Sources */,
+				0AF7B2E0219D4D8E00144B7E /* MBProgressHUD+bbs.m in Sources */,
 				0A6A0D6E21941A4D00AB4634 /* DefinePanGestureViewController.m in Sources */,
 				0A976BB920DB390F00BDE153 /* UIView+Corner.m in Sources */,
 				0A3059471FFC800C0092DF94 /* JLNavigationController.m in Sources */,
@@ -1164,6 +1197,7 @@
 				0A4F5B1E1F9EDD6C00140E82 /* JLGradientButton.m in Sources */,
 				0A5604651FF5E3C800A42929 /* ResponderView.m in Sources */,
 				0A768B1C208369850086AA40 /* JLPresentAnimation.m in Sources */,
+				0AF7B2E4219D4FA100144B7E /* SaveAlbumTool.m in Sources */,
 				0AA82C5621290B8C000A5C02 /* LIPerson+category.m in Sources */,
 				0A61116220E8ACEC008CE53F /* WebViewController.m in Sources */,
 				0A33173E20F5F89A00823A22 /* MenuCtlViewController.m in Sources */,

@@ -8,6 +8,7 @@ target 'test' do
   # Pods for test
   pod 'JLLogEncoding', '~> 0.0.2'
   pod 'Masonry'
+  pod 'MBProgressHUD', '~> 1.1.0'
 #  pod "NSLogger"
 
   target 'testTests' do
