@@ -31,7 +31,8 @@ dispatch_async(dispatch_get_main_queue(), block); \
 
 - (NSMutableArray<NSString *> *)arrClassNameXib {
     if (!_arrClassNameXib) {
-        _arrClassNameXib = @[@"GestureViewController", @"DefinePanGestureViewController", @"PhotoKitViewController", @"SlideTableViewController", @"KeyboardViewController", @"WebViewController", @"ScrollViewController", @"TestVCController", @"MenuCtlViewController"].mutableCopy;
+        _arrClassNameXib = @[@"TestAnimationViewController",
+                             @"GestureViewController", @"DefinePanGestureViewController", @"PhotoKitViewController", @"SlideTableViewController", @"KeyboardViewController", @"WebViewController", @"ScrollViewController", @"TestVCController", @"MenuCtlViewController"].mutableCopy;
     }
     return _arrClassNameXib;
 }

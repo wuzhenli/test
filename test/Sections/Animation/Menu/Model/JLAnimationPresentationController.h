@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JLAnimationPresentationController : UIPresentationController<UIViewControllerTransitioningDelegate>
+@interface JLAnimationPresentationController : UIPresentationController
 
 @end

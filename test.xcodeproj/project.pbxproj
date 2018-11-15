@@ -19,6 +19,10 @@
 		0A009D4320E8CC9E00D81C6A /* localImage2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0A009D3820E8CC9D00D81C6A /* localImage2.jpeg */; };
 		0A009D4420E8CC9E00D81C6A /* localImage7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0A009D3920E8CC9D00D81C6A /* localImage7.jpeg */; };
 		0A2E0C01206BD2A20061953B /* UIDevice+Addtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E0C00206BD2A20061953B /* UIDevice+Addtion.m */; };
+		0A304DC2219D79EF0074FF89 /* PresentAlphaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A304DC0219D79EF0074FF89 /* PresentAlphaViewController.m */; };
+		0A304DC3219D79EF0074FF89 /* PresentAlphaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A304DC1219D79EF0074FF89 /* PresentAlphaViewController.xib */; };
+		0A304DC8219D7A1C0074FF89 /* TestAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A304DC6219D7A1C0074FF89 /* TestAnimationViewController.m */; };
+		0A304DC9219D7A1C0074FF89 /* TestAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A304DC7219D7A1C0074FF89 /* TestAnimationViewController.xib */; };
 		0A3059421FFC6E910092DF94 /* SlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3059401FFC6E910092DF94 /* SlideViewController.m */; };
 		0A3059431FFC6E910092DF94 /* SlideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3059411FFC6E910092DF94 /* SlideViewController.xib */; };
 		0A3059471FFC800C0092DF94 /* JLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3059461FFC800C0092DF94 /* JLNavigationController.m */; };
@@ -63,7 +67,6 @@
 		0A6BD2261FD630FC00D13E33 /* APIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6BD2241FD630FC00D13E33 /* APIViewController.m */; };
 		0A6BD2271FD630FC00D13E33 /* APIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6BD2251FD630FC00D13E33 /* APIViewController.xib */; };
 		0A768B1C208369850086AA40 /* JLPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A768B1B208369850086AA40 /* JLPresentAnimation.m */; };
-		0A768B1F2083738F0086AA40 /* JLAnimationPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A768B1E2083738F0086AA40 /* JLAnimationPresentationController.m */; };
 		0A7C408A200701F500174650 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C4089200701F500174650 /* Person.m */; };
 		0A7C408E20073CE300174650 /* PhotoKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C408D20073CE300174650 /* PhotoKitViewController.m */; };
 		0A7C409020073CED00174650 /* PhotoKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7C408F20073CED00174650 /* PhotoKitViewController.xib */; };
@@ -74,6 +77,8 @@
 		0A948BDF2080B57E002BD6C7 /* NSString+formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A948BDE2080B57E002BD6C7 /* NSString+formatter.m */; };
 		0A948BE52080B6FB002BD6C7 /* NSDate+compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A948BE42080B6FB002BD6C7 /* NSDate+compare.m */; };
 		0A948BE72080B7B5002BD6C7 /* testDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A948BE62080B7B5002BD6C7 /* testDate.m */; };
+		0A96D0CF219DA26900F4DED6 /* JLAnimationPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A96D0CE219DA26900F4DED6 /* JLAnimationPresentationController.m */; };
+		0A96D0D4219DA37100F4DED6 /* AlphaPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A96D0D3219DA37100F4DED6 /* AlphaPresentationController.m */; };
 		0A976BB920DB390F00BDE153 /* UIView+Corner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A976BB820DB390F00BDE153 /* UIView+Corner.m */; };
 		0A9F887320E4F52400B44E68 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F887220E4F52400B44E68 /* TimerViewController.m */; };
 		0AA47ACF20160DAB00242C4D /* preview_2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47ACD20160DAA00242C4D /* preview_2.mov */; };
@@ -144,6 +149,12 @@
 		0A009D3920E8CC9D00D81C6A /* localImage7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = localImage7.jpeg; sourceTree = "<group>"; };
 		0A2E0BFF206BD2A20061953B /* UIDevice+Addtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Addtion.h"; sourceTree = "<group>"; };
 		0A2E0C00206BD2A20061953B /* UIDevice+Addtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Addtion.m"; sourceTree = "<group>"; };
+		0A304DBF219D79EF0074FF89 /* PresentAlphaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentAlphaViewController.h; sourceTree = "<group>"; };
+		0A304DC0219D79EF0074FF89 /* PresentAlphaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentAlphaViewController.m; sourceTree = "<group>"; };
+		0A304DC1219D79EF0074FF89 /* PresentAlphaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresentAlphaViewController.xib; sourceTree = "<group>"; };
+		0A304DC5219D7A1C0074FF89 /* TestAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAnimationViewController.h; sourceTree = "<group>"; };
+		0A304DC6219D7A1C0074FF89 /* TestAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAnimationViewController.m; sourceTree = "<group>"; };
+		0A304DC7219D7A1C0074FF89 /* TestAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestAnimationViewController.xib; sourceTree = "<group>"; };
 		0A30593F1FFC6E910092DF94 /* SlideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideViewController.h; sourceTree = "<group>"; };
 		0A3059401FFC6E910092DF94 /* SlideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideViewController.m; sourceTree = "<group>"; };
 		0A3059411FFC6E910092DF94 /* SlideViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideViewController.xib; sourceTree = "<group>"; };
@@ -227,7 +238,6 @@
 		0A768B1A208369850086AA40 /* JLPresentAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLPresentAnimation.h; sourceTree = "<group>"; };
 		0A768B1B208369850086AA40 /* JLPresentAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLPresentAnimation.m; sourceTree = "<group>"; };
 		0A768B1D2083738F0086AA40 /* JLAnimationPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLAnimationPresentationController.h; sourceTree = "<group>"; };
-		0A768B1E2083738F0086AA40 /* JLAnimationPresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLAnimationPresentationController.m; sourceTree = "<group>"; };
 		0A7C4088200701F500174650 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		0A7C4089200701F500174650 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		0A7C408C20073CE300174650 /* PhotoKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoKitViewController.h; sourceTree = "<group>"; };
@@ -245,6 +255,9 @@
 		0A948BE32080B6FB002BD6C7 /* NSDate+compare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+compare.h"; sourceTree = "<group>"; };
 		0A948BE42080B6FB002BD6C7 /* NSDate+compare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+compare.m"; sourceTree = "<group>"; };
 		0A948BE62080B7B5002BD6C7 /* testDate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testDate.m; sourceTree = "<group>"; };
+		0A96D0CE219DA26900F4DED6 /* JLAnimationPresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLAnimationPresentationController.m; sourceTree = "<group>"; };
+		0A96D0D2219DA37100F4DED6 /* AlphaPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlphaPresentationController.h; sourceTree = "<group>"; };
+		0A96D0D3219DA37100F4DED6 /* AlphaPresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlphaPresentationController.m; sourceTree = "<group>"; };
 		0A976BB720DB390F00BDE153 /* UIView+Corner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Corner.h"; sourceTree = "<group>"; };
 		0A976BB820DB390F00BDE153 /* UIView+Corner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Corner.m"; sourceTree = "<group>"; };
 		0A9F887120E4F52400B44E68 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
@@ -360,6 +373,28 @@
 				0A009D2F20E8CC9900D81C6A /* upload_long_image.jpeg */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		0A304DBE219D79CD0074FF89 /* Present */ = {
+			isa = PBXGroup;
+			children = (
+				0A304DBF219D79EF0074FF89 /* PresentAlphaViewController.h */,
+				0A304DC0219D79EF0074FF89 /* PresentAlphaViewController.m */,
+				0A304DC1219D79EF0074FF89 /* PresentAlphaViewController.xib */,
+				0A96D0D1219DA35A00F4DED6 /* Model */,
+			);
+			path = Present;
+			sourceTree = "<group>";
+		};
+		0A304DC4219D79FF0074FF89 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A768B1A208369850086AA40 /* JLPresentAnimation.h */,
+				0A768B1B208369850086AA40 /* JLPresentAnimation.m */,
+				0A768B1D2083738F0086AA40 /* JLAnimationPresentationController.h */,
+				0A96D0CE219DA26900F4DED6 /* JLAnimationPresentationController.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		0A30593E1FFC6E7D0092DF94 /* Slide */ = {
@@ -526,10 +561,6 @@
 			children = (
 				0A58035C1F7A01D1000B5192 /* ViewController.h */,
 				0A58035D1F7A01D1000B5192 /* ViewController.m */,
-				0A768B1A208369850086AA40 /* JLPresentAnimation.h */,
-				0A768B1B208369850086AA40 /* JLPresentAnimation.m */,
-				0A768B1D2083738F0086AA40 /* JLAnimationPresentationController.h */,
-				0A768B1E2083738F0086AA40 /* JLAnimationPresentationController.m */,
 				0A58035F1F7A01D1000B5192 /* Main.storyboard */,
 			);
 			path = Main;
@@ -538,7 +569,7 @@
 		0A58038D1F7A01F3000B5192 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
-				0AF7B2DA219D498500144B7E /* New Group */,
+				0AF7B2DA219D498500144B7E /* Animation */,
 				0AD6A9CD21185D9900DBA114 /* Runtime */,
 				0A61116820E8CACE008CE53F /* ThreadTimer */,
 				0A61116720E8CAC3008CE53F /* UIKit */,
@@ -744,6 +775,26 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		0A96D0D0219DA34600F4DED6 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				0A304DC5219D7A1C0074FF89 /* TestAnimationViewController.h */,
+				0A304DC6219D7A1C0074FF89 /* TestAnimationViewController.m */,
+				0A304DC7219D7A1C0074FF89 /* TestAnimationViewController.xib */,
+				0A304DC4219D79FF0074FF89 /* Model */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		0A96D0D1219DA35A00F4DED6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A96D0D2219DA37100F4DED6 /* AlphaPresentationController.h */,
+				0A96D0D3219DA37100F4DED6 /* AlphaPresentationController.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0A9F887020E4F50D00B44E68 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
@@ -874,11 +925,13 @@
 			path = keyWindow;
 			sourceTree = "<group>";
 		};
-		0AF7B2DA219D498500144B7E /* New Group */ = {
+		0AF7B2DA219D498500144B7E /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				0A96D0D0219DA34600F4DED6 /* Menu */,
+				0A304DBE219D79CD0074FF89 /* Present */,
 			);
-			path = "New Group";
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		0AF7B2DB219D4D8E00144B7E /* BBSProgressHUD */ = {
@@ -1038,6 +1091,7 @@
 				0A009D3F20E8CC9D00D81C6A /* localImage8.jpeg in Resources */,
 				0A3CCFDC214A330A0017F7A2 /* AudioVolumeViewController.xib in Resources */,
 				0AD77DB820E763D500330F2C /* SlideTableViewController.xib in Resources */,
+				0A304DC9219D7A1C0074FF89 /* TestAnimationViewController.xib in Resources */,
 				0A009D3C20E8CC9D00D81C6A /* localImage1.jpeg in Resources */,
 				0A009D4320E8CC9E00D81C6A /* localImage2.jpeg in Resources */,
 				0A009D4120E8CC9E00D81C6A /* localImage0.jpeg in Resources */,
@@ -1061,6 +1115,7 @@
 				0AD6A9D321185DAE00DBA114 /* KVOViewController.xib in Resources */,
 				0A6BD2271FD630FC00D13E33 /* APIViewController.xib in Resources */,
 				0A3059431FFC6E910092DF94 /* SlideViewController.xib in Resources */,
+				0A304DC3219D79EF0074FF89 /* PresentAlphaViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1161,14 +1216,15 @@
 				0A948BDF2080B57E002BD6C7 /* NSString+formatter.m in Sources */,
 				0A83D4E120DA4DCF00F8F231 /* BBSDrawView.m in Sources */,
 				0AA82C5321290B68000A5C02 /* Student.m in Sources */,
+				0A304DC8219D7A1C0074FF89 /* TestAnimationViewController.m in Sources */,
 				0AB886F220A3E49D003F2734 /* CollectionViewController.m in Sources */,
 				0AA82C4C21290B34000A5C02 /* LoadInitViewController.m in Sources */,
 				0A33174120F5F8BA00823A22 /* MCTextView.m in Sources */,
-				0A768B1F2083738F0086AA40 /* JLAnimationPresentationController.m in Sources */,
 				0AD77DB720E763D500330F2C /* SlideTableViewController.m in Sources */,
 				0A7C408A200701F500174650 /* Person.m in Sources */,
 				0AA82C5021290B50000A5C02 /* LIPerson.m in Sources */,
 				0AD77DBB20E76B7600330F2C /* SlideData.m in Sources */,
+				0A304DC2219D79EF0074FF89 /* PresentAlphaViewController.m in Sources */,
 				0A2E0C01206BD2A20061953B /* UIDevice+Addtion.m in Sources */,
 				0A6BCCE01FBABF5700D327AE /* IMBoard.m in Sources */,
 				0A5C56B42064CF2F009A1813 /* SafeArrayTool.m in Sources */,
@@ -1176,6 +1232,7 @@
 				0A61116C20E8CAFD008CE53F /* ScrollViewController.m in Sources */,
 				0A58035B1F7A01D1000B5192 /* AppDelegate.m in Sources */,
 				0A36886F20E6482E0077BA89 /* GCDViewController.m in Sources */,
+				0A96D0CF219DA26900F4DED6 /* JLAnimationPresentationController.m in Sources */,
 				0A5803931F7A0282000B5192 /* MehtodSignature.m in Sources */,
 				0A6BD2261FD630FC00D13E33 /* APIViewController.m in Sources */,
 				0AA82C5921290B9C000A5C02 /* Student+category.m in Sources */,
@@ -1202,6 +1259,7 @@
 				0A61116220E8ACEC008CE53F /* WebViewController.m in Sources */,
 				0A33173E20F5F89A00823A22 /* MenuCtlViewController.m in Sources */,
 				0A8F226E1F7B7E8200499EFD /* TestViewController.m in Sources */,
+				0A96D0D4219DA37100F4DED6 /* AlphaPresentationController.m in Sources */,
 				0AC0ACA920BFBD5D00D3185E /* PlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
