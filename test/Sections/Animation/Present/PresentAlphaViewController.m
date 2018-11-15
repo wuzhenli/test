@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.4];
+    self.view.backgroundColor = [UIColor orangeColor]; //[ colorWithAlphaComponent:0.4];
     
 //    CGSize scSize = [UIScreen mainScreen].bounds.size;
 //    self.preferredContentSize = CGSizeMake(scSize.width, 300);
