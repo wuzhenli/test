@@ -66,6 +66,11 @@
 		0A6BCCE01FBABF5700D327AE /* IMBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6BCCDF1FBABF5700D327AE /* IMBoard.m */; };
 		0A6BD2261FD630FC00D13E33 /* APIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6BD2241FD630FC00D13E33 /* APIViewController.m */; };
 		0A6BD2271FD630FC00D13E33 /* APIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6BD2251FD630FC00D13E33 /* APIViewController.xib */; };
+		0A72CD4E21A649EB00CDBE93 /* StaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A72CD4D21A649EB00CDBE93 /* StaticTableViewController.m */; };
+		0A72CD5121A64B4400CDBE93 /* StaticTableVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A72CD5021A64B4400CDBE93 /* StaticTableVCModel.m */; };
+		0A72CD5421A64B5D00CDBE93 /* StaticSecionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A72CD5321A64B5D00CDBE93 /* StaticSecionModel.m */; };
+		0A72CD5721A64B6F00CDBE93 /* StaticRowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A72CD5621A64B6F00CDBE93 /* StaticRowModel.m */; };
+		0A72CD5D21A64E5500CDBE93 /* StaticSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A72CD5B21A64E5500CDBE93 /* StaticSwitchTableViewCell.m */; };
 		0A768B1C208369850086AA40 /* JLPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A768B1B208369850086AA40 /* JLPresentAnimation.m */; };
 		0A7C408A200701F500174650 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C4089200701F500174650 /* Person.m */; };
 		0A7C408E20073CE300174650 /* PhotoKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C408D20073CE300174650 /* PhotoKitViewController.m */; };
@@ -235,6 +240,16 @@
 		0A6BD2231FD630FC00D13E33 /* APIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIViewController.h; sourceTree = "<group>"; };
 		0A6BD2241FD630FC00D13E33 /* APIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIViewController.m; sourceTree = "<group>"; };
 		0A6BD2251FD630FC00D13E33 /* APIViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = APIViewController.xib; sourceTree = "<group>"; };
+		0A72CD4C21A649EB00CDBE93 /* StaticTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticTableViewController.h; sourceTree = "<group>"; };
+		0A72CD4D21A649EB00CDBE93 /* StaticTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticTableViewController.m; sourceTree = "<group>"; };
+		0A72CD4F21A64B4400CDBE93 /* StaticTableVCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticTableVCModel.h; sourceTree = "<group>"; };
+		0A72CD5021A64B4400CDBE93 /* StaticTableVCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticTableVCModel.m; sourceTree = "<group>"; };
+		0A72CD5221A64B5D00CDBE93 /* StaticSecionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticSecionModel.h; sourceTree = "<group>"; };
+		0A72CD5321A64B5D00CDBE93 /* StaticSecionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticSecionModel.m; sourceTree = "<group>"; };
+		0A72CD5521A64B6F00CDBE93 /* StaticRowModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticRowModel.h; sourceTree = "<group>"; };
+		0A72CD5621A64B6F00CDBE93 /* StaticRowModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticRowModel.m; sourceTree = "<group>"; };
+		0A72CD5A21A64E5500CDBE93 /* StaticSwitchTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticSwitchTableViewCell.h; sourceTree = "<group>"; };
+		0A72CD5B21A64E5500CDBE93 /* StaticSwitchTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticSwitchTableViewCell.m; sourceTree = "<group>"; };
 		0A768B1A208369850086AA40 /* JLPresentAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLPresentAnimation.h; sourceTree = "<group>"; };
 		0A768B1B208369850086AA40 /* JLPresentAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLPresentAnimation.m; sourceTree = "<group>"; };
 		0A768B1D2083738F0086AA40 /* JLAnimationPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLAnimationPresentationController.h; sourceTree = "<group>"; };
@@ -650,6 +665,7 @@
 		0A61116720E8CAC3008CE53F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				0A72CD4B21A649D400CDBE93 /* StaticTableList */,
 				0A6A0D6A21941A3A00AB4634 /* Gesture */,
 				0A3CCFD7214A32F00017F7A2 /* auidoVolume */,
 				0A33173B20F5F88300823A22 /* MenuController */,
@@ -724,6 +740,39 @@
 				0A6BD2251FD630FC00D13E33 /* APIViewController.xib */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		0A72CD4B21A649D400CDBE93 /* StaticTableList */ = {
+			isa = PBXGroup;
+			children = (
+				0A72CD4C21A649EB00CDBE93 /* StaticTableViewController.h */,
+				0A72CD4D21A649EB00CDBE93 /* StaticTableViewController.m */,
+				0A72CD5921A64E3D00CDBE93 /* Views */,
+				0A72CD5821A64E1400CDBE93 /* Model */,
+			);
+			path = StaticTableList;
+			sourceTree = "<group>";
+		};
+		0A72CD5821A64E1400CDBE93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A72CD4F21A64B4400CDBE93 /* StaticTableVCModel.h */,
+				0A72CD5021A64B4400CDBE93 /* StaticTableVCModel.m */,
+				0A72CD5221A64B5D00CDBE93 /* StaticSecionModel.h */,
+				0A72CD5321A64B5D00CDBE93 /* StaticSecionModel.m */,
+				0A72CD5521A64B6F00CDBE93 /* StaticRowModel.h */,
+				0A72CD5621A64B6F00CDBE93 /* StaticRowModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A72CD5921A64E3D00CDBE93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A72CD5A21A64E5500CDBE93 /* StaticSwitchTableViewCell.h */,
+				0A72CD5B21A64E5500CDBE93 /* StaticSwitchTableViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		0A7C408B20073CD200174650 /* PhotoKit */ = {
@@ -1234,6 +1283,7 @@
 				0A36886F20E6482E0077BA89 /* GCDViewController.m in Sources */,
 				0A96D0CF219DA26900F4DED6 /* JLAnimationPresentationController.m in Sources */,
 				0A5803931F7A0282000B5192 /* MehtodSignature.m in Sources */,
+				0A72CD4E21A649EB00CDBE93 /* StaticTableViewController.m in Sources */,
 				0A6BD2261FD630FC00D13E33 /* APIViewController.m in Sources */,
 				0AA82C5921290B9C000A5C02 /* Student+category.m in Sources */,
 				0AD6A9D221185DAE00DBA114 /* KVOViewController.m in Sources */,
@@ -1253,14 +1303,18 @@
 				0A35462C20EFBB4A000FA171 /* TestVCController.m in Sources */,
 				0A4F5B1E1F9EDD6C00140E82 /* JLGradientButton.m in Sources */,
 				0A5604651FF5E3C800A42929 /* ResponderView.m in Sources */,
+				0A72CD5121A64B4400CDBE93 /* StaticTableVCModel.m in Sources */,
 				0A768B1C208369850086AA40 /* JLPresentAnimation.m in Sources */,
 				0AF7B2E4219D4FA100144B7E /* SaveAlbumTool.m in Sources */,
+				0A72CD5721A64B6F00CDBE93 /* StaticRowModel.m in Sources */,
 				0AA82C5621290B8C000A5C02 /* LIPerson+category.m in Sources */,
 				0A61116220E8ACEC008CE53F /* WebViewController.m in Sources */,
+				0A72CD5D21A64E5500CDBE93 /* StaticSwitchTableViewCell.m in Sources */,
 				0A33173E20F5F89A00823A22 /* MenuCtlViewController.m in Sources */,
 				0A8F226E1F7B7E8200499EFD /* TestViewController.m in Sources */,
 				0A96D0D4219DA37100F4DED6 /* AlphaPresentationController.m in Sources */,
 				0AC0ACA920BFBD5D00D3185E /* PlayerViewController.m in Sources */,
+				0A72CD5421A64B5D00CDBE93 /* StaticSecionModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
