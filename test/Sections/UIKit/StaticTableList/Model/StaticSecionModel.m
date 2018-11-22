@@ -20,6 +20,29 @@
 
 @implementation StaticSecionModel
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.minimumFooterHeight = 6;
+        self.minimumHeaderHeight = 6;
+    }
+    return self;
+}
+
+#pragma -mark private
+
+- (CGRect)getFrameWithView:(StaticHeaderFooterView *)view {
+    CGFloat w = [UIScreen mainScreen].bounds.size.width - view.consLeft.constant + view.consRight.constant;
+    NSDictionary *atts = @{
+                           NSFontAttributeName : view.lblTitle.font
+                           };
+    
+    CGRect frame = [view.lblTitle.text boundingRectWithSize:CGSizeMake(w, HUGE) options:kNilOptions attributes:atts context:nil];
+    return frame;
+}
+
+
 - (NSMutableArray<StaticRowModel *> *)arrRowModel {
     if (!_arrRowModel) {
         _arrRowModel = @[].mutableCopy;
@@ -28,18 +51,27 @@
 }
 
 - (CGFloat)headerHeight {
-    if (_headerHeight < 0.01 && self.headerString.length) {
-        CGFloat w = [UIScreen mainScreen].bounds.size.width - self.headerView.consLeft.constant + self.headerView.consRight.constant;
-        NSDictionary *atts = @{
-                               NSFontAttributeName : self.headerView.lblTitle.font
-                               };
-        
-        CGRect frame = [self.headerString boundingRectWithSize:CGSizeMake(w, HUGE) options:kNilOptions attributes:atts context:nil];
-        frame.origin.y = HEADER_Left_Margin;
-        self.headerView.frame = frame;
-        _headerHeight = self.headerView.frame.size.height + 6;
+    if (_headerHeight < 0.01) {
+        if (self.headerString.length) {
+            CGRect frame = [self getFrameWithView:self.headerView];
+            _headerHeight = frame.size.height + 6;
+        } else {
+            _headerHeight = self.minimumHeaderHeight;
+        }
     }
     return _headerHeight;
+}
+
+- (CGFloat)footerHeight {
+    if (_footerHeight < 0.01) {
+        if (self.footerString.length) {
+            CGRect frame = [self getFrameWithView:self.footerView];
+            _footerHeight = frame.size.height + 6;
+        } else {
+            _footerHeight = self.minimumFooterHeight;
+        }
+    }
+    return _footerHeight;
 }
 
 - (StaticHeaderFooterView *)headerView {
@@ -48,6 +80,14 @@
         _headerView.lblTitle.text = self.headerString;
     }
     return _headerView;
+}
+
+- (StaticHeaderFooterView *)footerView {
+    if (!_footerView && self.footerString.length) {
+        _footerView = [[StaticHeaderFooterView alloc] initWithReuseIdentifier:nil];
+        _footerView.lblTitle.text = self.footerString;
+    }
+    return _footerView;
 }
 
 @end

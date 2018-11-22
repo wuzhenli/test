@@ -23,29 +23,60 @@
 }
 
 - (void)setDataWithDictionary:(NSDictionary *)dic {
-    
-    StaticSecionModel *section = [StaticSecionModel new];
-    section.headerString = @"话题推送设置";
     {
-        StaticRowModel *row = [StaticRowModel staticRowModelWithType:EnumStaticRowTopic];
-        [row setCellClass:[StaticSwitchTableViewCell class]];
-        row.cell.lblTitle.text = @"话题";
-        row.cell.switchRight.on = [[dic objectForKey:@"topic"] boolValue];
-        [section.arrRowModel addObject:row];
+        StaticSecionModel *section = [StaticSecionModel new];
+        section.headerString = @"话题推送设置 header";
+//        section.footerString = @"话题推送设置 footer";
+        section.headerView.lblTitle.font = [UIFont systemFontOfSize:15];
+        {
+            StaticRowModel *row = [StaticRowModel staticRowModelWithType:EnumStaticRowTopic];
+            [row setCellClass:[StaticSwitchTableViewCell class]];
+            row.cell.lblTitle.text = @"话题";
+            row.cell.switchRight.on = [[dic objectForKey:@"topic"] boolValue];
+            [section.arrRowModel addObject:row];
+        } {
+            StaticRowModel *row = [StaticRowModel staticRowModelWithType:EnumStaticRowReply];
+            [row setCellClass:[StaticSwitchTableViewCell class]];
+            row.cell.lblTitle.text = @"回复";
+            row.cell.switchRight.on = [[dic objectForKey:@"reply"] boolValue];
+            [section.arrRowModel addObject:row];
+        } {
+            StaticRowModel *row = [StaticRowModel staticRowModelWithType:EnumStaticRowOpinion];
+            [row setCellClass:[StaticSwitchTableViewCell class]];
+            row.cell.lblTitle.text = @"观点";
+            row.cell.switchRight.on = [[dic objectForKey:@"opinion"] boolValue];
+            [section.arrRowModel addObject:row];
+        }
+        [self.arrSectionModel addObject:section];
     } {
-        StaticRowModel *row = [StaticRowModel staticRowModelWithType:EnumStaticRowReply];
-        [row setCellClass:[StaticSwitchTableViewCell class]];
-        row.cell.lblTitle.text = @"回复";
-        row.cell.switchRight.on = [[dic objectForKey:@"reply"] boolValue];
-        [section.arrRowModel addObject:row];
-    } {
-        StaticRowModel *row = [StaticRowModel staticRowModelWithType:EnumStaticRowOpinion];
-        [row setCellClass:[StaticSwitchTableViewCell class]];
-        row.cell.lblTitle.text = @"观点";
-        row.cell.switchRight.on = [[dic objectForKey:@"opinion"] boolValue];
-        [section.arrRowModel addObject:row];
+        StaticSecionModel *section = [StaticSecionModel new];
+//        section.headerString = @"话题推送设置 1 header";
+        section.footerString = @"话题推送设置 1 footer";
+        section.headerView.lblTitle.font = [UIFont systemFontOfSize:15];
+        {
+            StaticRowModel *row = [StaticRowModel staticRowModelWithType:EnumStaticRowTopic];
+            [row setCellClass:[StaticSwitchTableViewCell class]];
+            row.cell.lblTitle.text = @"话题 1";
+            row.cell.switchRight.on = [[dic objectForKey:@"topic"] boolValue];
+            [section.arrRowModel addObject:row];
+        } {
+            StaticRowModel *row = [StaticRowModel staticRowModelWithType:EnumStaticRowReply];
+            [row setCellClass:[StaticSwitchTableViewCell class]];
+            row.cell.lblTitle.text = @"回复 1";
+            row.cell.switchRight.on = [[dic objectForKey:@"reply"] boolValue];
+            [section.arrRowModel addObject:row];
+        } {
+            StaticRowModel *row = [StaticRowModel staticRowModelWithType:EnumStaticRowOpinion];
+            [row setCellClass:[StaticSwitchTableViewCell class]];
+            row.cell.lblTitle.text = @"观点 1";
+            row.cell.switchRight.on = [[dic objectForKey:@"opinion"] boolValue];
+            [section.arrRowModel addObject:row];
+        }
+        [self.arrSectionModel addObject:section];
     }
-    [self.arrSectionModel addObject:section];
+    
+    
+    
 }
 
 #pragma -mark getter

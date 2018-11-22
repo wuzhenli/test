@@ -81,10 +81,10 @@
     StaticSecionModel *secModel = self.model.arrSectionModel[section];
     return secModel.headerView;
 }
-
-//- (nullable UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-//    
-//}
+- (nullable UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    StaticSecionModel *secModel = self.model.arrSectionModel[section];
+    return secModel.footerView;
+}
 
 #pragma -mark getter
 
