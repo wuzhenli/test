@@ -23,8 +23,23 @@
             make.right.offset(-15);
             make.centerY.equalTo(self.contentView);
         }];
+        
+        [self.contentView addSubview:self.lblDesc];
+        [self.lblDesc mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.right.offset(-15);
+            make.centerY.equalTo(self.contentView);
+        }];
     }
     return self;
+}
+
+#pragma -mark event reponse
+
+- (void)switchRightValueChanged {
+    if (self.delegate &&
+        [self.delegate respondsToSelector:@selector(cellSwitchRightValueChanged:)]) {
+        [self.delegate cellSwitchRightValueChanged:self.switchRight];
+    }
 }
 
 
@@ -40,9 +55,20 @@
     return _lblTitle;
 }
 
+- (UILabel *)lblDesc {
+    if (!_lblDesc) {
+        UILabel *lbl = [[UILabel alloc] init];
+        lbl.textColor = [UIColor lightGrayColor];
+        lbl.font = [UIFont systemFontOfSize:15];
+        _lblDesc = lbl;
+    }
+    return _lblDesc;
+}
+
 - (UISwitch *)switchRight {
     if (!_switchRight) {
         UISwitch *sch = [[UISwitch alloc] init];
+        [sch addTarget:self action:@selector(switchRightValueChanged) forControlEvents:UIControlEventValueChanged];
         _switchRight = sch;
     }
     return _switchRight;

@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface StaticHeaderFooterView : UITableViewHeaderFooterView
 
 @property (strong, nonatomic) UILabel *lblTitle;
+
 @property (strong, nonatomic) NSLayoutConstraint *consLeft;
 @property (strong, nonatomic) NSLayoutConstraint *consRight;
 

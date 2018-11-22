@@ -19,9 +19,15 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, nonatomic) NSString *headerString;
 @property (copy, nonatomic) NSString *footerString;
 
+/**
+ 没有 header、footer 时，最小高度 
+ */
 @property (assign, nonatomic) CGFloat minimumHeaderHeight;
 @property (assign, nonatomic) CGFloat minimumFooterHeight;
 
+/**
+ 加上 header、footer 文字时的高度
+ */
 @property (assign, nonatomic, readonly) CGFloat headerHeight;
 @property (assign, nonatomic, readonly) CGFloat footerHeight;
 

@@ -38,6 +38,7 @@
             StaticRowModel *row = [StaticRowModel staticRowModelWithType:EnumStaticRowReply];
             [row setCellClass:[StaticSwitchTableViewCell class]];
             row.cell.lblTitle.text = @"回复";
+            row.cell.lblDesc.text = @"回复新观点";
             row.cell.switchRight.on = [[dic objectForKey:@"reply"] boolValue];
             [section.arrRowModel addObject:row];
         } {
@@ -63,6 +64,7 @@
             StaticRowModel *row = [StaticRowModel staticRowModelWithType:EnumStaticRowReply];
             [row setCellClass:[StaticSwitchTableViewCell class]];
             row.cell.lblTitle.text = @"回复 1";
+            row.cell.lblDesc.text = @"回复新观点 1";
             row.cell.switchRight.on = [[dic objectForKey:@"reply"] boolValue];
             [section.arrRowModel addObject:row];
         } {

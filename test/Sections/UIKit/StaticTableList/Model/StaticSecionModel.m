@@ -54,7 +54,7 @@
     if (_headerHeight < 0.01) {
         if (self.headerString.length) {
             CGRect frame = [self getFrameWithView:self.headerView];
-            _headerHeight = frame.size.height + 6;
+            _headerHeight = frame.size.height + self.minimumHeaderHeight;
         } else {
             _headerHeight = self.minimumHeaderHeight;
         }
@@ -66,7 +66,7 @@
     if (_footerHeight < 0.01) {
         if (self.footerString.length) {
             CGRect frame = [self getFrameWithView:self.footerView];
-            _footerHeight = frame.size.height + 6;
+            _footerHeight = frame.size.height + self.minimumFooterHeight;
         } else {
             _footerHeight = self.minimumFooterHeight;
         }

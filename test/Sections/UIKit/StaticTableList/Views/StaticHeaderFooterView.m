@@ -26,6 +26,7 @@
         }];
         self.consLeft = [consLeft valueForKey:@"layoutConstraint"];
         self.consRight = [consRight valueForKey:@"layoutConstraint"];
+        
     }
     return self;
 }

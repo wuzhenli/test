@@ -10,9 +10,19 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol StaticSwitchTableViewCellDelegate <NSObject>
+
+- (void)cellSwitchRightValueChanged:(UISwitch *)sender ;
+
+@end
+
 @interface StaticSwitchTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) id<StaticSwitchTableViewCellDelegate> delegate;
+
 @property (strong, nonatomic) UILabel *lblTitle;
+
+@property (strong, nonatomic) UILabel *lblDesc;
 @property (strong, nonatomic) UISwitch *switchRight;
 
 @end
