@@ -71,6 +71,7 @@
 		0A72CD5421A64B5D00CDBE93 /* StaticSecionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A72CD5321A64B5D00CDBE93 /* StaticSecionModel.m */; };
 		0A72CD5721A64B6F00CDBE93 /* StaticRowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A72CD5621A64B6F00CDBE93 /* StaticRowModel.m */; };
 		0A72CD5D21A64E5500CDBE93 /* StaticSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A72CD5B21A64E5500CDBE93 /* StaticSwitchTableViewCell.m */; };
+		0A72CD6121A65C4E00CDBE93 /* StaticHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A72CD6021A65C4E00CDBE93 /* StaticHeaderFooterView.m */; };
 		0A768B1C208369850086AA40 /* JLPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A768B1B208369850086AA40 /* JLPresentAnimation.m */; };
 		0A7C408A200701F500174650 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C4089200701F500174650 /* Person.m */; };
 		0A7C408E20073CE300174650 /* PhotoKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C408D20073CE300174650 /* PhotoKitViewController.m */; };
@@ -250,6 +251,8 @@
 		0A72CD5621A64B6F00CDBE93 /* StaticRowModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticRowModel.m; sourceTree = "<group>"; };
 		0A72CD5A21A64E5500CDBE93 /* StaticSwitchTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticSwitchTableViewCell.h; sourceTree = "<group>"; };
 		0A72CD5B21A64E5500CDBE93 /* StaticSwitchTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticSwitchTableViewCell.m; sourceTree = "<group>"; };
+		0A72CD5F21A65C4E00CDBE93 /* StaticHeaderFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticHeaderFooterView.h; sourceTree = "<group>"; };
+		0A72CD6021A65C4E00CDBE93 /* StaticHeaderFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticHeaderFooterView.m; sourceTree = "<group>"; };
 		0A768B1A208369850086AA40 /* JLPresentAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLPresentAnimation.h; sourceTree = "<group>"; };
 		0A768B1B208369850086AA40 /* JLPresentAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLPresentAnimation.m; sourceTree = "<group>"; };
 		0A768B1D2083738F0086AA40 /* JLAnimationPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLAnimationPresentationController.h; sourceTree = "<group>"; };
@@ -771,6 +774,8 @@
 			children = (
 				0A72CD5A21A64E5500CDBE93 /* StaticSwitchTableViewCell.h */,
 				0A72CD5B21A64E5500CDBE93 /* StaticSwitchTableViewCell.m */,
+				0A72CD5F21A65C4E00CDBE93 /* StaticHeaderFooterView.h */,
+				0A72CD6021A65C4E00CDBE93 /* StaticHeaderFooterView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1254,6 +1259,7 @@
 				0AD77DC020E7706300330F2C /* KeyboardViewController.m in Sources */,
 				0A3059421FFC6E910092DF94 /* SlideViewController.m in Sources */,
 				0A5535242115DD5A00A43828 /* DefineGestureViewController.m in Sources */,
+				0A72CD6121A65C4E00CDBE93 /* StaticHeaderFooterView.m in Sources */,
 				0AD77DB220E763AE00330F2C /* MGSwipeButton.m in Sources */,
 				0A9F887320E4F52400B44E68 /* TimerViewController.m in Sources */,
 				0AD6A9D621185DD300DBA114 /* KVOPerson.m in Sources */,

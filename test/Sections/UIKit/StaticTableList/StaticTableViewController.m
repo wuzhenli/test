@@ -21,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.tableViewStyle = UITableViewStyleGrouped;
+    
     [self.model registerCellUseTableView:self.tableView];
     
     [self.view addSubview:self.tableView];
@@ -65,6 +67,24 @@
     StaticSecionModel *secModel = self.model.arrSectionModel[indexPath.section];
     return secModel.arrRowModel[indexPath.row].rowHeight;
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    StaticSecionModel *secModel = self.model.arrSectionModel[section];
+    return secModel.headerHeight;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    StaticSecionModel *secModel = self.model.arrSectionModel[section];
+    return secModel.footerHeight;
+}
+
+- (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    StaticSecionModel *secModel = self.model.arrSectionModel[section];
+    return secModel.headerView;
+}
+
+//- (nullable UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+//    
+//}
 
 #pragma -mark getter
 

@@ -8,12 +8,22 @@
 
 #import <Foundation/Foundation.h>
 #import "StaticRowModel.h"
+#import "StaticHeaderFooterView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface StaticSecionModel : NSObject
 
 @property (strong, nonatomic) NSMutableArray<StaticRowModel *> *arrRowModel;
+
+@property (copy, nonatomic) NSString *headerString;
+@property (copy, nonatomic) NSString *footerString;
+
+@property (assign, nonatomic, readonly) CGFloat headerHeight;
+@property (assign, nonatomic, readonly) CGFloat footerHeight;
+
+@property (strong, nonatomic, nullable) StaticHeaderFooterView *headerView;
+@property (strong, nonatomic, nullable) StaticHeaderFooterView *footerView;
 
 @end
 

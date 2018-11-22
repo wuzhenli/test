@@ -25,6 +25,7 @@
 - (void)setDataWithDictionary:(NSDictionary *)dic {
     
     StaticSecionModel *section = [StaticSecionModel new];
+    section.headerString = @"话题推送设置";
     {
         StaticRowModel *row = [StaticRowModel staticRowModelWithType:EnumStaticRowTopic];
         [row setCellClass:[StaticSwitchTableViewCell class]];
