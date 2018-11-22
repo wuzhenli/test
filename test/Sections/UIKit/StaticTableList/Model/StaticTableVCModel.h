@@ -10,6 +10,8 @@
 #import "StaticSecionModel.h"
 
 #import "StaticSwitchTableViewCell.h"
+#import "StaticTitleSwitchCell.h"
+#import "StaticTitleDescCell.h"
 
 
 NS_ASSUME_NONNULL_BEGIN

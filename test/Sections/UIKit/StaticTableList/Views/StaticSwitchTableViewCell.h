@@ -16,14 +16,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+
 @interface StaticSwitchTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) id<StaticSwitchTableViewCellDelegate> delegate;
 
+@property (strong, nonatomic) UIImageView *imgViewLeft;
 @property (strong, nonatomic) UILabel *lblTitle;
 
 @property (strong, nonatomic) UILabel *lblDesc;
 @property (strong, nonatomic) UISwitch *switchRight;
+@property (strong, nonatomic) UIImageView *arrowRight;
+
+/**
+ 子类重写此方法，重新布局子控件 
+ */
+- (void)setupSubViews ;
 
 @end
 

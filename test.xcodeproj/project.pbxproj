@@ -116,6 +116,8 @@
 		0AE45A971F90591D00D738F4 /* KeyWinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE45A951F90591D00D738F4 /* KeyWinViewController.xib */; };
 		0AEA6F261F90B0E1008C3E69 /* reward_icon_price_rate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEA6F241F90B05B008C3E69 /* reward_icon_price_rate@2x.png */; };
 		0AEA6F271F90B0E1008C3E69 /* reward_icon_price_rate@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEA6F251F90B05B008C3E69 /* reward_icon_price_rate@3x.png */; };
+		0AEFF55F21A6734F00E95A76 /* StaticTitleSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEFF55E21A6734F00E95A76 /* StaticTitleSwitchCell.m */; };
+		0AEFF56221A6738D00E95A76 /* StaticTitleDescCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEFF56121A6738D00E95A76 /* StaticTitleDescCell.m */; };
 		0AF7B2E0219D4D8E00144B7E /* MBProgressHUD+bbs.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B2DC219D4D8E00144B7E /* MBProgressHUD+bbs.m */; };
 		0AF7B2E1219D4D8E00144B7E /* BBSProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B2DD219D4D8E00144B7E /* BBSProgressHUD.m */; };
 		0AF7B2E4219D4FA100144B7E /* SaveAlbumTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B2E3219D4FA100144B7E /* SaveAlbumTool.m */; };
@@ -329,6 +331,10 @@
 		0AE45A951F90591D00D738F4 /* KeyWinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyWinViewController.xib; sourceTree = "<group>"; };
 		0AEA6F241F90B05B008C3E69 /* reward_icon_price_rate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reward_icon_price_rate@2x.png"; sourceTree = "<group>"; };
 		0AEA6F251F90B05B008C3E69 /* reward_icon_price_rate@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reward_icon_price_rate@3x.png"; sourceTree = "<group>"; };
+		0AEFF55D21A6734F00E95A76 /* StaticTitleSwitchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticTitleSwitchCell.h; sourceTree = "<group>"; };
+		0AEFF55E21A6734F00E95A76 /* StaticTitleSwitchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticTitleSwitchCell.m; sourceTree = "<group>"; };
+		0AEFF56021A6738D00E95A76 /* StaticTitleDescCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticTitleDescCell.h; sourceTree = "<group>"; };
+		0AEFF56121A6738D00E95A76 /* StaticTitleDescCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticTitleDescCell.m; sourceTree = "<group>"; };
 		0AF7B2DC219D4D8E00144B7E /* MBProgressHUD+bbs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+bbs.m"; sourceTree = "<group>"; };
 		0AF7B2DD219D4D8E00144B7E /* BBSProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSProgressHUD.m; sourceTree = "<group>"; };
 		0AF7B2DE219D4D8E00144B7E /* BBSProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSProgressHUD.h; sourceTree = "<group>"; };
@@ -774,6 +780,10 @@
 			children = (
 				0A72CD5A21A64E5500CDBE93 /* StaticSwitchTableViewCell.h */,
 				0A72CD5B21A64E5500CDBE93 /* StaticSwitchTableViewCell.m */,
+				0AEFF55D21A6734F00E95A76 /* StaticTitleSwitchCell.h */,
+				0AEFF55E21A6734F00E95A76 /* StaticTitleSwitchCell.m */,
+				0AEFF56021A6738D00E95A76 /* StaticTitleDescCell.h */,
+				0AEFF56121A6738D00E95A76 /* StaticTitleDescCell.m */,
 				0A72CD5F21A65C4E00CDBE93 /* StaticHeaderFooterView.h */,
 				0A72CD6021A65C4E00CDBE93 /* StaticHeaderFooterView.m */,
 			);
@@ -1263,6 +1273,7 @@
 				0AD77DB220E763AE00330F2C /* MGSwipeButton.m in Sources */,
 				0A9F887320E4F52400B44E68 /* TimerViewController.m in Sources */,
 				0AD6A9D621185DD300DBA114 /* KVOPerson.m in Sources */,
+				0AEFF55F21A6734F00E95A76 /* StaticTitleSwitchCell.m in Sources */,
 				0A5535292115DD9100A43828 /* CircleGestureRecognizer.m in Sources */,
 				0A6A0D7221941A7200AB4634 /* JLPanGestureRecognizer.m in Sources */,
 				0A948BE52080B6FB002BD6C7 /* NSDate+compare.m in Sources */,
@@ -1299,6 +1310,7 @@
 				0A30594B1FFC87920092DF94 /* NSObject+DLIntrospection.m in Sources */,
 				0AB886F620A3E4DB003F2734 /* TestCollectionViewCell.m in Sources */,
 				0AD77DB120E763AE00330F2C /* MGSwipeTableCell.m in Sources */,
+				0AEFF56221A6738D00E95A76 /* StaticTitleDescCell.m in Sources */,
 				0AF7B2E0219D4D8E00144B7E /* MBProgressHUD+bbs.m in Sources */,
 				0A6A0D6E21941A4D00AB4634 /* DefinePanGestureViewController.m in Sources */,
 				0A976BB920DB390F00BDE153 /* UIView+Corner.m in Sources */,

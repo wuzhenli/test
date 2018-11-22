@@ -33,27 +33,6 @@
 - (void)setCellClass:(Class)cls {
     self.cell = [[cls alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     self.cell.delegate = self;
-    [self adjustCellSubViewWithType:self.type];
-}
-
-- (void)adjustCellSubViewWithType:(EnumStaticRowType)type {
-    switch (type) {
-        case EnumStaticRowReply: {
-            self.cell.lblDesc.hidden = NO;
-            self.cell.switchRight.hidden = YES;
-            break;
-        }
-        case EnumStaticRowTopic: {
-            self.cell.lblDesc.hidden = YES;
-            self.cell.switchRight.hidden = NO;
-            break;
-        }
-        case EnumStaticRowOpinion: {
-            self.cell.lblDesc.hidden = YES;
-            self.cell.switchRight.hidden = NO;
-            break;
-        }
-    }
 }
 
 #pragma -mark StaticSwitchTableViewCellDelegate
