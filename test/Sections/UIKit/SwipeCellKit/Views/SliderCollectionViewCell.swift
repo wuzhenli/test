@@ -22,13 +22,20 @@ class SliderCollectionViewCell: SwipeCollectionViewCell, SwipeCollectionViewCell
         let flag = SwipeAction(style: .default, title: "flag", handler: { (action, indexPath)  in  
             sf.cellDelegate.flagActionOfCell(cell: sf)  
         })
+        flag.textColor = UIColor.white
+        flag.backgroundColor = UIColor.lightGray
         flag.hidesWhenSelected = true
-        let del = SwipeAction(style: .default, title: "del", handler: { (action, indexPath)  in  
+        flag.font = UIFont.systemFont(ofSize: 14)
+        
+        let del = SwipeAction(style: .default, title: "标为已读", handler: { (action, indexPath)  in  
             sf.cellDelegate.deleteActionOfCell(cell: sf)
         })
         del.hidesWhenSelected = true
+        del.textColor = UIColor.white
+        del.backgroundColor = UIColor.orange
+        del.font = UIFont.systemFont(ofSize: 16)
         
-        return [flag, del]
+        return [del, flag]
     }
     
     @objc weak var cellDelegate: SliderCollectionViewCellDelegate!
