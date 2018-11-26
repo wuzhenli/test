@@ -99,6 +99,10 @@
 		0AB886F220A3E49D003F2734 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB886F120A3E49D003F2734 /* CollectionViewController.m */; };
 		0AB886F620A3E4DB003F2734 /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB886F420A3E4DB003F2734 /* TestCollectionViewCell.m */; };
 		0AB886F720A3E4DB003F2734 /* TestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB886F520A3E4DB003F2734 /* TestCollectionViewCell.xib */; };
+		0ABAE6F121ABC7870094BAA8 /* SwipeCellKitCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE6EF21ABC7870094BAA8 /* SwipeCellKitCollectionViewController.m */; };
+		0ABAE6F221ABC7870094BAA8 /* SwipeCellKitCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABAE6F021ABC7870094BAA8 /* SwipeCellKitCollectionViewController.xib */; };
+		0ABAE6F721ABC7F70094BAA8 /* SwipeCellKitCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE6F521ABC7F70094BAA8 /* SwipeCellKitCollectionViewCell.m */; };
+		0ABAE6F821ABC7F70094BAA8 /* SwipeCellKitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABAE6F621ABC7F70094BAA8 /* SwipeCellKitCollectionViewCell.xib */; };
 		0AC0ACA920BFBD5D00D3185E /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC0ACA820BFBD5D00D3185E /* PlayerViewController.m */; };
 		0AD0FEA520614F5D006678F4 /* SingleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0FEA420614F5D006678F4 /* SingleModel.m */; };
 		0AD6A9D221185DAE00DBA114 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6A9D021185DAE00DBA114 /* KVOViewController.m */; };
@@ -302,6 +306,12 @@
 		0AB886F320A3E4DB003F2734 /* TestCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewCell.h; sourceTree = "<group>"; };
 		0AB886F420A3E4DB003F2734 /* TestCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewCell.m; sourceTree = "<group>"; };
 		0AB886F520A3E4DB003F2734 /* TestCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCollectionViewCell.xib; sourceTree = "<group>"; };
+		0ABAE6EE21ABC7870094BAA8 /* SwipeCellKitCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipeCellKitCollectionViewController.h; sourceTree = "<group>"; };
+		0ABAE6EF21ABC7870094BAA8 /* SwipeCellKitCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeCellKitCollectionViewController.m; sourceTree = "<group>"; };
+		0ABAE6F021ABC7870094BAA8 /* SwipeCellKitCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipeCellKitCollectionViewController.xib; sourceTree = "<group>"; };
+		0ABAE6F421ABC7F70094BAA8 /* SwipeCellKitCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipeCellKitCollectionViewCell.h; sourceTree = "<group>"; };
+		0ABAE6F521ABC7F70094BAA8 /* SwipeCellKitCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeCellKitCollectionViewCell.m; sourceTree = "<group>"; };
+		0ABAE6F621ABC7F70094BAA8 /* SwipeCellKitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipeCellKitCollectionViewCell.xib; sourceTree = "<group>"; };
 		0AC0ACA720BFBD5D00D3185E /* PlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
 		0AC0ACA820BFBD5D00D3185E /* PlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		0AD0FEA320614F5D006678F4 /* SingleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleModel.h; sourceTree = "<group>"; };
@@ -674,6 +684,7 @@
 		0A61116720E8CAC3008CE53F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				0ABAE6ED21ABC7720094BAA8 /* SwipeCellKit */,
 				0A72CD4B21A649D400CDBE93 /* StaticTableList */,
 				0A6A0D6A21941A3A00AB4634 /* Gesture */,
 				0A3CCFD7214A32F00017F7A2 /* auidoVolume */,
@@ -906,6 +917,27 @@
 				0AB886F520A3E4DB003F2734 /* TestCollectionViewCell.xib */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		0ABAE6ED21ABC7720094BAA8 /* SwipeCellKit */ = {
+			isa = PBXGroup;
+			children = (
+				0ABAE6EE21ABC7870094BAA8 /* SwipeCellKitCollectionViewController.h */,
+				0ABAE6EF21ABC7870094BAA8 /* SwipeCellKitCollectionViewController.m */,
+				0ABAE6F021ABC7870094BAA8 /* SwipeCellKitCollectionViewController.xib */,
+				0ABAE6F321ABC7D90094BAA8 /* Views */,
+			);
+			path = SwipeCellKit;
+			sourceTree = "<group>";
+		};
+		0ABAE6F321ABC7D90094BAA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0ABAE6F421ABC7F70094BAA8 /* SwipeCellKitCollectionViewCell.h */,
+				0ABAE6F521ABC7F70094BAA8 /* SwipeCellKitCollectionViewCell.m */,
+				0ABAE6F621ABC7F70094BAA8 /* SwipeCellKitCollectionViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		0AC0ACA620BFBD3F00D3185E /* Player */ = {
@@ -1153,6 +1185,7 @@
 				0AD77DC120E7706300330F2C /* KeyboardViewController.xib in Resources */,
 				0AD77DA920E7558E00330F2C /* GestureViewController.xib in Resources */,
 				0AA47AD2201610E000242C4D /* changming.png in Resources */,
+				0ABAE6F821ABC7F70094BAA8 /* SwipeCellKitCollectionViewCell.xib in Resources */,
 				0A009D3F20E8CC9D00D81C6A /* localImage8.jpeg in Resources */,
 				0A3CCFDC214A330A0017F7A2 /* AudioVolumeViewController.xib in Resources */,
 				0AD77DB820E763D500330F2C /* SlideTableViewController.xib in Resources */,
@@ -1175,6 +1208,7 @@
 				0A7C409020073CED00174650 /* PhotoKitViewController.xib in Resources */,
 				0A6A0D6F21941A4D00AB4634 /* DefinePanGestureViewController.xib in Resources */,
 				0A5803611F7A01D1000B5192 /* Main.storyboard in Resources */,
+				0ABAE6F221ABC7870094BAA8 /* SwipeCellKitCollectionViewController.xib in Resources */,
 				0A35462D20EFBB4A000FA171 /* TestVCController.xib in Resources */,
 				0AA82C4D21290B34000A5C02 /* LoadInitViewController.xib in Resources */,
 				0AD6A9D321185DAE00DBA114 /* KVOViewController.xib in Resources */,
@@ -1328,6 +1362,7 @@
 				0A72CD4E21A649EB00CDBE93 /* StaticTableViewController.m in Sources */,
 				0A6BD2261FD630FC00D13E33 /* APIViewController.m in Sources */,
 				0AA82C5921290B9C000A5C02 /* Student+category.m in Sources */,
+				0ABAE6F121ABC7870094BAA8 /* SwipeCellKitCollectionViewController.m in Sources */,
 				0AD6A9D221185DAE00DBA114 /* KVOViewController.m in Sources */,
 				0A5D45D02063578900DC78F7 /* DBTool.m in Sources */,
 				0A3CCFDB214A330A0017F7A2 /* AudioVolumeViewController.m in Sources */,
@@ -1349,6 +1384,7 @@
 				0A72CD5121A64B4400CDBE93 /* StaticTableVCModel.m in Sources */,
 				0A768B1C208369850086AA40 /* JLPresentAnimation.m in Sources */,
 				0AF7B2E4219D4FA100144B7E /* SaveAlbumTool.m in Sources */,
+				0ABAE6F721ABC7F70094BAA8 /* SwipeCellKitCollectionViewCell.m in Sources */,
 				0A72CD5721A64B6F00CDBE93 /* StaticRowModel.m in Sources */,
 				0AA82C5621290B8C000A5C02 /* LIPerson+category.m in Sources */,
 				0A61116220E8ACEC008CE53F /* WebViewController.m in Sources */,
