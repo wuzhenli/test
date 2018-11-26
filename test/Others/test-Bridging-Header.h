@@ -4,4 +4,5 @@
 
 #import "BBSProgressHUD.h"
 #import <Masonry/Masonry.h>
-#import <SwipeCellKit/SwipeCellKit-Swift.h>
+#import "SwipeCellKit.h" 
+//SwipeCellKit/SwipeCellKit-Swift.h>

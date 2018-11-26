@@ -2,13 +2,11 @@ PODS:
   - JLLogEncoding (0.0.2)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
-  - SwipeCellKit (2.5.0)
 
 DEPENDENCIES:
   - JLLogEncoding (~> 0.0.2)
   - Masonry
   - MBProgressHUD (~> 1.1.0)
-  - SwipeCellKit (from `https://github.com/SwipeCellKit/SwipeCellKit.git`, branch `develop`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -16,22 +14,11 @@ SPEC REPOS:
     - Masonry
     - MBProgressHUD
 
-EXTERNAL SOURCES:
-  SwipeCellKit:
-    :branch: develop
-    :git: https://github.com/SwipeCellKit/SwipeCellKit.git
-
-CHECKOUT OPTIONS:
-  SwipeCellKit:
-    :commit: 9c69084b9b331c3c9f4767add20afe72112adee8
-    :git: https://github.com/SwipeCellKit/SwipeCellKit.git
-
 SPEC CHECKSUMS:
   JLLogEncoding: e01534b5dcdc51b64ea714a5ca358f32fe6f9271
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
-  SwipeCellKit: d8f2617538ce3021cb0a11d1b93856a06a2f2e20
 
-PODFILE CHECKSUM: e87877c013915a1df31742bc8fed3f55636f3efa
+PODFILE CHECKSUM: bae0d019c62d7c82f14dc0215181f008319f534e
 
 COCOAPODS: 1.5.0

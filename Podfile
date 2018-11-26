@@ -11,7 +11,7 @@ target 'test' do
   pod 'MBProgressHUD', '~> 1.1.0'
 #  pod "NSLogger"
 # Get the latest on develop
-  pod 'SwipeCellKit', :git => 'https://github.com/SwipeCellKit/SwipeCellKit.git', :branch => 'develop'
+# •pod 'SwipeCellKit', :git => 'https://github.com/SwipeCellKit/SwipeCellKit.git', :branch => 'develop'
 
   target 'testTests' do
     inherit! :search_paths

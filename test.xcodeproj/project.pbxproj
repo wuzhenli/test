@@ -102,6 +102,28 @@
 		0ABAE6F121ABC7870094BAA8 /* SwipeCellKitCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE6EF21ABC7870094BAA8 /* SwipeCellKitCollectionViewController.m */; };
 		0ABAE6F221ABC7870094BAA8 /* SwipeCellKitCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABAE6F021ABC7870094BAA8 /* SwipeCellKitCollectionViewController.xib */; };
 		0ABAE6FC21ABCCE00094BAA8 /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE6FB21ABCCE00094BAA8 /* SliderCollectionViewCell.swift */; };
+		0ABAE71821ABE7D20094BAA8 /* SwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE70021ABE7CF0094BAA8 /* SwipeController.swift */; };
+		0ABAE71A21ABE7D20094BAA8 /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE70221ABE7D00094BAA8 /* SwipeAction.swift */; };
+		0ABAE71B21ABE7D20094BAA8 /* SwipeFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE70321ABE7D00094BAA8 /* SwipeFeedback.swift */; };
+		0ABAE71C21ABE7D20094BAA8 /* SwipeActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE70421ABE7D00094BAA8 /* SwipeActionButton.swift */; };
+		0ABAE71D21ABE7D20094BAA8 /* Swipeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE70521ABE7D00094BAA8 /* Swipeable.swift */; };
+		0ABAE71E21ABE7D20094BAA8 /* SwipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE70621ABE7D00094BAA8 /* SwipeCollectionViewCell.swift */; };
+		0ABAE71F21ABE7D20094BAA8 /* SwipeActionTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE70721ABE7D00094BAA8 /* SwipeActionTransitioning.swift */; };
+		0ABAE72021ABE7D20094BAA8 /* SwipeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE70821ABE7D00094BAA8 /* SwipeAnimator.swift */; };
+		0ABAE72121ABE7D20094BAA8 /* SwipeExpansionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE70921ABE7D00094BAA8 /* SwipeExpansionStyle.swift */; };
+		0ABAE72221ABE7D20094BAA8 /* SwipeCollectionViewCell+Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE70A21ABE7D00094BAA8 /* SwipeCollectionViewCell+Accessibility.swift */; };
+		0ABAE72321ABE7D20094BAA8 /* SwipeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE70B21ABE7D00094BAA8 /* SwipeOptions.swift */; };
+		0ABAE72421ABE7D20094BAA8 /* SwipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE70C21ABE7D10094BAA8 /* SwipeTableViewCell.swift */; };
+		0ABAE72521ABE7D20094BAA8 /* SwipeTableViewCell+Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE70D21ABE7D10094BAA8 /* SwipeTableViewCell+Accessibility.swift */; };
+		0ABAE72621ABE7D20094BAA8 /* SwipeTransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE70E21ABE7D10094BAA8 /* SwipeTransitionLayout.swift */; };
+		0ABAE72721ABE7D20094BAA8 /* SwipeTableViewCell+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE70F21ABE7D10094BAA8 /* SwipeTableViewCell+Display.swift */; };
+		0ABAE72821ABE7D20094BAA8 /* SwipeCollectionViewCell+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE71021ABE7D10094BAA8 /* SwipeCollectionViewCell+Display.swift */; };
+		0ABAE72921ABE7D20094BAA8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE71121ABE7D10094BAA8 /* Extensions.swift */; };
+		0ABAE72A21ABE7D20094BAA8 /* SwipeActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE71221ABE7D10094BAA8 /* SwipeActionsView.swift */; };
+		0ABAE72B21ABE7D20094BAA8 /* SwipeTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE71421ABE7D10094BAA8 /* SwipeTableViewCellDelegate.swift */; };
+		0ABAE72C21ABE7D20094BAA8 /* SwipeAccessibilityCustomAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE71521ABE7D10094BAA8 /* SwipeAccessibilityCustomAction.swift */; };
+		0ABAE72D21ABE7D20094BAA8 /* SwipeExpanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE71621ABE7D10094BAA8 /* SwipeExpanding.swift */; };
+		0ABAE72E21ABE7D20094BAA8 /* SwipeCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE71721ABE7D20094BAA8 /* SwipeCollectionViewCellDelegate.swift */; };
 		0AC0ACA920BFBD5D00D3185E /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC0ACA820BFBD5D00D3185E /* PlayerViewController.m */; };
 		0AD0FEA520614F5D006678F4 /* SingleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0FEA420614F5D006678F4 /* SingleModel.m */; };
 		0AD6A9D221185DAE00DBA114 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6A9D021185DAE00DBA114 /* KVOViewController.m */; };
@@ -310,6 +332,29 @@
 		0ABAE6F021ABC7870094BAA8 /* SwipeCellKitCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipeCellKitCollectionViewController.xib; sourceTree = "<group>"; };
 		0ABAE6FA21ABCCE00094BAA8 /* test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-Bridging-Header.h"; sourceTree = "<group>"; };
 		0ABAE6FB21ABCCE00094BAA8 /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		0ABAE70021ABE7CF0094BAA8 /* SwipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeController.swift; sourceTree = "<group>"; };
+		0ABAE70221ABE7D00094BAA8 /* SwipeAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
+		0ABAE70321ABE7D00094BAA8 /* SwipeFeedback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeFeedback.swift; sourceTree = "<group>"; };
+		0ABAE70421ABE7D00094BAA8 /* SwipeActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeActionButton.swift; sourceTree = "<group>"; };
+		0ABAE70521ABE7D00094BAA8 /* Swipeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swipeable.swift; sourceTree = "<group>"; };
+		0ABAE70621ABE7D00094BAA8 /* SwipeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCollectionViewCell.swift; sourceTree = "<group>"; };
+		0ABAE70721ABE7D00094BAA8 /* SwipeActionTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeActionTransitioning.swift; sourceTree = "<group>"; };
+		0ABAE70821ABE7D00094BAA8 /* SwipeAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeAnimator.swift; sourceTree = "<group>"; };
+		0ABAE70921ABE7D00094BAA8 /* SwipeExpansionStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeExpansionStyle.swift; sourceTree = "<group>"; };
+		0ABAE70A21ABE7D00094BAA8 /* SwipeCollectionViewCell+Accessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwipeCollectionViewCell+Accessibility.swift"; sourceTree = "<group>"; };
+		0ABAE70B21ABE7D00094BAA8 /* SwipeOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeOptions.swift; sourceTree = "<group>"; };
+		0ABAE70C21ABE7D10094BAA8 /* SwipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeTableViewCell.swift; sourceTree = "<group>"; };
+		0ABAE70D21ABE7D10094BAA8 /* SwipeTableViewCell+Accessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwipeTableViewCell+Accessibility.swift"; sourceTree = "<group>"; };
+		0ABAE70E21ABE7D10094BAA8 /* SwipeTransitionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeTransitionLayout.swift; sourceTree = "<group>"; };
+		0ABAE70F21ABE7D10094BAA8 /* SwipeTableViewCell+Display.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwipeTableViewCell+Display.swift"; sourceTree = "<group>"; };
+		0ABAE71021ABE7D10094BAA8 /* SwipeCollectionViewCell+Display.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwipeCollectionViewCell+Display.swift"; sourceTree = "<group>"; };
+		0ABAE71121ABE7D10094BAA8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0ABAE71221ABE7D10094BAA8 /* SwipeActionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeActionsView.swift; sourceTree = "<group>"; };
+		0ABAE71321ABE7D10094BAA8 /* SwipeCellKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeCellKit.h; sourceTree = "<group>"; };
+		0ABAE71421ABE7D10094BAA8 /* SwipeTableViewCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		0ABAE71521ABE7D10094BAA8 /* SwipeAccessibilityCustomAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeAccessibilityCustomAction.swift; sourceTree = "<group>"; };
+		0ABAE71621ABE7D10094BAA8 /* SwipeExpanding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeExpanding.swift; sourceTree = "<group>"; };
+		0ABAE71721ABE7D20094BAA8 /* SwipeCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
 		0AC0ACA720BFBD5D00D3185E /* PlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
 		0AC0ACA820BFBD5D00D3185E /* PlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		0AD0FEA320614F5D006678F4 /* SingleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleModel.h; sourceTree = "<group>"; };
@@ -937,6 +982,36 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0ABAE6FF21ABE7BD0094BAA8 /* SwipeCellKit */ = {
+			isa = PBXGroup;
+			children = (
+				0ABAE71121ABE7D10094BAA8 /* Extensions.swift */,
+				0ABAE70521ABE7D00094BAA8 /* Swipeable.swift */,
+				0ABAE71521ABE7D10094BAA8 /* SwipeAccessibilityCustomAction.swift */,
+				0ABAE70221ABE7D00094BAA8 /* SwipeAction.swift */,
+				0ABAE70421ABE7D00094BAA8 /* SwipeActionButton.swift */,
+				0ABAE71221ABE7D10094BAA8 /* SwipeActionsView.swift */,
+				0ABAE70721ABE7D00094BAA8 /* SwipeActionTransitioning.swift */,
+				0ABAE70821ABE7D00094BAA8 /* SwipeAnimator.swift */,
+				0ABAE71321ABE7D10094BAA8 /* SwipeCellKit.h */,
+				0ABAE70621ABE7D00094BAA8 /* SwipeCollectionViewCell.swift */,
+				0ABAE70A21ABE7D00094BAA8 /* SwipeCollectionViewCell+Accessibility.swift */,
+				0ABAE71021ABE7D10094BAA8 /* SwipeCollectionViewCell+Display.swift */,
+				0ABAE71721ABE7D20094BAA8 /* SwipeCollectionViewCellDelegate.swift */,
+				0ABAE70021ABE7CF0094BAA8 /* SwipeController.swift */,
+				0ABAE71621ABE7D10094BAA8 /* SwipeExpanding.swift */,
+				0ABAE70921ABE7D00094BAA8 /* SwipeExpansionStyle.swift */,
+				0ABAE70321ABE7D00094BAA8 /* SwipeFeedback.swift */,
+				0ABAE70B21ABE7D00094BAA8 /* SwipeOptions.swift */,
+				0ABAE70C21ABE7D10094BAA8 /* SwipeTableViewCell.swift */,
+				0ABAE70D21ABE7D10094BAA8 /* SwipeTableViewCell+Accessibility.swift */,
+				0ABAE70F21ABE7D10094BAA8 /* SwipeTableViewCell+Display.swift */,
+				0ABAE71421ABE7D10094BAA8 /* SwipeTableViewCellDelegate.swift */,
+				0ABAE70E21ABE7D10094BAA8 /* SwipeTransitionLayout.swift */,
+			);
+			path = SwipeCellKit;
+			sourceTree = "<group>";
+		};
 		0AC0ACA620BFBD3F00D3185E /* Player */ = {
 			isa = PBXGroup;
 			children = (
@@ -970,6 +1045,7 @@
 		0AD77DAA20E763A500330F2C /* Verders */ = {
 			isa = PBXGroup;
 			children = (
+				0ABAE6FF21ABE7BD0094BAA8 /* SwipeCellKit */,
 				0AD77DAB20E763AE00330F2C /* MGSwipeTableCell */,
 			);
 			path = Verders;
@@ -1242,14 +1318,12 @@
 				"${BUILT_PRODUCTS_DIR}/JLLogEncoding/JLLogEncoding.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JLLogEncoding.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1324,11 +1398,14 @@
 				0A5803691F7A01D1000B5192 /* main.m in Sources */,
 				0AD77DC020E7706300330F2C /* KeyboardViewController.m in Sources */,
 				0A3059421FFC6E910092DF94 /* SlideViewController.m in Sources */,
+				0ABAE72721ABE7D20094BAA8 /* SwipeTableViewCell+Display.swift in Sources */,
 				0A5535242115DD5A00A43828 /* DefineGestureViewController.m in Sources */,
 				0A72CD6121A65C4E00CDBE93 /* StaticHeaderFooterView.m in Sources */,
 				0AD77DB220E763AE00330F2C /* MGSwipeButton.m in Sources */,
 				0A9F887320E4F52400B44E68 /* TimerViewController.m in Sources */,
+				0ABAE71B21ABE7D20094BAA8 /* SwipeFeedback.swift in Sources */,
 				0AD6A9D621185DD300DBA114 /* KVOPerson.m in Sources */,
+				0ABAE72021ABE7D20094BAA8 /* SwipeAnimator.swift in Sources */,
 				0AEFF55F21A6734F00E95A76 /* StaticTitleSwitchCell.m in Sources */,
 				0A5535292115DD9100A43828 /* CircleGestureRecognizer.m in Sources */,
 				0A6A0D7221941A7200AB4634 /* JLPanGestureRecognizer.m in Sources */,
@@ -1338,13 +1415,17 @@
 				0A948BDF2080B57E002BD6C7 /* NSString+formatter.m in Sources */,
 				0ABAE6FC21ABCCE00094BAA8 /* SliderCollectionViewCell.swift in Sources */,
 				0A83D4E120DA4DCF00F8F231 /* BBSDrawView.m in Sources */,
+				0ABAE72821ABE7D20094BAA8 /* SwipeCollectionViewCell+Display.swift in Sources */,
 				0AA82C5321290B68000A5C02 /* Student.m in Sources */,
+				0ABAE71A21ABE7D20094BAA8 /* SwipeAction.swift in Sources */,
 				0A304DC8219D7A1C0074FF89 /* TestAnimationViewController.m in Sources */,
 				0AB886F220A3E49D003F2734 /* CollectionViewController.m in Sources */,
 				0AA82C4C21290B34000A5C02 /* LoadInitViewController.m in Sources */,
 				0A33174120F5F8BA00823A22 /* MCTextView.m in Sources */,
 				0AD77DB720E763D500330F2C /* SlideTableViewController.m in Sources */,
 				0A7C408A200701F500174650 /* Person.m in Sources */,
+				0ABAE72321ABE7D20094BAA8 /* SwipeOptions.swift in Sources */,
+				0ABAE72921ABE7D20094BAA8 /* Extensions.swift in Sources */,
 				0AA82C5021290B50000A5C02 /* LIPerson.m in Sources */,
 				0AD77DBB20E76B7600330F2C /* SlideData.m in Sources */,
 				0A304DC2219D79EF0074FF89 /* PresentAlphaViewController.m in Sources */,
@@ -1360,16 +1441,21 @@
 				0A72CD4E21A649EB00CDBE93 /* StaticTableViewController.m in Sources */,
 				0A6BD2261FD630FC00D13E33 /* APIViewController.m in Sources */,
 				0AA82C5921290B9C000A5C02 /* Student+category.m in Sources */,
+				0ABAE72C21ABE7D20094BAA8 /* SwipeAccessibilityCustomAction.swift in Sources */,
 				0ABAE6F121ABC7870094BAA8 /* SwipeCellKitCollectionViewController.m in Sources */,
 				0AD6A9D221185DAE00DBA114 /* KVOViewController.m in Sources */,
 				0A5D45D02063578900DC78F7 /* DBTool.m in Sources */,
+				0ABAE72521ABE7D20094BAA8 /* SwipeTableViewCell+Accessibility.swift in Sources */,
 				0A3CCFDB214A330A0017F7A2 /* AudioVolumeViewController.m in Sources */,
 				0AD0FEA520614F5D006678F4 /* SingleModel.m in Sources */,
+				0ABAE71C21ABE7D20094BAA8 /* SwipeActionButton.swift in Sources */,
 				0A30594B1FFC87920092DF94 /* NSObject+DLIntrospection.m in Sources */,
 				0AB886F620A3E4DB003F2734 /* TestCollectionViewCell.m in Sources */,
 				0AD77DB120E763AE00330F2C /* MGSwipeTableCell.m in Sources */,
 				0AEFF56221A6738D00E95A76 /* StaticTitleDescCell.m in Sources */,
+				0ABAE71E21ABE7D20094BAA8 /* SwipeCollectionViewCell.swift in Sources */,
 				0AF7B2E0219D4D8E00144B7E /* MBProgressHUD+bbs.m in Sources */,
+				0ABAE71821ABE7D20094BAA8 /* SwipeController.swift in Sources */,
 				0A6A0D6E21941A4D00AB4634 /* DefinePanGestureViewController.m in Sources */,
 				0A976BB920DB390F00BDE153 /* UIView+Corner.m in Sources */,
 				0A3059471FFC800C0092DF94 /* JLNavigationController.m in Sources */,
@@ -1378,17 +1464,27 @@
 				0A5CA3401FECA77900EC170F /* Animal.m in Sources */,
 				0A35462C20EFBB4A000FA171 /* TestVCController.m in Sources */,
 				0A4F5B1E1F9EDD6C00140E82 /* JLGradientButton.m in Sources */,
+				0ABAE72421ABE7D20094BAA8 /* SwipeTableViewCell.swift in Sources */,
+				0ABAE72E21ABE7D20094BAA8 /* SwipeCollectionViewCellDelegate.swift in Sources */,
+				0ABAE72A21ABE7D20094BAA8 /* SwipeActionsView.swift in Sources */,
+				0ABAE72121ABE7D20094BAA8 /* SwipeExpansionStyle.swift in Sources */,
+				0ABAE72621ABE7D20094BAA8 /* SwipeTransitionLayout.swift in Sources */,
 				0A5604651FF5E3C800A42929 /* ResponderView.m in Sources */,
 				0A72CD5121A64B4400CDBE93 /* StaticTableVCModel.m in Sources */,
 				0A768B1C208369850086AA40 /* JLPresentAnimation.m in Sources */,
+				0ABAE72B21ABE7D20094BAA8 /* SwipeTableViewCellDelegate.swift in Sources */,
+				0ABAE71D21ABE7D20094BAA8 /* Swipeable.swift in Sources */,
 				0AF7B2E4219D4FA100144B7E /* SaveAlbumTool.m in Sources */,
+				0ABAE71F21ABE7D20094BAA8 /* SwipeActionTransitioning.swift in Sources */,
 				0A72CD5721A64B6F00CDBE93 /* StaticRowModel.m in Sources */,
 				0AA82C5621290B8C000A5C02 /* LIPerson+category.m in Sources */,
+				0ABAE72221ABE7D20094BAA8 /* SwipeCollectionViewCell+Accessibility.swift in Sources */,
 				0A61116220E8ACEC008CE53F /* WebViewController.m in Sources */,
 				0A72CD5D21A64E5500CDBE93 /* StaticSwitchTableViewCell.m in Sources */,
 				0A33173E20F5F89A00823A22 /* MenuCtlViewController.m in Sources */,
 				0A8F226E1F7B7E8200499EFD /* TestViewController.m in Sources */,
 				0A96D0D4219DA37100F4DED6 /* AlphaPresentationController.m in Sources */,
+				0ABAE72D21ABE7D20094BAA8 /* SwipeExpanding.swift in Sources */,
 				0AC0ACA920BFBD5D00D3185E /* PlayerViewController.m in Sources */,
 				0A72CD5421A64B5D00CDBE93 /* StaticSecionModel.m in Sources */,
 			);

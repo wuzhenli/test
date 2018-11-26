@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SwipeCellKit
+//import SwipeCellKit
 
 
 @objc protocol SliderCollectionViewCellDelegate {
