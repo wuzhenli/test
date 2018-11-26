@@ -7,13 +7,19 @@
 //
 
 #import "SwipeCellKitCollectionViewController.h"
-#import "SwipeCellKitCollectionViewCell.h"
+#import "test-Swift.h"
 
 
-@interface SwipeCellKitCollectionViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
+@interface SwipeCellKitCollectionViewController ()<
+    UICollectionViewDelegate, 
+    UICollectionViewDataSource,
+    SliderCollectionViewCellDelegate
+    //SwipeCollectionViewCellDelegate
+>
 @property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *flowLayout;
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (assign, nonatomic) NSUInteger rowNum;
 
 @end
 
@@ -22,12 +28,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.rowNum = 12;
     self.flowLayout.itemSize = CGSizeMake(SCREEN_Width, 80);
     
-    
-    UINib *nib = [UINib nibWithNibName:@"SwipeCellKitCollectionViewCell" bundle:nil];
-    
-    [self.collectionView registerNib:nib forCellWithReuseIdentifier:NSStringFromClass([SwipeCellKitCollectionViewCell class])];
+    [self.collectionView registerClass:[SliderCollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([SliderCollectionViewCell class])];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
 }
@@ -35,16 +39,30 @@
 #pragma -mark UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 12;
+    return self.rowNum;
 }
 
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    SwipeCellKitCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([SwipeCellKitCollectionViewCell class]) forIndexPath:indexPath];
+    SliderCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([SliderCollectionViewCell class]) forIndexPath:indexPath];
     
     cell.lblTitle.text = [NSString stringWithFormat:@"%ld - %ld", indexPath.section, indexPath.item];
-    
+    cell.cellDelegate = self;
     return cell;
 }
+
+#pragma -mark SliderCollectionViewCellDelegate
+
+- (void)flagActionOfCellWithCell:(SliderCollectionViewCell *)cell {
+    NSLog(@"%s", __func__);
+}
+
+- (void)deleteActionOfCellWithCell:(SliderCollectionViewCell *)cell {
+    NSLog(@"%s", __func__);
+//    self.rowNum --;
+    [self.collectionView reloadData];
+}
+
+
 
 @end
