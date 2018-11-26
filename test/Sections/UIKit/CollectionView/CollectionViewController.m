@@ -8,7 +8,6 @@
 
 #import "CollectionViewController.h"
 #import "TestCollectionViewCell.h"
-#import <Masonry.h>
 
 
 NSString *const Identifier = @"mycell_id";

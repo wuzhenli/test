@@ -121,9 +121,9 @@
 		0AF7B2E0219D4D8E00144B7E /* MBProgressHUD+bbs.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B2DC219D4D8E00144B7E /* MBProgressHUD+bbs.m */; };
 		0AF7B2E1219D4D8E00144B7E /* BBSProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B2DD219D4D8E00144B7E /* BBSProgressHUD.m */; };
 		0AF7B2E4219D4FA100144B7E /* SaveAlbumTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B2E3219D4FA100144B7E /* SaveAlbumTool.m */; };
-		269B448549997433A8B0D50A /* libPods-testTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 612422CE0D061CCBB3748038 /* libPods-testTests.a */; };
-		3B7D92282984AE0D04858733 /* libPods-testUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7A545D0AFD39E9776C9A01 /* libPods-testUITests.a */; };
-		A5A60D313472FD2F526845F5 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1AF70F871764CF416A73E9 /* libPods-test.a */; };
+		47845B86F679F8BC4D51D41B /* Pods_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2F05AC492F370379790F46 /* Pods_testTests.framework */; };
+		7F395CE552BA2D4E46CA9A47 /* Pods_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30BC06EB45B6EF316E8ABA0 /* Pods_testUITests.framework */; };
+		9EAC6D02032ACD6A60531714 /* Pods_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060E2C00D66C17E5EC4CA85E /* Pods_test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +144,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		060E2C00D66C17E5EC4CA85E /* Pods_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A009D2E20E8CC9900D81C6A /* localImage6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = localImage6.jpeg; sourceTree = "<group>"; };
 		0A009D2F20E8CC9900D81C6A /* upload_long_image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = upload_long_image.jpeg; sourceTree = "<group>"; };
 		0A009D3020E8CC9900D81C6A /* localImage1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = localImage1.jpeg; sourceTree = "<group>"; };
@@ -342,14 +343,13 @@
 		0AF7B2E2219D4FA100144B7E /* SaveAlbumTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveAlbumTool.h; sourceTree = "<group>"; };
 		0AF7B2E3219D4FA100144B7E /* SaveAlbumTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveAlbumTool.m; sourceTree = "<group>"; };
 		0FCB9083A04B080CBBDD9434 /* Pods-testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testUITests/Pods-testUITests.release.xcconfig"; sourceTree = "<group>"; };
-		1E1AF70F871764CF416A73E9 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AA8B6331C093CDC6CBEA45B /* Pods-testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testUITests/Pods-testUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4B446E73B49F3536C4317056 /* Pods-testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testTests/Pods-testTests.release.xcconfig"; sourceTree = "<group>"; };
-		612422CE0D061CCBB3748038 /* libPods-testTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6927F71FA297A680369A11EE /* Pods-testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testTests/Pods-testTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A30BC06EB45B6EF316E8ABA0 /* Pods_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC59F9B515C507BDB49D08C7 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
-		BC7A545D0AFD39E9776C9A01 /* libPods-testUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8988A2F64F2CB05F2D40D45 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
+		DD2F05AC492F370379790F46 /* Pods_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -358,7 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A61116520E8AEDE008CE53F /* WebKit.framework in Frameworks */,
-				A5A60D313472FD2F526845F5 /* libPods-test.a in Frameworks */,
+				9EAC6D02032ACD6A60531714 /* Pods_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +366,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				269B448549997433A8B0D50A /* libPods-testTests.a in Frameworks */,
+				47845B86F679F8BC4D51D41B /* Pods_testTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +374,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B7D92282984AE0D04858733 /* libPods-testUITests.a in Frameworks */,
+				7F395CE552BA2D4E46CA9A47 /* Pods_testUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1026,9 +1026,9 @@
 			isa = PBXGroup;
 			children = (
 				0A61116420E8AEDD008CE53F /* WebKit.framework */,
-				1E1AF70F871764CF416A73E9 /* libPods-test.a */,
-				612422CE0D061CCBB3748038 /* libPods-testTests.a */,
-				BC7A545D0AFD39E9776C9A01 /* libPods-testUITests.a */,
+				060E2C00D66C17E5EC4CA85E /* Pods_test.framework */,
+				DD2F05AC492F370379790F46 /* Pods_testTests.framework */,
+				A30BC06EB45B6EF316E8ABA0 /* Pods_testUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1044,6 +1044,7 @@
 				0A5803521F7A01D1000B5192 /* Sources */,
 				0A5803531F7A01D1000B5192 /* Frameworks */,
 				0A5803541F7A01D1000B5192 /* Resources */,
+				2BA0B484EC3033E966616478 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1200,6 +1201,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2BA0B484EC3033E966616478 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JLLogEncoding/JLLogEncoding.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JLLogEncoding.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		72681A6C164EF8BDEB3EE50F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

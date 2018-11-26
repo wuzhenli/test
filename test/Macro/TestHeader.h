@@ -13,6 +13,7 @@
 #import "Global.h"
 #import "LogMacro.h"
 #import "BBSProgressHUD.h"
-#import <Masonry.h>
+#import <Masonry/Masonry.h>
+#import <SwipeCellKit/SwipeCellKit-Swift.h>
 
 #endif /* TestHeader_h */
