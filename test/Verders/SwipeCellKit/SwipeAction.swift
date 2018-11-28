@@ -25,6 +25,8 @@ public class SwipeAction: NSObject {
     /// An optional unique action identifier.
     public var identifier: String?
     
+    public var firstActionAddCornerRadius: UInt = 0
+    
     /// The title of the action button.
     ///
     /// - note: You must specify a title or an image.

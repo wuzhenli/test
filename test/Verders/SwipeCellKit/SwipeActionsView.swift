@@ -279,6 +279,11 @@ class SwipeActionButtonWrapperView: UIView {
         super.init(frame: frame)
         
         configureBackgroundColor(with: action)
+        
+        if action.firstActionAddCornerRadius > 0 {
+            layer.cornerRadius = CGFloat(action.firstActionAddCornerRadius)
+            layer.masksToBounds = true
+        }
     }
     
     override func draw(_ rect: CGRect) {

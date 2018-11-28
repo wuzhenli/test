@@ -48,6 +48,7 @@
     
     cell.lblTitle.text = [NSString stringWithFormat:@"%ld - %ld", indexPath.section, indexPath.item];
     cell.cellDelegate = self;
+    cell.contentView.backgroundColor = collectionView.backgroundColor;
     return cell;
 }
 
