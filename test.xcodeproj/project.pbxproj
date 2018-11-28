@@ -18,6 +18,8 @@
 		0A009D4220E8CC9E00D81C6A /* localBigImage0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0A009D3720E8CC9D00D81C6A /* localBigImage0.jpeg */; };
 		0A009D4320E8CC9E00D81C6A /* localImage2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0A009D3820E8CC9D00D81C6A /* localImage2.jpeg */; };
 		0A009D4420E8CC9E00D81C6A /* localImage7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0A009D3920E8CC9D00D81C6A /* localImage7.jpeg */; };
+		0A2BEB4621AE4B990008C79B /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BEB4521AE4B990008C79B /* DrawViewController.m */; };
+		0A2BEB4921AE4BB10008C79B /* DrawFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BEB4821AE4BB10008C79B /* DrawFirstView.m */; };
 		0A2E0C01206BD2A20061953B /* UIDevice+Addtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E0C00206BD2A20061953B /* UIDevice+Addtion.m */; };
 		0A304DC2219D79EF0074FF89 /* PresentAlphaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A304DC0219D79EF0074FF89 /* PresentAlphaViewController.m */; };
 		0A304DC3219D79EF0074FF89 /* PresentAlphaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A304DC1219D79EF0074FF89 /* PresentAlphaViewController.xib */; };
@@ -181,6 +183,10 @@
 		0A009D3720E8CC9D00D81C6A /* localBigImage0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = localBigImage0.jpeg; sourceTree = "<group>"; };
 		0A009D3820E8CC9D00D81C6A /* localImage2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = localImage2.jpeg; sourceTree = "<group>"; };
 		0A009D3920E8CC9D00D81C6A /* localImage7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = localImage7.jpeg; sourceTree = "<group>"; };
+		0A2BEB4421AE4B990008C79B /* DrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
+		0A2BEB4521AE4B990008C79B /* DrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
+		0A2BEB4721AE4BB10008C79B /* DrawFirstView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawFirstView.h; sourceTree = "<group>"; };
+		0A2BEB4821AE4BB10008C79B /* DrawFirstView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawFirstView.m; sourceTree = "<group>"; };
 		0A2E0BFF206BD2A20061953B /* UIDevice+Addtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Addtion.h"; sourceTree = "<group>"; };
 		0A2E0C00206BD2A20061953B /* UIDevice+Addtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Addtion.m"; sourceTree = "<group>"; };
 		0A304DBF219D79EF0074FF89 /* PresentAlphaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentAlphaViewController.h; sourceTree = "<group>"; };
@@ -450,6 +456,17 @@
 				0A009D2F20E8CC9900D81C6A /* upload_long_image.jpeg */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		0A2BEB4321AE4B840008C79B /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				0A2BEB4421AE4B990008C79B /* DrawViewController.h */,
+				0A2BEB4521AE4B990008C79B /* DrawViewController.m */,
+				0A2BEB4721AE4BB10008C79B /* DrawFirstView.h */,
+				0A2BEB4821AE4BB10008C79B /* DrawFirstView.m */,
+			);
+			path = Draw;
 			sourceTree = "<group>";
 		};
 		0A304DBE219D79CD0074FF89 /* Present */ = {
@@ -728,6 +745,7 @@
 		0A61116720E8CAC3008CE53F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				0A2BEB4321AE4B840008C79B /* Draw */,
 				0ABAE6ED21ABC7720094BAA8 /* SwipeCellKit */,
 				0A72CD4B21A649D400CDBE93 /* StaticTableList */,
 				0A6A0D6A21941A3A00AB4634 /* Gesture */,
@@ -1432,6 +1450,7 @@
 				0A2E0C01206BD2A20061953B /* UIDevice+Addtion.m in Sources */,
 				0A6BCCE01FBABF5700D327AE /* IMBoard.m in Sources */,
 				0A5C56B42064CF2F009A1813 /* SafeArrayTool.m in Sources */,
+				0A2BEB4921AE4BB10008C79B /* DrawFirstView.m in Sources */,
 				0A640F1D1FC6D37100B69AFA /* GestureViewController.m in Sources */,
 				0A61116C20E8CAFD008CE53F /* ScrollViewController.m in Sources */,
 				0A58035B1F7A01D1000B5192 /* AppDelegate.m in Sources */,
@@ -1478,6 +1497,7 @@
 				0ABAE71F21ABE7D20094BAA8 /* SwipeActionTransitioning.swift in Sources */,
 				0A72CD5721A64B6F00CDBE93 /* StaticRowModel.m in Sources */,
 				0AA82C5621290B8C000A5C02 /* LIPerson+category.m in Sources */,
+				0A2BEB4621AE4B990008C79B /* DrawViewController.m in Sources */,
 				0ABAE72221ABE7D20094BAA8 /* SwipeCollectionViewCell+Accessibility.swift in Sources */,
 				0A61116220E8ACEC008CE53F /* WebViewController.m in Sources */,
 				0A72CD5D21A64E5500CDBE93 /* StaticSwitchTableViewCell.m in Sources */,

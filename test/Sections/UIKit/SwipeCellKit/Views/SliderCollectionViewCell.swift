@@ -41,6 +41,7 @@ class SliderCollectionViewCell: SwipeCollectionViewCell, SwipeCollectionViewCell
         } else {
             return nil
         }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, editActionsOptionsForItemAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> SwipeOptions {
