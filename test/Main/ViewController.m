@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "NSObject+DLIntrospection.h"
+#import <objc/runtime.h>
 
 #define Dispatch_Safe_Main(block) \
 if ([NSThread isMainThread]) { \
@@ -50,7 +51,6 @@ dispatch_async(dispatch_get_main_queue(), block); \
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@""
        style:UIBarButtonItemStylePlain target:self action:nil];
     
-    [self testPlus];
 }
 
 - (void)testPlus {

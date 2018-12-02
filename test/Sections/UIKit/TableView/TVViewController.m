@@ -9,10 +9,14 @@
 #import "TVViewController.h"
 
 @interface TVViewController ()<UITableViewDelegate, UITableViewDataSource>
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray<NSString *> *arrTitle;
 @property (strong, nonatomic) NSMutableArray<NSNumber *> *arrHeight;
+
+@property (strong, nonatomic) NSMutableArray<NSString *> *arrSectionIdx;
 @property (strong, nonatomic) UIView *headerView;
+
 @end
 
 @implementation TVViewController
@@ -21,6 +25,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"测试tableView";
+    self.tableView.sectionIndexColor = [UIColor redColor];
+    self.tableView.sectionIndexBackgroundColor = [UIColor greenColor];
+    
     self.tableView.tableFooterView = [UIView new];
     self.tableView.estimatedSectionFooterHeight = 0;
     self.tableView.estimatedSectionHeaderHeight = 0;
@@ -41,7 +48,9 @@
     }
 }
 
-
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 4;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.arrTitle.count;
@@ -54,6 +63,10 @@
     
     return cell;
 }
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return [NSString stringWithFormat:@"header:%d", section];
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 49;//self.arrHeight[indexPath.row].floatValue;
 }
@@ -80,6 +93,16 @@
     }];
     return @[actionDelete, actionDefault, actionDestructive];
 }
+
+
+- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
+    
+    return index + 1;
+}
+
+- (NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+    return self.arrSectionIdx;
+}
 /* slide delete
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
@@ -103,7 +126,7 @@
 
 - (NSMutableArray<NSString *> *)arrTitle {
     if (!_arrTitle) {
-        NSUInteger count = 50;
+        NSUInteger count = 12;
         _arrTitle = [NSMutableArray arrayWithCapacity:count];
         for (NSUInteger i = 0; i<count; i++) {
             [_arrTitle addObject:[NSString stringWithFormat:@"%ld", i]];
@@ -113,7 +136,7 @@
 }
 - (NSMutableArray<NSNumber *> *)arrHeight {
     if (!_arrHeight) {
-        NSUInteger count = 50;
+        NSUInteger count = 12;
         _arrHeight = [NSMutableArray arrayWithCapacity:count];
         for (NSUInteger i = 0; i<count; i++) {
             NSUInteger h = 50 + arc4random_uniform(50);
@@ -130,20 +153,11 @@
     }
     return _headerView;
 }
+- (NSMutableArray<NSString *> *)arrSectionIdx {
+    if (!_arrSectionIdx) {
+        _arrSectionIdx = @[@"A", @"B", @"C"].mutableCopy;
+    }
+    return _arrSectionIdx;
+}
+
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
