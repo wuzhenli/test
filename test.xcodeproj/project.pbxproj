@@ -37,6 +37,8 @@
 		0A3CCFDB214A330A0017F7A2 /* AudioVolumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3CCFD9214A330A0017F7A2 /* AudioVolumeViewController.m */; };
 		0A3CCFDC214A330A0017F7A2 /* AudioVolumeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3CCFDA214A330A0017F7A2 /* AudioVolumeViewController.xib */; };
 		0A3CCFDF214A33240017F7A2 /* VolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3CCFDE214A33240017F7A2 /* VolumeView.m */; };
+		0A3DE3F821C9E78400A0F071 /* FunctionTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3DE3F621C9E78400A0F071 /* FunctionTestViewController.m */; };
+		0A3DE3F921C9E78400A0F071 /* FunctionTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3DE3F721C9E78400A0F071 /* FunctionTestViewController.xib */; };
 		0A4F5B1E1F9EDD6C00140E82 /* JLGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F5B1D1F9EDD6C00140E82 /* JLGradientButton.m */; };
 		0A5535242115DD5A00A43828 /* DefineGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5535222115DD5A00A43828 /* DefineGestureViewController.m */; };
 		0A5535252115DD5A00A43828 /* DefineGestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A5535232115DD5A00A43828 /* DefineGestureViewController.xib */; };
@@ -216,6 +218,9 @@
 		0A3CCFDA214A330A0017F7A2 /* AudioVolumeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioVolumeViewController.xib; sourceTree = "<group>"; };
 		0A3CCFDD214A33240017F7A2 /* VolumeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VolumeView.h; sourceTree = "<group>"; };
 		0A3CCFDE214A33240017F7A2 /* VolumeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VolumeView.m; sourceTree = "<group>"; };
+		0A3DE3F521C9E78400A0F071 /* FunctionTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionTestViewController.h; sourceTree = "<group>"; };
+		0A3DE3F621C9E78400A0F071 /* FunctionTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionTestViewController.m; sourceTree = "<group>"; };
+		0A3DE3F721C9E78400A0F071 /* FunctionTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FunctionTestViewController.xib; sourceTree = "<group>"; };
 		0A4F5B1C1F9EDD6C00140E82 /* JLGradientButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLGradientButton.h; sourceTree = "<group>"; };
 		0A4F5B1D1F9EDD6C00140E82 /* JLGradientButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLGradientButton.m; sourceTree = "<group>"; };
 		0A5535212115DD5A00A43828 /* DefineGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineGestureViewController.h; sourceTree = "<group>"; };
@@ -551,6 +556,16 @@
 			path = auidoVolume;
 			sourceTree = "<group>";
 		};
+		0A3DE3F421C9E76A00A0F071 /* FunctionTest */ = {
+			isa = PBXGroup;
+			children = (
+				0A3DE3F521C9E78400A0F071 /* FunctionTestViewController.h */,
+				0A3DE3F621C9E78400A0F071 /* FunctionTestViewController.m */,
+				0A3DE3F721C9E78400A0F071 /* FunctionTestViewController.xib */,
+			);
+			path = FunctionTest;
+			sourceTree = "<group>";
+		};
 		0A4F5B1B1F9EDD5F00140E82 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -745,6 +760,7 @@
 		0A61116720E8CAC3008CE53F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				0A3DE3F421C9E76A00A0F071 /* FunctionTest */,
 				0A2BEB4321AE4B840008C79B /* Draw */,
 				0ABAE6ED21ABC7720094BAA8 /* SwipeCellKit */,
 				0A72CD4B21A649D400CDBE93 /* StaticTableList */,
@@ -1287,6 +1303,7 @@
 				0AEA6F271F90B0E1008C3E69 /* reward_icon_price_rate@3x.png in Resources */,
 				0A61116D20E8CAFD008CE53F /* ScrollViewController.xib in Resources */,
 				0A009D3E20E8CC9D00D81C6A /* localImage3.jpeg in Resources */,
+				0A3DE3F921C9E78400A0F071 /* FunctionTestViewController.xib in Resources */,
 				0A5803661F7A01D1000B5192 /* LaunchScreen.storyboard in Resources */,
 				0A009D4420E8CC9E00D81C6A /* localImage7.jpeg in Resources */,
 				0A009D3B20E8CC9D00D81C6A /* upload_long_image.jpeg in Resources */,
@@ -1431,6 +1448,7 @@
 				0A640F201FC6D7E600B69AFA /* GestureLabel.m in Sources */,
 				0A5C56B12064B1B0009A1813 /* NSSafeMuDictionary.m in Sources */,
 				0A948BDF2080B57E002BD6C7 /* NSString+formatter.m in Sources */,
+				0A3DE3F821C9E78400A0F071 /* FunctionTestViewController.m in Sources */,
 				0ABAE6FC21ABCCE00094BAA8 /* SliderCollectionViewCell.swift in Sources */,
 				0A83D4E120DA4DCF00F8F231 /* BBSDrawView.m in Sources */,
 				0ABAE72821ABE7D20094BAA8 /* SwipeCollectionViewCell+Display.swift in Sources */,
