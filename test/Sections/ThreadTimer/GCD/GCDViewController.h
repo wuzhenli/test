@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface GCDViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *lblTip;
 
 @end
