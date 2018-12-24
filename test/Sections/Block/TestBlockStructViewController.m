@@ -1,0 +1,55 @@
+//
+//  TestBlockStructViewController.m
+//  test
+//
+//  Created by li’s Air on 2018/12/23.
+//  Copyright © 2018 wzl. All rights reserved.
+//
+
+#import "TestBlockStructViewController.h"
+
+@interface TestBlockStructViewController ()
+
+
+@property (copy, nonatomic) dispatch_block_t block;
+@property (copy, nonatomic) dispatch_block_t blockVariable;;
+
+@end
+
+@implementation TestBlockStructViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
+}
+
+
+int intGlobal  = 144;
+
+- (void)testBlockCaptureStackVariable {
+    
+    self.block = ^{
+        NSLog(@"this is block capture normal int:%d", intGlobal);
+    };
+    self.block();
+    
+    __block int intBlock = 122;
+    
+    self.blockVariable = ^{
+        NSLog(@"this is block capture block int:%d", intGlobal);
+    };
+    self.blockVariable();
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScrollViewController">
             <connections>
-                <outlet property="doubleTap" destination="d32-M8-L2I" id="rNv-r8-Zhw"/>
-                <outlet property="imgView" destination="y0H-AS-vcg" id="2XO-Jp-bjP"/>
-                <outlet property="scrollView" destination="bZb-g8-ZSr" id="cxL-yv-nbV"/>
-                <outlet property="singleTap" destination="Q05-VE-QHa" id="0bT-bL-h6q"/>
+                <outlet property="btnBack" destination="xF3-FR-aj1" id="uis-3s-ofp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,21 +21,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZb-g8-ZSr">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="upload_long_image.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="y0H-AS-vcg">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
-                    </subviews>
-                    <gestureRecognizers/>
-                    <connections>
-                        <outletCollection property="gestureRecognizers" destination="Q05-VE-QHa" appends="YES" id="DUq-y9-x05"/>
-                        <outletCollection property="gestureRecognizers" destination="d32-M8-L2I" appends="YES" id="BD7-uN-SSx"/>
-                    </connections>
-                </scrollView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xF3-FR-aj1">
                     <rect key="frame" x="20" y="40" width="44" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -51,18 +34,5 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>
-        <tapGestureRecognizer id="Q05-VE-QHa" userLabel="singleTap Gesture Recognizer">
-            <connections>
-                <action selector="singleTap:" destination="-1" id="emP-qH-VhF"/>
-            </connections>
-        </tapGestureRecognizer>
-        <tapGestureRecognizer numberOfTapsRequired="2" id="d32-M8-L2I" userLabel="two Tap Gesture Recognizer">
-            <connections>
-                <action selector="twoTap:" destination="-1" id="aGt-ve-swu"/>
-            </connections>
-        </tapGestureRecognizer>
     </objects>
-    <resources>
-        <image name="upload_long_image.jpeg" width="640" height="13878"/>
-    </resources>
 </document>
