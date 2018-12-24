@@ -35,6 +35,7 @@
 		0A30594B1FFC87920092DF94 /* NSObject+DLIntrospection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A30594A1FFC87920092DF94 /* NSObject+DLIntrospection.m */; };
 		0A33173E20F5F89A00823A22 /* MenuCtlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A33173D20F5F89A00823A22 /* MenuCtlViewController.m */; };
 		0A33174120F5F8BA00823A22 /* MCTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A33174020F5F8BA00823A22 /* MCTextView.m */; };
+		0A342AA521D0B64B00ABBDD1 /* GCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A342AA421D0B64B00ABBDD1 /* GCDViewController.xib */; };
 		0A35462C20EFBB4A000FA171 /* TestVCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35462A20EFBB4A000FA171 /* TestVCController.m */; };
 		0A35462D20EFBB4A000FA171 /* TestVCController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A35462B20EFBB4A000FA171 /* TestVCController.xib */; };
 		0A36886F20E6482E0077BA89 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A36886E20E6482E0077BA89 /* GCDViewController.m */; };
@@ -220,6 +221,7 @@
 		0A33173D20F5F89A00823A22 /* MenuCtlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuCtlViewController.m; sourceTree = "<group>"; };
 		0A33173F20F5F8BA00823A22 /* MCTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCTextView.h; sourceTree = "<group>"; };
 		0A33174020F5F8BA00823A22 /* MCTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCTextView.m; sourceTree = "<group>"; };
+		0A342AA421D0B64B00ABBDD1 /* GCDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GCDViewController.xib; sourceTree = "<group>"; };
 		0A35462920EFBB4A000FA171 /* TestVCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVCController.h; sourceTree = "<group>"; };
 		0A35462A20EFBB4A000FA171 /* TestVCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVCController.m; sourceTree = "<group>"; };
 		0A35462B20EFBB4A000FA171 /* TestVCController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVCController.xib; sourceTree = "<group>"; };
@@ -571,6 +573,7 @@
 			children = (
 				0A36886D20E6482E0077BA89 /* GCDViewController.h */,
 				0A36886E20E6482E0077BA89 /* GCDViewController.m */,
+				0A342AA421D0B64B00ABBDD1 /* GCDViewController.xib */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -1347,6 +1350,7 @@
 				0A5803631F7A01D1000B5192 /* Assets.xcassets in Resources */,
 				0AA47ACF20160DAB00242C4D /* preview_2.mov in Resources */,
 				0A8F226F1F7B7E8200499EFD /* TestViewController.xib in Resources */,
+				0A342AA521D0B64B00ABBDD1 /* GCDViewController.xib in Resources */,
 				0A5535252115DD5A00A43828 /* DefineGestureViewController.xib in Resources */,
 				0AE45A971F90591D00D738F4 /* KeyWinViewController.xib in Resources */,
 				0A7C409020073CED00174650 /* PhotoKitViewController.xib in Resources */,

@@ -32,7 +32,7 @@ dispatch_async(dispatch_get_main_queue(), block); \
 
 - (NSMutableArray<NSString *> *)arrClassNameXib {
     if (!_arrClassNameXib) {
-        _arrClassNameXib = @[@"BlockBaseViewController",
+        _arrClassNameXib = @[@"GCDViewController", @"BlockBaseViewController",
                              @"FunctionTestViewController",@"StaticTableViewController",
                              @"SwipeCellKitCollectionViewController",
                              @"TestAnimationViewController", @"DrawViewController",
@@ -97,14 +97,14 @@ dispatch_async(dispatch_get_main_queue(), block); \
 
 - (NSMutableArray<NSString *> *)arrClassNameSB {
     if (!_arrClassNameSB) {
-        _arrClassNameSB = @[@"TVViewController", @"TimerViewController", @"GCDViewController"].mutableCopy;
+        _arrClassNameSB = @[@"TVViewController", @"TimerViewController"].mutableCopy;
     }
     return _arrClassNameSB;
 }
 
 - (NSMutableArray<NSString *> *)arrDescribeSB {
     if (!_arrDescribeSB) {
-        _arrDescribeSB = @[@"测试tableView", @"timer", @"GCDViewController"].mutableCopy;
+        _arrDescribeSB = @[@"测试tableView", @"timer"].mutableCopy;
     }
     return _arrDescribeSB;
 }
