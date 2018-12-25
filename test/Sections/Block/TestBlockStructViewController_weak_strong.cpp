@@ -65831,56 +65831,57 @@ static struct __TestBlockStructViewController__testBlockCaptureStackVariable_blo
 } __TestBlockStructViewController__testBlockCaptureStackVariable_block_desc_2_DATA = { 0, sizeof(struct __TestBlockStructViewController__testBlockCaptureStackVariable_block_impl_2), __TestBlockStructViewController__testBlockCaptureStackVariable_block_copy_2, __TestBlockStructViewController__testBlockCaptureStackVariable_block_dispose_2};
 /////////////////////////////////////////////
 static void _I_TestBlockStructViewController_testBlockCaptureStackVariable(TestBlockStructViewController * self, SEL _cmd) {
-UILabel *lbl = ......
+    UILabel *lbl = ......
 
-((void (*)(id, SEL, dispatch_block_t))(void *)objc_msgSend)
-(
-     (id)self,
-     sel_registerName("setBlock:"),
-     (
-        (void (*)())&__TestBlockStructViewController__testBlockCaptureStackVariable_block_impl_0
-        (
-             (void *)__TestBlockStructViewController__testBlockCaptureStackVariable_block_func_0,
-             &__TestBlockStructViewController__testBlockCaptureStackVariable_block_desc_0_DATA,
-             lbl,
-             570425344
-        )
-     )
-);
-((dispatch_block_t (*)(id, SEL))(void *)objc_msgSend)((id)self, sel_registerName("block"))();
-
-__attribute__((objc_ownership(weak))) UILabel *weakLbl = lbl;
-
-((void (*)(id, SEL, dispatch_block_t))(void *)objc_msgSend)
-(
-    (id)self,
-    sel_registerName("setCaptureWeak:"),
+    ((void (*)(id, SEL, dispatch_block_t))(void *)objc_msgSend)
     (
-        (void (*)())&__TestBlockStructViewController__testBlockCaptureStackVariable_block_impl_1
-        (
-            (void *)__TestBlockStructViewController__testBlockCaptureStackVariable_block_func_1,
-            &__TestBlockStructViewController__testBlockCaptureStackVariable_block_desc_1_DATA,
-            weakLbl,
-            570425344
-        )
-    )
-);
-    ((dispatch_block_t (*)(id, SEL))(void *)objc_msgSend)((id)self, sel_registerName("captureWeak"))();
+         (id)self,
+         sel_registerName("setBlock:"),
+         (
+            (void (*)())&__TestBlockStructViewController__testBlockCaptureStackVariable_block_impl_0
+            (
+                 (void *)__TestBlockStructViewController__testBlockCaptureStackVariable_block_func_0,
+                 &__TestBlockStructViewController__testBlockCaptureStackVariable_block_desc_0_DATA,
+                 lbl,
+                 570425344
+            )
+         )
+    );
+    ((dispatch_block_t (*)(id, SEL))(void *)objc_msgSend)((id)self, sel_registerName("block"))();
 
-((void (*)(id, SEL, dispatch_block_t))(void *)objc_msgSend)
-(
-   (id)self, sel_registerName("setCaptureWeakStrong:"),
-   (
-      (void (*)())&__TestBlockStructViewController__testBlockCaptureStackVariable_block_impl_2
-      (
-           (void *)__TestBlockStructViewController__testBlockCaptureStackVariable_block_func_2,
-           &__TestBlockStructViewController__testBlockCaptureStackVariable_block_desc_2_DATA,
-           weakLbl,
-           570425344
-      )
-   )
-);
-((dispatch_block_t (*)(id, SEL))(void *)objc_msgSend)((id)self, sel_registerName("captureWeakStrong"))();
+    
+    __attribute__((objc_ownership(weak))) UILabel *weakLbl = lbl;
+
+    ((void (*)(id, SEL, dispatch_block_t))(void *)objc_msgSend)
+    (
+        (id)self,
+        sel_registerName("setCaptureWeak:"),
+        (
+            (void (*)())&__TestBlockStructViewController__testBlockCaptureStackVariable_block_impl_1
+            (
+                (void *)__TestBlockStructViewController__testBlockCaptureStackVariable_block_func_1,
+                &__TestBlockStructViewController__testBlockCaptureStackVariable_block_desc_1_DATA,
+                weakLbl,
+                570425344
+            )
+        )
+    );
+        ((dispatch_block_t (*)(id, SEL))(void *)objc_msgSend)((id)self, sel_registerName("captureWeak"))();
+
+    ((void (*)(id, SEL, dispatch_block_t))(void *)objc_msgSend)
+    (
+       (id)self, sel_registerName("setCaptureWeakStrong:"),
+       (
+          (void (*)())&__TestBlockStructViewController__testBlockCaptureStackVariable_block_impl_2
+          (
+               (void *)__TestBlockStructViewController__testBlockCaptureStackVariable_block_func_2,
+               &__TestBlockStructViewController__testBlockCaptureStackVariable_block_desc_2_DATA,
+               weakLbl,
+               570425344
+          )
+       )
+    );
+    ((dispatch_block_t (*)(id, SEL))(void *)objc_msgSend)((id)self, sel_registerName("captureWeakStrong"))();
 }
 
 static void(* _I_TestBlockStructViewController_block(TestBlockStructViewController * self, SEL _cmd) )(){ return (*(__strong dispatch_block_t *)((char *)self + OBJC_IVAR_$_TestBlockStructViewController$_block)); }

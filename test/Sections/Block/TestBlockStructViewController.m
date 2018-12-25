@@ -31,7 +31,6 @@
 
 
 - (void)testBlockCaptureStackVariable {
-
     self.block = ^{
         NSLog(@"this is block capture strong point lbl:%@", _btnMember);
     };

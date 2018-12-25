@@ -80,11 +80,20 @@ static struct __TestBlockStructViewController__testBlockCaptureStackVariable_blo
   size_t Block_size;
 } __TestBlockStructViewController__testBlockCaptureStackVariable_block_desc_0_DATA = { 0, sizeof(struct __TestBlockStructViewController__testBlockCaptureStackVariable_block_impl_0)};
 
+
+
 struct __TestBlockStructViewController__testBlockCaptureStackVariable_block_impl_1 {
   struct __block_impl impl;
   struct __TestBlockStructViewController__testBlockCaptureStackVariable_block_desc_1* Desc;
   __Block_byref_intBlock_0 *intBlock; // by ref
-  __TestBlockStructViewController__testBlockCaptureStackVariable_block_impl_1(void *fp, struct __TestBlockStructViewController__testBlockCaptureStackVariable_block_desc_1 *desc, __Block_byref_intBlock_0 *_intBlock, int flags=0) : intBlock(_intBlock->__forwarding) {
+    
+  __TestBlockStructViewController__testBlockCaptureStackVariable_block_impl_1
+    (
+     void *fp, 
+     struct __TestBlockStructViewController__testBlockCaptureStackVariable_block_desc_1 *desc, 
+     __Block_byref_intBlock_0 *_intBlock, 
+     int flags=0) : intBlock(_intBlock->__forwarding) 
+    {
     impl.isa = &_NSConcreteStackBlock;
     impl.Flags = flags;
     impl.FuncPtr = fp;
@@ -125,18 +134,27 @@ static void _I_TestBlockStructViewController_testBlockCaptureStackVariable(TestB
 
     (   (void (*)(id, SEL, dispatch_block_t))    (void *)objc_msgSend        )
     (
-     (id)self,
-     sel_registerName("setBlock:"),
+       (id)self,
+       sel_registerName("setBlock:"),
         (
          (void (*)()) &__TestBlockStructViewController__testBlockCaptureStackVariable_block_impl_0
             (
-             (void *)__TestBlockStructViewController__testBlockCaptureStackVariable_block_func_0, &__TestBlockStructViewController__testBlockCaptureStackVariable_block_desc_0_DATA, intTemp
+                (void *)__TestBlockStructViewController__testBlockCaptureStackVariable_block_func_0,
+                &__TestBlockStructViewController__testBlockCaptureStackVariable_block_desc_0_DATA, 
+                intTemp
             )
         )
      );
 
     /// __block int intBlock = 122;
-    __attribute__((__blocks__(byref)))  __Block_byref_intBlock_0  intBlock = {(void*)0,(__Block_byref_intBlock_0 *)&intBlock, 0, sizeof(__Block_byref_intBlock_0), 122};
+    __attribute__((__blocks__(byref)))  __Block_byref_intBlock_0  intBlock = 
+    {
+        (void*)0,
+        (__Block_byref_intBlock_0 *)&intBlock, 
+        0, 
+        sizeof(__Block_byref_intBlock_0), 
+        122
+    };
 
     ((void (*)(id, SEL, dispatch_block_t))(void *)objc_msgSend)
     (

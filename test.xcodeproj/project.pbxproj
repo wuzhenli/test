@@ -44,6 +44,9 @@
 		0A3CCFDF214A33240017F7A2 /* VolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3CCFDE214A33240017F7A2 /* VolumeView.m */; };
 		0A3DE3F821C9E78400A0F071 /* FunctionTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3DE3F621C9E78400A0F071 /* FunctionTestViewController.m */; };
 		0A3DE3F921C9E78400A0F071 /* FunctionTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3DE3F721C9E78400A0F071 /* FunctionTestViewController.xib */; };
+		0A3F5A8B21D1C99000C583BC /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F5A8921D1C99000C583BC /* ThreadViewController.m */; };
+		0A3F5A8C21D1C99000C583BC /* ThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F5A8A21D1C99000C583BC /* ThreadViewController.xib */; };
+		0A3F5A8F21D1D06500C583BC /* NSRunLoop+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F5A8E21D1D06500C583BC /* NSRunLoop+Hook.m */; };
 		0A4F5B1E1F9EDD6C00140E82 /* JLGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F5B1D1F9EDD6C00140E82 /* JLGradientButton.m */; };
 		0A5535242115DD5A00A43828 /* DefineGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5535222115DD5A00A43828 /* DefineGestureViewController.m */; };
 		0A5535252115DD5A00A43828 /* DefineGestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A5535232115DD5A00A43828 /* DefineGestureViewController.xib */; };
@@ -235,6 +238,11 @@
 		0A3DE3F521C9E78400A0F071 /* FunctionTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionTestViewController.h; sourceTree = "<group>"; };
 		0A3DE3F621C9E78400A0F071 /* FunctionTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionTestViewController.m; sourceTree = "<group>"; };
 		0A3DE3F721C9E78400A0F071 /* FunctionTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FunctionTestViewController.xib; sourceTree = "<group>"; };
+		0A3F5A8821D1C99000C583BC /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
+		0A3F5A8921D1C99000C583BC /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
+		0A3F5A8A21D1C99000C583BC /* ThreadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadViewController.xib; sourceTree = "<group>"; };
+		0A3F5A8D21D1D06500C583BC /* NSRunLoop+Hook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSRunLoop+Hook.h"; sourceTree = "<group>"; };
+		0A3F5A8E21D1D06500C583BC /* NSRunLoop+Hook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSRunLoop+Hook.m"; sourceTree = "<group>"; };
 		0A4F5B1C1F9EDD6C00140E82 /* JLGradientButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLGradientButton.h; sourceTree = "<group>"; };
 		0A4F5B1D1F9EDD6C00140E82 /* JLGradientButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLGradientButton.m; sourceTree = "<group>"; };
 		0A5535212115DD5A00A43828 /* DefineGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineGestureViewController.h; sourceTree = "<group>"; };
@@ -600,6 +608,18 @@
 			path = FunctionTest;
 			sourceTree = "<group>";
 		};
+		0A3F5A8721D1C97C00C583BC /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				0A3F5A8821D1C99000C583BC /* ThreadViewController.h */,
+				0A3F5A8921D1C99000C583BC /* ThreadViewController.m */,
+				0A3F5A8A21D1C99000C583BC /* ThreadViewController.xib */,
+				0A3F5A8D21D1D06500C583BC /* NSRunLoop+Hook.h */,
+				0A3F5A8E21D1D06500C583BC /* NSRunLoop+Hook.m */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
 		0A4F5B1B1F9EDD5F00140E82 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -814,6 +834,7 @@
 		0A61116820E8CACE008CE53F /* ThreadTimer */ = {
 			isa = PBXGroup;
 			children = (
+				0A3F5A8721D1C97C00C583BC /* Thread */,
 				0A36887020E648330077BA89 /* GCD */,
 				0A9F887020E4F50D00B44E68 /* Timer */,
 			);
@@ -1324,6 +1345,7 @@
 				0AEA6F261F90B0E1008C3E69 /* reward_icon_price_rate@2x.png in Resources */,
 				0AA47AD020160DAB00242C4D /* preview_2的副本.123314.mov in Resources */,
 				0A009D3D20E8CC9D00D81C6A /* localImage5.jpeg in Resources */,
+				0A3F5A8C21D1C99000C583BC /* ThreadViewController.xib in Resources */,
 				0A61116320E8ACEC008CE53F /* WebViewController.xib in Resources */,
 				0A009D3A20E8CC9D00D81C6A /* localImage6.jpeg in Resources */,
 				0A009D4020E8CC9E00D81C6A /* localImage4.jpeg in Resources */,
@@ -1529,7 +1551,9 @@
 				0A3CCFDB214A330A0017F7A2 /* AudioVolumeViewController.m in Sources */,
 				0AD0FEA520614F5D006678F4 /* SingleModel.m in Sources */,
 				0ABAE71C21ABE7D20094BAA8 /* SwipeActionButton.swift in Sources */,
+				0A3F5A8F21D1D06500C583BC /* NSRunLoop+Hook.m in Sources */,
 				0A30594B1FFC87920092DF94 /* NSObject+DLIntrospection.m in Sources */,
+				0A3F5A8B21D1C99000C583BC /* ThreadViewController.m in Sources */,
 				0AB886F620A3E4DB003F2734 /* TestCollectionViewCell.m in Sources */,
 				0AD77DB120E763AE00330F2C /* MGSwipeTableCell.m in Sources */,
 				0AEFF56221A6738D00E95A76 /* StaticTitleDescCell.m in Sources */,
