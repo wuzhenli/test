@@ -8,10 +8,14 @@
 
 #import "TestBlockStructViewController.h"
 
-@interface TestBlockStructViewController ()
+@interface TestBlockStructViewController () {
+    UIButton *_btnMember;
+}
 
 
 @property (copy, nonatomic) dispatch_block_t block;
+@property (copy, nonatomic) dispatch_block_t captureWeak;
+@property (copy, nonatomic) dispatch_block_t captureWeakStrong;
 @property (copy, nonatomic) dispatch_block_t blockVariable;;
 
 @end
@@ -25,21 +29,14 @@
 }
 
 
-int intGlobal  = 144;
 
 - (void)testBlockCaptureStackVariable {
-    
+
     self.block = ^{
-        NSLog(@"this is block capture normal int:%d", intGlobal);
+        NSLog(@"this is block capture strong point lbl:%@", _btnMember);
     };
     self.block();
     
-    __block int intBlock = 122;
-    
-    self.blockVariable = ^{
-        NSLog(@"this is block capture block int:%d", intGlobal);
-    };
-    self.blockVariable();
 }
 
 /*
