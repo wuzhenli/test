@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "NSObject+DLIntrospection.h"
 #import <objc/runtime.h>
+#import "BBSAcitvity.h"
 
 #define Dispatch_Safe_Main(block) \
 if ([NSThread isMainThread]) { \
@@ -50,8 +51,8 @@ dispatch_async(dispatch_get_main_queue(), block); \
     
     self.sb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     
-    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@""
-       style:UIBarButtonItemStylePlain target:self action:nil];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"More"
+       style:UIBarButtonItemStylePlain target:self action:@selector(showActivityController)];
     
 }
 
@@ -61,6 +62,24 @@ dispatch_async(dispatch_get_main_queue(), block); \
     NSLog(@"j=%d", j);
 }
 
+
+- (void)showActivityController {
+    NSMutableArray *items = @[].mutableCopy;
+    [items addObject:@"六间房直播"]; // title
+    
+    NSString *webUrl = @"https://www.6.cn";  // url
+    if (webUrl) [items addObject:[NSURL URLWithString:webUrl]];
+    
+    BBSAcitvity *activity = [[BBSAcitvity alloc] init];
+    
+    UIActivityViewController * activityCtl = [[UIActivityViewController alloc]initWithActivityItems:items applicationActivities:@[activity]];
+    activityCtl.completionWithItemsHandler = ^(UIActivityType  _Nullable activityType, BOOL completed, NSArray * _Nullable returnedItems, NSError * _Nullable activityError) {
+        if (UIActivityTypeCopyToPasteboard == activityType) {
+            [UIPasteboard generalPasteboard].string = webUrl;
+        }
+    };
+    [self presentViewController:activityCtl animated:YES completion:nil];
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 2;

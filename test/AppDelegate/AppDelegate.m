@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,8 @@
 
 // -application:handleEventsForBackgroundURLSession:completionHandler:
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [self registerJLRouter];
     // Override point for customization after application launch.
 //    LoggerSetupBonjourForBuildUser();
 //    LoggerSetOptions(NULL,                  
@@ -26,7 +29,15 @@
 //                     kLoggerOption_BrowseBonjour|
 //                     kLoggerOption_BrowseOnlyLocalDomain);
 //    LoggerSetViewerHost(NULL, (__bridge CFStringRef)@"192.168.20.193", (UInt32)50000);
+    
     return YES;
+}
+
+- (void)registerJLRouter {
+    JLRoutes *routes = [JLRoutes globalRoutes];
+    [routes addRoute:@"BBS:userId" handler:^BOOL(NSDictionary<NSString *,id> * _Nonnull parameters) {
+        return YES;
+    }];
 }
 
 
@@ -45,8 +56,17 @@
 }
 
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    NSLog(@"%s", __func__);
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    //获取共享的UserDefaults
+    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.www.jaly.www.test"];
+    if ([userDefaults boolForKey:@"has-new-share"])
+    {
+        NSLog(@"新的分享 : %@", [userDefaults valueForKey:@"share-url"]);
+        
+        //重置分享标识
+        [userDefaults setBool:NO forKey:@"has-new-share"];
+    }
 }
 
 

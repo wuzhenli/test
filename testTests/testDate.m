@@ -19,9 +19,11 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    NSLog(@"--- setUp");
 }
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
+    NSLog(@"--- tearDown");
     [super tearDown];
 }
 
@@ -31,9 +33,7 @@
     NSString *show2 = [@"2018-04-12 23:54:32" bbs_formatterText];
     NSString *show3 = [@"2017-04-13 01:56:40" bbs_formatterText];
     
-    NSLog(@"%@   %@   %@", show1, show2, show3);
-    
-    
+    NSLog(@"%@   %@   %@", show1, show2, show3);   
 }
 
 - (void)testExample {

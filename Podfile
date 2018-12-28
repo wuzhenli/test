@@ -12,7 +12,7 @@ target 'test' do
 #  pod "NSLogger"
 # Get the latest on develop
 # •pod 'SwipeCellKit', :git => 'https://github.com/SwipeCellKit/SwipeCellKit.git', :branch => 'develop'
-
+  pod 'JLRoutes', '~> 2.1'
   target 'testTests' do
     inherit! :search_paths
     # Pods for testing
