@@ -44,6 +44,7 @@
 		0A3CCFDF214A33240017F7A2 /* VolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3CCFDE214A33240017F7A2 /* VolumeView.m */; };
 		0A3DE3F821C9E78400A0F071 /* FunctionTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3DE3F621C9E78400A0F071 /* FunctionTestViewController.m */; };
 		0A3DE3F921C9E78400A0F071 /* FunctionTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3DE3F721C9E78400A0F071 /* FunctionTestViewController.xib */; };
+		0A3EEF7E21D622B8009F6E59 /* MyShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3EEF7D21D622B8009F6E59 /* MyShareViewController.m */; };
 		0A3F5A8B21D1C99000C583BC /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F5A8921D1C99000C583BC /* ThreadViewController.m */; };
 		0A3F5A8C21D1C99000C583BC /* ThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F5A8A21D1C99000C583BC /* ThreadViewController.xib */; };
 		0A3F5A8F21D1D06500C583BC /* NSRunLoop+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F5A8E21D1D06500C583BC /* NSRunLoop+Hook.m */; };
@@ -265,6 +266,8 @@
 		0A3DE3F721C9E78400A0F071 /* FunctionTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FunctionTestViewController.xib; sourceTree = "<group>"; };
 		0A3EEF5C21D5F98B009F6E59 /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
 		0A3EEF5D21D5F9C6009F6E59 /* ShareLink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareLink.entitlements; sourceTree = "<group>"; };
+		0A3EEF7C21D622B8009F6E59 /* MyShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyShareViewController.h; sourceTree = "<group>"; };
+		0A3EEF7D21D622B8009F6E59 /* MyShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyShareViewController.m; sourceTree = "<group>"; };
 		0A3F5A8821D1C99000C583BC /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		0A3F5A8921D1C99000C583BC /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
 		0A3F5A8A21D1C99000C583BC /* ThreadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadViewController.xib; sourceTree = "<group>"; };
@@ -1094,6 +1097,8 @@
 				0AAA887A21D5D94C009A1F49 /* ShareViewController.h */,
 				0AAA887B21D5D94C009A1F49 /* ShareViewController.m */,
 				0AAA887D21D5D94C009A1F49 /* MainInterface.storyboard */,
+				0A3EEF7C21D622B8009F6E59 /* MyShareViewController.h */,
+				0A3EEF7D21D622B8009F6E59 /* MyShareViewController.m */,
 				0AAA888021D5D94C009A1F49 /* Info.plist */,
 			);
 			path = ShareLink;
@@ -1728,6 +1733,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3EEF7E21D622B8009F6E59 /* MyShareViewController.m in Sources */,
 				0AAA887C21D5D94C009A1F49 /* ShareViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
