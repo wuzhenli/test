@@ -18,14 +18,17 @@
     return YES;
 }
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor lightGrayColor];
     
     UIButton *btn = [[UIButton alloc] init];
     [btn addTarget:self action:@selector(btnCloseClicked) forControlEvents:UIControlEventTouchUpInside];
-    btn.backgroundColor = [UIColor lightGrayColor];
+    [btn setTitle:@"Close" forState:UIControlStateNormal];
+//    btn.backgroundColor = [UIColor lightGrayColor];
     btn.frame = CGRectMake(10, 20, 44, 44);
     [self.view addSubview:btn];
     

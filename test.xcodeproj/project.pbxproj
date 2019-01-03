@@ -49,6 +49,11 @@
 		0A3F5A8C21D1C99000C583BC /* ThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F5A8A21D1C99000C583BC /* ThreadViewController.xib */; };
 		0A3F5A8F21D1D06500C583BC /* NSRunLoop+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F5A8E21D1D06500C583BC /* NSRunLoop+Hook.m */; };
 		0A4F5B1E1F9EDD6C00140E82 /* JLGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F5B1D1F9EDD6C00140E82 /* JLGradientButton.m */; };
+		0A50041221DDA19C00A1E243 /* TestHeightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A50041021DDA19C00A1E243 /* TestHeightTableViewController.m */; };
+		0A50041321DDA19C00A1E243 /* TestHeightTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A50041121DDA19C00A1E243 /* TestHeightTableViewController.xib */; };
+		0A50041821DDA20E00A1E243 /* AutoHeightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A50041621DDA20E00A1E243 /* AutoHeightTableViewCell.m */; };
+		0A50041921DDA20E00A1E243 /* AutoHeightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A50041721DDA20E00A1E243 /* AutoHeightTableViewCell.xib */; };
+		0A50041D21DDA2F400A1E243 /* TestHeightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A50041C21DDA2F400A1E243 /* TestHeightModel.m */; };
 		0A5535242115DD5A00A43828 /* DefineGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5535222115DD5A00A43828 /* DefineGestureViewController.m */; };
 		0A5535252115DD5A00A43828 /* DefineGestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A5535232115DD5A00A43828 /* DefineGestureViewController.xib */; };
 		0A5535292115DD9100A43828 /* CircleGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5535282115DD9100A43828 /* CircleGestureRecognizer.m */; };
@@ -275,6 +280,14 @@
 		0A3F5A8E21D1D06500C583BC /* NSRunLoop+Hook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSRunLoop+Hook.m"; sourceTree = "<group>"; };
 		0A4F5B1C1F9EDD6C00140E82 /* JLGradientButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLGradientButton.h; sourceTree = "<group>"; };
 		0A4F5B1D1F9EDD6C00140E82 /* JLGradientButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLGradientButton.m; sourceTree = "<group>"; };
+		0A50040F21DDA19C00A1E243 /* TestHeightTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHeightTableViewController.h; sourceTree = "<group>"; };
+		0A50041021DDA19C00A1E243 /* TestHeightTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHeightTableViewController.m; sourceTree = "<group>"; };
+		0A50041121DDA19C00A1E243 /* TestHeightTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestHeightTableViewController.xib; sourceTree = "<group>"; };
+		0A50041521DDA20E00A1E243 /* AutoHeightTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoHeightTableViewCell.h; sourceTree = "<group>"; };
+		0A50041621DDA20E00A1E243 /* AutoHeightTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoHeightTableViewCell.m; sourceTree = "<group>"; };
+		0A50041721DDA20E00A1E243 /* AutoHeightTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoHeightTableViewCell.xib; sourceTree = "<group>"; };
+		0A50041B21DDA2F400A1E243 /* TestHeightModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHeightModel.h; sourceTree = "<group>"; };
+		0A50041C21DDA2F400A1E243 /* TestHeightModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHeightModel.m; sourceTree = "<group>"; };
 		0A5535212115DD5A00A43828 /* DefineGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineGestureViewController.h; sourceTree = "<group>"; };
 		0A5535222115DD5A00A43828 /* DefineGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefineGestureViewController.m; sourceTree = "<group>"; };
 		0A5535232115DD5A00A43828 /* DefineGestureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefineGestureViewController.xib; sourceTree = "<group>"; };
@@ -679,6 +692,29 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0A50041421DDA1EE00A1E243 /* TestCellHeight */ = {
+			isa = PBXGroup;
+			children = (
+				0A50041A21DDA2E300A1E243 /* Model */,
+				0A50040F21DDA19C00A1E243 /* TestHeightTableViewController.h */,
+				0A50041021DDA19C00A1E243 /* TestHeightTableViewController.m */,
+				0A50041121DDA19C00A1E243 /* TestHeightTableViewController.xib */,
+				0A50041521DDA20E00A1E243 /* AutoHeightTableViewCell.h */,
+				0A50041621DDA20E00A1E243 /* AutoHeightTableViewCell.m */,
+				0A50041721DDA20E00A1E243 /* AutoHeightTableViewCell.xib */,
+			);
+			path = TestCellHeight;
+			sourceTree = "<group>";
+		};
+		0A50041A21DDA2E300A1E243 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A50041B21DDA2F400A1E243 /* TestHeightModel.h */,
+				0A50041C21DDA2F400A1E243 /* TestHeightModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0A5535262115DD5F00A43828 /* DefineGesture */ = {
 			isa = PBXGroup;
 			children = (
@@ -1000,6 +1036,7 @@
 		0A826D5920DFD4AC00338617 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				0A50041421DDA1EE00A1E243 /* TestCellHeight */,
 				0A826D5A20DFD4C000338617 /* TVViewController.h */,
 				0A826D5B20DFD4C000338617 /* TVViewController.m */,
 				0AD77DB420E763D500330F2C /* SlideTableViewController.h */,
@@ -1447,6 +1484,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AB886F720A3E4DB003F2734 /* TestCollectionViewCell.xib in Resources */,
+				0A50041921DDA20E00A1E243 /* AutoHeightTableViewCell.xib in Resources */,
+				0A50041321DDA19C00A1E243 /* TestHeightTableViewController.xib in Resources */,
 				0AEA6F261F90B0E1008C3E69 /* reward_icon_price_rate@2x.png in Resources */,
 				0AA47AD020160DAB00242C4D /* preview_2的副本.123314.mov in Resources */,
 				0A009D3D20E8CC9D00D81C6A /* localImage5.jpeg in Resources */,
@@ -1618,7 +1657,9 @@
 				0ABAE71B21ABE7D20094BAA8 /* SwipeFeedback.swift in Sources */,
 				0AD6A9D621185DD300DBA114 /* KVOPerson.m in Sources */,
 				0ABAE72021ABE7D20094BAA8 /* SwipeAnimator.swift in Sources */,
+				0A50041221DDA19C00A1E243 /* TestHeightTableViewController.m in Sources */,
 				0AEFF55F21A6734F00E95A76 /* StaticTitleSwitchCell.m in Sources */,
+				0A50041821DDA20E00A1E243 /* AutoHeightTableViewCell.m in Sources */,
 				0A5535292115DD9100A43828 /* CircleGestureRecognizer.m in Sources */,
 				0A6A0D7221941A7200AB4634 /* JLPanGestureRecognizer.m in Sources */,
 				0A948BE52080B6FB002BD6C7 /* NSDate+compare.m in Sources */,
@@ -1693,6 +1734,7 @@
 				0A72CD5121A64B4400CDBE93 /* StaticTableVCModel.m in Sources */,
 				0A768B1C208369850086AA40 /* JLPresentAnimation.m in Sources */,
 				0ABAE72B21ABE7D20094BAA8 /* SwipeTableViewCellDelegate.swift in Sources */,
+				0A50041D21DDA2F400A1E243 /* TestHeightModel.m in Sources */,
 				0ABAE71D21ABE7D20094BAA8 /* Swipeable.swift in Sources */,
 				0AF7B2E4219D4FA100144B7E /* SaveAlbumTool.m in Sources */,
 				0ABAE71F21ABE7D20094BAA8 /* SwipeActionTransitioning.swift in Sources */,
