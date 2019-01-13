@@ -64,6 +64,13 @@ BOOL shouldKeepRunning = YES; // global
      第3个参数: 是否每次都需要监听
      第4个参数: 优先级, 数字低的先调用
      第5个参数: 监听到状态改变之后的回调
+     CF_EXPORT CFRunLoopObserverRef CFRunLoopObserverCreateWithHandler(
+     CFAllocatorRef allocator, 
+     CFOptionFlags activities, 
+     Boolean repeats, 
+     CFIndex order, 
+     void (^block) (CFRunLoopObserverRef observer, CFRunLoopActivity activity)) API_AVAILABLE(macos(10.7), ios(5.0), watchos(2.0), tvos(9.0));
+
      */
     CFRunLoopObserverRef  observer = CFRunLoopObserverCreateWithHandler(CFAllocatorGetDefault(), kCFRunLoopAllActivities, YES, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
         switch (activity) {

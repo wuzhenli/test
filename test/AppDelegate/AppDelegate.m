@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "TargetViewController.h"
 
 
 @interface AppDelegate ()
@@ -20,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [self registerJLRouter];
-    // Override point for customization after application launch.
+//    Override point for customization after application launch.
 //    LoggerSetupBonjourForBuildUser();
 //    LoggerSetOptions(NULL,                  
 //                     kLoggerOption_BufferLogsUntilConnection |
@@ -35,11 +35,64 @@
 
 - (void)registerJLRouter {
     JLRoutes *routes = [JLRoutes globalRoutes];
-    [routes addRoute:@"BBS:userId" handler:^BOOL(NSDictionary<NSString *,id> * _Nonnull parameters) {
+    
+    [[JLRoutes routesForScheme:@"thing"] addRoute:@"/global" handler:^BOOL(NSDictionary<NSString *,id> * _Nonnull parameters) { // 只匹配 scheme 是 thing  的 url
+        NSLog(@"thing://global");
         return YES;
     }];
+    
+    
+    id block = [JLRRouteHandler handlerBlockForTargetClass:[TargetViewController class] completion:^ BOOL(id<JLRRouteHandlerTarget> viewController) {
+        UIViewController *rootVC = [UIApplication sharedApplication].keyWindow.rootViewController;
+        while (rootVC.presentedViewController) {
+            rootVC = rootVC.presentedViewController;
+        }
+        if ([rootVC isKindOfClass:[UINavigationController class]]) {
+            UINavigationController *nav = (UINavigationController *)rootVC;
+            [nav pushViewController:(TargetViewController  *)viewController animated:YES];
+            return YES;
+        }
+        return NO;
+    }];
+    [[JLRoutes  globalRoutes] addRoute:@"/some/route" handler:block];
+    
+//    [routes addRoute:@"/global" handler:^BOOL(NSDictionary<NSString *,id> * _Nonnull parameters) {
+//        NSLog(@"/global : %@", parameters[@"JLRouteURL"]); // 不管 scheme 是什么 都有机会匹配
+//        return YES;
+//    }];
+    
+//    [JLRoutes routesForScheme:@"thing"].shouldFallbackToGlobalRoutes = NO;
+    
+    [routes addRoute:@"/wildcard/*" handler:^BOOL(NSDictionary<NSString *,id> * _Nonnull parameters) {
+        NSArray *pathComponents = parameters[JLRouteWildcardComponentsKey];
+        if (pathComponents.count > 0 && [pathComponents[0] isEqualToString:@"joker"]) {
+            return YES;
+        }
+        return NO;
+    }];
+    
+    /*
+     {
+         JLRoutePattern = "user/view/:userID";
+         JLRouteScheme = JLRoutesGlobalRoutesScheme;
+         JLRouteURL = "BBS://user/view/joeldev";
+         userID = joeldev;
+     }
+     */
+//    [routes addRoute:@"user/view/:userID:userName" handler:^BOOL(NSDictionary<NSString *,id> * _Nonnull parameters) {
+//        NSLog(@"user/view/:userID:userName  param:%@", parameters);
+//        return YES;
+//    }];
+    // 多种匹配
+//    [routes addRoute:@"/:object/:action/:primaryKey" handler:^BOOL(NSDictionary<NSString *,id> * _Nonnull parameters) {
+//        NSLog(@"/:object/:action/:primaryKey: param:%@", parameters);
+//        return YES;
+//    }];
 }
 
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    return [JLRoutes routeURL:url];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     NSLog(@"%s", __func__);

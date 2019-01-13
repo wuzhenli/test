@@ -160,6 +160,8 @@
 		0AD77DBB20E76B7600330F2C /* SlideData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD77DBA20E76B7600330F2C /* SlideData.m */; };
 		0AD77DC020E7706300330F2C /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD77DBE20E7706300330F2C /* KeyboardViewController.m */; };
 		0AD77DC120E7706300330F2C /* KeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD77DBF20E7706300330F2C /* KeyboardViewController.xib */; };
+		0AE002A521DE06E7007C2125 /* JLRoutersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE002A321DE06E7007C2125 /* JLRoutersViewController.m */; };
+		0AE002A621DE06E7007C2125 /* JLRoutersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE002A421DE06E7007C2125 /* JLRoutersViewController.xib */; };
 		0AE45A961F90591D00D738F4 /* KeyWinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE45A941F90591D00D738F4 /* KeyWinViewController.m */; };
 		0AE45A971F90591D00D738F4 /* KeyWinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE45A951F90591D00D738F4 /* KeyWinViewController.xib */; };
 		0AEA6F261F90B0E1008C3E69 /* reward_icon_price_rate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEA6F241F90B05B008C3E69 /* reward_icon_price_rate@2x.png */; };
@@ -170,6 +172,7 @@
 		0AF7B2E0219D4D8E00144B7E /* MBProgressHUD+bbs.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B2DC219D4D8E00144B7E /* MBProgressHUD+bbs.m */; };
 		0AF7B2E1219D4D8E00144B7E /* BBSProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B2DD219D4D8E00144B7E /* BBSProgressHUD.m */; };
 		0AF7B2E4219D4FA100144B7E /* SaveAlbumTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B2E3219D4FA100144B7E /* SaveAlbumTool.m */; };
+		0AFBE91521DEF32200F2D102 /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBE91421DEF32200F2D102 /* TargetViewController.m */; };
 		47845B86F679F8BC4D51D41B /* Pods_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2F05AC492F370379790F46 /* Pods_testTests.framework */; };
 		7F395CE552BA2D4E46CA9A47 /* Pods_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30BC06EB45B6EF316E8ABA0 /* Pods_testUITests.framework */; };
 		9EAC6D02032ACD6A60531714 /* Pods_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060E2C00D66C17E5EC4CA85E /* Pods_test.framework */; };
@@ -465,6 +468,9 @@
 		0AD77DBF20E7706300330F2C /* KeyboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardViewController.xib; sourceTree = "<group>"; };
 		0AD77DC320E78ADB00330F2C /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		0AD77DC420E78AE700330F2C /* TestHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHeader.h; sourceTree = "<group>"; };
+		0AE002A221DE06E7007C2125 /* JLRoutersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLRoutersViewController.h; sourceTree = "<group>"; };
+		0AE002A321DE06E7007C2125 /* JLRoutersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLRoutersViewController.m; sourceTree = "<group>"; };
+		0AE002A421DE06E7007C2125 /* JLRoutersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JLRoutersViewController.xib; sourceTree = "<group>"; };
 		0AE45A931F90591D00D738F4 /* KeyWinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyWinViewController.h; sourceTree = "<group>"; };
 		0AE45A941F90591D00D738F4 /* KeyWinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyWinViewController.m; sourceTree = "<group>"; };
 		0AE45A951F90591D00D738F4 /* KeyWinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyWinViewController.xib; sourceTree = "<group>"; };
@@ -482,6 +488,8 @@
 		0AF7B2DF219D4D8E00144B7E /* MBProgressHUD+bbs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+bbs.h"; sourceTree = "<group>"; };
 		0AF7B2E2219D4FA100144B7E /* SaveAlbumTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveAlbumTool.h; sourceTree = "<group>"; };
 		0AF7B2E3219D4FA100144B7E /* SaveAlbumTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveAlbumTool.m; sourceTree = "<group>"; };
+		0AFBE91321DEF32200F2D102 /* TargetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TargetViewController.h; sourceTree = "<group>"; };
+		0AFBE91421DEF32200F2D102 /* TargetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TargetViewController.m; sourceTree = "<group>"; };
 		0FCB9083A04B080CBBDD9434 /* Pods-testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testUITests/Pods-testUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2AA8B6331C093CDC6CBEA45B /* Pods-testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testUITests/Pods-testUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4B446E73B49F3536C4317056 /* Pods-testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testTests/Pods-testTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -815,6 +823,7 @@
 		0A58038D1F7A01F3000B5192 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				0AE002A121DE06D1007C2125 /* Router */,
 				0AAA887021D5D3F1009A1F49 /* ActivityController */,
 				0A0CC8C221CE4E2E00AA53A3 /* Block */,
 				0AF7B2DA219D498500144B7E /* Animation */,
@@ -1284,6 +1293,18 @@
 			path = Macro;
 			sourceTree = "<group>";
 		};
+		0AE002A121DE06D1007C2125 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0AE002A221DE06E7007C2125 /* JLRoutersViewController.h */,
+				0AE002A321DE06E7007C2125 /* JLRoutersViewController.m */,
+				0AE002A421DE06E7007C2125 /* JLRoutersViewController.xib */,
+				0AFBE91321DEF32200F2D102 /* TargetViewController.h */,
+				0AFBE91421DEF32200F2D102 /* TargetViewController.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		0AE45A921F90590400D738F4 /* keyWindow */ = {
 			isa = PBXGroup;
 			children = (
@@ -1502,6 +1523,7 @@
 				0AD77DB820E763D500330F2C /* SlideTableViewController.xib in Resources */,
 				0A304DC9219D7A1C0074FF89 /* TestAnimationViewController.xib in Resources */,
 				0A009D3C20E8CC9D00D81C6A /* localImage1.jpeg in Resources */,
+				0AE002A621DE06E7007C2125 /* JLRoutersViewController.xib in Resources */,
 				0A009D4320E8CC9E00D81C6A /* localImage2.jpeg in Resources */,
 				0A009D4120E8CC9E00D81C6A /* localImage0.jpeg in Resources */,
 				0AEA6F271F90B0E1008C3E69 /* reward_icon_price_rate@3x.png in Resources */,
@@ -1701,12 +1723,14 @@
 				0A6BD2261FD630FC00D13E33 /* APIViewController.m in Sources */,
 				0AA82C5921290B9C000A5C02 /* Student+category.m in Sources */,
 				0ABAE72C21ABE7D20094BAA8 /* SwipeAccessibilityCustomAction.swift in Sources */,
+				0AFBE91521DEF32200F2D102 /* TargetViewController.m in Sources */,
 				0ABAE6F121ABC7870094BAA8 /* SwipeCellKitCollectionViewController.m in Sources */,
 				0AD6A9D221185DAE00DBA114 /* KVOViewController.m in Sources */,
 				0A5D45D02063578900DC78F7 /* DBTool.m in Sources */,
 				0ABAE72521ABE7D20094BAA8 /* SwipeTableViewCell+Accessibility.swift in Sources */,
 				0A3CCFDB214A330A0017F7A2 /* AudioVolumeViewController.m in Sources */,
 				0AD0FEA520614F5D006678F4 /* SingleModel.m in Sources */,
+				0AE002A521DE06E7007C2125 /* JLRoutersViewController.m in Sources */,
 				0ABAE71C21ABE7D20094BAA8 /* SwipeActionButton.swift in Sources */,
 				0A3F5A8F21D1D06500C583BC /* NSRunLoop+Hook.m in Sources */,
 				0A30594B1FFC87920092DF94 /* NSObject+DLIntrospection.m in Sources */,

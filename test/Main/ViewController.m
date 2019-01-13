@@ -33,7 +33,7 @@ dispatch_async(dispatch_get_main_queue(), block); \
 
 - (NSMutableArray<NSString *> *)arrClassNameXib {
     if (!_arrClassNameXib) {
-        _arrClassNameXib = @[ @"TestHeightTableViewController",@"ThreadViewController", 
+        _arrClassNameXib = @[ @"JLRoutersViewController",@"TestHeightTableViewController",@"ThreadViewController", 
                               @"GCDViewController", @"BlockBaseViewController",
                              @"FunctionTestViewController",@"StaticTableViewController",
                              @"SwipeCellKitCollectionViewController",
@@ -49,6 +49,9 @@ dispatch_async(dispatch_get_main_queue(), block); \
     [super viewDidLoad];
     self.title = @"测试 Demo";
     self.tableView.tableFooterView = [UIView new];
+    
+    UIScrollView *sv;
+    sv.pagingEnabled;
     
     self.sb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     
@@ -98,7 +101,7 @@ dispatch_async(dispatch_get_main_queue(), block); \
     } else {
         cell.textLabel.text = self.arrClassNameXib[indexPath.row];
     }
-    
+    cell.layoutMargins;
     
     return cell;
 }

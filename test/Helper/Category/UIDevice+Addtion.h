@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIDevice (Addtion)
+
 + (BOOL)ad_lessThenVersion:(NSString *)version ;
+
 @end
