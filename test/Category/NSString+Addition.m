@@ -38,7 +38,7 @@
 }
 
 - (BOOL)adt_isPhoneNum {
-    NSString *MOBILE = @"^1\\d{10}$";
+    NSString *MOBILE = @"^1\\d{19}$"; //  @"^1\\d{10}$";
     NSPredicate *regextestmobile = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", MOBILE];
     return [regextestmobile evaluateWithObject:self];
 }
