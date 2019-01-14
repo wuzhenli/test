@@ -13,6 +13,9 @@
 		0A3059471FFC800C0092DF94 /* JLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3059461FFC800C0092DF94 /* JLNavigationController.m */; };
 		0A30594B1FFC87920092DF94 /* NSObject+DLIntrospection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A30594A1FFC87920092DF94 /* NSObject+DLIntrospection.m */; };
 		0A36886F20E6482E0077BA89 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A36886E20E6482E0077BA89 /* GCDViewController.m */; };
+		0A36AF8721EC21E7005E2105 /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A36AF8621EC21E7005E2105 /* NSString+Addition.m */; };
+		0A36AF8921EC224F005E2105 /* NSStringAdditionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A36AF8821EC224F005E2105 /* NSStringAdditionTests.m */; };
+		0A36AF8A21EC225D005E2105 /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A36AF8621EC21E7005E2105 /* NSString+Addition.m */; };
 		0A4F5B1E1F9EDD6C00140E82 /* JLGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F5B1D1F9EDD6C00140E82 /* JLGradientButton.m */; };
 		0A5604651FF5E3C800A42929 /* ResponderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5604641FF5E3C800A42929 /* ResponderView.m */; };
 		0A58035B1F7A01D1000B5192 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A58035A1F7A01D1000B5192 /* AppDelegate.m */; };
@@ -56,6 +59,7 @@
 		0AB886F220A3E49D003F2734 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB886F120A3E49D003F2734 /* CollectionViewController.m */; };
 		0AB886F620A3E4DB003F2734 /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB886F420A3E4DB003F2734 /* TestCollectionViewCell.m */; };
 		0AB886F720A3E4DB003F2734 /* TestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB886F520A3E4DB003F2734 /* TestCollectionViewCell.xib */; };
+		0ABA452121E874CA007DA894 /* MehtodSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5803921F7A0282000B5192 /* MehtodSignature.m */; };
 		0AC0ACA920BFBD5D00D3185E /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC0ACA820BFBD5D00D3185E /* PlayerViewController.m */; };
 		0AD0FEA520614F5D006678F4 /* SingleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0FEA420614F5D006678F4 /* SingleModel.m */; };
 		0AD77DA920E7558E00330F2C /* GestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD77DA820E7558E00330F2C /* GestureViewController.xib */; };
@@ -104,6 +108,9 @@
 		0A30594A1FFC87920092DF94 /* NSObject+DLIntrospection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DLIntrospection.m"; sourceTree = "<group>"; };
 		0A36886D20E6482E0077BA89 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		0A36886E20E6482E0077BA89 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		0A36AF8521EC21E7005E2105 /* NSString+Addition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Addition.h"; sourceTree = "<group>"; };
+		0A36AF8621EC21E7005E2105 /* NSString+Addition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Addition.m"; sourceTree = "<group>"; };
+		0A36AF8821EC224F005E2105 /* NSStringAdditionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringAdditionTests.m; sourceTree = "<group>"; };
 		0A4F5B1C1F9EDD6C00140E82 /* JLGradientButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLGradientButton.h; sourceTree = "<group>"; };
 		0A4F5B1D1F9EDD6C00140E82 /* JLGradientButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLGradientButton.m; sourceTree = "<group>"; };
 		0A5604631FF5E3C800A42929 /* ResponderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponderView.h; sourceTree = "<group>"; };
@@ -285,6 +292,15 @@
 			path = GCD;
 			sourceTree = "<group>";
 		};
+		0A36AF8421EC21D3005E2105 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0A36AF8521EC21E7005E2105 /* NSString+Addition.h */,
+				0A36AF8621EC21E7005E2105 /* NSString+Addition.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		0A4F5B1B1F9EDD5F00140E82 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +341,7 @@
 		0A5803581F7A01D1000B5192 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				0A36AF8421EC21D3005E2105 /* Category */,
 				0AD77DC220E78AB900330F2C /* Macro */,
 				0AD77DAA20E763A500330F2C /* Verders */,
 				0AA47AD1201610E000242C4D /* changming.png */,
@@ -349,6 +366,7 @@
 				0A5803721F7A01D2000B5192 /* testTests.m */,
 				0A948BE62080B7B5002BD6C7 /* testDate.m */,
 				0A5803741F7A01D2000B5192 /* Info.plist */,
+				0A36AF8821EC224F005E2105 /* NSStringAdditionTests.m */,
 			);
 			path = testTests;
 			sourceTree = "<group>";
@@ -919,6 +937,7 @@
 				0A5CA3401FECA77900EC170F /* Animal.m in Sources */,
 				0A4F5B1E1F9EDD6C00140E82 /* JLGradientButton.m in Sources */,
 				0A5604651FF5E3C800A42929 /* ResponderView.m in Sources */,
+				0A36AF8721EC21E7005E2105 /* NSString+Addition.m in Sources */,
 				0A768B1C208369850086AA40 /* JLPresentAnimation.m in Sources */,
 				0A61116220E8ACEC008CE53F /* WebViewController.m in Sources */,
 				0A8F226E1F7B7E8200499EFD /* TestViewController.m in Sources */,
@@ -931,7 +950,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A5803731F7A01D2000B5192 /* testTests.m in Sources */,
+				0A36AF8921EC224F005E2105 /* NSStringAdditionTests.m in Sources */,
 				0A948BE72080B7B5002BD6C7 /* testDate.m in Sources */,
+				0ABA452121E874CA007DA894 /* MehtodSignature.m in Sources */,
+				0A36AF8A21EC225D005E2105 /* NSString+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

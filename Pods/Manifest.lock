@@ -1,20 +1,16 @@
 PODS:
-  - JLLogEncoding (0.0.2)
   - Masonry (1.1.0)
 
 DEPENDENCIES:
-  - JLLogEncoding (~> 0.0.2)
   - Masonry
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - JLLogEncoding
     - Masonry
 
 SPEC CHECKSUMS:
-  JLLogEncoding: e01534b5dcdc51b64ea714a5ca358f32fe6f9271
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: 35bac1538eb3871ac24dee00d18c3ae1742fa9f9
+PODFILE CHECKSUM: 703174ec3e689c0a43401786ab96c6093788caa3
 
 COCOAPODS: 1.5.0
