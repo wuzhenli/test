@@ -7,6 +7,7 @@
 //
 
 #import "BlockBaseViewController.h"
+#import "BlockCrashViewController.h"
 
 @interface BlockBaseViewController ()
 
@@ -32,6 +33,10 @@
 - (void)pushViewControllerName:(NSString *)name {
     Class c = NSClassFromString(name);
     [self.navigationController pushViewController:[c new] animated:YES];
+}
+- (IBAction)btnBlockZimbierClicked:(id)sender {
+    BlockCrashViewController *vc = [BlockCrashViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /*

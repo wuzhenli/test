@@ -24,6 +24,8 @@
 		0A0CC8CC21CE4E6800AA53A3 /* BlockAreaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0CC8CA21CE4E6800AA53A3 /* BlockAreaViewController.xib */; };
 		0A2BEB4621AE4B990008C79B /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BEB4521AE4B990008C79B /* DrawViewController.m */; };
 		0A2BEB4921AE4BB10008C79B /* DrawFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BEB4821AE4BB10008C79B /* DrawFirstView.m */; };
+		0A2DBE9B21F716F9006ECAAE /* BlockCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2DBE9921F716F9006ECAAE /* BlockCrashViewController.m */; };
+		0A2DBE9C21F716F9006ECAAE /* BlockCrashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2DBE9A21F716F9006ECAAE /* BlockCrashViewController.xib */; };
 		0A2E0C01206BD2A20061953B /* UIDevice+Addtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E0C00206BD2A20061953B /* UIDevice+Addtion.m */; };
 		0A304DC2219D79EF0074FF89 /* PresentAlphaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A304DC0219D79EF0074FF89 /* PresentAlphaViewController.m */; };
 		0A304DC3219D79EF0074FF89 /* PresentAlphaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A304DC1219D79EF0074FF89 /* PresentAlphaViewController.xib */; };
@@ -39,6 +41,8 @@
 		0A35462C20EFBB4A000FA171 /* TestVCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35462A20EFBB4A000FA171 /* TestVCController.m */; };
 		0A35462D20EFBB4A000FA171 /* TestVCController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A35462B20EFBB4A000FA171 /* TestVCController.xib */; };
 		0A36886F20E6482E0077BA89 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A36886E20E6482E0077BA89 /* GCDViewController.m */; };
+		0A39302E21FED45D007C9213 /* PrivateAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A39302C21FED45D007C9213 /* PrivateAPIViewController.m */; };
+		0A39302F21FED45D007C9213 /* PrivateAPIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A39302D21FED45D007C9213 /* PrivateAPIViewController.xib */; };
 		0A3CCFDB214A330A0017F7A2 /* AudioVolumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3CCFD9214A330A0017F7A2 /* AudioVolumeViewController.m */; };
 		0A3CCFDC214A330A0017F7A2 /* AudioVolumeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3CCFDA214A330A0017F7A2 /* AudioVolumeViewController.xib */; };
 		0A3CCFDF214A33240017F7A2 /* VolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3CCFDE214A33240017F7A2 /* VolumeView.m */; };
@@ -172,6 +176,8 @@
 		0AF7B2E0219D4D8E00144B7E /* MBProgressHUD+bbs.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B2DC219D4D8E00144B7E /* MBProgressHUD+bbs.m */; };
 		0AF7B2E1219D4D8E00144B7E /* BBSProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B2DD219D4D8E00144B7E /* BBSProgressHUD.m */; };
 		0AF7B2E4219D4FA100144B7E /* SaveAlbumTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B2E3219D4FA100144B7E /* SaveAlbumTool.m */; };
+		0AF871C4220050730019F308 /* StructSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF871C2220050730019F308 /* StructSizeViewController.m */; };
+		0AF871C5220050730019F308 /* StructSizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF871C3220050730019F308 /* StructSizeViewController.xib */; };
 		0AFBE91521DEF32200F2D102 /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBE91421DEF32200F2D102 /* TargetViewController.m */; };
 		47845B86F679F8BC4D51D41B /* Pods_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2F05AC492F370379790F46 /* Pods_testTests.framework */; };
 		7F395CE552BA2D4E46CA9A47 /* Pods_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30BC06EB45B6EF316E8ABA0 /* Pods_testUITests.framework */; };
@@ -239,6 +245,9 @@
 		0A2BEB4521AE4B990008C79B /* DrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
 		0A2BEB4721AE4BB10008C79B /* DrawFirstView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawFirstView.h; sourceTree = "<group>"; };
 		0A2BEB4821AE4BB10008C79B /* DrawFirstView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawFirstView.m; sourceTree = "<group>"; };
+		0A2DBE9821F716F9006ECAAE /* BlockCrashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockCrashViewController.h; sourceTree = "<group>"; };
+		0A2DBE9921F716F9006ECAAE /* BlockCrashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockCrashViewController.m; sourceTree = "<group>"; };
+		0A2DBE9A21F716F9006ECAAE /* BlockCrashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlockCrashViewController.xib; sourceTree = "<group>"; };
 		0A2E0BFF206BD2A20061953B /* UIDevice+Addtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Addtion.h"; sourceTree = "<group>"; };
 		0A2E0C00206BD2A20061953B /* UIDevice+Addtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Addtion.m"; sourceTree = "<group>"; };
 		0A304DBF219D79EF0074FF89 /* PresentAlphaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentAlphaViewController.h; sourceTree = "<group>"; };
@@ -264,6 +273,9 @@
 		0A35462B20EFBB4A000FA171 /* TestVCController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVCController.xib; sourceTree = "<group>"; };
 		0A36886D20E6482E0077BA89 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		0A36886E20E6482E0077BA89 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		0A39302B21FED45D007C9213 /* PrivateAPIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateAPIViewController.h; sourceTree = "<group>"; };
+		0A39302C21FED45D007C9213 /* PrivateAPIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateAPIViewController.m; sourceTree = "<group>"; };
+		0A39302D21FED45D007C9213 /* PrivateAPIViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrivateAPIViewController.xib; sourceTree = "<group>"; };
 		0A3CCFD8214A330A0017F7A2 /* AudioVolumeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVolumeViewController.h; sourceTree = "<group>"; };
 		0A3CCFD9214A330A0017F7A2 /* AudioVolumeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVolumeViewController.m; sourceTree = "<group>"; };
 		0A3CCFDA214A330A0017F7A2 /* AudioVolumeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioVolumeViewController.xib; sourceTree = "<group>"; };
@@ -488,6 +500,9 @@
 		0AF7B2DF219D4D8E00144B7E /* MBProgressHUD+bbs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+bbs.h"; sourceTree = "<group>"; };
 		0AF7B2E2219D4FA100144B7E /* SaveAlbumTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveAlbumTool.h; sourceTree = "<group>"; };
 		0AF7B2E3219D4FA100144B7E /* SaveAlbumTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveAlbumTool.m; sourceTree = "<group>"; };
+		0AF871C1220050730019F308 /* StructSizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StructSizeViewController.h; sourceTree = "<group>"; };
+		0AF871C2220050730019F308 /* StructSizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StructSizeViewController.m; sourceTree = "<group>"; };
+		0AF871C3220050730019F308 /* StructSizeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StructSizeViewController.xib; sourceTree = "<group>"; };
 		0AFBE91321DEF32200F2D102 /* TargetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TargetViewController.h; sourceTree = "<group>"; };
 		0AFBE91421DEF32200F2D102 /* TargetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TargetViewController.m; sourceTree = "<group>"; };
 		0FCB9083A04B080CBBDD9434 /* Pods-testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testUITests/Pods-testUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -565,6 +580,9 @@
 				0A0CC8CA21CE4E6800AA53A3 /* BlockAreaViewController.xib */,
 				0AED26B021CFB1DB004B6051 /* TestBlockStructViewController.h */,
 				0AED26B121CFB1DB004B6051 /* TestBlockStructViewController.m */,
+				0A2DBE9821F716F9006ECAAE /* BlockCrashViewController.h */,
+				0A2DBE9921F716F9006ECAAE /* BlockCrashViewController.m */,
+				0A2DBE9A21F716F9006ECAAE /* BlockCrashViewController.xib */,
 			);
 			path = Block;
 			sourceTree = "<group>";
@@ -649,6 +667,16 @@
 				0A342AA421D0B64B00ABBDD1 /* GCDViewController.xib */,
 			);
 			path = GCD;
+			sourceTree = "<group>";
+		};
+		0A39302A21FED44C007C9213 /* PrivateAPI */ = {
+			isa = PBXGroup;
+			children = (
+				0A39302B21FED45D007C9213 /* PrivateAPIViewController.h */,
+				0A39302C21FED45D007C9213 /* PrivateAPIViewController.m */,
+				0A39302D21FED45D007C9213 /* PrivateAPIViewController.xib */,
+			);
+			path = PrivateAPI;
 			sourceTree = "<group>";
 		};
 		0A3CCFD7214A32F00017F7A2 /* auidoVolume */ = {
@@ -823,6 +851,8 @@
 		0A58038D1F7A01F3000B5192 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				0AF871C0220050660019F308 /* StructSize */,
+				0A39302A21FED44C007C9213 /* PrivateAPI */,
 				0AE002A121DE06D1007C2125 /* Router */,
 				0AAA887021D5D3F1009A1F49 /* ActivityController */,
 				0A0CC8C221CE4E2E00AA53A3 /* Block */,
@@ -1335,6 +1365,16 @@
 			path = BBSProgressHUD;
 			sourceTree = "<group>";
 		};
+		0AF871C0220050660019F308 /* StructSize */ = {
+			isa = PBXGroup;
+			children = (
+				0AF871C1220050730019F308 /* StructSizeViewController.h */,
+				0AF871C2220050730019F308 /* StructSizeViewController.m */,
+				0AF871C3220050730019F308 /* StructSizeViewController.xib */,
+			);
+			path = StructSize;
+			sourceTree = "<group>";
+		};
 		4C8113F0C994875998A88BC3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1517,17 +1557,20 @@
 				0AD77DC120E7706300330F2C /* KeyboardViewController.xib in Resources */,
 				0AD77DA920E7558E00330F2C /* GestureViewController.xib in Resources */,
 				0A0CC8CC21CE4E6800AA53A3 /* BlockAreaViewController.xib in Resources */,
+				0A39302F21FED45D007C9213 /* PrivateAPIViewController.xib in Resources */,
 				0AA47AD2201610E000242C4D /* changming.png in Resources */,
 				0A009D3F20E8CC9D00D81C6A /* localImage8.jpeg in Resources */,
 				0A3CCFDC214A330A0017F7A2 /* AudioVolumeViewController.xib in Resources */,
 				0AD77DB820E763D500330F2C /* SlideTableViewController.xib in Resources */,
 				0A304DC9219D7A1C0074FF89 /* TestAnimationViewController.xib in Resources */,
 				0A009D3C20E8CC9D00D81C6A /* localImage1.jpeg in Resources */,
+				0AF871C5220050730019F308 /* StructSizeViewController.xib in Resources */,
 				0AE002A621DE06E7007C2125 /* JLRoutersViewController.xib in Resources */,
 				0A009D4320E8CC9E00D81C6A /* localImage2.jpeg in Resources */,
 				0A009D4120E8CC9E00D81C6A /* localImage0.jpeg in Resources */,
 				0AEA6F271F90B0E1008C3E69 /* reward_icon_price_rate@3x.png in Resources */,
 				0A61116D20E8CAFD008CE53F /* ScrollViewController.xib in Resources */,
+				0A2DBE9C21F716F9006ECAAE /* BlockCrashViewController.xib in Resources */,
 				0A009D3E20E8CC9D00D81C6A /* localImage3.jpeg in Resources */,
 				0A3DE3F921C9E78400A0F071 /* FunctionTestViewController.xib in Resources */,
 				0A5803661F7A01D1000B5192 /* LaunchScreen.storyboard in Resources */,
@@ -1585,11 +1628,12 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-test/Pods-test-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JLLogEncoding/JLLogEncoding.framework",
 				"${BUILT_PRODUCTS_DIR}/JLRoutes/JLRoutes.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-4/iOS/RevealServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1597,10 +1641,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JLRoutes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-test/Pods-test-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		72681A6C164EF8BDEB3EE50F /* [CP] Check Pods Manifest.lock */ = {
@@ -1678,6 +1723,7 @@
 				0A9F887320E4F52400B44E68 /* TimerViewController.m in Sources */,
 				0ABAE71B21ABE7D20094BAA8 /* SwipeFeedback.swift in Sources */,
 				0AD6A9D621185DD300DBA114 /* KVOPerson.m in Sources */,
+				0AF871C4220050730019F308 /* StructSizeViewController.m in Sources */,
 				0ABAE72021ABE7D20094BAA8 /* SwipeAnimator.swift in Sources */,
 				0A50041221DDA19C00A1E243 /* TestHeightTableViewController.m in Sources */,
 				0AEFF55F21A6734F00E95A76 /* StaticTitleSwitchCell.m in Sources */,
@@ -1724,10 +1770,12 @@
 				0AA82C5921290B9C000A5C02 /* Student+category.m in Sources */,
 				0ABAE72C21ABE7D20094BAA8 /* SwipeAccessibilityCustomAction.swift in Sources */,
 				0AFBE91521DEF32200F2D102 /* TargetViewController.m in Sources */,
+				0A39302E21FED45D007C9213 /* PrivateAPIViewController.m in Sources */,
 				0ABAE6F121ABC7870094BAA8 /* SwipeCellKitCollectionViewController.m in Sources */,
 				0AD6A9D221185DAE00DBA114 /* KVOViewController.m in Sources */,
 				0A5D45D02063578900DC78F7 /* DBTool.m in Sources */,
 				0ABAE72521ABE7D20094BAA8 /* SwipeTableViewCell+Accessibility.swift in Sources */,
+				0A2DBE9B21F716F9006ECAAE /* BlockCrashViewController.m in Sources */,
 				0A3CCFDB214A330A0017F7A2 /* AudioVolumeViewController.m in Sources */,
 				0AD0FEA520614F5D006678F4 /* SingleModel.m in Sources */,
 				0AE002A521DE06E7007C2125 /* JLRoutersViewController.m in Sources */,

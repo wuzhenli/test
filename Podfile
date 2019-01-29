@@ -13,6 +13,10 @@ target 'test' do
 # Get the latest on develop
 # •pod 'SwipeCellKit', :git => 'https://github.com/SwipeCellKit/SwipeCellKit.git', :branch => 'develop'
   pod 'JLRoutes', '~> 2.1'
+  
+  pod 'Reveal-SDK', :git => 'https://git.coding.net/kakukeme/Reveal-SDK.git', :configurations => ['Debug']
+
+  
   target 'testTests' do
     inherit! :search_paths
     # Pods for testing
