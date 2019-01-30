@@ -19,6 +19,8 @@
 // -application:handleEventsForBackgroundURLSession:completionHandler:
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    
+    [self testLumberjack];
     [self registerJLRouter];
 //    Override point for customization after application launch.
 //    LoggerSetupBonjourForBuildUser();
@@ -31,6 +33,20 @@
 //    LoggerSetViewerHost(NULL, (__bridge CFStringRef)@"192.168.20.193", (UInt32)50000);
     
     return YES;
+}
+
+#pragma -mark private
+
+- (void)testLumberjack {
+    [DDLog addLogger:[DDOSLogger sharedInstance]];
+    
+    DDFileLogger *filelogger = [[DDFileLogger alloc] init];
+    filelogger.rollingFrequency = 60 * 60 * 24;
+    filelogger.logFileManager.maximumNumberOfLogFiles = 7;
+    [DDLog addLogger:filelogger]; 
+    // The above code tells the application to keep a week's worth of log files on the system.
+    
+    [DDLog allLoggersWithLevel];
 }
 
 - (void)registerJLRouter {
