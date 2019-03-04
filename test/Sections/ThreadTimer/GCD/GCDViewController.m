@@ -8,6 +8,7 @@
 
 #import "GCDViewController.h"
 #import "SafeMuDictionary.h"
+#import "SafeArray.h"
 
 @interface GCDViewController ()
 
@@ -318,14 +319,21 @@
     */
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)testArraySafe:(id)sender {
+    
+    SafeArray *arr = [SafeArray new];
+     dispatch_queue_t queue = dispatch_queue_create("test", DISPATCH_QUEUE_CONCURRENT);
+    
+     
+     for (NSUInteger i = 0; i < 10; i++) {
+         dispatch_async(queue, ^{
+             for (NSUInteger j = 0; j < 1000; j++) {
+                 [arr addObject:@(j) block:^(SafeArray * _Nonnull array, id  _Nonnull obj, NSInteger index) {
+                     ;
+                 }];
+             }
+         });
+     }
 }
-*/
 
 @end

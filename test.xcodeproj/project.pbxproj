@@ -154,6 +154,7 @@
 		0ABAE72D21ABE7D20094BAA8 /* SwipeExpanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE71621ABE7D10094BAA8 /* SwipeExpanding.swift */; };
 		0ABAE72E21ABE7D20094BAA8 /* SwipeCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE71721ABE7D20094BAA8 /* SwipeCollectionViewCellDelegate.swift */; };
 		0AC0ACA920BFBD5D00D3185E /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC0ACA820BFBD5D00D3185E /* PlayerViewController.m */; };
+		0AC4F2A5222D4714000F93F9 /* SafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC4F2A4222D4714000F93F9 /* SafeArray.m */; };
 		0AD0FEA520614F5D006678F4 /* SingleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0FEA420614F5D006678F4 /* SingleModel.m */; };
 		0AD34B3221D0A0C600DFBE63 /* PreviewImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD34B3121D0A0C600DFBE63 /* PreviewImageView.m */; };
 		0AD6A9D221185DAE00DBA114 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6A9D021185DAE00DBA114 /* KVOViewController.m */; };
@@ -463,6 +464,8 @@
 		0ABAE71721ABE7D20094BAA8 /* SwipeCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
 		0AC0ACA720BFBD5D00D3185E /* PlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
 		0AC0ACA820BFBD5D00D3185E /* PlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		0AC4F2A3222D4714000F93F9 /* SafeArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeArray.h; sourceTree = "<group>"; };
+		0AC4F2A4222D4714000F93F9 /* SafeArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeArray.m; sourceTree = "<group>"; };
 		0AD0FEA320614F5D006678F4 /* SingleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleModel.h; sourceTree = "<group>"; };
 		0AD0FEA420614F5D006678F4 /* SingleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleModel.m; sourceTree = "<group>"; };
 		0AD0FEA6206150BF006678F4 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
@@ -673,8 +676,7 @@
 				0A36886D20E6482E0077BA89 /* GCDViewController.h */,
 				0A36886E20E6482E0077BA89 /* GCDViewController.m */,
 				0A342AA421D0B64B00ABBDD1 /* GCDViewController.xib */,
-				0A992293222D40A7001A39A8 /* SafeMuDictionary.h */,
-				0A992294222D40A7001A39A8 /* SafeMuDictionary.m */,
+				0AC4F2A2222D4628000F93F9 /* Model */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -1281,6 +1283,17 @@
 			path = Player;
 			sourceTree = "<group>";
 		};
+		0AC4F2A2222D4628000F93F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A992293222D40A7001A39A8 /* SafeMuDictionary.h */,
+				0A992294222D40A7001A39A8 /* SafeMuDictionary.m */,
+				0AC4F2A3222D4714000F93F9 /* SafeArray.h */,
+				0AC4F2A4222D4714000F93F9 /* SafeArray.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0AD6A9CD21185D9900DBA114 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
@@ -1810,6 +1823,7 @@
 				0A30594B1FFC87920092DF94 /* NSObject+DLIntrospection.m in Sources */,
 				0A3F5A8B21D1C99000C583BC /* ThreadViewController.m in Sources */,
 				0AB886F620A3E4DB003F2734 /* TestCollectionViewCell.m in Sources */,
+				0AC4F2A5222D4714000F93F9 /* SafeArray.m in Sources */,
 				0AD77DB120E763AE00330F2C /* MGSwipeTableCell.m in Sources */,
 				0AEFF56221A6738D00E95A76 /* StaticTitleDescCell.m in Sources */,
 				0ABAE71E21ABE7D20094BAA8 /* SwipeCollectionViewCell.swift in Sources */,
