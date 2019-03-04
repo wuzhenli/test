@@ -4,7 +4,7 @@
 //
 //  Created by li’Pro on 2018/6/29.
 //  Copyright © 2018年 wzl. All rights reserved.
-//
+//  dispatch source : // https://www.jianshu.com/p/880c2f9301b6
 
 #import "GCDViewController.h"
 
@@ -36,6 +36,9 @@
         make.top.equalTo(self.lblTip.mas_bottom).offset(15);
     }];
     
+    for (NSInteger i = 0; i<10; i++) {
+        NSLog(@"globalQueue:%p", dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0));
+    }
     
 }
 
@@ -109,7 +112,7 @@
     });
 }
 
-- (IBAction)btnSourceTest2 {
+- (IBAction)btnSourceTest2 { 
     dispatch_source_t source = dispatch_source_create(DISPATCH_SOURCE_TYPE_DATA_ADD, 0, 0, dispatch_get_main_queue());
     
     //事件触发后执行的句柄
@@ -199,6 +202,60 @@
     
 }
 
+- (IBAction)testDispatchBarrierSync:(id)sender {
+    dispatch_queue_t queue = dispatch_queue_create("test.concurrent.queue", DISPATCH_QUEUE_CONCURRENT);
+    
+    for (NSUInteger i = 0; i<10; i++) {
+        dispatch_async(queue, ^{
+            NSLog(@"before index:%ld", i);
+        });
+    }
+    
+    for (NSUInteger i = 0; i<100; i++) {
+        dispatch_barrier_sync(queue, ^{
+            if (i == 100 - 1) {
+                NSLog(@"barrier index:%ld", i);
+                NSLog(@"currentThread:%@", [NSThread currentThread]);
+            }
+        });
+    }
+    
+    NSLog(@"this is main Thread");
+    
+    for (NSUInteger i = 10; i<20; i++) {
+        dispatch_async(queue, ^{
+            NSLog(@"after index:%ld", i);
+        });
+    }
+}
+
+
+- (IBAction)testDispatchBarrierAsync:(id)sender {
+    dispatch_queue_t queue = dispatch_queue_create("test.concurrent.queue", DISPATCH_QUEUE_CONCURRENT);
+    
+    for (NSUInteger i = 0; i<10; i++) {
+        dispatch_async(queue, ^{
+            NSLog(@"before index:%ld", i);
+        });
+    }
+    
+    for (NSUInteger i = 0; i<100; i++) {
+        dispatch_barrier_async(queue, ^{
+            if (i == 100 - 1) {
+                NSLog(@"barrier index:%ld", i);
+                NSLog(@"currentThread:%@", [NSThread currentThread]);
+            }
+        });
+    }
+    
+    NSLog(@"this is main Thread");
+    
+    for (NSUInteger i = 10; i<20; i++) {
+        dispatch_async(queue, ^{
+            NSLog(@"after index:%ld", i);
+        });
+    }
+}
 
 /*
 #pragma mark - Navigation
