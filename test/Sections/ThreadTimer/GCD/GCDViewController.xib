@@ -74,12 +74,20 @@
                         <action selector="testDispatchBarrierSync:" destination="-1" eventType="touchUpInside" id="vzi-qX-ers"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whb-ju-OUs">
-                    <rect key="frame" x="16" y="413" width="345" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whb-ju-OUs">
+                    <rect key="frame" x="15" y="413" width="345" height="41"/>
                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="test dispatch_barrier_async"/>
                     <connections>
                         <action selector="testDispatchBarrierAsync:" destination="-1" eventType="touchUpInside" id="g7y-R9-xuO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTw-zx-qwI">
+                    <rect key="frame" x="15" y="469" width="345" height="41"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="test Dictionary ThreadSafe"/>
+                    <connections>
+                        <action selector="testDictionarySafe:" destination="-1" eventType="touchUpInside" id="ovZ-BA-If5"/>
                     </connections>
                 </button>
             </subviews>
@@ -98,12 +106,16 @@
                 <constraint firstItem="GcG-9l-KWp" firstAttribute="leading" secondItem="H33-6u-p9D" secondAttribute="leading" id="bAT-Hc-5xp"/>
                 <constraint firstItem="Kry-IC-DL7" firstAttribute="trailing" secondItem="x3u-hS-6MQ" secondAttribute="trailing" id="dcz-av-gQZ"/>
                 <constraint firstItem="x3u-hS-6MQ" firstAttribute="top" secondItem="GcG-9l-KWp" secondAttribute="bottom" constant="17" id="e4g-ke-KmT"/>
+                <constraint firstItem="hTw-zx-qwI" firstAttribute="top" secondItem="Whb-ju-OUs" secondAttribute="bottom" constant="15" id="g1g-wt-kbh"/>
                 <constraint firstItem="GcG-9l-KWp" firstAttribute="trailing" secondItem="H33-6u-p9D" secondAttribute="trailing" id="gBy-el-WJf"/>
+                <constraint firstItem="hTw-zx-qwI" firstAttribute="leading" secondItem="Whb-ju-OUs" secondAttribute="leading" id="haK-ES-M2d"/>
                 <constraint firstItem="H33-6u-p9D" firstAttribute="leading" secondItem="b8I-9V-r2n" secondAttribute="leading" id="ihk-y9-SNZ"/>
                 <constraint firstItem="Whb-ju-OUs" firstAttribute="top" secondItem="I0O-y6-oMi" secondAttribute="bottom" constant="8" id="kBz-yH-QS4"/>
+                <constraint firstItem="hTw-zx-qwI" firstAttribute="height" secondItem="Whb-ju-OUs" secondAttribute="height" id="kgx-2r-CFd"/>
                 <constraint firstItem="Kry-IC-DL7" firstAttribute="top" secondItem="x3u-hS-6MQ" secondAttribute="bottom" constant="8" id="lCE-4Y-tIi"/>
                 <constraint firstItem="x3u-hS-6MQ" firstAttribute="trailing" secondItem="GcG-9l-KWp" secondAttribute="trailing" id="m5G-Fq-Z7z"/>
                 <constraint firstItem="x3u-hS-6MQ" firstAttribute="height" secondItem="GcG-9l-KWp" secondAttribute="height" id="nZ8-IO-jf8"/>
+                <constraint firstItem="hTw-zx-qwI" firstAttribute="trailing" secondItem="Whb-ju-OUs" secondAttribute="trailing" id="ncX-XV-Qnd"/>
                 <constraint firstItem="Kry-IC-DL7" firstAttribute="height" secondItem="x3u-hS-6MQ" secondAttribute="height" id="nrM-TQ-yBl"/>
                 <constraint firstItem="Whb-ju-OUs" firstAttribute="leading" secondItem="I0O-y6-oMi" secondAttribute="leading" id="o9C-6a-xKP"/>
                 <constraint firstItem="GcG-9l-KWp" firstAttribute="top" secondItem="H33-6u-p9D" secondAttribute="bottom" constant="23" id="pLG-vq-ehZ"/>

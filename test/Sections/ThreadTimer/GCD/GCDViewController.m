@@ -7,6 +7,7 @@
 //  dispatch source : // https://www.jianshu.com/p/880c2f9301b6
 
 #import "GCDViewController.h"
+#import "SafeMuDictionary.h"
 
 @interface GCDViewController ()
 
@@ -36,9 +37,11 @@
         make.top.equalTo(self.lblTip.mas_bottom).offset(15);
     }];
     
-    for (NSInteger i = 0; i<10; i++) {
-        NSLog(@"globalQueue:%p", dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0));
-    }
+    
+    
+//    for (NSInteger i = 0; i<10; i++) {
+//        NSLog(@"globalQueue:%p", dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0));
+//    }
     
 }
 
@@ -255,6 +258,64 @@
             NSLog(@"after index:%ld", i);
         });
     }
+}
+- (IBAction)testDictionarySafe:(id)sender {
+    /* will crash
+    NSMutableDictionary *dic = [NSMutableDictionary new];
+    dispatch_queue_t queue = dispatch_queue_create("test", DISPATCH_QUEUE_CONCURRENT);
+    // dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    
+    for (NSUInteger i = 0; i < 10; i++) {
+        dispatch_async(queue, ^{
+            for (NSUInteger i = 0; i < 1000; i++) {
+                dic[@(i)] = @(i);
+            }
+        });
+    } */
+    
+    SafeMuDictionary *dic = [SafeMuDictionary new];
+    dispatch_queue_t queue = dispatch_queue_create("test", DISPATCH_QUEUE_CONCURRENT);
+    // dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    
+    dispatch_group_t group = dispatch_group_create();
+    
+    for (NSUInteger j = 0; j < 10; j++) {
+        dispatch_group_enter(group);
+        
+        dispatch_async(queue, ^{
+            for (NSUInteger i = 0; i < 1000; i++) {
+                [dic setObject:@(i) forKey:@(i) block:^(SafeMuDictionary * _Nonnull dic, id  _Nonnull obj, id  _Nonnull aKey) {
+                    if (i == 1000 - 1) {
+                        dispatch_group_leave(group);
+                        NSLog(@"leave:%ld", j);
+                    }
+                }];
+            }
+        });
+    }
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        NSLog(@"%@", [dic getDictionary]);
+    });
+    
+    /*
+    dispatch_async(queue, ^{
+        for (NSUInteger i = 0; i < 1000; i++) {
+            dic[@(i)] = @(i);
+        }
+        dispatch_semaphore_signal(semaphore);
+    });
+    dispatch_async(queue, ^{
+        for (NSUInteger i = 0; i < 1000; i++) {
+            dic[@(i)] = @(i);
+        }
+        dispatch_semaphore_signal(semaphore);
+    });
+    
+    
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+    NSLog(@"%@", dic);
+    */
 }
 
 /*

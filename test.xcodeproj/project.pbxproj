@@ -110,6 +110,7 @@
 		0A96D0CF219DA26900F4DED6 /* JLAnimationPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A96D0CE219DA26900F4DED6 /* JLAnimationPresentationController.m */; };
 		0A96D0D4219DA37100F4DED6 /* AlphaPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A96D0D3219DA37100F4DED6 /* AlphaPresentationController.m */; };
 		0A976BB920DB390F00BDE153 /* UIView+Corner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A976BB820DB390F00BDE153 /* UIView+Corner.m */; };
+		0A992295222D40A7001A39A8 /* SafeMuDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A992294222D40A7001A39A8 /* SafeMuDictionary.m */; };
 		0A9F887320E4F52400B44E68 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F887220E4F52400B44E68 /* TimerViewController.m */; };
 		0AA47ACF20160DAB00242C4D /* preview_2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47ACD20160DAA00242C4D /* preview_2.mov */; };
 		0AA47AD020160DAB00242C4D /* preview_2的副本.123314.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47ACE20160DAB00242C4D /* preview_2的副本.123314.mov */; };
@@ -402,6 +403,8 @@
 		0A96D0D3219DA37100F4DED6 /* AlphaPresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlphaPresentationController.m; sourceTree = "<group>"; };
 		0A976BB720DB390F00BDE153 /* UIView+Corner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Corner.h"; sourceTree = "<group>"; };
 		0A976BB820DB390F00BDE153 /* UIView+Corner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Corner.m"; sourceTree = "<group>"; };
+		0A992293222D40A7001A39A8 /* SafeMuDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeMuDictionary.h; sourceTree = "<group>"; };
+		0A992294222D40A7001A39A8 /* SafeMuDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeMuDictionary.m; sourceTree = "<group>"; };
 		0A9F887120E4F52400B44E68 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		0A9F887220E4F52400B44E68 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		0AA47ACD20160DAA00242C4D /* preview_2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = preview_2.mov; sourceTree = "<group>"; };
@@ -670,6 +673,8 @@
 				0A36886D20E6482E0077BA89 /* GCDViewController.h */,
 				0A36886E20E6482E0077BA89 /* GCDViewController.m */,
 				0A342AA421D0B64B00ABBDD1 /* GCDViewController.xib */,
+				0A992293222D40A7001A39A8 /* SafeMuDictionary.h */,
+				0A992294222D40A7001A39A8 /* SafeMuDictionary.m */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -1764,6 +1769,7 @@
 				0A304DC8219D7A1C0074FF89 /* TestAnimationViewController.m in Sources */,
 				0A3AC36C220177B200252113 /* LumberViewController.m in Sources */,
 				0AB886F220A3E49D003F2734 /* CollectionViewController.m in Sources */,
+				0A992295222D40A7001A39A8 /* SafeMuDictionary.m in Sources */,
 				0AA82C4C21290B34000A5C02 /* LoadInitViewController.m in Sources */,
 				0A33174120F5F8BA00823A22 /* MCTextView.m in Sources */,
 				0AED26B221CFB1DB004B6051 /* TestBlockStructViewController.m in Sources */,
