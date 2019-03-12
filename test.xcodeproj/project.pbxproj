@@ -41,6 +41,7 @@
 		0A35462C20EFBB4A000FA171 /* TestVCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35462A20EFBB4A000FA171 /* TestVCController.m */; };
 		0A35462D20EFBB4A000FA171 /* TestVCController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A35462B20EFBB4A000FA171 /* TestVCController.xib */; };
 		0A36886F20E6482E0077BA89 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A36886E20E6482E0077BA89 /* GCDViewController.m */; };
+		0A37E7F822375A5C00A32AE4 /* KVOPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A37E7F722375A5C00A32AE4 /* KVOPattern.m */; };
 		0A39302E21FED45D007C9213 /* PrivateAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A39302C21FED45D007C9213 /* PrivateAPIViewController.m */; };
 		0A39302F21FED45D007C9213 /* PrivateAPIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A39302D21FED45D007C9213 /* PrivateAPIViewController.xib */; };
 		0A3AA7262235FFB9006CF0C7 /* KVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3AA7242235FFB9006CF0C7 /* KVCViewController.m */; };
@@ -279,6 +280,8 @@
 		0A35462B20EFBB4A000FA171 /* TestVCController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVCController.xib; sourceTree = "<group>"; };
 		0A36886D20E6482E0077BA89 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		0A36886E20E6482E0077BA89 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		0A37E7F622375A5C00A32AE4 /* KVOPattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOPattern.h; sourceTree = "<group>"; };
+		0A37E7F722375A5C00A32AE4 /* KVOPattern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOPattern.m; sourceTree = "<group>"; };
 		0A39302B21FED45D007C9213 /* PrivateAPIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateAPIViewController.h; sourceTree = "<group>"; };
 		0A39302C21FED45D007C9213 /* PrivateAPIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateAPIViewController.m; sourceTree = "<group>"; };
 		0A39302D21FED45D007C9213 /* PrivateAPIViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrivateAPIViewController.xib; sourceTree = "<group>"; };
@@ -730,6 +733,8 @@
 				0A3AA7232235FFB9006CF0C7 /* KVCViewController.h */,
 				0A3AA7242235FFB9006CF0C7 /* KVCViewController.m */,
 				0A3AA7252235FFB9006CF0C7 /* KVCViewController.xib */,
+				0A37E7F622375A5C00A32AE4 /* KVOPattern.h */,
+				0A37E7F722375A5C00A32AE4 /* KVOPattern.m */,
 			);
 			path = KVC;
 			sourceTree = "<group>";
@@ -1794,6 +1799,7 @@
 				0ABAE71B21ABE7D20094BAA8 /* SwipeFeedback.swift in Sources */,
 				0AD6A9D621185DD300DBA114 /* KVOPerson.m in Sources */,
 				0AF871C4220050730019F308 /* StructSizeViewController.m in Sources */,
+				0A37E7F822375A5C00A32AE4 /* KVOPattern.m in Sources */,
 				0ABAE72021ABE7D20094BAA8 /* SwipeAnimator.swift in Sources */,
 				0A50041221DDA19C00A1E243 /* TestHeightTableViewController.m in Sources */,
 				0AEFF55F21A6734F00E95A76 /* StaticTitleSwitchCell.m in Sources */,

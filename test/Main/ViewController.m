@@ -52,9 +52,6 @@ dispatch_async(dispatch_get_main_queue(), block); \
     self.title = @"测试 Demo";
     self.tableView.tableFooterView = [UIView new];
     
-    UIScrollView *sv;
-    sv.pagingEnabled;
-    
     self.sb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"More"
