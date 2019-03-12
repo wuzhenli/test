@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KVOPattern : NSObject {
+    @public
     NSMutableArray<NSString *> *_books;
 }
 

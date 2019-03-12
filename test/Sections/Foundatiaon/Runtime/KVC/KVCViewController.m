@@ -37,17 +37,20 @@
 
 - (IBAction)btnMutableArrayValueForKey:(id)sender {
     static int i = 0;
-    NSLog(@"before:%p  %@", self.pattern.books, NSStringFromClass([self.pattern.books class]));
+    NSLog(@"before:%p  %@", self.pattern->_books, NSStringFromClass([self.pattern->_books class]));
     NSMutableArray *array = [self.pattern mutableArrayValueForKey:@"books"];
     if (i++ %2 == 0) {
         [array addObject:@"OC"];
     } else {
         [array removeLastObject];
     }
-    NSLog(@"after:%p  %@", self.pattern.books, NSStringFromClass([self.pattern.books class]));
+    NSLog(@"after:%p  %@", self.pattern->_books, NSStringFromClass([self.pattern->_books class]));
 }
 
-    
+- (IBAction)btnProxyArray:(id)sender {
+    NSLog(@"%@", [self.pattern valueForKey:@"contacts"]);
+}
+
 
 /*
 #pragma mark - Navigation
@@ -64,7 +67,7 @@
 - (KVOPattern *)pattern {
     if (!_pattern) {
         _pattern = [KVOPattern new];
-        [_pattern.books addObjectsFromArray:@[@"C", @"Java", @"oracle", @"English"]];
+        [_pattern->_books addObjectsFromArray:@[@"C", @"Java", @"oracle", @"English"]];
         [_pattern addObserver:self forKeyPath:@"books" options:NSKeyValueObservingOptionNew context:nil];
     }
     return _pattern;
