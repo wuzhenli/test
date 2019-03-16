@@ -26,19 +26,34 @@
     
     self.person = [KVOPerson new];
     self.person.name = @"p0";
-    [self.person printInfo];
-    
+//    [self.person printInfo];
+//
     [self.person addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
-    self.person.name = @"p1";
-    [self.person printInfo];
-    
-    [self.person removeObserver:self forKeyPath:@"name"];
-    [self.person printInfo];
+//    self.person.name = @"p1";
+//    [self.person printInfo];
+//
+//    [self.person removeObserver:self forKeyPath:@"name"];
+//    [self.person printInfo];
 }
+
+- (void)dealloc {
+    [self.person removeObserver:self forKeyPath:@"name"];
+}
+
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     NSLog(@"keyPath:%@  change:%@", keyPath, change);
 }
+
+- (IBAction)btnChangeName:(id)sender {
+    [self.person setValue:@(time(NULL)).stringValue forKey:@"name"];
+}
+
+- (IBAction)btnChange_name:(id)sender {
+    [self.person setValue:@(time(NULL)).stringValue forKey:@"_name"];
+}
+
+
 
 /*
 #pragma mark - Navigation

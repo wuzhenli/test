@@ -11,6 +11,7 @@
 #import "Animal.h"
 #import "SingleModel.h"
 #import "UIDevice+Addtion.h"
+#import "Tool.h"
 
 @interface testTests : XCTestCase
 
@@ -160,34 +161,10 @@
 
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
+    [self measureBlock:^{ // 0.00539 0.00808 0.00745
+        [Tool testCount:1000000];
     }];
+    /// 0.0067 0.00936 0.00777
 }
 
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -100,6 +100,7 @@
 		0A72CD5D21A64E5500CDBE93 /* StaticSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A72CD5B21A64E5500CDBE93 /* StaticSwitchTableViewCell.m */; };
 		0A72CD6121A65C4E00CDBE93 /* StaticHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A72CD6021A65C4E00CDBE93 /* StaticHeaderFooterView.m */; };
 		0A768B1C208369850086AA40 /* JLPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A768B1B208369850086AA40 /* JLPresentAnimation.m */; };
+		0A78C5D7223B995A0042BDA5 /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A78C5D6223B995A0042BDA5 /* Tool.m */; };
 		0A7C408A200701F500174650 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C4089200701F500174650 /* Person.m */; };
 		0A7C408E20073CE300174650 /* PhotoKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C408D20073CE300174650 /* PhotoKitViewController.m */; };
 		0A7C409020073CED00174650 /* PhotoKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7C408F20073CED00174650 /* PhotoKitViewController.xib */; };
@@ -390,6 +391,8 @@
 		0A768B1A208369850086AA40 /* JLPresentAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLPresentAnimation.h; sourceTree = "<group>"; };
 		0A768B1B208369850086AA40 /* JLPresentAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLPresentAnimation.m; sourceTree = "<group>"; };
 		0A768B1D2083738F0086AA40 /* JLAnimationPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLAnimationPresentationController.h; sourceTree = "<group>"; };
+		0A78C5D5223B995A0042BDA5 /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		0A78C5D6223B995A0042BDA5 /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
 		0A7C4088200701F500174650 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		0A7C4089200701F500174650 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		0A7C408C20073CE300174650 /* PhotoKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoKitViewController.h; sourceTree = "<group>"; };
@@ -988,6 +991,7 @@
 		0A61116620E8C8EC008CE53F /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				0A78C5D4223B994E0042BDA5 /* TestTool */,
 				0AF7B2DB219D4D8E00144B7E /* BBSProgressHUD */,
 				0A948BDC2080B559002BD6C7 /* Category */,
 			);
@@ -1117,6 +1121,15 @@
 				0A72CD6021A65C4E00CDBE93 /* StaticHeaderFooterView.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0A78C5D4223B994E0042BDA5 /* TestTool */ = {
+			isa = PBXGroup;
+			children = (
+				0A78C5D5223B995A0042BDA5 /* Tool.h */,
+				0A78C5D6223B995A0042BDA5 /* Tool.m */,
+			);
+			path = TestTool;
 			sourceTree = "<group>";
 		};
 		0A7C408B20073CD200174650 /* PhotoKit */ = {
@@ -1799,6 +1812,7 @@
 				0ABAE71B21ABE7D20094BAA8 /* SwipeFeedback.swift in Sources */,
 				0AD6A9D621185DD300DBA114 /* KVOPerson.m in Sources */,
 				0AF871C4220050730019F308 /* StructSizeViewController.m in Sources */,
+				0A78C5D7223B995A0042BDA5 /* Tool.m in Sources */,
 				0A37E7F822375A5C00A32AE4 /* KVOPattern.m in Sources */,
 				0ABAE72021ABE7D20094BAA8 /* SwipeAnimator.swift in Sources */,
 				0A50041221DDA19C00A1E243 /* TestHeightTableViewController.m in Sources */,
@@ -2169,7 +2183,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y49U8RX2F5;
+				DEVELOPMENT_TEAM = 294Q8452TK;
 				INFOPLIST_FILE = testUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jaly.www.extension.testUITests;
@@ -2185,7 +2199,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y49U8RX2F5;
+				DEVELOPMENT_TEAM = 294Q8452TK;
 				INFOPLIST_FILE = testUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jaly.www.extension.testUITests;
