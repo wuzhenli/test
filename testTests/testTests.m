@@ -8,7 +8,6 @@
 
 #import <XCTest/XCTest.h>
 #import "MehtodSignature.h"
-#import "Animal.h"
 #import "SingleModel.h"
 #import "UIDevice+Addtion.h"
 #import "Tool.h"
@@ -58,24 +57,9 @@
 
 - (void)testCompare {
     NSString *s1 = [[UIDevice currentDevice] systemVersion]; // 11.2
-    
-    
-    XCTAssertTrue([UIDevice ad_lessThenVersion:@"11.3"]);
-    XCTAssertFalse([UIDevice ad_lessThenVersion:@"11.2"]);
-    XCTAssertFalse([UIDevice ad_lessThenVersion:@"8.0"], @"less then 8.4 is false" );
     NSLog(@"systemV:%@", s1);  // -1
 }
 
-- (void)testSingleton {
-    SingleModel *m1 = [SingleModel shareSingleModel];
-    SingleModel *m2 = [SingleModel shareSingleModel];
-    
-    XCTAssertNotNil(m1, "m1 is nil");
-    XCTAssertNotNil(m2, "m2 is nil");
-    
-    
-    XCTAssert(m1 == m2, "m1 != m2");
-}
 - (void)testDate {
     NSDate *datePast = [NSDate distantPast];
     NSDate *date = [NSDate date];

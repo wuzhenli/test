@@ -6,7 +6,7 @@ target 'test' do
   use_frameworks!
 
   # Pods for test
-  pod 'JLLogEncoding', '~> 0.0.2'
+  # pod 'JLLogEncoding', '~> 0.0.2'
   pod 'Masonry'
   pod 'MBProgressHUD', '~> 1.1.0'
   pod 'GrowTextView', '~> 1.0'

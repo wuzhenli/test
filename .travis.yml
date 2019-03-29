@@ -1,0 +1,12 @@
+language: objective-c
+xcode_workspace: test.xcworkspace # path to your xcodeproj folder
+xcode_scheme: test
+xcode_destination: platform=iOS Simulator,OS=11.1,name=iPhone X
+notifications:
+  email:
+    recipients:
+      - 1363721033@qq.com
+    on_success: always
+    on_failure: always
+  slack:
+    on_success: always
