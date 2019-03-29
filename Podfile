@@ -9,6 +9,7 @@ target 'test' do
   pod 'JLLogEncoding', '~> 0.0.2'
   pod 'Masonry'
   pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'GrowTextView', '~> 1.0'
 #  pod "NSLogger"
 # Get the latest on develop
 # •pod 'SwipeCellKit', :git => 'https://github.com/SwipeCellKit/SwipeCellKit.git', :branch => 'develop'

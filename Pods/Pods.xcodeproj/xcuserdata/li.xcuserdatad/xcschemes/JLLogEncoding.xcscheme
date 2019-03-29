@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0C1440C0F58E7E7DBBC536303BC85756"
+               BlueprintIdentifier = "10F843E26F9C432948978565829FDBEF"
+               BuildableName = "JLLogEncoding.framework"
                BlueprintName = "JLLogEncoding"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "JLLogEncoding.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
