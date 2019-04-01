@@ -1,12 +1,8 @@
 PODS:
-  - CocoaLumberjack (3.4.2):
-    - CocoaLumberjack/Default (= 3.4.2)
-    - CocoaLumberjack/Extensions (= 3.4.2)
-  - CocoaLumberjack/Default (3.4.2)
-  - CocoaLumberjack/Extensions (3.4.2):
-    - CocoaLumberjack/Default
+  - CocoaLumberjack (3.5.2):
+    - CocoaLumberjack/Core (= 3.5.2)
+  - CocoaLumberjack/Core (3.5.2)
   - GrowTextView (1.0)
-  - JLLogEncoding (0.0.2)
   - JLRoutes (2.1)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
@@ -15,7 +11,6 @@ PODS:
 DEPENDENCIES:
   - CocoaLumberjack
   - GrowTextView (~> 1.0)
-  - JLLogEncoding (~> 0.0.2)
   - JLRoutes (~> 2.1)
   - Masonry
   - MBProgressHUD (~> 1.1.0)
@@ -25,7 +20,6 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CocoaLumberjack
     - GrowTextView
-    - JLLogEncoding
     - JLRoutes
     - Masonry
     - MBProgressHUD
@@ -40,14 +34,13 @@ CHECKOUT OPTIONS:
     :git: https://git.coding.net/kakukeme/Reveal-SDK.git
 
 SPEC CHECKSUMS:
-  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  CocoaLumberjack: 118bf4a820efc641f79fa487b75ed928dccfae23
   GrowTextView: 8528109cb3b0f31fb88152d06c791974652cf37d
-  JLLogEncoding: e01534b5dcdc51b64ea714a5ca358f32fe6f9271
   JLRoutes: d755245322b94227662ea3e43492fdca94e05c5b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   Reveal-SDK: 6504f524a2e7138913251139ba30a03b3da91792
 
-PODFILE CHECKSUM: 11be41b5ecf79d20b6c037d475bb8052e461690b
+PODFILE CHECKSUM: 687e973703ad51f0b740fd30927e658237b03dab
 
 COCOAPODS: 1.6.1

@@ -155,7 +155,6 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GrowTextView/GrowTextView.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/JLLogEncoding/JLLogEncoding.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JLRoutes/JLRoutes.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
@@ -164,7 +163,6 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GrowTextView/GrowTextView.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/JLLogEncoding/JLLogEncoding.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JLRoutes/JLRoutes.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
