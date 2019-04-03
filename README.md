@@ -9,5 +9,4 @@
 
 ![image](https://upload-images.jianshu.io/upload_images/2591472-5a95c3f4c6e81e37.gif?imageMogr2/auto-orient/strip | width=300)
 
-<img alt="jl_txv_paster.gif" src="https://upload-images.jianshu.io/upload_images/2591472-754d34bb3c0c126c.gif?imageMogr2/auto-orient/strip" width="300 /img>
-<br />
+<img src="https://upload-images.jianshu.io/upload_images/2591472-754d34bb3c0c126c.gif?imageMogr2/auto-orient/strip" width="300">
