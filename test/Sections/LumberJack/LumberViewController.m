@@ -7,9 +7,9 @@
 //
 
 #import "LumberViewController.h"
-#import <CocoaLumberjack/CocoaLumberjack.h>
+//#import <CocoaLumberjack/CocoaLumberjack.h>
 
-static const DDLogLevel ddLogLevel = DDLogLevelDebug;
+//static const DDLogLevel ddLogLevel = DDLogLevelDebug;
 
 @interface LumberViewController ()
 
@@ -25,7 +25,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelDebug;
 }
 
 - (void)someMehtod {
-    DDLogVerbose(@"this is someMethod : verbose");
+//    DDLogVerbose(@"this is someMethod : verbose");
 }
 
 /*

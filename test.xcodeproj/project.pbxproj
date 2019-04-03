@@ -95,7 +95,6 @@
 		0A6C158B2254ED4600316F34 /* NSStringAdditionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6C15882254ED4600316F34 /* NSStringAdditionTests.m */; };
 		0A6C158C2254ED4600316F34 /* testDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6C15892254ED4600316F34 /* testDate.m */; };
 		0A6C158D2254ED4600316F34 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6C158A2254ED4600316F34 /* testTests.m */; };
-		0A6C15972254EE8E00316F34 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6C15962254EE8E00316F34 /* testUITests.m */; };
 		0A72CD4E21A649EB00CDBE93 /* StaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A72CD4D21A649EB00CDBE93 /* StaticTableViewController.m */; };
 		0A72CD5121A64B4400CDBE93 /* StaticTableVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A72CD5021A64B4400CDBE93 /* StaticTableVCModel.m */; };
 		0A72CD5421A64B5D00CDBE93 /* StaticSecionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A72CD5321A64B5D00CDBE93 /* StaticSecionModel.m */; };
@@ -195,13 +194,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		0A6C15752254ED0F00316F34 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A58034E1F7A01D1000B5192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0A5803551F7A01D1000B5192;
-			remoteInfo = test;
-		};
-		0A6C15992254EE8F00316F34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0A58034E1F7A01D1000B5192 /* Project object */;
 			proxyType = 1;
@@ -378,9 +370,6 @@
 		0A6C15882254ED4600316F34 /* NSStringAdditionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringAdditionTests.m; sourceTree = "<group>"; };
 		0A6C15892254ED4600316F34 /* testDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testDate.m; sourceTree = "<group>"; };
 		0A6C158A2254ED4600316F34 /* testTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testTests.m; sourceTree = "<group>"; };
-		0A6C15942254EE8E00316F34 /* testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A6C15962254EE8E00316F34 /* testUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testUITests.m; sourceTree = "<group>"; };
-		0A6C15982254EE8E00316F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A72CD4C21A649EB00CDBE93 /* StaticTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticTableViewController.h; sourceTree = "<group>"; };
 		0A72CD4D21A649EB00CDBE93 /* StaticTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticTableViewController.m; sourceTree = "<group>"; };
 		0A72CD4F21A64B4400CDBE93 /* StaticTableVCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticTableVCModel.h; sourceTree = "<group>"; };
@@ -556,13 +545,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB3FD2E41CD467697C7D5962 /* Pods_testTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A6C15912254EE8E00316F34 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -854,7 +836,6 @@
 				0A5803581F7A01D1000B5192 /* test */,
 				0AAA887921D5D94C009A1F49 /* ShareLink */,
 				0A6C15712254ED0F00316F34 /* testTests */,
-				0A6C15952254EE8E00316F34 /* testUITests */,
 				0A5803571F7A01D1000B5192 /* Products */,
 				4C8113F0C994875998A88BC3 /* Pods */,
 				9F237A32F3EF21F12F0E1157 /* Frameworks */,
@@ -867,7 +848,6 @@
 				0A5803561F7A01D1000B5192 /* test.app */,
 				0AAA887821D5D94C009A1F49 /* ShareLink.appex */,
 				0A6C15702254ED0F00316F34 /* testTests.xctest */,
-				0A6C15942254EE8E00316F34 /* testUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1087,15 +1067,6 @@
 				0A6C15742254ED0F00316F34 /* Info.plist */,
 			);
 			path = testTests;
-			sourceTree = "<group>";
-		};
-		0A6C15952254EE8E00316F34 /* testUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0A6C15962254EE8E00316F34 /* testUITests.m */,
-				0A6C15982254EE8E00316F34 /* Info.plist */,
-			);
-			path = testUITests;
 			sourceTree = "<group>";
 		};
 		0A72CD4B21A649D400CDBE93 /* StaticTableList */ = {
@@ -1543,24 +1514,6 @@
 			productReference = 0A6C15702254ED0F00316F34 /* testTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0A6C15932254EE8E00316F34 /* testUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0A6C159B2254EE8F00316F34 /* Build configuration list for PBXNativeTarget "testUITests" */;
-			buildPhases = (
-				0A6C15902254EE8E00316F34 /* Sources */,
-				0A6C15912254EE8E00316F34 /* Frameworks */,
-				0A6C15922254EE8E00316F34 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0A6C159A2254EE8F00316F34 /* PBXTargetDependency */,
-			);
-			name = testUITests;
-			productName = testUITests;
-			productReference = 0A6C15942254EE8E00316F34 /* testUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		0AAA887721D5D94C009A1F49 /* ShareLink */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AAA888421D5D94C009A1F49 /* Build configuration list for PBXNativeTarget "ShareLink" */;
@@ -1602,11 +1555,6 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0A5803551F7A01D1000B5192;
 					};
-					0A6C15932254EE8E00316F34 = {
-						CreatedOnToolsVersion = 10.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 0A5803551F7A01D1000B5192;
-					};
 					0AAA887721D5D94C009A1F49 = {
 						CreatedOnToolsVersion = 10.0;
 						ProvisioningStyle = Automatic;
@@ -1634,7 +1582,6 @@
 				0A5803551F7A01D1000B5192 /* test */,
 				0AAA887721D5D94C009A1F49 /* ShareLink */,
 				0A6C156F2254ED0F00316F34 /* testTests */,
-				0A6C15932254EE8E00316F34 /* testUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1706,13 +1653,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A6C15922254EE8E00316F34 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0AAA887621D5D94C009A1F49 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1746,7 +1686,6 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/GrowTextView/GrowTextView.framework",
 				"${BUILT_PRODUCTS_DIR}/JLRoutes/JLRoutes.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
@@ -1755,7 +1694,6 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GrowTextView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JLRoutes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
@@ -1974,14 +1912,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A6C15902254EE8E00316F34 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A6C15972254EE8E00316F34 /* testUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0AAA887421D5D94C009A1F49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1998,11 +1928,6 @@
 			isa = PBXTargetDependency;
 			target = 0A5803551F7A01D1000B5192 /* test */;
 			targetProxy = 0A6C15752254ED0F00316F34 /* PBXContainerItemProxy */;
-		};
-		0A6C159A2254EE8F00316F34 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0A5803551F7A01D1000B5192 /* test */;
-			targetProxy = 0A6C15992254EE8F00316F34 /* PBXContainerItemProxy */;
 		};
 		0AAA888221D5D94C009A1F49 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2233,47 +2158,6 @@
 			};
 			name = Release;
 		};
-		0A6C159C2254EE8F00316F34 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 294Q8452TK;
-				INFOPLIST_FILE = testUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jaly.www.testUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = test;
-			};
-			name = Debug;
-		};
-		0A6C159D2254EE8F00316F34 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 294Q8452TK;
-				INFOPLIST_FILE = testUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jaly.www.testUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = test;
-			};
-			name = Release;
-		};
 		0AAA888521D5D94C009A1F49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2341,15 +2225,6 @@
 			buildConfigurations = (
 				0A6C15772254ED0F00316F34 /* Debug */,
 				0A6C15782254ED0F00316F34 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0A6C159B2254EE8F00316F34 /* Build configuration list for PBXNativeTarget "testUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A6C159C2254EE8F00316F34 /* Debug */,
-				0A6C159D2254EE8F00316F34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

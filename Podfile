@@ -16,7 +16,7 @@ target 'test' do
   pod 'JLRoutes', '~> 2.1'
   
   pod 'Reveal-SDK', :git => 'https://git.coding.net/kakukeme/Reveal-SDK.git', :configurations => ['Debug']
-  pod 'CocoaLumberjack'
+  # pod 'CocoaLumberjack'
   
   target 'testTests' do
     inherit! :search_paths

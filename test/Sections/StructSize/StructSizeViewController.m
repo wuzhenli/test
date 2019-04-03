@@ -7,9 +7,9 @@
 //
 
 #import "StructSizeViewController.h"
-#import <CocoaLumberjack/CocoaLumberjack.h>
 
-static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+
+//static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 
 @interface StructSizeViewController ()
 
@@ -23,7 +23,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
     
     // https://www.cnblogs.com/0201zcr/p/4789332.html
     [self testSizeOfSequence];
-    DDLogVerbose(@"StructSizeViewController");
+    // DDLogVerbose(@"StructSizeViewController");
 }
 
 - (void)testSizeOfSequence {

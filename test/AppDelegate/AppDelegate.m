@@ -20,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     
-    [self testLumberjack];
+//    [self testLumberjack];
     [self registerJLRouter];
 //    Override point for customization after application launch.
 //    LoggerSetupBonjourForBuildUser();
@@ -37,17 +37,17 @@
 
 #pragma -mark private
 
-- (void)testLumberjack {
-    [DDLog addLogger:[DDOSLogger sharedInstance]];
-    
-    DDFileLogger *filelogger = [[DDFileLogger alloc] init];
-    filelogger.rollingFrequency = 60 * 60 * 24;
-    filelogger.logFileManager.maximumNumberOfLogFiles = 7;
-    [DDLog addLogger:filelogger]; 
-    // The above code tells the application to keep a week's worth of log files on the system.
-    
-    [DDLog allLoggersWithLevel];
-}
+//- (void)testLumberjack {
+//    [DDLog addLogger:[DDOSLogger sharedInstance]];
+//
+//    DDFileLogger *filelogger = [[DDFileLogger alloc] init];
+//    filelogger.rollingFrequency = 60 * 60 * 24;
+//    filelogger.logFileManager.maximumNumberOfLogFiles = 7;
+//    [DDLog addLogger:filelogger];
+//    // The above code tells the application to keep a week's worth of log files on the system.
+//
+//    [DDLog allLoggersWithLevel];
+//}
 
 - (void)registerJLRouter {
     JLRoutes *routes = [JLRoutes globalRoutes];
