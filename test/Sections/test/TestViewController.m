@@ -21,11 +21,10 @@ NSLog(@"--- after");
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
+    NSLog(@"%@", [NSThread callStackSymbols]);
     TEST_ARGS(NSLog(@"anything"););
 }
 
