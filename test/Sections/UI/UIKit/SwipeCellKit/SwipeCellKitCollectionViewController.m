@@ -29,7 +29,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.rowNum = 12;
-    self.flowLayout.itemSize = CGSizeMake(SCREEN_Width, 80);
+    self.flowLayout.itemSize = CGSizeMake(SCREEN_Width, 59);
+    self.flowLayout.minimumLineSpacing = 0;
+    self.flowLayout.minimumInteritemSpacing = 0;
     
     [self.collectionView registerClass:[SliderCollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([SliderCollectionViewCell class])];
     self.collectionView.delegate = self;

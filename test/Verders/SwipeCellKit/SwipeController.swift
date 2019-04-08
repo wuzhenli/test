@@ -26,10 +26,11 @@ protocol SwipeControllerDelegate: class {
 }
 
 class SwipeController: NSObject {
-    
+    /// Cell
     weak var swipeable: (UIView & Swipeable)?
+    /// cell.contentView
     weak var actionsContainerView: UIView?
-    
+    /// Cell
     weak var delegate: SwipeControllerDelegate?
     weak var scrollView: UIScrollView?
     
@@ -83,7 +84,7 @@ class SwipeController: NSObject {
             
             if swipeable.state == .center || swipeable.state == .animatingToCenter {
                 let orientation: SwipeActionsOrientation = velocity.x > 0 ? .left : .right
-                
+                // 滑动cell ，首先由着触发代理方法
                 showActionsView(for: orientation)
             }
         case .changed:
@@ -175,6 +176,7 @@ class SwipeController: NSObject {
     
     @discardableResult
     func showActionsView(for orientation: SwipeActionsOrientation) -> Bool {
+        // 经过 cell -> cell.delegate 询问 [SwipeAction]
         guard let actions = delegate?.swipeController(self, editActionsForSwipeableFor: orientation), actions.count > 0 else { return false }
         guard let swipeable = self.swipeable else { return false }
         
@@ -328,6 +330,7 @@ class SwipeController: NSObject {
     }
     
     func configure() {
+        /// Cell add two gesture
         swipeable?.addGestureRecognizer(tapGestureRecognizer)
         swipeable?.addGestureRecognizer(panGestureRecognizer)
     }
