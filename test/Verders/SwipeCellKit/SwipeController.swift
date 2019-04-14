@@ -182,6 +182,7 @@ class SwipeController: NSObject {
         
         originalLayoutMargins = swipeable.layoutMargins
         
+        // 把侧滑按钮添加到 cell 上
         configureActionsView(with: actions, for: orientation)
         
         delegate?.swipeController(self, willBeginEditingSwipeableFor: orientation)

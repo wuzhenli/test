@@ -107,6 +107,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
   install_framework "${PODS_ROOT}/Reveal-SDK/RevealServer-4/iOS/RevealServer.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WMPageController/WMPageController.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/GrowTextView/GrowTextView.framework"
@@ -114,6 +115,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
   install_framework "${PODS_ROOT}/Reveal-SDK/RevealServer-4/iOS/RevealServer.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WMPageController/WMPageController.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

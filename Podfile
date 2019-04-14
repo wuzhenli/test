@@ -17,6 +17,7 @@ target 'ShareLink' do
   pod 'Reveal-SDK', :git => 'https://git.coding.net/kakukeme/Reveal-SDK.git', :configurations => ['Debug']
   # pod 'CocoaLumberjack'
   # Pods for ShareLink
+  pod 'WMPageController', '~> 2.4.0' 
 
 end
 
