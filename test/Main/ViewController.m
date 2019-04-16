@@ -33,7 +33,8 @@ dispatch_async(dispatch_get_main_queue(), block); \
 
 - (NSMutableArray<NSString *> *)arrClassNameXib {
     if (!_arrClassNameXib) {
-        _arrClassNameXib = @[ @"KVCViewController", @"KVOViewController" ,@"PrivateAPIViewController",  @"StructSizeViewController",
+        _arrClassNameXib = @[ @"BaseAnimationViewController",
+                              @"KVCViewController", @"KVOViewController" ,@"PrivateAPIViewController",  @"StructSizeViewController",
                               @"LumberViewController", 
                               @"JLRoutersViewController",@"TestHeightTableViewController",@"ThreadViewController", 
                               @"GCDViewController", @"BlockBaseViewController",

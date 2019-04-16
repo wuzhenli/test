@@ -22,6 +22,8 @@
 		0A0CC8C721CE4E4200AA53A3 /* BlockBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0CC8C521CE4E4200AA53A3 /* BlockBaseViewController.xib */; };
 		0A0CC8CB21CE4E6800AA53A3 /* BlockAreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0CC8C921CE4E6800AA53A3 /* BlockAreaViewController.m */; };
 		0A0CC8CC21CE4E6800AA53A3 /* BlockAreaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0CC8CA21CE4E6800AA53A3 /* BlockAreaViewController.xib */; };
+		0A209D0D226481B0005E7B8B /* BaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A209D0B226481B0005E7B8B /* BaseAnimationViewController.m */; };
+		0A209D0E226481B0005E7B8B /* BaseAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A209D0C226481B0005E7B8B /* BaseAnimationViewController.xib */; };
 		0A2BEB4621AE4B990008C79B /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BEB4521AE4B990008C79B /* DrawViewController.m */; };
 		0A2BEB4921AE4BB10008C79B /* DrawFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BEB4821AE4BB10008C79B /* DrawFirstView.m */; };
 		0A2DBE9B21F716F9006ECAAE /* BlockCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2DBE9921F716F9006ECAAE /* BlockCrashViewController.m */; };
@@ -242,6 +244,9 @@
 		0A0CC8C821CE4E6800AA53A3 /* BlockAreaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockAreaViewController.h; sourceTree = "<group>"; };
 		0A0CC8C921CE4E6800AA53A3 /* BlockAreaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockAreaViewController.m; sourceTree = "<group>"; };
 		0A0CC8CA21CE4E6800AA53A3 /* BlockAreaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlockAreaViewController.xib; sourceTree = "<group>"; };
+		0A209D0A226481B0005E7B8B /* BaseAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseAnimationViewController.h; sourceTree = "<group>"; };
+		0A209D0B226481B0005E7B8B /* BaseAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseAnimationViewController.m; sourceTree = "<group>"; };
+		0A209D0C226481B0005E7B8B /* BaseAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseAnimationViewController.xib; sourceTree = "<group>"; };
 		0A2BEB4421AE4B990008C79B /* DrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
 		0A2BEB4521AE4B990008C79B /* DrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
 		0A2BEB4721AE4BB10008C79B /* DrawFirstView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawFirstView.h; sourceTree = "<group>"; };
@@ -593,6 +598,16 @@
 				0A2DBE9A21F716F9006ECAAE /* BlockCrashViewController.xib */,
 			);
 			path = Block;
+			sourceTree = "<group>";
+		};
+		0A209D0922648195005E7B8B /* BaseAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				0A209D0A226481B0005E7B8B /* BaseAnimationViewController.h */,
+				0A209D0B226481B0005E7B8B /* BaseAnimationViewController.m */,
+				0A209D0C226481B0005E7B8B /* BaseAnimationViewController.xib */,
+			);
+			path = BaseAnimation;
 			sourceTree = "<group>";
 		};
 		0A2BEB4321AE4B840008C79B /* Draw */ = {
@@ -1418,6 +1433,7 @@
 		0AF7B2DA219D498500144B7E /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				0A209D0922648195005E7B8B /* BaseAnimation */,
 				0A96D0D0219DA34600F4DED6 /* Menu */,
 				0A304DBE219D79CD0074FF89 /* Present */,
 			);
@@ -1626,6 +1642,7 @@
 				0A5803661F7A01D1000B5192 /* LaunchScreen.storyboard in Resources */,
 				0A009D4420E8CC9E00D81C6A /* localImage7.jpeg in Resources */,
 				0A0CC8C721CE4E4200AA53A3 /* BlockBaseViewController.xib in Resources */,
+				0A209D0E226481B0005E7B8B /* BaseAnimationViewController.xib in Resources */,
 				0A009D3B20E8CC9D00D81C6A /* upload_long_image.jpeg in Resources */,
 				0A009D4220E8CC9E00D81C6A /* localBigImage0.jpeg in Resources */,
 				0A5803631F7A01D1000B5192 /* Assets.xcassets in Resources */,
@@ -1880,6 +1897,7 @@
 				0A2BEB4621AE4B990008C79B /* DrawViewController.m in Sources */,
 				0ABAE72221ABE7D20094BAA8 /* SwipeCollectionViewCell+Accessibility.swift in Sources */,
 				0A61116220E8ACEC008CE53F /* WebViewController.m in Sources */,
+				0A209D0D226481B0005E7B8B /* BaseAnimationViewController.m in Sources */,
 				0A72CD5D21A64E5500CDBE93 /* StaticSwitchTableViewCell.m in Sources */,
 				0A33173E20F5F89A00823A22 /* MenuCtlViewController.m in Sources */,
 				0A8F226E1F7B7E8200499EFD /* TestViewController.m in Sources */,

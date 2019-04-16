@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseAnimationViewController">
+            <connections>
+                <outlet property="containerView" destination="rmA-g7-NuW" id="c0c-eF-xgb"/>
+                <outlet property="greenView" destination="mar-Jf-BpO" id="6CY-Tt-Gos"/>
+                <outlet property="lblGroupAnimation" destination="znO-D1-IUJ" id="qWF-Od-opw"/>
+                <outlet property="redView" destination="OSx-Ax-O2d" id="UXj-Iq-89C"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y56-Eb-wUs">
+                    <rect key="frame" x="42" y="152" width="122" height="89"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="BaseAnimation">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="btnBaseAnimationClicked:" destination="-1" eventType="touchUpInside" id="8yY-lr-Afn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNU-oa-u7n">
+                    <rect key="frame" x="204" y="218" width="77" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.602715373" green="0.74595424109999997" blue="0.602715373" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Path">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="pathAnimation:" destination="-1" eventType="touchUpInside" id="tds-fx-Hu1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1k-CT-nOo">
+                    <rect key="frame" x="34" y="293" width="123" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.602715373" green="0.74595424109999997" blue="0.602715373" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Key Frame">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnKeyFrameAnimationClicked:" destination="-1" eventType="touchUpInside" id="Xuq-Fd-btE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXW-nw-UIh">
+                    <rect key="frame" x="271" y="293" width="123" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.602715373" green="0.74595424109999997" blue="0.602715373" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="CATransition">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnTransitionClicked:" destination="-1" eventType="touchUpInside" id="V34-dd-jVX"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmA-g7-NuW">
+                    <rect key="frame" x="20" y="658" width="374" height="184"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OSx-Ax-O2d">
+                            <rect key="frame" x="10" y="10" width="151" height="164"/>
+                            <color key="backgroundColor" red="1" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mar-Jf-BpO">
+                            <rect key="frame" x="203" y="10" width="151" height="164"/>
+                            <color key="backgroundColor" red="0.085882482390000001" green="0.96456866200000002" blue="0.050313600350000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="mar-Jf-BpO" firstAttribute="height" secondItem="OSx-Ax-O2d" secondAttribute="height" id="BZK-hH-R2U"/>
+                        <constraint firstItem="mar-Jf-BpO" firstAttribute="centerY" secondItem="OSx-Ax-O2d" secondAttribute="centerY" id="C8C-Zj-GFD"/>
+                        <constraint firstItem="OSx-Ax-O2d" firstAttribute="top" secondItem="rmA-g7-NuW" secondAttribute="top" constant="10" id="NWN-GD-QEr"/>
+                        <constraint firstAttribute="trailing" secondItem="mar-Jf-BpO" secondAttribute="trailing" constant="20" id="OzP-3r-FIY"/>
+                        <constraint firstItem="OSx-Ax-O2d" firstAttribute="leading" secondItem="rmA-g7-NuW" secondAttribute="leading" constant="10" id="Sci-Uj-Mpm"/>
+                        <constraint firstItem="mar-Jf-BpO" firstAttribute="leading" secondItem="OSx-Ax-O2d" secondAttribute="trailing" constant="42" id="WKf-YI-bm6"/>
+                        <constraint firstItem="mar-Jf-BpO" firstAttribute="width" secondItem="OSx-Ax-O2d" secondAttribute="width" id="cHn-jq-2BC"/>
+                        <constraint firstAttribute="height" constant="184" id="dyg-Lb-dpB"/>
+                        <constraint firstAttribute="bottom" secondItem="OSx-Ax-O2d" secondAttribute="bottom" constant="10" id="nDT-cs-6sp"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6p-8O-gpP">
+                    <rect key="frame" x="34" y="364" width="123" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.602715373" green="0.74595424109999997" blue="0.602715373" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="GroupAnimation">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnGroupAnimationClicked:" destination="-1" eventType="touchUpInside" id="Wq6-Jp-zTU"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="group animation test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znO-D1-IUJ">
+                    <rect key="frame" x="223" y="369" width="158" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.602715373" green="0.74595424109999997" blue="0.602715373" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A38-2e-knN">
+                    <rect key="frame" x="25" y="425" width="141" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.602715373" green="0.74595424109999997" blue="0.602715373" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="interactiveAnimation">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="testInteractiveAnimation:" destination="-1" eventType="touchUpInside" id="wUL-DV-nhd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="rmA-g7-NuW" secondAttribute="trailing" constant="20" id="Goa-Cq-8q7"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="rmA-g7-NuW" secondAttribute="bottom" constant="20" id="bBi-xu-yiL"/>
+                <constraint firstItem="rmA-g7-NuW" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="i0V-cO-1Qs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="131.8840579710145" y="152.67857142857142"/>
+        </view>
+    </objects>
+</document>
