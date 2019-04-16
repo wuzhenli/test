@@ -13,6 +13,7 @@
 #import "Global.h"
 #import "LogMacro.h"
 #import "BBSProgressHUD.h"
+#import "UIViewController+base.h"
 
 #import <Masonry/Masonry.h>
 #import "SwipeCellKit.h"

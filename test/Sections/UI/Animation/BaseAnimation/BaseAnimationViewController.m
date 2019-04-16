@@ -7,6 +7,8 @@
 //  https://juejin.im/post/5bd140abf265da0ae6778180
 
 #import "BaseAnimationViewController.h"
+#import "PushAnimation.h"
+
 
 @interface BaseAnimationViewController ()<CAAnimationDelegate>
 
@@ -19,6 +21,13 @@
 
 @implementation BaseAnimationViewController
 
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        self.bs_pushTransitioning = [[PushAnimation alloc] init];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -27,7 +36,6 @@
 
 - (IBAction)btnBaseAnimationClicked:(UIButton *)sender {
 //    sender.frame = CGRectMake(200, 400, 100, 40);
-    
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
     
     //

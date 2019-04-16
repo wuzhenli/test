@@ -20,10 +20,48 @@
     self.interactivePopGestureRecognizer.delegate = self;
     
     
-    
+    self.delegate = self;
 }
 
-#pragma -mark 
+#pragma -mark UINavigationControllerDelegate
+
+// Called when the navigation controller shows a new top view controller via a push, pop or setting of the view controller stack.
+//- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+//    
+//}
+//- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+//    
+//}
+//
+//- (UIInterfaceOrientationMask)navigationControllerSupportedInterfaceOrientations:(UINavigationController *)navigationController NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED {
+//    
+//}
+//- (UIInterfaceOrientation)navigationControllerPreferredInterfaceOrientationForPresentation:(UINavigationController *)navigationController NS_AVAILABLE_IOS(7_0) __TVOS_PROHIBITED 
+
+- (nullable id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
+                                   interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>) animationController NS_AVAILABLE_IOS(7_0) {
+    return nil;
+}
+
+- (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                            animationControllerForOperation:(UINavigationControllerOperation)operation
+                                                         fromViewController:(UIViewController *)fromVC
+                                                           toViewController:(UIViewController *)toVC  {
+    id <UIViewControllerAnimatedTransitioning> animationing = nil;
+    
+    switch (operation) {
+        case UINavigationControllerOperationPop:
+            animationing = fromVC.bs_pushTransitioning;
+            break;
+        case UINavigationControllerOperationPush:
+            animationing = toVC.bs_pushTransitioning;
+            break;
+        default:
+            break;
+    }
+    return animationing;
+}
+
 #pragma -mark UIGestureRecognizerDelegate
 
 // called when a gesture recognizer attempts to transition out of UIGestureRecognizerStatePossible. returning NO causes it to transition to UIGestureRecognizerStateFailed

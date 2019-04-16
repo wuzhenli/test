@@ -51,6 +51,8 @@
 		0A3AA7272235FFB9006CF0C7 /* KVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3AA7252235FFB9006CF0C7 /* KVCViewController.xib */; };
 		0A3AC36C220177B200252113 /* LumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3AC36A220177B200252113 /* LumberViewController.m */; };
 		0A3AC36D220177B200252113 /* LumberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3AC36B220177B200252113 /* LumberViewController.xib */; };
+		0A3C26A822657CBF00C23ABE /* UIViewController+base.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C26A722657CBF00C23ABE /* UIViewController+base.m */; };
+		0A3C26AB22657E9B00C23ABE /* PushAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C26AA22657E9B00C23ABE /* PushAnimation.m */; };
 		0A3CCFDB214A330A0017F7A2 /* AudioVolumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3CCFD9214A330A0017F7A2 /* AudioVolumeViewController.m */; };
 		0A3CCFDC214A330A0017F7A2 /* AudioVolumeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3CCFDA214A330A0017F7A2 /* AudioVolumeViewController.xib */; };
 		0A3CCFDF214A33240017F7A2 /* VolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3CCFDE214A33240017F7A2 /* VolumeView.m */; };
@@ -292,6 +294,10 @@
 		0A3AC369220177B200252113 /* LumberViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LumberViewController.h; sourceTree = "<group>"; };
 		0A3AC36A220177B200252113 /* LumberViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LumberViewController.m; sourceTree = "<group>"; };
 		0A3AC36B220177B200252113 /* LumberViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LumberViewController.xib; sourceTree = "<group>"; };
+		0A3C26A622657CBF00C23ABE /* UIViewController+base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+base.h"; sourceTree = "<group>"; };
+		0A3C26A722657CBF00C23ABE /* UIViewController+base.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+base.m"; sourceTree = "<group>"; };
+		0A3C26A922657E9B00C23ABE /* PushAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushAnimation.h; sourceTree = "<group>"; };
+		0A3C26AA22657E9B00C23ABE /* PushAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushAnimation.m; sourceTree = "<group>"; };
 		0A3CCFD8214A330A0017F7A2 /* AudioVolumeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVolumeViewController.h; sourceTree = "<group>"; };
 		0A3CCFD9214A330A0017F7A2 /* AudioVolumeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVolumeViewController.m; sourceTree = "<group>"; };
 		0A3CCFDA214A330A0017F7A2 /* AudioVolumeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioVolumeViewController.xib; sourceTree = "<group>"; };
@@ -606,6 +612,8 @@
 				0A209D0A226481B0005E7B8B /* BaseAnimationViewController.h */,
 				0A209D0B226481B0005E7B8B /* BaseAnimationViewController.m */,
 				0A209D0C226481B0005E7B8B /* BaseAnimationViewController.xib */,
+				0A3C26A922657E9B00C23ABE /* PushAnimation.h */,
+				0A3C26AA22657E9B00C23ABE /* PushAnimation.m */,
 			);
 			path = BaseAnimation;
 			sourceTree = "<group>";
@@ -658,6 +666,8 @@
 			children = (
 				0A3059451FFC800C0092DF94 /* JLNavigationController.h */,
 				0A3059461FFC800C0092DF94 /* JLNavigationController.m */,
+				0A3C26A622657CBF00C23ABE /* UIViewController+base.h */,
+				0A3C26A722657CBF00C23ABE /* UIViewController+base.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1821,6 +1831,7 @@
 				0A304DC8219D7A1C0074FF89 /* TestAnimationViewController.m in Sources */,
 				0A3AC36C220177B200252113 /* LumberViewController.m in Sources */,
 				0AB886F220A3E49D003F2734 /* CollectionViewController.m in Sources */,
+				0A3C26AB22657E9B00C23ABE /* PushAnimation.m in Sources */,
 				0A992295222D40A7001A39A8 /* SafeMuDictionary.m in Sources */,
 				0AA82C4C21290B34000A5C02 /* LoadInitViewController.m in Sources */,
 				0A33174120F5F8BA00823A22 /* MCTextView.m in Sources */,
@@ -1872,6 +1883,7 @@
 				0A6A0D6E21941A4D00AB4634 /* DefinePanGestureViewController.m in Sources */,
 				0A976BB920DB390F00BDE153 /* UIView+Corner.m in Sources */,
 				0A3059471FFC800C0092DF94 /* JLNavigationController.m in Sources */,
+				0A3C26A822657CBF00C23ABE /* UIViewController+base.m in Sources */,
 				0AE45A961F90591D00D738F4 /* KeyWinViewController.m in Sources */,
 				0A826D5C20DFD4C000338617 /* TVViewController.m in Sources */,
 				0A5CA3401FECA77900EC170F /* Animal.m in Sources */,
