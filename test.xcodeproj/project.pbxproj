@@ -90,6 +90,10 @@
 		0A61116D20E8CAFD008CE53F /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A61116B20E8CAFD008CE53F /* ScrollViewController.xib */; };
 		0A640F1D1FC6D37100B69AFA /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A640F1C1FC6D37100B69AFA /* GestureViewController.m */; };
 		0A640F201FC6D7E600B69AFA /* GestureLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A640F1F1FC6D7E600B69AFA /* GestureLabel.m */; };
+		0A668D072267245A00B8AD5A /* ReverseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A668D052267245A00B8AD5A /* ReverseViewController.m */; };
+		0A668D082267245A00B8AD5A /* ReverseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A668D062267245A00B8AD5A /* ReverseViewController.xib */; };
+		0A668D0C2267282300B8AD5A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A668D0A2267282300B8AD5A /* LoginViewController.m */; };
+		0A668D0D2267282300B8AD5A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A668D0B2267282300B8AD5A /* LoginViewController.xib */; };
 		0A6A0D6E21941A4D00AB4634 /* DefinePanGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A0D6C21941A4D00AB4634 /* DefinePanGestureViewController.m */; };
 		0A6A0D6F21941A4D00AB4634 /* DefinePanGestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6A0D6D21941A4D00AB4634 /* DefinePanGestureViewController.xib */; };
 		0A6A0D7221941A7200AB4634 /* JLPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A0D7121941A7200AB4634 /* JLPanGestureRecognizer.m */; };
@@ -366,6 +370,12 @@
 		0A640F1C1FC6D37100B69AFA /* GestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
 		0A640F1E1FC6D7E600B69AFA /* GestureLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureLabel.h; sourceTree = "<group>"; };
 		0A640F1F1FC6D7E600B69AFA /* GestureLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureLabel.m; sourceTree = "<group>"; };
+		0A668D042267245A00B8AD5A /* ReverseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseViewController.h; sourceTree = "<group>"; };
+		0A668D052267245A00B8AD5A /* ReverseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseViewController.m; sourceTree = "<group>"; };
+		0A668D062267245A00B8AD5A /* ReverseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReverseViewController.xib; sourceTree = "<group>"; };
+		0A668D092267282300B8AD5A /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0A668D0A2267282300B8AD5A /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0A668D0B2267282300B8AD5A /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		0A6A0D6B21941A4D00AB4634 /* DefinePanGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefinePanGestureViewController.h; sourceTree = "<group>"; };
 		0A6A0D6C21941A4D00AB4634 /* DefinePanGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefinePanGestureViewController.m; sourceTree = "<group>"; };
 		0A6A0D6D21941A4D00AB4634 /* DefinePanGestureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefinePanGestureViewController.xib; sourceTree = "<group>"; };
@@ -1053,6 +1063,19 @@
 			path = Gesture;
 			sourceTree = "<group>";
 		};
+		0A668D032267244300B8AD5A /* ReverseAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				0A668D042267245A00B8AD5A /* ReverseViewController.h */,
+				0A668D052267245A00B8AD5A /* ReverseViewController.m */,
+				0A668D062267245A00B8AD5A /* ReverseViewController.xib */,
+				0A668D092267282300B8AD5A /* LoginViewController.h */,
+				0A668D0A2267282300B8AD5A /* LoginViewController.m */,
+				0A668D0B2267282300B8AD5A /* LoginViewController.xib */,
+			);
+			path = ReverseAnimation;
+			sourceTree = "<group>";
+		};
 		0A6A0D6A21941A3A00AB4634 /* Gesture */ = {
 			isa = PBXGroup;
 			children = (
@@ -1443,6 +1466,7 @@
 		0AF7B2DA219D498500144B7E /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				0A668D032267244300B8AD5A /* ReverseAnimation */,
 				0A209D0922648195005E7B8B /* BaseAnimation */,
 				0A96D0D0219DA34600F4DED6 /* Menu */,
 				0A304DBE219D79CD0074FF89 /* Present */,
@@ -1653,8 +1677,10 @@
 				0A009D4420E8CC9E00D81C6A /* localImage7.jpeg in Resources */,
 				0A0CC8C721CE4E4200AA53A3 /* BlockBaseViewController.xib in Resources */,
 				0A209D0E226481B0005E7B8B /* BaseAnimationViewController.xib in Resources */,
+				0A668D0D2267282300B8AD5A /* LoginViewController.xib in Resources */,
 				0A009D3B20E8CC9D00D81C6A /* upload_long_image.jpeg in Resources */,
 				0A009D4220E8CC9E00D81C6A /* localBigImage0.jpeg in Resources */,
+				0A668D082267245A00B8AD5A /* ReverseViewController.xib in Resources */,
 				0A5803631F7A01D1000B5192 /* Assets.xcassets in Resources */,
 				0AA47ACF20160DAB00242C4D /* preview_2.mov in Resources */,
 				0A8F226F1F7B7E8200499EFD /* TestViewController.xib in Resources */,
@@ -1825,6 +1851,7 @@
 				0A3DE3F821C9E78400A0F071 /* FunctionTestViewController.m in Sources */,
 				0ABAE6FC21ABCCE00094BAA8 /* SliderCollectionViewCell.swift in Sources */,
 				0A83D4E120DA4DCF00F8F231 /* BBSDrawView.m in Sources */,
+				0A668D0C2267282300B8AD5A /* LoginViewController.m in Sources */,
 				0ABAE72821ABE7D20094BAA8 /* SwipeCollectionViewCell+Display.swift in Sources */,
 				0AA82C5321290B68000A5C02 /* Student.m in Sources */,
 				0ABAE71A21ABE7D20094BAA8 /* SwipeAction.swift in Sources */,
@@ -1856,6 +1883,7 @@
 				0A5803931F7A0282000B5192 /* MehtodSignature.m in Sources */,
 				0A72CD4E21A649EB00CDBE93 /* StaticTableViewController.m in Sources */,
 				0A6BD2261FD630FC00D13E33 /* APIViewController.m in Sources */,
+				0A668D072267245A00B8AD5A /* ReverseViewController.m in Sources */,
 				0AA82C5921290B9C000A5C02 /* Student+category.m in Sources */,
 				0ABAE72C21ABE7D20094BAA8 /* SwipeAccessibilityCustomAction.swift in Sources */,
 				0AFBE91521DEF32200F2D102 /* TargetViewController.m in Sources */,

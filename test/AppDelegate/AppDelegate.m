@@ -18,7 +18,13 @@
 
 // -application:handleEventsForBackgroundURLSession:completionHandler:
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+#if DEBUG
+    [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
+    //for tvOS:
+//    Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/tvOSInjection.bundle")?.load()
+//    //Or for macOS:
+//    Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/macOSInjection.bundle")?.load()
+#endif
     
 //    [self testLumberjack];
     [self registerJLRouter];

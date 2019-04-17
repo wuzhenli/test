@@ -27,13 +27,15 @@ dispatch_async(dispatch_get_main_queue(), block); \
 
 @property (strong, nonatomic) NSMutableArray<NSString *> *arrClassNameXib;
 @property (strong, nonatomic) UIStoryboard *sb;
+@property (strong, nonatomic) NSIndexPath *selIndexPath;
+
 @end
 
 @implementation ViewController
 
 - (NSMutableArray<NSString *> *)arrClassNameXib {
     if (!_arrClassNameXib) {
-        _arrClassNameXib = @[ @"BaseAnimationViewController",
+        _arrClassNameXib = @[ @"BaseAnimationViewController", @"ReverseViewController",
                               @"KVCViewController", @"KVOViewController" ,@"PrivateAPIViewController",  @"StructSizeViewController",
                               @"LumberViewController", 
                               @"JLRoutersViewController",@"TestHeightTableViewController",@"ThreadViewController", 
@@ -58,6 +60,15 @@ dispatch_async(dispatch_get_main_queue(), block); \
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"More"
        style:UIBarButtonItemStylePlain target:self action:@selector(showActivityController)];
     
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    if (self.selIndexPath) {
+        [self.tableView deselectRowAtIndexPath:self.selIndexPath animated:NO];
+        self.selIndexPath = nil;
+    }
 }
 
 - (void)testPlus {
@@ -101,7 +112,6 @@ dispatch_async(dispatch_get_main_queue(), block); \
     } else {
         cell.textLabel.text = self.arrClassNameXib[indexPath.row];
     }
-    cell.layoutMargins;
     
     return cell;
 }
@@ -115,6 +125,7 @@ dispatch_async(dispatch_get_main_queue(), block); \
         vc = [[NSClassFromString(className) alloc] init];
     }
     [self.navigationController pushViewController:vc animated:YES];
+    self.selIndexPath = indexPath;
 }
 
 
@@ -133,28 +144,3 @@ dispatch_async(dispatch_get_main_queue(), block); \
 }
 
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
