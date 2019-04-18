@@ -19,6 +19,7 @@
 
 @end
 
+
 @implementation BaseAnimationViewController
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -34,24 +35,24 @@
     self.containerView.hidden = YES;
 }
 
+
 - (IBAction)btnBaseAnimationClicked:(UIButton *)sender {
-//    sender.frame = CGRectMake(200, 400, 100, 40);
+    sender.frame = CGRectMake(0, 100, 100, 40);
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
     
     //
     animation.duration = 1;
-//    animation.repeatCount = 2;
+    animation.repeatCount = 3;
     
-    animation.autoreverses = NO;
     animation.removedOnCompletion = NO;
     animation.delegate = self;
     
-//    animation.additive = YES;
+    animation.additive = YES;
     animation.cumulative = YES;
     
-//    animation.fromValue = [NSValue valueWithCGPoint:CGPointMake(100, 60)];
-//    animation.toValue = [NSValue valueWithCGPoint:CGPointMake(100, 200)];
-    animation.byValue = [NSValue valueWithCGPoint:CGPointMake(20, 30)];
+    animation.fromValue = [NSValue valueWithCGPoint:CGPointMake(50, 60)];
+    animation.toValue = [NSValue valueWithCGPoint:CGPointMake(50, 200)];
+//    animation.byValue = [NSValue valueWithCGPoint:CGPointMake(20, 30)];
     
     [sender.layer addAnimation:animation forKey:@"move"];
 }
@@ -66,10 +67,32 @@
     
     animation.path = path.CGPath;
     animation.delegate = self;
-    animation.rotationMode = kCAAnimationRotateAutoReverse;
+    animation.rotationMode = kCAAnimationRotateAutoReverse;  
     
     [sender.layer addAnimation:animation forKey:nil];
 }
+
+- (IBAction)btnValueFunctionClicked:(UIButton *)sender {
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform"];
+    
+    animation.duration = 2;
+//    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    animation.delegate = self;
+    
+    animation.repeatCount = 1;
+    animation.autoreverses = NO;
+    // 保持动画结束后的状态
+//    animation.removedOnCompletion = NO;
+//    animation.fillMode = kCAFillModeForwards;
+    
+    animation.timingFunction = [CAMediaTimingFunction functionWithControlPoints:.3 :.8 :.9 :.9];
+    
+    animation.valueFunction = [CAValueFunction functionWithName:kCAValueFunctionRotateZ];
+    animation.fromValue = @(M_PI / 4.);
+    animation.toValue = @(- M_PI / 4.);
+    [sender.layer addAnimation:animation forKey:nil];
+}
+
 
 - (IBAction)btnKeyFrameAnimationClicked:(UIButton *)sender {
     sender.layer.position = CGPointMake(10, 120);
@@ -84,7 +107,7 @@
     animation.values = @[value0 ,value1, value2, value3, value4];
     animation.keyTimes = @[@(0), @(0.1), @(0.2), @(0.6), @(1)];
     animation.duration = 3;
-    animation.calculationMode = kCAAnimationCubic;
+    animation.calculationMode = kCAAnimationDiscrete;
     animation.rotationMode = kCAAnimationRotateAutoReverse;
     
     [sender.layer addAnimation:animation forKey:nil];
@@ -207,6 +230,53 @@ float startFrac;
     }
 }
 
+- (IBAction)testAPIAnimation:(UIButton *)sender {
+    [self testKeyFrameAnimation:sender];
+}
+
+- (void)testKeyFrameAnimation:(UIButton *)sender {
+//    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    
+    
+    /**/
+     CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation.z"];
+     
+     animation.duration = 2;
+     animation.values = @[@(0), @(M_PI + 2), @(0)];
+     //    animation.keyTimes = @[@(0), @(0.5), @1];
+     // animation.valueFunction = [CAValueFunction valueForKey:kCAValueFunctionRotateZ];
+     animation.calculationMode = kCAAnimationPaced;
+     // animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+     
+     [sender.layer addAnimation:animation forKey:nil];
+     
+}
+
+- (void)p_testBaseAnimation:(UIButton *)sender {
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
+    
+    animation.duration = 1;
+    //    animation.timeOffset = 0.5;
+    //    animation.speed = 2;
+    //    animation.repeatCount = 2;
+    //    animation.repeatDuration = 0.8;
+    //    animation.autoreverses = YES;
+    animation.delegate = self;
+    animation.fillMode =  kCAFillModeRemoved;// kCAFillModeForwards; // CAMediaTimingFillMode
+    
+    //    animation.additive = YES;
+    //    animation.cumulative = YES;
+    animation.fromValue = [NSValue valueWithCGPoint:CGPointMake(100, 100)];
+    animation.toValue = [NSValue valueWithCGPoint:CGPointMake(100, 200)];
+    //    animation.byValue = [NSValue valueWithCGPoint:CGPointMake(90, 30)];
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+    
+    /* When true, the animation is removed from the render tree once its
+     * active duration has passed. Defaults to YES. */
+    animation.removedOnCompletion = NO;
+    
+    [sender.layer addAnimation:animation forKey:@"move"];
+}
 
 #pragma -mark CAAnimationDelegate
 

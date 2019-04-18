@@ -26,36 +26,19 @@
 - (IBAction)btnReverseclicked:(id)sender {
     CAKeyframeAnimation *keyAnimation = [CAKeyframeAnimation animation];
     // 旋转角度， 其中的value表示图像旋转的最终位置
-    keyAnimation.values = [NSArray arrayWithObjects:
-                           [NSValue valueWithCATransform3D:CATransform3DMakeRotation(0, 0,1,0)],
-                           [NSValue valueWithCATransform3D:CATransform3DMakeRotation((M_PI/2), 0,1,0)],
-                           [NSValue valueWithCATransform3D:CATransform3DMakeRotation(0, 0,1,0)],
-                           nil];
-    keyAnimation.cumulative = NO;
-    keyAnimation.duration = 0.4;
+//    keyAnimation.values = [NSArray arrayWithObjects:
+//                           [NSValue valueWithCATransform3D:CATransform3DMakeRotation(0, 0,1,0)],
+//                           [NSValue valueWithCATransform3D:CATransform3DMakeRotation((M_PI/2 ), 0,1,0)],
+//                           [NSValue valueWithCATransform3D:CATransform3DMakeRotation(0, 0,1,0)],
+//                           nil];
+    
+    
+    keyAnimation.values = @[@0, @(M_PI_2), @0];
+    keyAnimation.duration = 1.4;
     keyAnimation.repeatCount = 1;
     keyAnimation.removedOnCompletion = NO;
     
-    [self.imgView.layer addAnimation:keyAnimation forKey:@"transform"];
-    // [self performSelector:@selector(changeImg) withObject:nil afterDelay:0.6 * actionSeconds];
-    
-    /*
-    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.y"];
-    
-    animation.toValue = [NSNumber numberWithFloat:M_PI];
-    animation.duration = 0.5;
-    animation.fillMode = kCAFillModeForwards;
-    animation.removedOnCompletion = YES;
-    [self.imgView.layer addAnimation:animation forKey:nil];
-    */
-    /* 会翻转但有阴影
-    [UIView transitionWithView:self.imgView duration:0.5 options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{
-       
-    }completion:^(BOOL finished) {
-
-    }];
-     */
-    
+    [self.imgView.layer addAnimation:keyAnimation forKey:@"transform.rotation.y"];
 }
 
 
