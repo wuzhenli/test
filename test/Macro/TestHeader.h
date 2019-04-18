@@ -14,6 +14,7 @@
 #import "LogMacro.h"
 #import "BBSProgressHUD.h"
 #import "UIViewController+base.h"
+#import "CALayer+animation.h"
 
 #import <Masonry/Masonry.h>
 #import "SwipeCellKit.h"

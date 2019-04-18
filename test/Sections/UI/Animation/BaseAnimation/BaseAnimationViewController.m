@@ -8,7 +8,7 @@
 
 #import "BaseAnimationViewController.h"
 #import "PushAnimation.h"
-
+#import "AniLayer.h"
 
 @interface BaseAnimationViewController ()<CAAnimationDelegate>
 
@@ -17,6 +17,10 @@
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (weak, nonatomic) IBOutlet UILabel *lblGroupAnimation;
 
+@property (strong, nonatomic) NSMutableArray *arrImages;
+@property (weak, nonatomic) IBOutlet UIImageView *imgViewPlay;
+
+@property (strong, nonatomic) AniLayer *myLayer;
 @end
 
 
@@ -33,6 +37,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.containerView.hidden = YES;
+    
+    _myLayer = [AniLayer layer];
+    _myLayer.frame = CGRectMake(10, 90, 100, 30);
+    _myLayer.backgroundColor = [UIColor lightGrayColor].CGColor;
+    [self.view.layer addSublayer:_myLayer];
+}
+
+- (IBAction)btnMyLayerAnimation:(UIButton *)sender {
+    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"thickness"];
+    anim.toValue = [NSNumber numberWithFloat:10.0];
+    anim.autoreverses = YES;
+    [self.myLayer addAnimation:anim forKey:nil];
 }
 
 
@@ -93,6 +109,20 @@
     [sender.layer addAnimation:animation forKey:nil];
 }
 
+- (IBAction)btnPlayImagesClicked:(id)sender {
+    CAKeyframeAnimation *ani = [CAKeyframeAnimation animationWithKeyPath:@"contents"];
+    if (!self.arrImages) {
+        self.arrImages = @[[UIImage imageNamed:@"short_video_album_empty_image"], 
+                           [UIImage imageNamed:@"short_video_button_share_qq_highlighted"],
+                           [UIImage imageNamed:@"short_video_button_share_qq_zone_highlighted"]].mutableCopy;
+    }
+    ani.values = self.arrImages;
+    ani.keyTimes = @[@0, @0.4, @1 ];
+    ani.calculationMode = kCAAnimationDiscrete;
+    ani.duration = 2;
+    ani.repeatCount = HUGE_VALF;
+    [self.imgViewPlay.layer addAnimation:ani forKey:nil];
+}
 
 - (IBAction)btnKeyFrameAnimationClicked:(UIButton *)sender {
     sender.layer.position = CGPointMake(10, 120);
@@ -231,7 +261,12 @@ float startFrac;
 }
 
 - (IBAction)testAPIAnimation:(UIButton *)sender {
-    [self testKeyFrameAnimation:sender];
+    [self testProgramingSender:sender];
+}
+
+- (void)testProgramingSender:(UIButton *)sender {
+    // [sender.layer ani_shake];
+    
 }
 
 - (void)testKeyFrameAnimation:(UIButton *)sender {

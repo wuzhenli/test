@@ -68,6 +68,8 @@
 		0A50041821DDA20E00A1E243 /* AutoHeightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A50041621DDA20E00A1E243 /* AutoHeightTableViewCell.m */; };
 		0A50041921DDA20E00A1E243 /* AutoHeightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A50041721DDA20E00A1E243 /* AutoHeightTableViewCell.xib */; };
 		0A50041D21DDA2F400A1E243 /* TestHeightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A50041C21DDA2F400A1E243 /* TestHeightModel.m */; };
+		0A5523B1226831D500B51121 /* CALayer+animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5523B0226831D500B51121 /* CALayer+animation.m */; };
+		0A5523B42268535200B51121 /* AniLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5523B32268535200B51121 /* AniLayer.m */; };
 		0A5535242115DD5A00A43828 /* DefineGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5535222115DD5A00A43828 /* DefineGestureViewController.m */; };
 		0A5535252115DD5A00A43828 /* DefineGestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A5535232115DD5A00A43828 /* DefineGestureViewController.xib */; };
 		0A5535292115DD9100A43828 /* CircleGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5535282115DD9100A43828 /* CircleGestureRecognizer.m */; };
@@ -329,6 +331,10 @@
 		0A50041721DDA20E00A1E243 /* AutoHeightTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoHeightTableViewCell.xib; sourceTree = "<group>"; };
 		0A50041B21DDA2F400A1E243 /* TestHeightModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHeightModel.h; sourceTree = "<group>"; };
 		0A50041C21DDA2F400A1E243 /* TestHeightModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHeightModel.m; sourceTree = "<group>"; };
+		0A5523AF226831D500B51121 /* CALayer+animation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+animation.h"; sourceTree = "<group>"; };
+		0A5523B0226831D500B51121 /* CALayer+animation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+animation.m"; sourceTree = "<group>"; };
+		0A5523B22268535200B51121 /* AniLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AniLayer.h; sourceTree = "<group>"; };
+		0A5523B32268535200B51121 /* AniLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AniLayer.m; sourceTree = "<group>"; };
 		0A5535212115DD5A00A43828 /* DefineGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineGestureViewController.h; sourceTree = "<group>"; };
 		0A5535222115DD5A00A43828 /* DefineGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefineGestureViewController.m; sourceTree = "<group>"; };
 		0A5535232115DD5A00A43828 /* DefineGestureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefineGestureViewController.xib; sourceTree = "<group>"; };
@@ -624,6 +630,8 @@
 				0A209D0C226481B0005E7B8B /* BaseAnimationViewController.xib */,
 				0A3C26A922657E9B00C23ABE /* PushAnimation.h */,
 				0A3C26AA22657E9B00C23ABE /* PushAnimation.m */,
+				0A5523B22268535200B51121 /* AniLayer.h */,
+				0A5523B32268535200B51121 /* AniLayer.m */,
 			);
 			path = BaseAnimation;
 			sourceTree = "<group>";
@@ -718,6 +726,8 @@
 			children = (
 				0A36AF8521EC21E7005E2105 /* NSString+Addition.h */,
 				0A36AF8621EC21E7005E2105 /* NSString+Addition.m */,
+				0A5523AF226831D500B51121 /* CALayer+animation.h */,
+				0A5523B0226831D500B51121 /* CALayer+animation.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1877,12 +1887,14 @@
 				0A2BEB4921AE4BB10008C79B /* DrawFirstView.m in Sources */,
 				0A640F1D1FC6D37100B69AFA /* GestureViewController.m in Sources */,
 				0A61116C20E8CAFD008CE53F /* ScrollViewController.m in Sources */,
+				0A5523B42268535200B51121 /* AniLayer.m in Sources */,
 				0A58035B1F7A01D1000B5192 /* AppDelegate.m in Sources */,
 				0A36886F20E6482E0077BA89 /* GCDViewController.m in Sources */,
 				0A96D0CF219DA26900F4DED6 /* JLAnimationPresentationController.m in Sources */,
 				0A5803931F7A0282000B5192 /* MehtodSignature.m in Sources */,
 				0A72CD4E21A649EB00CDBE93 /* StaticTableViewController.m in Sources */,
 				0A6BD2261FD630FC00D13E33 /* APIViewController.m in Sources */,
+				0A5523B1226831D500B51121 /* CALayer+animation.m in Sources */,
 				0A668D072267245A00B8AD5A /* ReverseViewController.m in Sources */,
 				0AA82C5921290B9C000A5C02 /* Student+category.m in Sources */,
 				0ABAE72C21ABE7D20094BAA8 /* SwipeAccessibilityCustomAction.swift in Sources */,
