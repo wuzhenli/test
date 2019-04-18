@@ -165,14 +165,15 @@
 //        l.font = [UIFont boldSystemFontOfSize:20];
 //        l;
 //    });
-//    
-//    CATransition *transition = [[CATransition alloc] init];
-//    transition.duration = 2;
-//    transition.type = kCATransitionPush;
-//    transition.subtype = kCATransitionFromRight; // 从右向左 
-//    [self.containerView.layer addAnimation:transition forKey:nil];
-//    [self.containerView addSubview:lbl1];
-    [self testTransaction];
+//   
+    CATransition *transition = [[CATransition alloc] init];
+    transition.duration = 2;
+    transition.type = kCATransitionReveal;
+    transition.subtype = kCATransitionFromBottom; // 从右向左 
+    [self.imgViewPlay.layer addAnimation:transition forKey:nil];
+    
+    self.imgViewPlay.image = [UIImage imageNamed:@"short_video_button_share_wx_highlighted"];
+//    [self testTransaction];
 }
 
 
@@ -261,8 +262,30 @@ float startFrac;
 }
 
 - (IBAction)testAPIAnimation:(UIButton *)sender {
-    [self testProgramingSender:sender];
+    CGRect endRect = sender.frame;
+    endRect.origin = CGPointMake(10, 90);
+    
+    [UIView animateWithDuration:3 animations:^{
+        sender.frame = endRect;
+    }];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        CGRect secondRect = endRect;
+        secondRect.origin = CGPointMake(300, 90);
+        
+        // UIViewAnimationOptionCurveEaseInOut  UIViewAnimationOptionBeginFromCurrentState
+        [UIView animateWithDuration:3 delay:0 options:UIViewAnimationOptionCurveEaseInOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
+            sender.frame = secondRect;
+        } completion:^(BOOL finished) {
+            ;
+        }];
+    });
+    
 }
+
+
+
+
 
 - (void)testProgramingSender:(UIButton *)sender {
     // [sender.layer ani_shake];

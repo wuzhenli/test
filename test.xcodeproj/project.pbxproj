@@ -70,6 +70,8 @@
 		0A50041D21DDA2F400A1E243 /* TestHeightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A50041C21DDA2F400A1E243 /* TestHeightModel.m */; };
 		0A5523B1226831D500B51121 /* CALayer+animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5523B0226831D500B51121 /* CALayer+animation.m */; };
 		0A5523B42268535200B51121 /* AniLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5523B32268535200B51121 /* AniLayer.m */; };
+		0A5523B822686A7D00B51121 /* IQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5523B622686A7D00B51121 /* IQViewController.m */; };
+		0A5523B922686A7D00B51121 /* IQViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A5523B722686A7D00B51121 /* IQViewController.xib */; };
 		0A5535242115DD5A00A43828 /* DefineGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5535222115DD5A00A43828 /* DefineGestureViewController.m */; };
 		0A5535252115DD5A00A43828 /* DefineGestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A5535232115DD5A00A43828 /* DefineGestureViewController.xib */; };
 		0A5535292115DD9100A43828 /* CircleGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5535282115DD9100A43828 /* CircleGestureRecognizer.m */; };
@@ -335,6 +337,9 @@
 		0A5523B0226831D500B51121 /* CALayer+animation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+animation.m"; sourceTree = "<group>"; };
 		0A5523B22268535200B51121 /* AniLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AniLayer.h; sourceTree = "<group>"; };
 		0A5523B32268535200B51121 /* AniLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AniLayer.m; sourceTree = "<group>"; };
+		0A5523B522686A7D00B51121 /* IQViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IQViewController.h; sourceTree = "<group>"; };
+		0A5523B622686A7D00B51121 /* IQViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IQViewController.m; sourceTree = "<group>"; };
+		0A5523B722686A7D00B51121 /* IQViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IQViewController.xib; sourceTree = "<group>"; };
 		0A5535212115DD5A00A43828 /* DefineGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineGestureViewController.h; sourceTree = "<group>"; };
 		0A5535222115DD5A00A43828 /* DefineGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefineGestureViewController.m; sourceTree = "<group>"; };
 		0A5535232115DD5A00A43828 /* DefineGestureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefineGestureViewController.xib; sourceTree = "<group>"; };
@@ -1435,6 +1440,9 @@
 				0AD77DBD20E7706300330F2C /* KeyboardViewController.h */,
 				0AD77DBE20E7706300330F2C /* KeyboardViewController.m */,
 				0AD77DBF20E7706300330F2C /* KeyboardViewController.xib */,
+				0A5523B522686A7D00B51121 /* IQViewController.h */,
+				0A5523B622686A7D00B51121 /* IQViewController.m */,
+				0A5523B722686A7D00B51121 /* IQViewController.xib */,
 			);
 			path = dismissKeyboard;
 			sourceTree = "<group>";
@@ -1543,7 +1551,6 @@
 				0A5803541F7A01D1000B5192 /* Resources */,
 				2BA0B484EC3033E966616478 /* [CP] Embed Pods Frameworks */,
 				0AAA888721D5D94C009A1F49 /* Embed App Extensions */,
-				9441752FCA33E22F68B48753 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1581,7 +1588,6 @@
 				0AAA887421D5D94C009A1F49 /* Sources */,
 				0AAA887521D5D94C009A1F49 /* Frameworks */,
 				0AAA887621D5D94C009A1F49 /* Resources */,
-				4A97814645C0F196F0056FEF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1706,6 +1712,7 @@
 				0AD6A9D321185DAE00DBA114 /* KVOViewController.xib in Resources */,
 				0A6BD2271FD630FC00D13E33 /* APIViewController.xib in Resources */,
 				0A3059431FFC6E910092DF94 /* SlideViewController.xib in Resources */,
+				0A5523B922686A7D00B51121 /* IQViewController.xib in Resources */,
 				0A304DC3219D79EF0074FF89 /* PresentAlphaViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1734,8 +1741,9 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-test/Pods-test-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GrowTextView/GrowTextView.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/JLRoutes/JLRoutes.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
@@ -1745,6 +1753,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GrowTextView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JLRoutes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
@@ -1753,22 +1762,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4A97814645C0F196F0056FEF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShareLink/Pods-ShareLink-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-test/Pods-test-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8F28661348C1F3EAFF188EE7 /* [CP] Check Pods Manifest.lock */ = {
@@ -1787,21 +1781,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9441752FCA33E22F68B48753 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D9B10C69BBF3D453FD435787 /* [CP] Check Pods Manifest.lock */ = {
@@ -1957,6 +1936,7 @@
 				0ABAE72D21ABE7D20094BAA8 /* SwipeExpanding.swift in Sources */,
 				0AC0ACA920BFBD5D00D3185E /* PlayerViewController.m in Sources */,
 				0A72CD5421A64B5D00CDBE93 /* StaticSecionModel.m in Sources */,
+				0A5523B822686A7D00B51121 /* IQViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
