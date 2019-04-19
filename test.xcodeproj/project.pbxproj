@@ -72,6 +72,10 @@
 		0A5523B42268535200B51121 /* AniLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5523B32268535200B51121 /* AniLayer.m */; };
 		0A5523B822686A7D00B51121 /* IQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5523B622686A7D00B51121 /* IQViewController.m */; };
 		0A5523B922686A7D00B51121 /* IQViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A5523B722686A7D00B51121 /* IQViewController.xib */; };
+		0A5523BE226886DC00B51121 /* PushPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5523BC226886DC00B51121 /* PushPresentViewController.m */; };
+		0A5523BF226886DC00B51121 /* PushPresentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A5523BD226886DC00B51121 /* PushPresentViewController.xib */; };
+		0A5523C3226886E900B51121 /* PushDestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5523C1226886E900B51121 /* PushDestViewController.m */; };
+		0A5523C4226886E900B51121 /* PushDestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A5523C2226886E900B51121 /* PushDestViewController.xib */; };
 		0A5535242115DD5A00A43828 /* DefineGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5535222115DD5A00A43828 /* DefineGestureViewController.m */; };
 		0A5535252115DD5A00A43828 /* DefineGestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A5535232115DD5A00A43828 /* DefineGestureViewController.xib */; };
 		0A5535292115DD9100A43828 /* CircleGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5535282115DD9100A43828 /* CircleGestureRecognizer.m */; };
@@ -340,6 +344,12 @@
 		0A5523B522686A7D00B51121 /* IQViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IQViewController.h; sourceTree = "<group>"; };
 		0A5523B622686A7D00B51121 /* IQViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IQViewController.m; sourceTree = "<group>"; };
 		0A5523B722686A7D00B51121 /* IQViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IQViewController.xib; sourceTree = "<group>"; };
+		0A5523BB226886DC00B51121 /* PushPresentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushPresentViewController.h; sourceTree = "<group>"; };
+		0A5523BC226886DC00B51121 /* PushPresentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushPresentViewController.m; sourceTree = "<group>"; };
+		0A5523BD226886DC00B51121 /* PushPresentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PushPresentViewController.xib; sourceTree = "<group>"; };
+		0A5523C0226886E900B51121 /* PushDestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushDestViewController.h; sourceTree = "<group>"; };
+		0A5523C1226886E900B51121 /* PushDestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushDestViewController.m; sourceTree = "<group>"; };
+		0A5523C2226886E900B51121 /* PushDestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PushDestViewController.xib; sourceTree = "<group>"; };
 		0A5535212115DD5A00A43828 /* DefineGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineGestureViewController.h; sourceTree = "<group>"; };
 		0A5535222115DD5A00A43828 /* DefineGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefineGestureViewController.m; sourceTree = "<group>"; };
 		0A5535232115DD5A00A43828 /* DefineGestureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefineGestureViewController.xib; sourceTree = "<group>"; };
@@ -867,6 +877,19 @@
 				0A50041C21DDA2F400A1E243 /* TestHeightModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0A5523BA226886C500B51121 /* PresentPushAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				0A5523BB226886DC00B51121 /* PushPresentViewController.h */,
+				0A5523BC226886DC00B51121 /* PushPresentViewController.m */,
+				0A5523BD226886DC00B51121 /* PushPresentViewController.xib */,
+				0A5523C0226886E900B51121 /* PushDestViewController.h */,
+				0A5523C1226886E900B51121 /* PushDestViewController.m */,
+				0A5523C2226886E900B51121 /* PushDestViewController.xib */,
+			);
+			path = PresentPushAnimation;
 			sourceTree = "<group>";
 		};
 		0A5535262115DD5F00A43828 /* DefineGesture */ = {
@@ -1484,6 +1507,7 @@
 		0AF7B2DA219D498500144B7E /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				0A5523BA226886C500B51121 /* PresentPushAnimation */,
 				0A668D032267244300B8AD5A /* ReverseAnimation */,
 				0A209D0922648195005E7B8B /* BaseAnimation */,
 				0A96D0D0219DA34600F4DED6 /* Menu */,
@@ -1672,6 +1696,7 @@
 				0A009D4020E8CC9E00D81C6A /* localImage4.jpeg in Resources */,
 				0AD77DC120E7706300330F2C /* KeyboardViewController.xib in Resources */,
 				0AD77DA920E7558E00330F2C /* GestureViewController.xib in Resources */,
+				0A5523C4226886E900B51121 /* PushDestViewController.xib in Resources */,
 				0A0CC8CC21CE4E6800AA53A3 /* BlockAreaViewController.xib in Resources */,
 				0A39302F21FED45D007C9213 /* PrivateAPIViewController.xib in Resources */,
 				0AA47AD2201610E000242C4D /* changming.png in Resources */,
@@ -1705,6 +1730,7 @@
 				0AE45A971F90591D00D738F4 /* KeyWinViewController.xib in Resources */,
 				0A7C409020073CED00174650 /* PhotoKitViewController.xib in Resources */,
 				0A6A0D6F21941A4D00AB4634 /* DefinePanGestureViewController.xib in Resources */,
+				0A5523BF226886DC00B51121 /* PushPresentViewController.xib in Resources */,
 				0A5803611F7A01D1000B5192 /* Main.storyboard in Resources */,
 				0ABAE6F221ABC7870094BAA8 /* SwipeCellKitCollectionViewController.xib in Resources */,
 				0A35462D20EFBB4A000FA171 /* TestVCController.xib in Resources */,
@@ -1900,6 +1926,8 @@
 				0AF7B2E0219D4D8E00144B7E /* MBProgressHUD+bbs.m in Sources */,
 				0ABAE71821ABE7D20094BAA8 /* SwipeController.swift in Sources */,
 				0A6A0D6E21941A4D00AB4634 /* DefinePanGestureViewController.m in Sources */,
+				0A5523BE226886DC00B51121 /* PushPresentViewController.m in Sources */,
+				0A5523C3226886E900B51121 /* PushDestViewController.m in Sources */,
 				0A976BB920DB390F00BDE153 /* UIView+Corner.m in Sources */,
 				0A3059471FFC800C0092DF94 /* JLNavigationController.m in Sources */,
 				0A3C26A822657CBF00C23ABE /* UIViewController+base.m in Sources */,

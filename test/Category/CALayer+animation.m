@@ -10,7 +10,7 @@
 
 @implementation CALayer (animation)
 
-- (void)ani_shake {
+- (void)ani_rotateShake {
     // Apple 不推荐使用 transform.rotation.z ，超过 1 次旋转这会使计算量复杂。
     CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"transform"];
     anim.duration = 0.05;
@@ -41,6 +41,21 @@
 //
 //    [self addAnimation:anim forKey:nil];
      
+}
+
+- (void)ani_leftRightShake {
+    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"transform"];
+    
+    anim.fromValue = @(-10);
+    anim.toValue = @10;
+    anim.valueFunction = [CAValueFunction functionWithName:kCAValueFunctionTranslateX];
+    
+    anim.duration = 0.05;
+    anim.repeatCount = 3;
+    anim.autoreverses = YES;
+    anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    
+    [self addAnimation:anim forKey:nil];
 }
 
 @end

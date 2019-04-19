@@ -262,24 +262,7 @@ float startFrac;
 }
 
 - (IBAction)testAPIAnimation:(UIButton *)sender {
-    CGRect endRect = sender.frame;
-    endRect.origin = CGPointMake(10, 90);
-    
-    [UIView animateWithDuration:3 animations:^{
-        sender.frame = endRect;
-    }];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        CGRect secondRect = endRect;
-        secondRect.origin = CGPointMake(300, 90);
-        
-        // UIViewAnimationOptionCurveEaseInOut  UIViewAnimationOptionBeginFromCurrentState
-        [UIView animateWithDuration:3 delay:0 options:UIViewAnimationOptionCurveEaseInOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
-            sender.frame = secondRect;
-        } completion:^(BOOL finished) {
-            ;
-        }];
-    });
+    [sender.layer ani_rotateShake];
     
 }
 

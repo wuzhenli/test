@@ -13,9 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CALayer (animation)
 
 /**
- 晃动 3 下 
+ 旋转晃动 3 下 
  */
-- (void)ani_shake ;
+- (void)ani_rotateShake ;
+
+/**
+ 左右晃动 3 下
+ */
+- (void)ani_leftRightShake ;
 
 @end
 
