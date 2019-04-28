@@ -41,13 +41,17 @@
      cube                立方体效果
      oglFlip             上下翻转效果
      */
-    CATransition *transition = [CATransition animation];
-    transition.duration = 0.4;
-    transition.type = kCATransitionReveal;
-    transition.subtype = kCATransitionFromLeft;
-    //    [self.navigationController.view.layer addAnimation:transition forKey:nil];
+//    CATransition *transition = [CATransition animation];
+//    transition.duration = 0.4;
+//    transition.type = @"oglFlip"; //kCATransitionReveal;
+//    transition.subtype = kCATransitionFromLeft;
+//    //    [self.navigationController.view.layer addAnimation:transition forKey:nil];
 
-    [sender.layer addAnimation:transition forKey:nil];
+    [sender.layer ani_leftRightShake];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        sender.backgroundColor = [UIColor lightGrayColor];
+    });
     
 }
 
