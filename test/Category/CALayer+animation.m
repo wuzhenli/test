@@ -79,10 +79,12 @@
      oglFlip             上下翻转效果
  @param subtype 枚举
  @param duration 动画时间
+ @param timingFunction 动画速度方式
  */
 - (void)ani_transitionWithType:(NSString *)type 
                        subType:(EnumTransitionSubtype)subtype 
-                      duration:(CFTimeInterval)duration {
+                      duration:(CFTimeInterval)duration 
+                timingFunction:(EnumTransitionTimingFunction)timingFunction {
     /*
      */
     NSString *subtypeValue = kCATransitionFromRight;
@@ -100,13 +102,39 @@
             subtypeValue = kCATransitionFromTop;
             break;
     }
+
     
     CATransition *transition = [CATransition animation];
     transition.duration = duration;
     transition.type = type;
     transition.subtype = subtypeValue;
+    transition.timingFunction = [self timingFunctionWith:timingFunction];
+    
     
     [self addAnimation:transition forKey:nil];
+}
+
+#pragma -mark private
+
+- (CAMediaTimingFunction *)timingFunctionWith:(EnumTransitionTimingFunction)timingFunction {
+    CAMediaTimingFunctionName functionName = kCAMediaTimingFunctionDefault;
+    switch (timingFunction) {
+        case EnumTransitionTimingFunctionLinear:
+            functionName = kCAMediaTimingFunctionLinear;
+            break;
+        case EnumTransitionTimingFunctionEaseIn:
+            functionName = kCAMediaTimingFunctionEaseIn;
+            break;
+        case EnumTransitionTimingFunctionEaseOut:
+            functionName = kCAMediaTimingFunctionEaseOut;
+            break;
+        case EnumTransitionTimingFunctionEaseInEaseOut:
+            functionName = kCAMediaTimingFunctionEaseInEaseOut;
+            break;
+        default:
+            break;
+    }
+    return [CAMediaTimingFunction functionWithName:functionName];
 }
 
 @end

@@ -61,6 +61,10 @@ dispatch_async(dispatch_get_main_queue(), block); \
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"More"
        style:UIBarButtonItemStylePlain target:self action:@selector(showActivityController)];
     
+    [self testGCD];
+    
+    UICollectionView *c;
+    UICollectionViewFlowLayout *layout;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -70,6 +74,18 @@ dispatch_async(dispatch_get_main_queue(), block); \
         [self.tableView deselectRowAtIndexPath:self.selIndexPath animated:NO];
         self.selIndexPath = nil;
     }
+}
+
+- (void)testGCD {
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    
+    dispatch_async(queue, ^{
+        ;
+    });
+    
+    dispatch_barrier_async(queue, ^{
+        ;
+    });
 }
 
 - (void)testPlus {

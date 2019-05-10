@@ -17,6 +17,28 @@ typedef NS_ENUM(NSUInteger, EnumTransitionSubtype) {
     EnumTransitionSubtypeFromBottom
 };
 
+typedef NS_ENUM(NSUInteger, EnumTransitionTimingFunction) {
+    EnumTransitionTimingFunctionLinear,
+    EnumTransitionTimingFunctionEaseIn,
+    EnumTransitionTimingFunctionEaseOut,
+    EnumTransitionTimingFunctionEaseInEaseOut,
+    EnumTransitionTimingFunctionDefault
+};
+
+
+///** Timing function names. **/
+//
+//CA_EXTERN CAMediaTimingFunctionName const kCAMediaTimingFunctionLinear
+//API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
+//CA_EXTERN CAMediaTimingFunctionName const kCAMediaTimingFunctionEaseIn
+//API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
+//CA_EXTERN CAMediaTimingFunctionName const kCAMediaTimingFunctionEaseOut
+//API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
+//CA_EXTERN CAMediaTimingFunctionName const kCAMediaTimingFunctionEaseInEaseOut
+//API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
+//CA_EXTERN CAMediaTimingFunctionName const kCAMediaTimingFunctionDefault
+//API_AVAILABLE(macos(10.6), ios(3.0), watchos(2.0), tvos(9.0));
+
 
 @interface CALayer (animation)
 
@@ -29,6 +51,7 @@ typedef NS_ENUM(NSUInteger, EnumTransitionSubtype) {
  左右晃动 3 下
  */
 - (void)ani_leftRightShake ;
+
 
 /**
  添加过渡动画
@@ -50,10 +73,12 @@ typedef NS_ENUM(NSUInteger, EnumTransitionSubtype) {
  oglFlip             上下翻转效果
  @param subtype 枚举
  @param duration 动画时间
+ @param timingFunction 动画速度方式
  */
 - (void)ani_transitionWithType:(NSString *)type 
                        subType:(EnumTransitionSubtype)subtype 
-                      duration:(CFTimeInterval)duration ; 
+                      duration:(CFTimeInterval)duration 
+                timingFunction:(EnumTransitionTimingFunction)timingFunction ; 
 
 @end
 

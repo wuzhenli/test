@@ -21,6 +21,7 @@
 }
 
 - (IBAction)btnPushClicked:(UIButton *)sender {
+    
 //    PushDestViewController *vc = [PushDestViewController new];
 //    [self.navigationController pushViewController:vc animated:NO];
     sender.backgroundColor = [UIColor redColor];
@@ -47,8 +48,10 @@
 //    transition.subtype = kCATransitionFromLeft;
 //    //    [self.navigationController.view.layer addAnimation:transition forKey:nil];
 
-    [sender.layer ani_leftRightShake];
+    [sender.layer ani_transitionWithType:kCATransitionPush subType:EnumTransitionSubtypeFromLeft duration:1 timingFunction:EnumTransitionTimingFunctionEaseIn];
     
+//    [sender.layer ani_leftRightShake];
+//    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         sender.backgroundColor = [UIColor lightGrayColor];
     });
