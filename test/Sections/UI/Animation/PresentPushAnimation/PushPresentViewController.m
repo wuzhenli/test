@@ -48,7 +48,7 @@
 //    transition.subtype = kCATransitionFromLeft;
 //    //    [self.navigationController.view.layer addAnimation:transition forKey:nil];
 
-    [sender.layer ani_transitionWithType:kCATransitionPush subType:EnumTransitionSubtypeFromLeft duration:1 timingFunction:EnumTransitionTimingFunctionEaseIn];
+    [sender.layer ani_transitionWithType:kCATransitionPush subtype:EnumTransitionSubtypeFromLeft duration:1 timingFunction:EnumTransitionTimingFunctionEaseIn];
     
 //    [sender.layer ani_leftRightShake];
 //    

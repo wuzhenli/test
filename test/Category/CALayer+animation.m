@@ -82,11 +82,23 @@
  @param timingFunction 动画速度方式
  */
 - (void)ani_transitionWithType:(NSString *)type 
-                       subType:(EnumTransitionSubtype)subtype 
+                       subtype:(EnumTransitionSubtype)subtype 
                       duration:(CFTimeInterval)duration 
                 timingFunction:(EnumTransitionTimingFunction)timingFunction {
-    /*
-     */
+    
+    CATransition *transition = [CATransition animation];
+    transition.duration = duration;
+    transition.type = type;
+    transition.subtype = [self subTypeWith:subtype];
+    transition.timingFunction = [self timingFunctionWith:timingFunction];
+    
+    
+    [self addAnimation:transition forKey:nil];
+}
+
+#pragma -mark private
+
+- (NSString *)subTypeWith:(EnumTransitionSubtype)subtype {
     NSString *subtypeValue = kCATransitionFromRight;
     switch (subtype) {
         case EnumTransitionSubtypeFromRight:
@@ -102,19 +114,8 @@
             subtypeValue = kCATransitionFromTop;
             break;
     }
-
-    
-    CATransition *transition = [CATransition animation];
-    transition.duration = duration;
-    transition.type = type;
-    transition.subtype = subtypeValue;
-    transition.timingFunction = [self timingFunctionWith:timingFunction];
-    
-    
-    [self addAnimation:transition forKey:nil];
+    return subtypeValue;
 }
-
-#pragma -mark private
 
 - (CAMediaTimingFunction *)timingFunctionWith:(EnumTransitionTimingFunction)timingFunction {
     CAMediaTimingFunctionName functionName = kCAMediaTimingFunctionDefault;

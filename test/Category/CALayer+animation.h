@@ -76,7 +76,7 @@ typedef NS_ENUM(NSUInteger, EnumTransitionTimingFunction) {
  @param timingFunction 动画速度方式
  */
 - (void)ani_transitionWithType:(NSString *)type 
-                       subType:(EnumTransitionSubtype)subtype 
+                       subtype:(EnumTransitionSubtype)subtype 
                       duration:(CFTimeInterval)duration 
                 timingFunction:(EnumTransitionTimingFunction)timingFunction ; 
 
