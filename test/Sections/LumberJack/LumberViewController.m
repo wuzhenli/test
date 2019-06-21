@@ -20,7 +20,6 @@
     // Do any additional setup after loading the view from its nib.
 //    [self someMehtod];
     
-    
 }
 
 - (void)someMehtod {
@@ -41,14 +40,36 @@
     DDLogError(@"Error");
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)btnDispatchClicked:(UIButton *)sender {
+    DDDispatchQueueLogFormatter *formatter = [[DDDispatchQueueLogFormatter alloc] init];
+    formatter.minQueueLength = 4;
+    formatter.maxQueueLength = 0;
+    
+    [formatter setReplacementString:@"downloading" forQueueLabel:@"queue.downloading"];
+    [formatter setReplacementString:@"parsing" forQueueLabel:@"queue.parsing"];
+    [[DDTTYLogger sharedInstance] setLogFormatter:formatter];
+    
+//    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    DDLogVerbose(@"start queue");
+    
+    dispatch_queue_t downloadQueue = dispatch_queue_create("queue.downloading", NULL);
+    dispatch_queue_t parsingQueue = dispatch_queue_create("queue.parsing", NULL);
+    
+    dispatch_async(downloadQueue, ^{
+        DDLogVerbose(@"SomeLog in download queue");
+    });
+    
+    dispatch_async(parsingQueue, ^{
+        DDLogVerbose(@"Some task in parsing queue");
+    });
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        DDLogVerbose(@"Task in global queue");
+    });
+    dispatch_async(dispatch_get_main_queue(), ^{
+        DDLogVerbose(@"Task in main Queue");
+    });
 }
-*/
+
 
 @end

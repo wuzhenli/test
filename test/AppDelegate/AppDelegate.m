@@ -27,8 +27,9 @@
 #endif
     
     // 日志输出到 Console
-    [DDLog addLogger:[DDOSLogger sharedInstance]];
-    [DDOSLogger sharedInstance].logFormatter = [[MyCustomFormatter alloc] init];
+//    [DDLog addLogger:[DDOSLogger sharedInstance]];
+//    [DDOSLogger sharedInstance].logFormatter = [[MyCustomFormatter alloc] init];
+    
     
     // 日志保存到沙盒
     DDFileLogger *fileLogger = [[DDFileLogger alloc] init];
@@ -56,21 +57,9 @@
     
     
     
-    //DDTTYLogger(@"red log");
     
-    
-    
-//    [self testLumberjack];
+
     [self registerJLRouter];
-//    Override point for customization after application launch.
-//    LoggerSetupBonjourForBuildUser();
-//    LoggerSetOptions(NULL,                  
-//                     kLoggerOption_BufferLogsUntilConnection |
-//                     kLoggerOption_UseSSL |
-//                     kLoggerOption_CaptureSystemConsole|
-//                     kLoggerOption_BrowseBonjour|
-//                     kLoggerOption_BrowseOnlyLocalDomain);
-//    LoggerSetViewerHost(NULL, (__bridge CFStringRef)@"192.168.20.193", (UInt32)50000);
     
     return YES;
 }
