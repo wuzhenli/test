@@ -8,7 +8,49 @@
 
 #import "MyCustomFormatter.h"
 
+
+@interface MyCustomFormatter () {
+    DDAtomicCounter *atomicLoggerCounter;
+    NSDateFormatter *threadUnsafeDateFormatter;
+}
+
+@end
+
+
 @implementation MyCustomFormatter
+
+- (NSString *)stringFromDate:(NSDate *)date {
+    NSString *dateFormatString = @"yyyy/MM/dd HH:mm:ss:SSS";
+    int32_t loggerCount = [atomicLoggerCounter value];
+    
+    if (loggerCount <= 1) {
+        // Single-threaded mode.
+        
+        if (threadUnsafeDateFormatter == nil) {
+            threadUnsafeDateFormatter = [[NSDateFormatter alloc] init];
+            [threadUnsafeDateFormatter setDateFormat:dateFormatString];
+        }
+        
+        return [threadUnsafeDateFormatter stringFromDate:date];
+    } else {
+        // Multi-threaded mode.
+        // NSDateFormatter is NOT thread-safe.
+        
+        NSString *key = @"MyCustomFormatter_NSDateFormatter";
+        
+        NSMutableDictionary *threadDictionary = [[NSThread currentThread] threadDictionary];
+        NSDateFormatter *dateFormatter = [threadDictionary objectForKey:key];
+        
+        if (dateFormatter == nil) {
+            dateFormatter = [[NSDateFormatter alloc] init];
+            [dateFormatter setDateFormat:dateFormatString];
+            
+            [threadDictionary setObject:dateFormatter forKey:key];
+        }
+        
+        return [dateFormatter stringFromDate:date];
+    }
+}
 
 - (NSString *)formatLogMessage:(DDLogMessage *)logMessage {
     NSString *logLevel;
@@ -20,8 +62,18 @@
         default                : logLevel = @"V"; break;
     }
     
-    return [NSString stringWithFormat:@"%@ | %@", logLevel, logMessage->_message];
+    NSString *dateAndTime = [self stringFromDate:(logMessage.timestamp)];
+    NSString *logMsg = logMessage->_message;
+    
+    return [NSString stringWithFormat:@"%@ %@ | %@", logLevel, dateAndTime, logMsg];
 }
 
+- (void)didAddToLogger:(id <DDLogger>)logger {
+    [atomicLoggerCounter increment];
+}
+
+- (void)willRemoveFromLogger:(id <DDLogger>)logger {
+    [atomicLoggerCounter decrement];
+}
 
 @end
