@@ -206,6 +206,7 @@
 		0AFBE91521DEF32200F2D102 /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBE91421DEF32200F2D102 /* TargetViewController.m */; };
 		873046C2B6621608F8A6A06D /* Pods_ShareLink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DE4FB1BFA00CAA178C47D /* Pods_ShareLink.framework */; };
 		9EAC6D02032ACD6A60531714 /* Pods_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060E2C00D66C17E5EC4CA85E /* Pods_test.framework */; };
+		AB6A620022BCD91400709AD8 /* MyCustomFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6A61FF22BCD91400709AD8 /* MyCustomFormatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -567,6 +568,8 @@
 		732D5490952EBD16D052059A /* Pods-ShareLink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareLink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareLink/Pods-ShareLink.debug.xcconfig"; sourceTree = "<group>"; };
 		A30BC06EB45B6EF316E8ABA0 /* Pods_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3DE4FB1BFA00CAA178C47D /* Pods_ShareLink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareLink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB6A61FE22BCD91400709AD8 /* MyCustomFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCustomFormatter.h; sourceTree = "<group>"; };
+		AB6A61FF22BCD91400709AD8 /* MyCustomFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCustomFormatter.m; sourceTree = "<group>"; };
 		B48CE6231A9C1861083E1A5C /* Pods-ShareLink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareLink.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareLink/Pods-ShareLink.release.xcconfig"; sourceTree = "<group>"; };
 		BC59F9B515C507BDB49D08C7 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		C8988A2F64F2CB05F2D40D45 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
@@ -803,6 +806,7 @@
 				0A3AC369220177B200252113 /* LumberViewController.h */,
 				0A3AC36A220177B200252113 /* LumberViewController.m */,
 				0A3AC36B220177B200252113 /* LumberViewController.xib */,
+				AB6A61FD22BCD8FF00709AD8 /* Model */,
 			);
 			path = LumberJack;
 			sourceTree = "<group>";
@@ -1562,6 +1566,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AB6A61FD22BCD8FF00709AD8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB6A61FE22BCD91400709AD8 /* MyCustomFormatter.h */,
+				AB6A61FF22BCD91400709AD8 /* MyCustomFormatter.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1768,6 +1781,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-test/Pods-test-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/GrowTextView/GrowTextView.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/JLRoutes/JLRoutes.framework",
@@ -1778,6 +1792,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GrowTextView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JLRoutes.framework",
@@ -1957,6 +1972,7 @@
 				0ABAE72221ABE7D20094BAA8 /* SwipeCollectionViewCell+Accessibility.swift in Sources */,
 				0A61116220E8ACEC008CE53F /* WebViewController.m in Sources */,
 				0A209D0D226481B0005E7B8B /* BaseAnimationViewController.m in Sources */,
+				AB6A620022BCD91400709AD8 /* MyCustomFormatter.m in Sources */,
 				0A72CD5D21A64E5500CDBE93 /* StaticSwitchTableViewCell.m in Sources */,
 				0A33173E20F5F89A00823A22 /* MenuCtlViewController.m in Sources */,
 				0A8F226E1F7B7E8200499EFD /* TestViewController.m in Sources */,

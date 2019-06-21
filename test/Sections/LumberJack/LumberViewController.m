@@ -7,9 +7,7 @@
 //
 
 #import "LumberViewController.h"
-//#import <CocoaLumberjack/CocoaLumberjack.h>
 
-//static const DDLogLevel ddLogLevel = DDLogLevelDebug;
 
 @interface LumberViewController ()
 
@@ -20,12 +18,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self someMehtod];
+//    [self someMehtod];
+    
     
 }
 
 - (void)someMehtod {
 //    DDLogVerbose(@"this is someMethod : verbose");
+    [DDLog addLogger:[DDOSLogger sharedInstance]]; // Uses os_log
+    
+    DDFileLogger *fileLogger = [[DDFileLogger alloc] init]; // File Logger
+    fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
+    fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
+    [DDLog addLogger:fileLogger];
+    
+    
+    
+    DDLogVerbose(@"Verbose");
+    DDLogDebug(@"Debug");
+    DDLogInfo(@"Info");
+    DDLogWarn(@"Warn");
+    DDLogError(@"Error");
 }
 
 /*

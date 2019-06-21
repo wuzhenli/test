@@ -7,12 +7,16 @@
 //
 
 #import "AppDelegate.h"
+/// VC
 #import "TargetViewController.h"
+/// models
+#import "MyCustomFormatter.h"
 
 
 @interface AppDelegate ()
 
 @end
+
 
 @implementation AppDelegate
 
@@ -20,11 +24,41 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 #if DEBUG
     [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
-    //for tvOS:
-//    Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/tvOSInjection.bundle")?.load()
-//    //Or for macOS:
-//    Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/macOSInjection.bundle")?.load()
 #endif
+    
+    // 日志输出到 Console
+    [DDLog addLogger:[DDOSLogger sharedInstance]];
+    [DDOSLogger sharedInstance].logFormatter = [[MyCustomFormatter alloc] init];
+    
+    // 日志保存到沙盒
+    DDFileLogger *fileLogger = [[DDFileLogger alloc] init];
+    fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
+    fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
+    [DDLog addLogger:fileLogger withLevel:DDLogLevelError]; // 日志打印级别
+    
+    {
+        // 日志保存到沙盒
+        DDFileLogger *fileLogger = [[DDFileLogger alloc] init];
+        fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
+        fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
+        [DDLog addLogger:fileLogger withLevel:DDLogLevelWarning]; // 日志打印级别
+    }
+    
+    //
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+    
+    // To this:
+    DDLogError(@"Broken sprocket detected!");
+    DDLogVerbose(@"User selected file:%@ withSize:%u", @"/user/li/pagh", 1090);
+    DDLogError(@"%@", NSHomeDirectory());
+    DDLogWarn(@"This is warning statement");
+    
+    
+    
+    //DDTTYLogger(@"red log");
+    
+    
     
 //    [self testLumberjack];
     [self registerJLRouter];

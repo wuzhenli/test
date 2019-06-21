@@ -19,6 +19,15 @@ dispatch_async(dispatch_get_main_queue(), block); \
 }
 
 
+#define LOG_CONTEXT_JS 1
+#define LOG_CONTEXT_HTTP 1
+
+#define DDLogJS(frmt, ...) LOG_MAYBE(YES, ddLogLevel, LOG_FLAG_DEBUG, LOG_CONTEXT_JS, nil, __PRETTY_FUNCTION__, frmt, ##__VA_ARGS__)
+
+#define DDLogHTTP(frmt, ...) LOG_MAYBE(YES, ddLogLevel, LOG_FLAG_DEBUG, LOG_CONTEXT_HTTP, nil, __PRETTY_FUNCTION__, frmt, ##__VA_ARGS__)
+
+
+
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -58,13 +67,22 @@ dispatch_async(dispatch_get_main_queue(), block); \
     
     self.sb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     
+    NSOperation *op;
+    
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"More"
        style:UIBarButtonItemStylePlain target:self action:@selector(showActivityController)];
     
     [self testGCD];
     
-    UICollectionView *c;
-    UICollectionViewFlowLayout *layout;
+    
+    DDLogFileManagerDefault *fileManagerJS = [[DDLogFileManagerDefault alloc] initWithLogsDirectory:nil];
+    DDFileLogger *loggerJS = [[DDFileLogger alloc] initWithLogFileManager:fileManagerJS];
+    
+    DDContextWhitelistFilterLogFormatter *formatterJS = [[DDContextWhitelistFilterLogFormatter alloc] init];
+    [formatterJS addToWhitelist:LOG_CONTEXT_JS];
+    [loggerJS setLogFormatter:formatterJS];
+    
+
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -92,6 +110,15 @@ dispatch_async(dispatch_get_main_queue(), block); \
     int i = 3;
     int j = ++i + ++i + ++i;
     NSLog(@"j=%d", j);
+}
+
+- (void)t {
+    DDLogFileManagerDefault *fileManagerHttp = [[DDLogFileManagerDefault alloc] initWithLogsDirectory:nil];
+    DDFileLogger *loggerHttp = [[DDFileLogger alloc] initWithLogFileManager:fileManagerHttp];
+    DDContextWhitelistFilterLogFormatter *formatterHttp = [[DDContextWhitelistFilterLogFormatter alloc] init];
+    [formatterHttp addToWhitelist:LOG_CONTEXT_HTTP];
+    [loggerHttp setLogFormatter:formatterHttp];
+    [DDLog addLogger:loggerHttp];
 }
 
 

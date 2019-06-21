@@ -1,4 +1,7 @@
 PODS:
+  - CocoaLumberjack (3.5.3):
+    - CocoaLumberjack/Core (= 3.5.3)
+  - CocoaLumberjack/Core (3.5.3)
   - GrowTextView (1.0)
   - IQKeyboardManager (6.2.1)
   - JLRoutes (2.1)
@@ -8,6 +11,7 @@ PODS:
   - WMPageController (2.4.3)
 
 DEPENDENCIES:
+  - CocoaLumberjack
   - GrowTextView (~> 1.0)
   - IQKeyboardManager
   - JLRoutes (~> 2.1)
@@ -18,6 +22,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - CocoaLumberjack
     - GrowTextView
     - IQKeyboardManager
     - JLRoutes
@@ -35,6 +40,7 @@ CHECKOUT OPTIONS:
     :git: https://git.coding.net/kakukeme/Reveal-SDK.git
 
 SPEC CHECKSUMS:
+  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
   GrowTextView: 8528109cb3b0f31fb88152d06c791974652cf37d
   IQKeyboardManager: 964638372b4a61892cc74fdfa6fd26de8c9464a2
   JLRoutes: d755245322b94227662ea3e43492fdca94e05c5b
@@ -43,6 +49,6 @@ SPEC CHECKSUMS:
   Reveal-SDK: 6504f524a2e7138913251139ba30a03b3da91792
   WMPageController: 4c7f2c636675a71aea5eecf8fdc07a0ce86954e3
 
-PODFILE CHECKSUM: 1db32d286d47167736df63c1fdf500d1bbdb8596
+PODFILE CHECKSUM: 648ea170ab43ff91cafde880a792ecf51f19124d
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.6.2

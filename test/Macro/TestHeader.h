@@ -22,7 +22,15 @@
 #import <JLRoutes/JLRRouteDefinition.h>
 #import <JLRoutes/JLRRouteHandler.h>
 
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarning;
+#endif
 
+
+#import "NSObject+DLIntrospection.h"
 
 
 #endif /* TestHeader_h */

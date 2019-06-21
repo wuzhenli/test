@@ -18,6 +18,9 @@ target 'test' do
   
   pod 'IQKeyboardManager' #iOS8 and later
   
+  pod 'CocoaLumberjack'
+
+  
   
   pod 'Reveal-SDK', :git => 'https://git.coding.net/kakukeme/Reveal-SDK.git', :configurations => ['Debug']
   # pod 'CocoaLumberjack'
