@@ -12,6 +12,12 @@
 /// models
 #import "MyCustomFormatter.h"
 
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarning;
+#endif
+
 
 @interface AppDelegate ()
 
@@ -26,10 +32,21 @@
     [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
 #endif
     
-    // 日志输出到 Console
-//    [DDLog addLogger:[DDOSLogger sharedInstance]];
-//    [DDOSLogger sharedInstance].logFormatter = [[MyCustomFormatter alloc] init];
+    NSString *version = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+    [[NSUserDefaults standardUserDefaults] setObject:version
+                                              forKey:@"version_preference"];
     
+    NSString *build = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
+    [[NSUserDefaults standardUserDefaults] setObject:build
+                                              forKey:@"build_preference"];
+    
+    NSString *githash = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"GITHash"];
+    [[NSUserDefaults standardUserDefaults] setObject:githash
+                                              forKey:@"githash_preference"];
+    
+    // 日志输出到 Console
+    [DDLog addLogger:[DDOSLogger sharedInstance]];
+    [DDOSLogger sharedInstance].logFormatter = [[MyCustomFormatter alloc] init];
     
     // 日志保存到沙盒
     DDFileLogger *fileLogger = [[DDFileLogger alloc] init];
@@ -37,8 +54,7 @@
     fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
     [DDLog addLogger:fileLogger withLevel:DDLogLevelError]; // 日志打印级别
     
-    {
-        // 日志保存到沙盒
+    {   // 日志保存到沙盒
         DDFileLogger *fileLogger = [[DDFileLogger alloc] init];
         fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
         fileLogger.logFileManager.maximumNumberOfLogFiles = 7;

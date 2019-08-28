@@ -58,7 +58,6 @@
 		0A3CCFDF214A33240017F7A2 /* VolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3CCFDE214A33240017F7A2 /* VolumeView.m */; };
 		0A3DE3F821C9E78400A0F071 /* FunctionTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3DE3F621C9E78400A0F071 /* FunctionTestViewController.m */; };
 		0A3DE3F921C9E78400A0F071 /* FunctionTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3DE3F721C9E78400A0F071 /* FunctionTestViewController.xib */; };
-		0A3EEF7E21D622B8009F6E59 /* MyShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3EEF7D21D622B8009F6E59 /* MyShareViewController.m */; };
 		0A3F5A8B21D1C99000C583BC /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F5A8921D1C99000C583BC /* ThreadViewController.m */; };
 		0A3F5A8C21D1C99000C583BC /* ThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F5A8A21D1C99000C583BC /* ThreadViewController.xib */; };
 		0A3F5A8F21D1D06500C583BC /* NSRunLoop+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F5A8E21D1D06500C583BC /* NSRunLoop+Hook.m */; };
@@ -143,9 +142,6 @@
 		0AA82C5621290B8C000A5C02 /* LIPerson+category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA82C5521290B8C000A5C02 /* LIPerson+category.m */; };
 		0AA82C5921290B9C000A5C02 /* Student+category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA82C5821290B9B000A5C02 /* Student+category.m */; };
 		0AAA887321D5D40B009A1F49 /* BBSAcitvity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA887221D5D40B009A1F49 /* BBSAcitvity.m */; };
-		0AAA887C21D5D94C009A1F49 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA887B21D5D94C009A1F49 /* ShareViewController.m */; };
-		0AAA887F21D5D94C009A1F49 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA887D21D5D94C009A1F49 /* MainInterface.storyboard */; };
-		0AAA888321D5D94C009A1F49 /* ShareLink.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0AAA887821D5D94C009A1F49 /* ShareLink.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0AB886F220A3E49D003F2734 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB886F120A3E49D003F2734 /* CollectionViewController.m */; };
 		0AB886F620A3E4DB003F2734 /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB886F420A3E4DB003F2734 /* TestCollectionViewCell.m */; };
 		0AB886F720A3E4DB003F2734 /* TestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB886F520A3E4DB003F2734 /* TestCollectionViewCell.xib */; };
@@ -204,9 +200,9 @@
 		0AF871C4220050730019F308 /* StructSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF871C2220050730019F308 /* StructSizeViewController.m */; };
 		0AF871C5220050730019F308 /* StructSizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF871C3220050730019F308 /* StructSizeViewController.xib */; };
 		0AFBE91521DEF32200F2D102 /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBE91421DEF32200F2D102 /* TargetViewController.m */; };
-		873046C2B6621608F8A6A06D /* Pods_ShareLink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DE4FB1BFA00CAA178C47D /* Pods_ShareLink.framework */; };
 		9EAC6D02032ACD6A60531714 /* Pods_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060E2C00D66C17E5EC4CA85E /* Pods_test.framework */; };
 		AB6A620022BCD91400709AD8 /* MyCustomFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6A61FF22BCD91400709AD8 /* MyCustomFormatter.m */; };
+		AB8BDE422316275E009764B7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB8BDE412316275E009764B7 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,13 +213,6 @@
 			remoteGlobalIDString = 0A5803551F7A01D1000B5192;
 			remoteInfo = test;
 		};
-		0AAA888121D5D94C009A1F49 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A58034E1F7A01D1000B5192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0AAA887721D5D94C009A1F49;
-			remoteInfo = ShareLink;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -233,7 +222,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				0AAA888321D5D94C009A1F49 /* ShareLink.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,7 +459,6 @@
 		0AA82C5821290B9B000A5C02 /* Student+category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+category.m"; sourceTree = "<group>"; };
 		0AAA887121D5D40B009A1F49 /* BBSAcitvity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBSAcitvity.h; sourceTree = "<group>"; };
 		0AAA887221D5D40B009A1F49 /* BBSAcitvity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBSAcitvity.m; sourceTree = "<group>"; };
-		0AAA887821D5D94C009A1F49 /* ShareLink.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareLink.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AAA887A21D5D94C009A1F49 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
 		0AAA887B21D5D94C009A1F49 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
 		0AAA887E21D5D94C009A1F49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -570,6 +557,7 @@
 		AB3DE4FB1BFA00CAA178C47D /* Pods_ShareLink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareLink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6A61FE22BCD91400709AD8 /* MyCustomFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCustomFormatter.h; sourceTree = "<group>"; };
 		AB6A61FF22BCD91400709AD8 /* MyCustomFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCustomFormatter.m; sourceTree = "<group>"; };
+		AB8BDE412316275E009764B7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		B48CE6231A9C1861083E1A5C /* Pods-ShareLink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareLink.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareLink/Pods-ShareLink.release.xcconfig"; sourceTree = "<group>"; };
 		BC59F9B515C507BDB49D08C7 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		C8988A2F64F2CB05F2D40D45 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
@@ -590,14 +578,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0AAA887521D5D94C009A1F49 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				873046C2B6621608F8A6A06D /* Pods_ShareLink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -924,7 +904,6 @@
 			isa = PBXGroup;
 			children = (
 				0A5803561F7A01D1000B5192 /* test.app */,
-				0AAA887821D5D94C009A1F49 /* ShareLink.appex */,
 				0A6C15702254ED0F00316F34 /* testTests.xctest */,
 			);
 			name = Products;
@@ -933,7 +912,7 @@
 		0A5803581F7A01D1000B5192 /* test */ = {
 			isa = PBXGroup;
 			children = (
-				0A3EEF5C21D5F98B009F6E59 /* test.entitlements */,
+				AB8BDE402316274A009764B7 /* Supporting Files */,
 				0A61116620E8C8EC008CE53F /* Helper */,
 				0A36AF8421EC21D3005E2105 /* Category */,
 				0AD77DC220E78AB900330F2C /* Macro */,
@@ -945,7 +924,6 @@
 				0A3059441FFC7FF60092DF94 /* Common */,
 				0A5CA33D1FECA76700EC170F /* Models */,
 				0A4F5B1B1F9EDD5F00140E82 /* View */,
-				0A5803671F7A01D1000B5192 /* Info.plist */,
 				0A58038E1F7A01FC000B5192 /* Others */,
 				0A58038D1F7A01F3000B5192 /* Sections */,
 				0A58038C1F7A01EB000B5192 /* Main */,
@@ -1575,6 +1553,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		AB8BDE402316274A009764B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB8BDE412316275E009764B7 /* Settings.bundle */,
+				0A3EEF5C21D5F98B009F6E59 /* test.entitlements */,
+				0A5803671F7A01D1000B5192 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1588,11 +1576,11 @@
 				0A5803541F7A01D1000B5192 /* Resources */,
 				2BA0B484EC3033E966616478 /* [CP] Embed Pods Frameworks */,
 				0AAA888721D5D94C009A1F49 /* Embed App Extensions */,
+				AB8BDE432316279D009764B7 /* Setting Show App Info */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0AAA888221D5D94C009A1F49 /* PBXTargetDependency */,
 			);
 			name = test;
 			productName = test;
@@ -1616,24 +1604,6 @@
 			productName = testTests;
 			productReference = 0A6C15702254ED0F00316F34 /* testTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		0AAA887721D5D94C009A1F49 /* ShareLink */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0AAA888421D5D94C009A1F49 /* Build configuration list for PBXNativeTarget "ShareLink" */;
-			buildPhases = (
-				8F28661348C1F3EAFF188EE7 /* [CP] Check Pods Manifest.lock */,
-				0AAA887421D5D94C009A1F49 /* Sources */,
-				0AAA887521D5D94C009A1F49 /* Frameworks */,
-				0AAA887621D5D94C009A1F49 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ShareLink;
-			productName = ShareLink;
-			productReference = 0AAA887821D5D94C009A1F49 /* ShareLink.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -1659,15 +1629,6 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0A5803551F7A01D1000B5192;
 					};
-					0AAA887721D5D94C009A1F49 = {
-						CreatedOnToolsVersion = 10.0;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
 				};
 			};
 			buildConfigurationList = 0A5803511F7A01D1000B5192 /* Build configuration list for PBXProject "test" */;
@@ -1684,7 +1645,6 @@
 			projectRoot = "";
 			targets = (
 				0A5803551F7A01D1000B5192 /* test */,
-				0AAA887721D5D94C009A1F49 /* ShareLink */,
 				0A6C156F2254ED0F00316F34 /* testTests */,
 			);
 		};
@@ -1721,6 +1681,7 @@
 				0AF871C5220050730019F308 /* StructSizeViewController.xib in Resources */,
 				0AE002A621DE06E7007C2125 /* JLRoutersViewController.xib in Resources */,
 				0A009D4320E8CC9E00D81C6A /* localImage2.jpeg in Resources */,
+				AB8BDE422316275E009764B7 /* Settings.bundle in Resources */,
 				0A009D4120E8CC9E00D81C6A /* localImage0.jpeg in Resources */,
 				0AEA6F271F90B0E1008C3E69 /* reward_icon_price_rate@3x.png in Resources */,
 				0A61116D20E8CAFD008CE53F /* ScrollViewController.xib in Resources */,
@@ -1763,14 +1724,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0AAA887621D5D94C009A1F49 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0AAA887F21D5D94C009A1F49 /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1806,23 +1759,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-test/Pods-test-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8F28661348C1F3EAFF188EE7 /* [CP] Check Pods Manifest.lock */ = {
+		AB8BDE432316279D009764B7 /* Setting Show App Info */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+			inputFileListPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			inputPaths = (
+			);
+			name = "Setting Show App Info";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ShareLink-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${SRCROOT}/xcode-git-hash.sh\"\n";
 		};
 		D9B10C69BBF3D453FD435787 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1994,15 +1947,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0AAA887421D5D94C009A1F49 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A3EEF7E21D622B8009F6E59 /* MyShareViewController.m in Sources */,
-				0AAA887C21D5D94C009A1F49 /* ShareViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -2010,11 +1954,6 @@
 			isa = PBXTargetDependency;
 			target = 0A5803551F7A01D1000B5192 /* test */;
 			targetProxy = 0A6C15752254ED0F00316F34 /* PBXContainerItemProxy */;
-		};
-		0AAA888221D5D94C009A1F49 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0AAA887721D5D94C009A1F49 /* ShareLink */;
-			targetProxy = 0AAA888121D5D94C009A1F49 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2158,13 +2097,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = test/test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 294Q8452TK;
+				DEVELOPMENT_TEAM = Y49U8RX2F5;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/test/Others/PrefixHeader.pch";
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jaly.www.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lily.test.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "test/Others/test-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -2181,13 +2120,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = test/test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 294Q8452TK;
+				DEVELOPMENT_TEAM = Y49U8RX2F5;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/test/Others/PrefixHeader.pch";
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jaly.www.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lily.test.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "test/Others/test-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
@@ -2238,49 +2177,6 @@
 			};
 			name = Release;
 		};
-		0AAA888521D5D94C009A1F49 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 732D5490952EBD16D052059A /* Pods-ShareLink.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CODE_SIGN_ENTITLEMENTS = ShareLink/ShareLink.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 294Q8452TK;
-				INFOPLIST_FILE = ShareLink/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jaly.www.test.ShareLink;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		0AAA888621D5D94C009A1F49 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B48CE6231A9C1861083E1A5C /* Pods-ShareLink.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CODE_SIGN_ENTITLEMENTS = ShareLink/ShareLink.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 294Q8452TK;
-				INFOPLIST_FILE = ShareLink/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jaly.www.test.ShareLink;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2307,15 +2203,6 @@
 			buildConfigurations = (
 				0A6C15772254ED0F00316F34 /* Debug */,
 				0A6C15782254ED0F00316F34 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0AAA888421D5D94C009A1F49 /* Build configuration list for PBXNativeTarget "ShareLink" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0AAA888521D5D94C009A1F49 /* Debug */,
-				0AAA888621D5D94C009A1F49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

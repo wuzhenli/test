@@ -33,8 +33,25 @@
 //        make.leftMargin.rightMargin.bottomMargin.topMargin.offset(0);
 //    }];
 //    self.grayView.layoutMargins = UIEdgeInsetsMake(50, 50, 50, 50);
+    [self testRedianConfig];
+}
+//- (void)viewDidLayoutSubviews {
+//    [super viewDidLayoutSubviews];
+//}
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    NSLog(@"statusBarHeight:%lf", [UIApplication sharedApplication].statusBarFrame.size.height);
+};
+
+- (void)testRedianConfig {
     
-    [self example2];
+    
+    [self.view addSubview:self.redView];
+    [self.redView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.offset(10);
+        make.top.offset(66);
+        make.size.mas_equalTo(CGSizeMake(100, 30));
+    }];
 }
 
 - (void)example2 {
@@ -105,7 +122,6 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self testView];
 }
 
 

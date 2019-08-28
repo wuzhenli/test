@@ -21,10 +21,18 @@
 }
 
 - (IBAction)btnPushClicked:(UIButton *)sender {
+    [UIView animateWithDuration:0.4 animations:^{
+        sender.layer.transform = CATransform3DRotate(CATransform3DIdentity, M_PI , 1, 0, 0);
+    } completion:^(BOOL finished) {
+        sender.layer.transform = CATransform3DIdentity;
+    }];
     
+    return;
+    self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
 //    PushDestViewController *vc = [PushDestViewController new];
 //    [self.navigationController pushViewController:vc animated:NO];
-    sender.backgroundColor = [UIColor redColor];
+    // sender.backgroundColor = [UIColor redColor];
+    NSString *title = sender.currentTitle;
     /*
      
      CA_EXTERN CATransitionType const kCATransitionFade 渐变
@@ -47,13 +55,14 @@
 //    transition.type = @"oglFlip"; //kCATransitionReveal;
 //    transition.subtype = kCATransitionFromLeft;
 //    //    [self.navigationController.view.layer addAnimation:transition forKey:nil];
-
-    [sender.layer ani_transitionWithType:kCATransitionPush subtype:EnumTransitionSubtypeFromLeft duration:1 timingFunction:EnumTransitionTimingFunctionEaseIn];
+    [sender setTitle:nil forState:UIControlStateNormal];
+    [sender.layer ani_transitionWithType:@"oglFlip" subtype:EnumTransitionSubtypeFromBottom duration:0.2 timingFunction:EnumTransitionTimingFunctionEaseIn];
     
 //    [sender.layer ani_leftRightShake];
 //    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        sender.backgroundColor = [UIColor lightGrayColor];
+        // sender.backgroundColor = [UIColor lightGrayColor];
+        [sender setTitle:@"Push ViewController" forState:UIControlStateNormal];
     });
     
 }

@@ -7,6 +7,11 @@
 //
 
 #import "LumberViewController.h"
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelError;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarning;
+#endif
 
 
 @interface LumberViewController ()
@@ -18,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-//    [self someMehtod];
+    [self someMehtod];
     
 }
 

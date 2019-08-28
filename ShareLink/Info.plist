@@ -30,10 +30,10 @@
 				<string>1</string>
 			</dict>
 		</dict>
-		<key>NSExtensionPrincipalClass</key>
-		<string>MyShareViewController</string>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.share-services</string>
+		<key>NSExtensionPrincipalClass</key>
+		<string>MyShareViewController</string>
 	</dict>
 </dict>
 </plist>
