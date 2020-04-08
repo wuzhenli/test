@@ -7,21 +7,38 @@
 //
 
 #import "FindLeakViewController.h"
+#import "ActionButton.h"
+
 
 @interface FindLeakViewController ()
 
 @property (copy, nonatomic) dispatch_block_t block;
+@property (strong, nonatomic) ActionButton *actionButton;
 
 @end
 
 
 @implementation FindLeakViewController
 
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        self.modalPresentationStyle = UIModalPresentationFullScreen;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backButton setTitle:@"<" forState:UIControlStateNormal];
+    [backButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    backButton.frame = CGRectMake(10, 20, 44, 44);
+    [backButton addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:backButton];
     
     UILabel *label = [UILabel new];
     label.text = @"返回出现内存泄露";
@@ -34,16 +51,39 @@
         NSLog(@"%@ %@", NSStringFromClass([self class]), self);
     };
     self.block();
+    
+    
+    [self.view addSubview:self.actionButton];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.actionButton sendActionsForControlEvents:UIControlEventTouchUpOutside];
+    });
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)backAction {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
-*/
+
+- (void)actionButtonClicked:(UIButton *)sender event:(UIEvent *)event {
+    NSLog(@"%s", __func__);
+}
+- (void)actionButtonTouchUpOutside {
+    NSLog(@"%s", __func__);
+}
+
+#pragma mark - getter
+
+- (ActionButton *)actionButton {
+    if (!_actionButton) {
+        _actionButton = [ActionButton buttonWithType:UIButtonTypeCustom];
+        [_actionButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_actionButton setTitle:@"ActionButton" forState:UIControlStateNormal];
+        [_actionButton addTarget:self action:@selector(actionButtonClicked:event:) forControlEvents:UIControlEventTouchUpInside];
+        [_actionButton addTarget:self action:@selector(actionButtonTouchUpOutside) forControlEvents:UIControlEventTouchUpOutside];
+        
+        _actionButton.frame = CGRectMake(20, 150, SCREEN_Width-40, 45);
+    }
+    return _actionButton;
+}
 
 @end

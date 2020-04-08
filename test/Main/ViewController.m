@@ -67,12 +67,8 @@ dispatch_async(dispatch_get_main_queue(), block); \
     
     self.sb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     
-    NSOperation *op;
-    
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"More"
-       style:UIBarButtonItemStylePlain target:self action:@selector(showActivityController)];
-    
-    [self testGCD];
+       style:UIBarButtonItemStylePlain target:self action:@selector(showLeakPage)];
     
     
     DDLogFileManagerDefault *fileManagerJS = [[DDLogFileManagerDefault alloc] initWithLogsDirectory:nil];
@@ -106,12 +102,6 @@ dispatch_async(dispatch_get_main_queue(), block); \
     });
 }
 
-- (void)testPlus {
-    int i = 3;
-    int j = ++i + ++i + ++i;
-    NSLog(@"j=%d", j);
-}
-
 - (void)t {
     DDLogFileManagerDefault *fileManagerHttp = [[DDLogFileManagerDefault alloc] initWithLogsDirectory:nil];
     DDFileLogger *loggerHttp = [[DDFileLogger alloc] initWithLogFileManager:fileManagerHttp];
@@ -121,6 +111,10 @@ dispatch_async(dispatch_get_main_queue(), block); \
     [DDLog addLogger:loggerHttp];
 }
 
+- (void)showLeakPage {
+    UIViewController *vc = [[NSClassFromString(@"FindLeakViewController") alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 - (void)showActivityController {
     NSMutableArray *items = @[].mutableCopy;
