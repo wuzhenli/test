@@ -53,7 +53,7 @@ dispatch_async(dispatch_get_main_queue(), block); \
                              @"FunctionTestViewController",@"StaticTableViewController",
                              @"SwipeCellKitCollectionViewController",
                              @"TestAnimationViewController", @"DrawViewController",
-                             @"GestureViewController", @"DefinePanGestureViewController", @"PhotoKitViewController", @"SlideTableViewController", @"KeyboardViewController", @"WebViewController", @"ScrollViewController", @"TestVCController", @"MenuCtlViewController", @"TestViewController"].mutableCopy;
+                             @"GestureViewController", @"DefinePanGestureViewController", @"PhotoKitViewController", @"SlideTableViewController", @"KeyboardViewController", @"WebViewController", @"ScrollViewController", @"TestVCController", @"MenuCtlViewController", @"TestViewController", @"FindLeakViewController"].mutableCopy;
     }
     return _arrClassNameXib;
 }

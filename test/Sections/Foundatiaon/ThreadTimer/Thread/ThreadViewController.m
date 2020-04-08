@@ -4,7 +4,8 @@
 //
 //  Created by li’Pro on 2018/12/25.
 //  Copyright © 2018 wzl. All rights reserved.
-//
+//  https://www.jianshu.com/p/3f972fac2fb2  runloop处理事件源
+
 
 #import "ThreadViewController.h"
 
@@ -51,9 +52,11 @@ BOOL shouldKeepRunning = YES; // global
     [self addRunloopObserverWithCreate:CFRunLoopGetCurrent()];
     [self observerRunloop:CFRunLoopGetCurrent()];
     
+    
     NSRunLoop *theRL = [NSRunLoop currentRunLoop];
-    [theRL runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
-    NSLog(@" 停止了 runloop end");
+    NSDate *expireDate = [NSDate distantFuture];
+    BOOL result = [theRL runMode:NSDefaultRunLoopMode beforeDate:expireDate];
+    NSLog(@" 停止了 runloop end result:%d", result);
 }
 
 - (void)observerRunloop:(CFRunLoopRef)runloopRef {
@@ -134,9 +137,9 @@ static void __runloopCallback(CFRunLoopObserverRef observer, CFRunLoopActivity a
 - (IBAction)btnExistClicked:(id)sender {
     [self performSelector:@selector(quitRunloop) onThread:self.thread withObject:nil waitUntilDone:NO];
 }
-- (void)quitRunloop {
-    CFRunLoopStop(CFRunLoopGetCurrent());
-    [[NSThread currentThread] cancel];
+- (void)quitRunloop { // 不用任何代码，向该线程发消息就能退出线程和 runloop
+//    CFRunLoopStop(CFRunLoopGetCurrent());
+//    [[NSThread currentThread] cancel];
 }
 
 @end

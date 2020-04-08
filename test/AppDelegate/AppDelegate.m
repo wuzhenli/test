@@ -26,11 +26,30 @@ static const DDLogLevel ddLogLevel = DDLogLevelWarning;
 
 @implementation AppDelegate
 
+void test() {
+    dispatch_queue_t queue = dispatch_queue_create("q", DISPATCH_QUEUE_SERIAL);
+    
+    dispatch_async(queue, ^{
+        sleep(1);
+    });
+    dispatch_async(queue, ^{
+        sleep(1);
+    });
+    dispatch_sync(queue, ^{
+        sleep(1);
+    });
+}
+
 // -application:handleEventsForBackgroundURLSession:completionHandler:
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 #if DEBUG
     [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
 #endif
+    
+    test();
+    
+    
+    
     
     NSString *version = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
     [[NSUserDefaults standardUserDefaults] setObject:version

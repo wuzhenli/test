@@ -201,6 +201,7 @@
 		0AF871C5220050730019F308 /* StructSizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF871C3220050730019F308 /* StructSizeViewController.xib */; };
 		0AFBE91521DEF32200F2D102 /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBE91421DEF32200F2D102 /* TargetViewController.m */; };
 		9EAC6D02032ACD6A60531714 /* Pods_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060E2C00D66C17E5EC4CA85E /* Pods_test.framework */; };
+		AB3B0B8F243D9CDD008F8BD0 /* FindLeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3B0B8E243D9CDD008F8BD0 /* FindLeakViewController.m */; };
 		AB6A620022BCD91400709AD8 /* MyCustomFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6A61FF22BCD91400709AD8 /* MyCustomFormatter.m */; };
 		AB8BDE422316275E009764B7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB8BDE412316275E009764B7 /* Settings.bundle */; };
 /* End PBXBuildFile section */
@@ -554,6 +555,8 @@
 		2AA8B6331C093CDC6CBEA45B /* Pods-testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testUITests/Pods-testUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		732D5490952EBD16D052059A /* Pods-ShareLink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareLink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareLink/Pods-ShareLink.debug.xcconfig"; sourceTree = "<group>"; };
 		A30BC06EB45B6EF316E8ABA0 /* Pods_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3B0B8D243D9CDD008F8BD0 /* FindLeakViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindLeakViewController.h; sourceTree = "<group>"; };
+		AB3B0B8E243D9CDD008F8BD0 /* FindLeakViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindLeakViewController.m; sourceTree = "<group>"; };
 		AB3DE4FB1BFA00CAA178C47D /* Pods_ShareLink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareLink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6A61FE22BCD91400709AD8 /* MyCustomFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCustomFormatter.h; sourceTree = "<group>"; };
 		AB6A61FF22BCD91400709AD8 /* MyCustomFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCustomFormatter.m; sourceTree = "<group>"; };
@@ -954,6 +957,7 @@
 		0A58038D1F7A01F3000B5192 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				AB3B0B8C243D9CD1008F8BD0 /* Memory */,
 				0A3AA7212235FE7B006CF0C7 /* UI */,
 				0A3AA7202235FE5F006CF0C7 /* Foundatiaon */,
 				0A3AC3682201779D00252113 /* LumberJack */,
@@ -1544,6 +1548,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AB3B0B8C243D9CD1008F8BD0 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				AB3B0B8D243D9CDD008F8BD0 /* FindLeakViewController.h */,
+				AB3B0B8E243D9CDD008F8BD0 /* FindLeakViewController.m */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
 		AB6A61FD22BCD8FF00709AD8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -1735,10 +1748,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-test/Pods-test-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
 				"${BUILT_PRODUCTS_DIR}/GrowTextView/GrowTextView.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/JLRoutes/JLRoutes.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${PODS_ROOT}/Reveal-SDK/RevealServer-4/iOS/RevealServer.framework",
 				"${BUILT_PRODUCTS_DIR}/WMPageController/WMPageController.framework",
@@ -1746,10 +1761,12 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GrowTextView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JLRoutes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLeaksFinder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WMPageController.framework",
@@ -1833,6 +1850,7 @@
 				0A0CC8CB21CE4E6800AA53A3 /* BlockAreaViewController.m in Sources */,
 				0A3DE3F821C9E78400A0F071 /* FunctionTestViewController.m in Sources */,
 				0ABAE6FC21ABCCE00094BAA8 /* SliderCollectionViewCell.swift in Sources */,
+				AB3B0B8F243D9CDD008F8BD0 /* FindLeakViewController.m in Sources */,
 				0A83D4E120DA4DCF00F8F231 /* BBSDrawView.m in Sources */,
 				0A668D0C2267282300B8AD5A /* LoginViewController.m in Sources */,
 				0ABAE72821ABE7D20094BAA8 /* SwipeCollectionViewCell+Display.swift in Sources */,

@@ -20,6 +20,7 @@ target 'test' do
   
   pod 'CocoaLumberjack'
 
+  pod 'MLeaksFinder'
   
   
   pod 'Reveal-SDK', :git => 'https://git.coding.net/kakukeme/Reveal-SDK.git', :configurations => ['Debug']
@@ -31,7 +32,3 @@ end
 
 
 
-target 'ShareLink' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  use_frameworks!
-end
