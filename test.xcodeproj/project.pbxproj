@@ -131,6 +131,11 @@
 		0A96D0D4219DA37100F4DED6 /* AlphaPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A96D0D3219DA37100F4DED6 /* AlphaPresentationController.m */; };
 		0A976BB920DB390F00BDE153 /* UIView+Corner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A976BB820DB390F00BDE153 /* UIView+Corner.m */; };
 		0A992295222D40A7001A39A8 /* SafeMuDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A992294222D40A7001A39A8 /* SafeMuDictionary.m */; };
+		0A995DC024D675CC006E41CF /* InitObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A995DBF24D675CC006E41CF /* InitObject.m */; };
+		0A995DC324D684AF006E41CF /* TestIntialize.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A995DC224D684AF006E41CF /* TestIntialize.m */; };
+		0A995DC624D684EA006E41CF /* FeedsBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A995DC524D684EA006E41CF /* FeedsBaseViewController.m */; };
+		0A995DC924D685C2006E41CF /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A995DC824D685C2006E41CF /* CircleViewController.m */; };
+		0A995DCC24D6868F006E41CF /* HotFeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A995DCB24D6868F006E41CF /* HotFeedsViewController.m */; };
 		0A9F887320E4F52400B44E68 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F887220E4F52400B44E68 /* TimerViewController.m */; };
 		0AA47ACF20160DAB00242C4D /* preview_2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47ACD20160DAA00242C4D /* preview_2.mov */; };
 		0AA47AD020160DAB00242C4D /* preview_2的副本.123314.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0AA47ACE20160DAB00242C4D /* preview_2的副本.123314.mov */; };
@@ -443,6 +448,16 @@
 		0A976BB820DB390F00BDE153 /* UIView+Corner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Corner.m"; sourceTree = "<group>"; };
 		0A992293222D40A7001A39A8 /* SafeMuDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeMuDictionary.h; sourceTree = "<group>"; };
 		0A992294222D40A7001A39A8 /* SafeMuDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeMuDictionary.m; sourceTree = "<group>"; };
+		0A995DBE24D675CC006E41CF /* InitObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitObject.h; sourceTree = "<group>"; };
+		0A995DBF24D675CC006E41CF /* InitObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitObject.m; sourceTree = "<group>"; };
+		0A995DC124D684AF006E41CF /* TestIntialize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestIntialize.h; sourceTree = "<group>"; };
+		0A995DC224D684AF006E41CF /* TestIntialize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestIntialize.m; sourceTree = "<group>"; };
+		0A995DC424D684EA006E41CF /* FeedsBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedsBaseViewController.h; sourceTree = "<group>"; };
+		0A995DC524D684EA006E41CF /* FeedsBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedsBaseViewController.m; sourceTree = "<group>"; };
+		0A995DC724D685C2006E41CF /* CircleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
+		0A995DC824D685C2006E41CF /* CircleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleViewController.m; sourceTree = "<group>"; };
+		0A995DCA24D6868F006E41CF /* HotFeedsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotFeedsViewController.h; sourceTree = "<group>"; };
+		0A995DCB24D6868F006E41CF /* HotFeedsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotFeedsViewController.m; sourceTree = "<group>"; };
 		0A9F887120E4F52400B44E68 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		0A9F887220E4F52400B44E68 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		0AA47ACD20160DAA00242C4D /* preview_2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = preview_2.mov; sourceTree = "<group>"; };
@@ -749,6 +764,7 @@
 		0A3AA7202235FE5F006CF0C7 /* Foundatiaon */ = {
 			isa = PBXGroup;
 			children = (
+				0A995DBD24D675B5006E41CF /* initialize */,
 				0A61116820E8CACE008CE53F /* ThreadTimer */,
 				0A0CC8C221CE4E2E00AA53A3 /* Block */,
 				0A5803901F7A026B000B5192 /* MehtodSignature */,
@@ -1261,6 +1277,23 @@
 				0A96D0D3219DA37100F4DED6 /* AlphaPresentationController.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0A995DBD24D675B5006E41CF /* initialize */ = {
+			isa = PBXGroup;
+			children = (
+				0A995DBE24D675CC006E41CF /* InitObject.h */,
+				0A995DBF24D675CC006E41CF /* InitObject.m */,
+				0A995DC424D684EA006E41CF /* FeedsBaseViewController.h */,
+				0A995DC524D684EA006E41CF /* FeedsBaseViewController.m */,
+				0A995DC724D685C2006E41CF /* CircleViewController.h */,
+				0A995DC824D685C2006E41CF /* CircleViewController.m */,
+				0A995DCA24D6868F006E41CF /* HotFeedsViewController.h */,
+				0A995DCB24D6868F006E41CF /* HotFeedsViewController.m */,
+				0A995DC124D684AF006E41CF /* TestIntialize.h */,
+				0A995DC224D684AF006E41CF /* TestIntialize.m */,
+			);
+			path = initialize;
 			sourceTree = "<group>";
 		};
 		0A9F887020E4F50D00B44E68 /* Timer */ = {
@@ -1824,6 +1857,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A995DCC24D6868F006E41CF /* HotFeedsViewController.m in Sources */,
 				0AF7B2E1219D4D8E00144B7E /* BBSProgressHUD.m in Sources */,
 				0A7C408E20073CE300174650 /* PhotoKitViewController.m in Sources */,
 				0A58035E1F7A01D1000B5192 /* ViewController.m in Sources */,
@@ -1843,6 +1877,7 @@
 				0A37E7F822375A5C00A32AE4 /* KVOPattern.m in Sources */,
 				0ABAE72021ABE7D20094BAA8 /* SwipeAnimator.swift in Sources */,
 				0A50041221DDA19C00A1E243 /* TestHeightTableViewController.m in Sources */,
+				0A995DC324D684AF006E41CF /* TestIntialize.m in Sources */,
 				0AEFF55F21A6734F00E95A76 /* StaticTitleSwitchCell.m in Sources */,
 				0A50041821DDA20E00A1E243 /* AutoHeightTableViewCell.m in Sources */,
 				0A5535292115DD9100A43828 /* CircleGestureRecognizer.m in Sources */,
@@ -1864,6 +1899,7 @@
 				0A304DC8219D7A1C0074FF89 /* TestAnimationViewController.m in Sources */,
 				0A3AC36C220177B200252113 /* LumberViewController.m in Sources */,
 				0AB886F220A3E49D003F2734 /* CollectionViewController.m in Sources */,
+				0A995DC024D675CC006E41CF /* InitObject.m in Sources */,
 				0A3C26AB22657E9B00C23ABE /* PushAnimation.m in Sources */,
 				0A992295222D40A7001A39A8 /* SafeMuDictionary.m in Sources */,
 				0AA82C4C21290B34000A5C02 /* LoadInitViewController.m in Sources */,
@@ -1940,6 +1976,7 @@
 				0A50041D21DDA2F400A1E243 /* TestHeightModel.m in Sources */,
 				0ABAE71D21ABE7D20094BAA8 /* Swipeable.swift in Sources */,
 				0AF7B2E4219D4FA100144B7E /* SaveAlbumTool.m in Sources */,
+				0A995DC924D685C2006E41CF /* CircleViewController.m in Sources */,
 				0ABAE71F21ABE7D20094BAA8 /* SwipeActionTransitioning.swift in Sources */,
 				0A72CD5721A64B6F00CDBE93 /* StaticRowModel.m in Sources */,
 				0AA82C5621290B8C000A5C02 /* LIPerson+category.m in Sources */,
@@ -1951,6 +1988,7 @@
 				AB6A620022BCD91400709AD8 /* MyCustomFormatter.m in Sources */,
 				0A72CD5D21A64E5500CDBE93 /* StaticSwitchTableViewCell.m in Sources */,
 				0A33173E20F5F89A00823A22 /* MenuCtlViewController.m in Sources */,
+				0A995DC624D684EA006E41CF /* FeedsBaseViewController.m in Sources */,
 				0A8F226E1F7B7E8200499EFD /* TestViewController.m in Sources */,
 				0A96D0D4219DA37100F4DED6 /* AlphaPresentationController.m in Sources */,
 				AB3B0B92243DA8F3008F8BD0 /* ActionButton.m in Sources */,

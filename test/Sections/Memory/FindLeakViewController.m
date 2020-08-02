@@ -8,6 +8,7 @@
 
 #import "FindLeakViewController.h"
 #import "ActionButton.h"
+#import <FBRetainCycleDetector/FBRetainCycleDetector.h>
 
 
 @interface FindLeakViewController ()
@@ -66,7 +67,15 @@
 
 - (void)actionButtonClicked:(UIButton *)sender event:(UIEvent *)event {
     NSLog(@"%s", __func__);
+    
+    FBRetainCycleDetector *detector = [FBRetainCycleDetector new];
+    [detector addCandidate:self];
+    NSSet<NSArray<FBObjectiveCGraphElement *> *> *retainCycles = [detector findRetainCycles];
+    for (NSArray<FBObjectiveCGraphElement *> *cycleArray in retainCycles) {
+        NSLog(@"%@", cycleArray);
+    }
 }
+
 - (void)actionButtonTouchUpOutside {
     NSLog(@"%s", __func__);
 }
