@@ -177,6 +177,9 @@
 		0ABAE72E21ABE7D20094BAA8 /* SwipeCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAE71721ABE7D20094BAA8 /* SwipeCollectionViewCellDelegate.swift */; };
 		0AC0ACA920BFBD5D00D3185E /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC0ACA820BFBD5D00D3185E /* PlayerViewController.m */; };
 		0AC4F2A5222D4714000F93F9 /* SafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC4F2A4222D4714000F93F9 /* SafeArray.m */; };
+		0ACC56CF257CDB4600A47122 /* MapHashTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC56CD257CDB4600A47122 /* MapHashTableViewController.m */; };
+		0ACC56D0257CDB4600A47122 /* MapHashTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ACC56CE257CDB4600A47122 /* MapHashTableViewController.xib */; };
+		0ACC56D7257CDB5300A47122 /* TableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC56D6257CDB5300A47122 /* TableModel.m */; };
 		0AD0FEA520614F5D006678F4 /* SingleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0FEA420614F5D006678F4 /* SingleModel.m */; };
 		0AD34B3221D0A0C600DFBE63 /* PreviewImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD34B3121D0A0C600DFBE63 /* PreviewImageView.m */; };
 		0AD6A9D221185DAE00DBA114 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6A9D021185DAE00DBA114 /* KVOViewController.m */; };
@@ -517,6 +520,11 @@
 		0AC0ACA820BFBD5D00D3185E /* PlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		0AC4F2A3222D4714000F93F9 /* SafeArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeArray.h; sourceTree = "<group>"; };
 		0AC4F2A4222D4714000F93F9 /* SafeArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeArray.m; sourceTree = "<group>"; };
+		0ACC56CC257CDB4600A47122 /* MapHashTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapHashTableViewController.h; sourceTree = "<group>"; };
+		0ACC56CD257CDB4600A47122 /* MapHashTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapHashTableViewController.m; sourceTree = "<group>"; };
+		0ACC56CE257CDB4600A47122 /* MapHashTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapHashTableViewController.xib; sourceTree = "<group>"; };
+		0ACC56D5257CDB5300A47122 /* TableModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableModel.h; sourceTree = "<group>"; };
+		0ACC56D6257CDB5300A47122 /* TableModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableModel.m; sourceTree = "<group>"; };
 		0AD0FEA320614F5D006678F4 /* SingleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleModel.h; sourceTree = "<group>"; };
 		0AD0FEA420614F5D006678F4 /* SingleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleModel.m; sourceTree = "<group>"; };
 		0AD0FEA6206150BF006678F4 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
@@ -976,6 +984,7 @@
 		0A58038D1F7A01F3000B5192 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				0ACC56CB257CDB3100A47122 /* MapHashTable */,
 				AB3B0B8C243D9CD1008F8BD0 /* Memory */,
 				0A3AA7212235FE7B006CF0C7 /* UI */,
 				0A3AA7202235FE5F006CF0C7 /* Foundatiaon */,
@@ -1437,6 +1446,18 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		0ACC56CB257CDB3100A47122 /* MapHashTable */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC56CC257CDB4600A47122 /* MapHashTableViewController.h */,
+				0ACC56CD257CDB4600A47122 /* MapHashTableViewController.m */,
+				0ACC56CE257CDB4600A47122 /* MapHashTableViewController.xib */,
+				0ACC56D5257CDB5300A47122 /* TableModel.h */,
+				0ACC56D6257CDB5300A47122 /* TableModel.m */,
+			);
+			path = MapHashTable;
+			sourceTree = "<group>";
+		};
 		0AD6A9CD21185D9900DBA114 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
@@ -1710,6 +1731,7 @@
 				0A50041921DDA20E00A1E243 /* AutoHeightTableViewCell.xib in Resources */,
 				0A50041321DDA19C00A1E243 /* TestHeightTableViewController.xib in Resources */,
 				0AEA6F261F90B0E1008C3E69 /* reward_icon_price_rate@2x.png in Resources */,
+				0ACC56D0257CDB4600A47122 /* MapHashTableViewController.xib in Resources */,
 				0AA47AD020160DAB00242C4D /* preview_2的副本.123314.mov in Resources */,
 				0A3AA7272235FFB9006CF0C7 /* KVCViewController.xib in Resources */,
 				0A3AC36D220177B200252113 /* LumberViewController.xib in Resources */,
@@ -1949,6 +1971,7 @@
 				0AC4F2A5222D4714000F93F9 /* SafeArray.m in Sources */,
 				0AD77DB120E763AE00330F2C /* MGSwipeTableCell.m in Sources */,
 				0AEFF56221A6738D00E95A76 /* StaticTitleDescCell.m in Sources */,
+				0ACC56CF257CDB4600A47122 /* MapHashTableViewController.m in Sources */,
 				0ABAE71E21ABE7D20094BAA8 /* SwipeCollectionViewCell.swift in Sources */,
 				0AF7B2E0219D4D8E00144B7E /* MBProgressHUD+bbs.m in Sources */,
 				0ABAE71821ABE7D20094BAA8 /* SwipeController.swift in Sources */,
@@ -1994,6 +2017,7 @@
 				AB3B0B92243DA8F3008F8BD0 /* ActionButton.m in Sources */,
 				0ABAE72D21ABE7D20094BAA8 /* SwipeExpanding.swift in Sources */,
 				0AC0ACA920BFBD5D00D3185E /* PlayerViewController.m in Sources */,
+				0ACC56D7257CDB5300A47122 /* TableModel.m in Sources */,
 				0A72CD5421A64B5D00CDBE93 /* StaticSecionModel.m in Sources */,
 				0A5523B822686A7D00B51121 /* IQViewController.m in Sources */,
 			);
